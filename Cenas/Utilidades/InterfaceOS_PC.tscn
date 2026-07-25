@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://50iioxb1e5pe"]
+
+[node name="InterfaceOS" type="Control" unique_id=1710706125]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="CheckBox" type="CheckBox" parent="." unique_id=1379023923]
+layout_mode = 0
+offset_right = 256.0
+offset_bottom = 142.0
+text = "teste"

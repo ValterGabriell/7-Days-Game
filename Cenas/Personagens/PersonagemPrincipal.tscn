@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://de05wlqki0ysv"]
+
+[ext_resource type="Script" uid="uid://dvlfcdp0s6r5t" path="res://Scripts/Personagens/PersonagemPrincipal.cs" id="1_m7cs5"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_ef0sp"]
+radius = 0.45
+height = 1.7
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ef0sp"]
+height = 1.8730469
+
+[node name="PersonagemPrincipal" type="CharacterBody3D" unique_id=1772752661 node_paths=PackedStringArray("RaycastDeIteracao", "CameraPivot")]
+collision_layer = 2
+script = ExtResource("1_m7cs5")
+RaycastDeIteracao = NodePath("PivotCamera/RayCast3D")
+CameraPivot = NodePath("PivotCamera")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1129311965]
+mesh = SubResource("CapsuleMesh_ef0sp")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1876157092]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.06347656, 0)
+shape = SubResource("CapsuleShape3D_ef0sp")
+
+[node name="PivotCamera" type="Node3D" parent="." unique_id=2002210972]
+
+[node name="Camera3D" type="Camera3D" parent="PivotCamera" unique_id=444195198]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.56495607, 0.34925956)
+
+[node name="RayCast3D" type="RayCast3D" parent="PivotCamera" unique_id=186265043]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0.49587226, 0)
+collision_mask = 4

@@ -1,0 +1,141 @@
+[gd_scene format=3 uid="uid://coqrw62on23tk"]
+
+[ext_resource type="PackedScene" uid="uid://de05wlqki0ysv" path="res://Cenas/Personagens/PersonagemPrincipal.tscn" id="1_hudp4"]
+[ext_resource type="PackedScene" uid="uid://dcwtuba2ktbea" path="res://Cenas/Globais/UI/ConfiguracaoDeTela.tscn" id="1_x0xyy"]
+[ext_resource type="PackedScene" uid="uid://50iioxb1e5pe" path="res://Cenas/Utilidades/InterfaceOS_PC.tscn" id="2_ncvnv"]
+[ext_resource type="PackedScene" uid="uid://r1idoxctvvqp" path="res://Arte/Prototipo/PSX Computer asset pack/PSX Computer asset pack/fbx/desk.fbx" id="3_qjbho"]
+[ext_resource type="PackedScene" uid="uid://do76cstbmgfj8" path="res://Arte/Prototipo/PSX Computer asset pack/PSX Computer asset pack/fbx/computer.fbx" id="4_il6rv"]
+[ext_resource type="PackedScene" uid="uid://cblc8wmuveb28" path="res://Cenas/Utilidades/Monitor.tscn" id="5_il6rv"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_ef0sp"]
+size = Vector2(8, 8)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_exfc0"]
+size = Vector3(8.015099, 0.037597656, 8.312317)
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_exfc0"]
+
+[sub_resource type="Sky" id="Sky_v5wr4"]
+sky_material = SubResource("ProceduralSkyMaterial_exfc0")
+
+[sub_resource type="Environment" id="Environment_ef0sp"]
+background_mode = 2
+sky = SubResource("Sky_v5wr4")
+
+[node name="SalaRadioPrincipal" type="Node3D" unique_id=97208055]
+
+[node name="ConfiguracaoGlobal" type="Node" parent="." unique_id=1369820672]
+
+[node name="Chao" type="MeshInstance3D" parent="ConfiguracaoGlobal" unique_id=1632632857]
+mesh = SubResource("PlaneMesh_ef0sp")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="ConfiguracaoGlobal/Chao" unique_id=2014523829]
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ConfiguracaoGlobal/Chao/StaticBody3D" unique_id=668260349]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.015361786, 0, -0.12503052)
+shape = SubResource("BoxShape3D_exfc0")
+debug_color = Color(0, 0, 15.863711, 1)
+
+[node name="Chao6" type="MeshInstance3D" parent="ConfiguracaoGlobal" unique_id=1639063069]
+transform = Transform3D(-1, -8.742278e-08, 0, 8.742278e-08, -1, 0, 0, 0, 1, 0, 3.1305373, 0)
+mesh = SubResource("PlaneMesh_ef0sp")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="ConfiguracaoGlobal/Chao6" unique_id=1640575830]
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ConfiguracaoGlobal/Chao6/StaticBody3D" unique_id=1597389086]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.015361786, 0, -0.12503052)
+shape = SubResource("BoxShape3D_exfc0")
+debug_color = Color(0, 0, 15.863711, 1)
+
+[node name="Chao2" type="MeshInstance3D" parent="ConfiguracaoGlobal" unique_id=625721745]
+transform = Transform3D(1, 0, 0, 0, -4.3711385e-08, 0.38993838, 0, -0.99999994, -1.7044748e-08, 0, 1.5692697, 3.9702606)
+mesh = SubResource("PlaneMesh_ef0sp")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="ConfiguracaoGlobal/Chao2" unique_id=2062581773]
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ConfiguracaoGlobal/Chao2/StaticBody3D" unique_id=2032880700]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.015361786, 0, -0.12503052)
+shape = SubResource("BoxShape3D_exfc0")
+debug_color = Color(0, 0, 15.863711, 1)
+
+[node name="Chao5" type="MeshInstance3D" parent="ConfiguracaoGlobal" unique_id=1016421844]
+transform = Transform3D(1, 0, 0, 0, -4.3711385e-08, -0.38993838, 0, 0.99999994, -1.7044748e-08, 0, 1.5692697, -3.9678316)
+mesh = SubResource("PlaneMesh_ef0sp")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="ConfiguracaoGlobal/Chao5" unique_id=347814999]
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ConfiguracaoGlobal/Chao5/StaticBody3D" unique_id=1780206769]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.015361786, 0, -0.12503052)
+shape = SubResource("BoxShape3D_exfc0")
+debug_color = Color(0, 0, 15.863711, 1)
+
+[node name="Chao3" type="MeshInstance3D" parent="ConfiguracaoGlobal" unique_id=1789421966]
+transform = Transform3D(-4.371139e-08, -0.99999994, -1.7044748e-08, 0, -4.3711385e-08, 0.38993838, -1, 4.3711385e-08, 7.450496e-16, 3.9711466, 1.5513914, -0.022540689)
+mesh = SubResource("PlaneMesh_ef0sp")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="ConfiguracaoGlobal/Chao3" unique_id=831788240]
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ConfiguracaoGlobal/Chao3/StaticBody3D" unique_id=1449825555]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.015361786, 0, -0.12503052)
+shape = SubResource("BoxShape3D_exfc0")
+debug_color = Color(0, 0, 15.863711, 1)
+
+[node name="Chao4" type="MeshInstance3D" parent="ConfiguracaoGlobal" unique_id=1210368258]
+transform = Transform3D(-4.371139e-08, 0.99999994, 1.7044748e-08, 0, -4.3711385e-08, 0.38993838, 1, 4.3711385e-08, 7.450496e-16, -3.9930243, 1.5513914, -0.022540689)
+mesh = SubResource("PlaneMesh_ef0sp")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="ConfiguracaoGlobal/Chao4" unique_id=1682384686]
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ConfiguracaoGlobal/Chao4/StaticBody3D" unique_id=1834434871]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.015361786, 0, -0.12503052)
+shape = SubResource("BoxShape3D_exfc0")
+debug_color = Color(0, 0, 15.863711, 1)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="ConfiguracaoGlobal" unique_id=1863400236]
+environment = SubResource("Environment_ef0sp")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="ConfiguracaoGlobal" unique_id=1258275601]
+transform = Transform3D(1, 0, 0, 0, 0.015735032, 0.9998762, 0, -0.9998762, 0.015735032, -1.2868919, 9.4079075, -1.6323752)
+
+[node name="UI" type="CanvasLayer" parent="ConfiguracaoGlobal" unique_id=1795865658]
+
+[node name="ConfiguracaoDeTela" parent="ConfiguracaoGlobal/UI" unique_id=342123749 instance=ExtResource("1_x0xyy")]
+
+[node name="LuzesInternasSala" type="Node3D" parent="ConfiguracaoGlobal" unique_id=1124538024]
+
+[node name="SpotLight3D" type="SpotLight3D" parent="ConfiguracaoGlobal/LuzesInternasSala" unique_id=1210710574]
+transform = Transform3D(1, 0, 0, 0, 0.05356203, 0.99856454, 0, -0.99856454, 0.05356203, 0, 3.1195264, 0)
+light_energy = 5.0
+light_indirect_energy = 5.0
+light_volumetric_fog_energy = 2.313
+light_size = 0.159
+
+[node name="Personagens" type="Node" parent="." unique_id=938030835]
+
+[node name="PersonagemPrincipal" parent="Personagens" unique_id=1772752661 instance=ExtResource("1_hudp4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7947912, 0.75348556, 3.0642219)
+
+[node name="MesaDeTrabalho" type="Node3D" parent="." unique_id=726947653]
+
+[node name="desk" parent="MesaDeTrabalho" unique_id=1665067259 instance=ExtResource("3_qjbho")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16412771, 0.018798828, -3.2983959)
+
+[node name="computer" parent="MesaDeTrabalho" unique_id=1189384088 instance=ExtResource("4_il6rv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7073078, 0.76739895, -3.3194888)
+
+[node name="Monitor" parent="MesaDeTrabalho" unique_id=280688919 node_paths=PackedStringArray("SubViewportPC", "Jogador") instance=ExtResource("5_il6rv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.69350696, -3.3506498)
+SubViewportPC = NodePath("../SubViewport")
+Jogador = NodePath("../../Personagens/PersonagemPrincipal")
+
+[node name="SubViewport" type="SubViewport" parent="MesaDeTrabalho" unique_id=402928208]
+size = Vector2i(1024, 768)
+render_target_update_mode = 4
+
+[node name="InterfaceOS" parent="MesaDeTrabalho/SubViewport" unique_id=1710706125 instance=ExtResource("2_ncvnv")]

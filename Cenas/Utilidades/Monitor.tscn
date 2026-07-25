@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://cblc8wmuveb28"]
+
+[ext_resource type="Script" uid="uid://cv2kwcbhfp3mn" path="res://Scripts/Utilidades/MonitorPC/MonitorPC.cs" id="1_7epkd"]
+[ext_resource type="PackedScene" uid="uid://d3minlybcrd7t" path="res://Arte/Prototipo/PSX Computer asset pack/PSX Computer asset pack/fbx/CrtMonitor.fbx" id="1_53m4a"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ef0sp"]
+size = Vector3(0.45251465, 0.48919678, 1)
+
+[sub_resource type="QuadMesh" id="QuadMesh_ef0sp"]
+
+[node name="Monitor" type="StaticBody3D" unique_id=280688919 node_paths=PackedStringArray("TelaMesh", "CameraDoPc")]
+collision_layer = 4
+collision_mask = 2
+script = ExtResource("1_7epkd")
+TelaMesh = NodePath("TelaMesh")
+CameraDoPc = NodePath("CameraDoPc")
+
+[node name="CrtMonitor" parent="." unique_id=1024618059 instance=ExtResource("1_53m4a")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1074014455]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.010559082, 0.2906189, 0)
+shape = SubResource("BoxShape3D_ef0sp")
+
+[node name="TelaMesh" type="MeshInstance3D" parent="." unique_id=1442949808]
+transform = Transform3D(0.4081858, 0, 0, 0, 0.3213922, 0, 0, 0, 1, 0.001860112, 0.30463257, 0.2331264)
+mesh = SubResource("QuadMesh_ef0sp")
+
+[node name="CameraDoPc" type="Camera3D" parent="." unique_id=269933907]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.30232275, 0.4988805)
+fov = 71.5
+size = 0.4
