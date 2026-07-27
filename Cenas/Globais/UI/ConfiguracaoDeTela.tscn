@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dcwtuba2ktbea"]
 
-[ext_resource type="Script" uid="uid://dubs60jcwaavr" path="res://Scripts/Globais/UI/UIConfiguracaoDeTela.cs" id="1_3wq5e"]
+[ext_resource type="Script" uid="uid://cypiqesojpm6l" path="res://Scripts/UI/UIConfiguracaoDeTela.cs" id="1_3wq5e"]
 
 [node name="ConfiguracaoDeTela" type="Control" unique_id=342123749 node_paths=PackedStringArray("_dropdownResolucao", "_checkboxTelaCheia")]
 layout_mode = 3

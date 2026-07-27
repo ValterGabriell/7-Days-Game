@@ -17,8 +17,10 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-ConfiguracaoDeTela="*uid://dcwtuba2ktbea"
 GerenciadorDeTela="*uid://cjjymhir2ncqa"
+GerenciadorDeAudiencia="*uid://dqyl0vlmtqjb1"
+GerenciadorDeNoticias="*uid://ucye0y73a8el"
+GerenciadorPassagemDoTempo="*uid://d0fm2w4q7denx"
 
 [display]
 
@@ -100,6 +102,7 @@ interagir={
 3d_physics/layer_1="chao"
 3d_physics/layer_2="jogador"
 3d_physics/layer_3="computador_monitor"
+3d_physics/layer_4="cadeira"
 
 [physics]
 

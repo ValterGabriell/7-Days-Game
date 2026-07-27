@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://3s4yx3fvr77y"]
+
+[ext_resource type="ArrayMesh" uid="uid://c6bt366xpo2ew" path="res://Arte/Prototipo/Cadeira/Cadeira.obj" id="1_hd8s1"]
+[ext_resource type="Script" uid="uid://cbmjwafjmpgx6" path="res://Scripts/Utilidades/Cadeira.cs" id="1_j74d3"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ef0sp"]
+size = Vector3(0.48486328, 0.8699951, 0.43774414)
+
+[node name="Cadeira" type="StaticBody3D" unique_id=1157801776]
+collision_layer = 8
+collision_mask = 2
+script = ExtResource("1_j74d3")
+
+[node name="Cadeira" type="MeshInstance3D" parent="." unique_id=415987401]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.040952206, 0, 0.17549229)
+mesh = ExtResource("1_hd8s1")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1617966985]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.035196066, 0.44794923, 0.15881348)
+shape = SubResource("BoxShape3D_ef0sp")

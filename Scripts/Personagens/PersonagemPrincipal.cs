@@ -5,8 +5,11 @@ namespace Scripts.Personagens.Principal;
 
 public partial class PersonagemPrincipal : CharacterBody3D
 {
-    public enum EstadoJogador { Normal, NoComputador }
+    public enum EstadoJogador { Normal, Sentado }
+    public enum SubEstadoMesa { Nenhum, Computador, Radio, Telefone }
+
     public EstadoJogador EstadoAtual { get; private set; } = EstadoJogador.Normal;
+    public SubEstadoMesa SubEstadoAtual { get; private set; } = SubEstadoMesa.Nenhum;
 
     public const float Speed = 5.0f;
     public const float JumpVelocity = 4.5f;
@@ -16,10 +19,15 @@ public partial class PersonagemPrincipal : CharacterBody3D
         GD.Print($"Alternando estado do jogador de {EstadoAtual} para {novoEstado}");
         EstadoAtual = novoEstado;
 
-        if (EstadoAtual == EstadoJogador.NoComputador)
+        if (EstadoAtual == EstadoJogador.Sentado)
         {
             Velocity = Vector3.Zero;
         }
+    }
+
+    public void DefinirSubEstadoMesa(SubEstadoMesa novoSubEstado)
+    {
+        SubEstadoAtual = novoSubEstado;
     }
 
     public override void _Ready()
@@ -29,7 +37,7 @@ public partial class PersonagemPrincipal : CharacterBody3D
 
     public override void _Input(InputEvent @event)
     {
-        if (EstadoAtual == EstadoJogador.NoComputador) return;
+        if (EstadoAtual == EstadoJogador.Sentado) return;
 
         MoveCameraComMouse(@event);
         TentouInteragirComAlgoIterativo(@event);
@@ -37,7 +45,7 @@ public partial class PersonagemPrincipal : CharacterBody3D
 
     public override void _PhysicsProcess(double delta)
     {
-        if (EstadoAtual == EstadoJogador.NoComputador) return;
+        if (EstadoAtual == EstadoJogador.Sentado) return;
 
         Vector3 velocity = Velocity;
         MoveCameraComControle();

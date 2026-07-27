@@ -1,11 +1,14 @@
 [gd_scene format=3 uid="uid://coqrw62on23tk"]
 
+[ext_resource type="Script" uid="uid://2c4ni0hxm3d3" path="res://Scripts/UI/MenuConfiguracaoUI.cs" id="1_3iwg5"]
 [ext_resource type="PackedScene" uid="uid://de05wlqki0ysv" path="res://Cenas/Personagens/PersonagemPrincipal.tscn" id="1_hudp4"]
-[ext_resource type="PackedScene" uid="uid://dcwtuba2ktbea" path="res://Cenas/Globais/UI/ConfiguracaoDeTela.tscn" id="1_x0xyy"]
+[ext_resource type="PackedScene" uid="uid://dcwtuba2ktbea" path="res://Cenas/Globais/UI/ConfiguracaoDeTela.tscn" id="2_3iwg5"]
 [ext_resource type="PackedScene" uid="uid://50iioxb1e5pe" path="res://Cenas/Utilidades/InterfaceOS_PC.tscn" id="2_ncvnv"]
 [ext_resource type="PackedScene" uid="uid://r1idoxctvvqp" path="res://Arte/Prototipo/PSX Computer asset pack/PSX Computer asset pack/fbx/desk.fbx" id="3_qjbho"]
+[ext_resource type="Script" uid="uid://bhlyp6t0jy560" path="res://Scripts/Globais/GerenciadorMesa.cs" id="4_dbo6t"]
 [ext_resource type="PackedScene" uid="uid://do76cstbmgfj8" path="res://Arte/Prototipo/PSX Computer asset pack/PSX Computer asset pack/fbx/computer.fbx" id="4_il6rv"]
 [ext_resource type="PackedScene" uid="uid://cblc8wmuveb28" path="res://Cenas/Utilidades/Monitor.tscn" id="5_il6rv"]
+[ext_resource type="PackedScene" uid="uid://3s4yx3fvr77y" path="res://Cenas/Utilidades/Cadeira.tscn" id="8_awft6"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_ef0sp"]
 size = Vector2(8, 8)
@@ -104,8 +107,9 @@ environment = SubResource("Environment_ef0sp")
 transform = Transform3D(1, 0, 0, 0, 0.015735032, 0.9998762, 0, -0.9998762, 0.015735032, -1.2868919, 9.4079075, -1.6323752)
 
 [node name="UI" type="CanvasLayer" parent="ConfiguracaoGlobal" unique_id=1795865658]
+script = ExtResource("1_3iwg5")
 
-[node name="ConfiguracaoDeTela" parent="ConfiguracaoGlobal/UI" unique_id=342123749 instance=ExtResource("1_x0xyy")]
+[node name="ConfiguracaoDeTela" parent="ConfiguracaoGlobal/UI" unique_id=342123749 instance=ExtResource("2_3iwg5")]
 
 [node name="LuzesInternasSala" type="Node3D" parent="ConfiguracaoGlobal" unique_id=1124538024]
 
@@ -121,7 +125,17 @@ light_size = 0.159
 [node name="PersonagemPrincipal" parent="Personagens" unique_id=1772752661 instance=ExtResource("1_hudp4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7947912, 0.75348556, 3.0642219)
 
-[node name="MesaDeTrabalho" type="Node3D" parent="." unique_id=726947653]
+[node name="MesaDeTrabalho" type="Node3D" parent="." unique_id=726947653 node_paths=PackedStringArray("CameraMesa", "CameraRadio", "CameraComputador", "CameraTelefone", "PontoRadio", "PontoComputador", "PontoTelefone", "Jogador", "UI")]
+script = ExtResource("4_dbo6t")
+CameraMesa = NodePath("Cameras/CameraDaMesa")
+CameraRadio = NodePath("Cameras/CameraRadio")
+CameraComputador = NodePath("Cameras/CameraMonitor")
+CameraTelefone = NodePath("Cameras/CameraTelefone")
+PontoRadio = NodePath("PontoRadio")
+PontoComputador = NodePath("PontoComputador")
+PontoTelefone = NodePath("PontoTelefone")
+Jogador = NodePath("../Personagens/PersonagemPrincipal")
+UI = NodePath("UI_Mesa")
 
 [node name="desk" parent="MesaDeTrabalho" unique_id=1665067259 instance=ExtResource("3_qjbho")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16412771, 0.018798828, -3.2983959)
@@ -131,11 +145,62 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7073078, 0.76739895, -3.319
 
 [node name="Monitor" parent="MesaDeTrabalho" unique_id=280688919 node_paths=PackedStringArray("SubViewportPC", "Jogador") instance=ExtResource("5_il6rv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.69350696, -3.3506498)
-SubViewportPC = NodePath("../SubViewport")
+SubViewportPC = NodePath("SubViewport")
 Jogador = NodePath("../../Personagens/PersonagemPrincipal")
 
-[node name="SubViewport" type="SubViewport" parent="MesaDeTrabalho" unique_id=402928208]
+[node name="SubViewport" type="SubViewport" parent="MesaDeTrabalho/Monitor" unique_id=402928208]
 size = Vector2i(1024, 768)
 render_target_update_mode = 4
 
-[node name="InterfaceOS" parent="MesaDeTrabalho/SubViewport" unique_id=1710706125 instance=ExtResource("2_ncvnv")]
+[node name="InterfaceOS" parent="MesaDeTrabalho/Monitor/SubViewport" unique_id=1710706125 instance=ExtResource("2_ncvnv")]
+
+[node name="Cadeira" parent="MesaDeTrabalho" unique_id=1157801776 node_paths=PackedStringArray("PontoAssento", "Jogador") instance=ExtResource("8_awft6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.024380445, 0.018798947, -2.5266366)
+PontoAssento = NodePath("Marker3D")
+Jogador = NodePath("../../Personagens/PersonagemPrincipal")
+
+[node name="Marker3D" type="Marker3D" parent="MesaDeTrabalho/Cadeira" unique_id=1192011903]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.46463966, 0.17889428)
+
+[node name="Cameras" type="Node3D" parent="MesaDeTrabalho" unique_id=1776447465]
+
+[node name="CameraDaMesa" type="Camera3D" parent="MesaDeTrabalho/Cameras" unique_id=1651172819]
+transform = Transform3D(1, 0, 0, 0, 0.98379755, 0.17928296, 0, -0.17928296, 0.98379755, 0, 1.0794214, -2.3536956)
+
+[node name="CameraMonitor" type="Camera3D" parent="MesaDeTrabalho/Cameras" unique_id=474360464]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.0023255, -2.8946724)
+fov = 73.47248
+size = 0.45
+near = 0.032
+
+[node name="CameraTelefone" type="Camera3D" parent="MesaDeTrabalho/Cameras" unique_id=1992259124]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.47812605, 1.0023255, -2.8946724)
+fov = 73.47248
+size = 0.45
+near = 0.032
+
+[node name="CameraRadio" type="Camera3D" parent="MesaDeTrabalho/Cameras" unique_id=1962701620]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -0.14918327, 1.0023255, -2.8946724)
+fov = 73.47248
+size = 0.45
+near = 0.032
+
+[node name="PontoRadio" type="Marker3D" parent="MesaDeTrabalho" unique_id=1949511537]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.9668684, 0.8887565, -2.4633632)
+
+[node name="PontoComputador" type="Marker3D" parent="MesaDeTrabalho" unique_id=633035859]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.08552706, 0.8887565, -3.0820653)
+
+[node name="PontoTelefone" type="Marker3D" parent="MesaDeTrabalho" unique_id=571074231]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4526633, 0.8887565, -2.508583)
+
+[node name="UI_Mesa" type="CanvasLayer" parent="MesaDeTrabalho" unique_id=1711098233]
+visible = false
+
+[node name="Label" type="Label" parent="MesaDeTrabalho/UI_Mesa" unique_id=219745936]
+offset_left = 827.0
+offset_top = 960.0
+offset_right = 1127.0
+offset_bottom = 994.0
+theme_override_font_sizes/font_size = 24
+text = "PRESSIONE E PARA FOCAR"

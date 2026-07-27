@@ -5,4 +5,14 @@
     <EnableDynamicLoading>true</EnableDynamicLoading>
     <RootNamespace>fiveyears3</RootNamespace>
   </PropertyGroup>
+  <ItemGroup>
+    <Content Include="scripts\dados\jsons\dia_01\Noticias.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Scripts\Dados\JSONS\Dia_01\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="coisas_feitas.md" />
+    <None Include="gdd.md" />
+  </ItemGroup>
 </Project>

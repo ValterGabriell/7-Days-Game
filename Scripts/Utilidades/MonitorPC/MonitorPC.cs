@@ -1,19 +1,21 @@
+using fiveyears3.Scripts.Globais;
 using fiveyears3.Scripts.Utilidades;
 using Godot;
 using Scripts.Personagens.Principal;
 
 public partial class MonitorPC : StaticBody3D, IItemInteracao
 {
+    [ExportGroup("Componentes do Monitor")]
     [Export] public SubViewport SubViewportPC;
     [Export] public MeshInstance3D TelaMesh;
-    [Export] public Camera3D CameraDoPc;
+    [Export] public Camera3D CameraPC; 
     [Export] private PersonagemPrincipal Jogador;
 
     [ExportGroup("Configurações do Controle")]
     [Export] public float VelocidadePonteiroControle = 800.0f;
 
     private StandardMaterial3D _materialTela;
-    private Camera3D _cameraJogador;
+    private bool _focadoNoPC = false;
 
     public override void _Ready()
     {
@@ -24,26 +26,42 @@ public partial class MonitorPC : StaticBody3D, IItemInteracao
         };
 
         TelaMesh.MaterialOverride = _materialTela;
-
-        if (CameraDoPc != null)
-            CameraDoPc.Current = false;
-
-        Desligar();
+        LigarTela();
     }
 
     public override void _Process(double delta)
     {
-        if (!CameraDoPc.Current) return;
+        if (!PodeInteragirComPC()) return;
 
         MoverPonteiroComAnalogicoEsquerdo((float)delta);
     }
 
+    public override void _UnhandledInput(InputEvent @event)
+    {
+        if (GerenciadorMesa.Instance != null) return;
+
+        
+        if (EstaNaVisaoGeralDoPC() && @event.IsActionPressed("interagir"))
+        {
+            AtivarFocoPC();
+            GetViewport().SetInputAsHandled();
+            return;
+        }
+
+        
+        if (_focadoNoPC && @event.IsActionPressed("ui_cancel"))
+        {
+            DesativarFocoPC();
+            GetViewport().SetInputAsHandled();
+            return;
+        }
+    }
+
     public override void _Input(InputEvent @event)
     {
-        if (!CameraDoPc.Current) return;
+        if (!PodeInteragirComPC()) return;
 
-        // Pressionar o botão "interagir" ou "ui_accept" simula o clique do mouse no PC
-        if (@event.IsAction("interagir") || @event.IsAction("ui_accept"))
+        if (@event.IsAction("interagir"))
         {
             SimularCliqueMouse(@event.IsPressed());
             GetViewport().SetInputAsHandled();
@@ -52,12 +70,6 @@ public partial class MonitorPC : StaticBody3D, IItemInteracao
 
         switch (@event)
         {
-            case InputEventKey key when key.IsActionPressed("ui_cancel"):
-            case InputEventJoypadButton joyBtn when joyBtn.IsActionPressed("ui_cancel"):
-                SairDoComputador();
-                GetViewport().SetInputAsHandled();
-                break;
-
             case InputEventMouse:
                 ProjetarInputNaUI(@event);
                 break;
@@ -66,13 +78,60 @@ public partial class MonitorPC : StaticBody3D, IItemInteracao
 
     public void Interagir()
     {
-        if (CameraDoPc.Current) return;
-        EntrarNoComputador();
+        if (EstaNaVisaoGeralDoPC() && !_focadoNoPC)
+        {
+            AtivarFocoPC();
+        }
+    }
+
+    public void AtivarFocoPC()
+    {
+        _focadoNoPC = true;
+        if (CameraPC != null) CameraPC.Current = true;
+        GD.Print("Foco aproximado no PC ativado.");
+    }
+
+    public void DesativarFocoPC()
+    {
+        _focadoNoPC = false;
+        
+        if (GerenciadorMesa.Instance?.CameraMesa != null)
+        {
+            GerenciadorMesa.Instance.CameraMesa.Current = true;
+        }
+        GD.Print("Retornou para a câmera geral da mesa.");
+    }
+
+    private bool EstaNaVisaoGeralDoPC()
+    {
+        return Jogador != null
+            && Jogador.EstadoAtual == PersonagemPrincipal.EstadoJogador.Sentado
+            && GerenciadorMesa.Instance?.EquipamentoAtual == GerenciadorMesa.EquipamentoMesa.Computador;
+    }
+
+    private bool EstaNoFocoDoPcPelaMesa()
+    {
+        return Jogador != null
+            && Jogador.EstadoAtual == PersonagemPrincipal.EstadoJogador.Sentado
+            && GerenciadorMesa.Instance?.EstaFocadoNoEquipamento == true
+            && GerenciadorMesa.Instance.EquipamentoAtual == GerenciadorMesa.EquipamentoMesa.Computador;
+    }
+
+    private bool PodeInteragirComPC()
+    {
+        return EstaNoFocoDoPcPelaMesa() || (EstaNaVisaoGeralDoPC() && _focadoNoPC);
+    }
+
+    private void LigarTela()
+    {
+        SubViewportPC.RenderTargetUpdateMode = SubViewport.UpdateMode.Always;
+        _materialTela.EmissionEnabled = true;
+        _materialTela.AlbedoColor = Colors.White;
+        GerenciadorDeNoticias.Instance?.CarregarNoticiasDoDia();
     }
 
     private void MoverPonteiroComAnalogicoEsquerdo(float delta)
     {
-        // Lendo do analógico esquerdo (direções de movimento padrão)
         Vector2 inputDir = Input.GetVector("ui_left", "ui_right", "ui_up", "ui_down");
         if (inputDir == Vector2.Zero) return;
 
@@ -110,48 +169,17 @@ public partial class MonitorPC : StaticBody3D, IItemInteracao
         ProjetarInputNaUI(clickEvent);
     }
 
-    private void EntrarNoComputador()
-    {
-        _cameraJogador = GetViewport().GetCamera3D();
-        GD.Print(Jogador);
-        Jogador?.AlternarEstado(PersonagemPrincipal.EstadoJogador.NoComputador);
-
-        SubViewportPC.RenderTargetUpdateMode = SubViewport.UpdateMode.Always;
-        _materialTela.EmissionEnabled = true;
-        _materialTela.AlbedoColor = Colors.White;
-
-        CameraDoPc.Current = true;
-        Input.MouseMode = Input.MouseModeEnum.Visible;
-        AlterarProcessamentoJogador(false);
-    }
-
-    private void SairDoComputador()
-    {
-        GD.Print("saindo do pc");
-        if (_cameraJogador != null)
-            _cameraJogador.Current = true;
-
-        Jogador?.AlternarEstado(PersonagemPrincipal.EstadoJogador.Normal);
-        Input.MouseMode = Input.MouseModeEnum.Captured;
-        AlterarProcessamentoJogador(true);
-    }
-
-    private void Desligar()
-    {
-        SairDoComputador();
-
-        SubViewportPC.RenderTargetUpdateMode = SubViewport.UpdateMode.Once;
-        _materialTela.EmissionEnabled = false;
-        _materialTela.AlbedoColor = Colors.Black;
-    }
-
     private void ProjetarInputNaUI(InputEvent @event)
     {
         if (@event is not InputEventMouse mouseEvent) return;
 
+        
+        Camera3D cameraAtual = GetViewport().GetCamera3D();
+        if (cameraAtual == null) return;
+
         Vector2 mousePos = mouseEvent.Position;
-        Vector3 rayFrom = CameraDoPc.ProjectRayOrigin(mousePos);
-        Vector3 rayDir = CameraDoPc.ProjectRayNormal(mousePos);
+        Vector3 rayFrom = cameraAtual.ProjectRayOrigin(mousePos);
+        Vector3 rayDir = cameraAtual.ProjectRayNormal(mousePos);
 
         Transform3D gt = TelaMesh.GlobalTransform;
         Plane plane = new(gt.Basis.Z, gt.Origin);
@@ -175,11 +203,5 @@ public partial class MonitorPC : StaticBody3D, IItemInteracao
         }
 
         SubViewportPC.PushInput(dupEvent);
-    }
-
-    private void AlterarProcessamentoJogador(bool ativo)
-    {
-        Jogador?.SetPhysicsProcess(ativo);
-        Jogador?.SetProcess(ativo);
     }
 }
