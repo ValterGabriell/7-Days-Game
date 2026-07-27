@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://buxjtfk285s03" path="res://Scripts/UI/InterfaceOSUI.cs" id="1_r6i6s"]
 
-[node name="InterfaceOS" type="Control" unique_id=1710706125 node_paths=PackedStringArray("ListaNoticias", "LblTitulo", "LblRemetente", "LblTextoOriginal", "OptIntegra", "OptSuprimir", "OptOficial", "OptInvestigativo", "LblPreview", "BtnImprimir", "LblPautas", "LblAudiencia", "LblEsperanca", "LblIrritacao", "BtnEncerrar")]
+[node name="InterfaceOS" type="Control" unique_id=1710706125 node_paths=PackedStringArray("ListaNoticias", "LblTitulo", "LblRemetente", "LblTextoOriginal", "OptIntegra", "OptSuprimir", "OptOficial", "OptInvestigativo", "LblPreview", "BtnImprimir", "LblPautas", "LblAudiencia", "LblEsperanca", "LblIrritacao", "BtnEncerrar", "BtnMusicas", "BtnPropagandaNoticias", "BoxMusicas", "BoxNoticiasPropaganda", "ListaMusicas")]
 layout_mode = 3
 anchor_right = 0.53000003
 anchor_bottom = 0.697
@@ -12,21 +12,26 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
 script = ExtResource("1_r6i6s")
-ListaNoticias = NodePath("FundoTerminal/Margens/VBoxContainer/LayoutGrid/ColunaEsquerda/ListaNoticias")
-LblTitulo = NodePath("FundoTerminal/Margens/VBoxContainer/LayoutGrid/ColunaCentro/LblTitulo")
-LblRemetente = NodePath("FundoTerminal/Margens/VBoxContainer/LayoutGrid/ColunaCentro/LblRemetente")
-LblTextoOriginal = NodePath("FundoTerminal/Margens/VBoxContainer/LayoutGrid/ColunaCentro/LblTextoOriginal")
-OptIntegra = NodePath("FundoTerminal/Margens/VBoxContainer/LayoutGrid/ColunaCentro/OptIntegra")
-OptSuprimir = NodePath("FundoTerminal/Margens/VBoxContainer/LayoutGrid/ColunaCentro/OptSuprimir")
-OptOficial = NodePath("FundoTerminal/Margens/VBoxContainer/LayoutGrid/ColunaCentro/OptOficial")
-OptInvestigativo = NodePath("FundoTerminal/Margens/VBoxContainer/LayoutGrid/ColunaCentro/OptInvestigativo")
-LblPreview = NodePath("FundoTerminal/Margens/VBoxContainer/LayoutGrid/ColunaCentro/LblPreview")
-BtnImprimir = NodePath("FundoTerminal/Margens/VBoxContainer/LayoutGrid/ColunaCentro/BtnImprimir")
+ListaNoticias = NodePath("FundoTerminal/Margens/VBoxContainer/LayoutGridNoticias/ColunaEsquerda/ListaNoticias")
+LblTitulo = NodePath("FundoTerminal/Margens/VBoxContainer/LayoutGridNoticias/ColunaCentro/LblTitulo")
+LblRemetente = NodePath("FundoTerminal/Margens/VBoxContainer/LayoutGridNoticias/ColunaCentro/LblRemetente")
+LblTextoOriginal = NodePath("FundoTerminal/Margens/VBoxContainer/LayoutGridNoticias/ColunaCentro/LblTextoOriginal")
+OptIntegra = NodePath("FundoTerminal/Margens/VBoxContainer/LayoutGridNoticias/ColunaCentro/OptIntegra")
+OptSuprimir = NodePath("FundoTerminal/Margens/VBoxContainer/LayoutGridNoticias/ColunaCentro/OptSuprimir")
+OptOficial = NodePath("FundoTerminal/Margens/VBoxContainer/LayoutGridNoticias/ColunaCentro/OptOficial")
+OptInvestigativo = NodePath("FundoTerminal/Margens/VBoxContainer/LayoutGridNoticias/ColunaCentro/OptInvestigativo")
+LblPreview = NodePath("FundoTerminal/Margens/VBoxContainer/LayoutGridNoticias/ColunaCentro/LblPreview")
+BtnImprimir = NodePath("FundoTerminal/Margens/VBoxContainer/LayoutGridNoticias/ColunaCentro/BtnImprimir")
 LblPautas = NodePath("FundoTerminal/Margens/VBoxContainer/VBoxContainer/ColunaDireita/LblPautas")
 LblAudiencia = NodePath("FundoTerminal/Margens/VBoxContainer/VBoxContainer/ColunaDireita/LblAudiencia")
 LblEsperanca = NodePath("FundoTerminal/Margens/VBoxContainer/VBoxContainer/ColunaDireita/LblEsperanca")
 LblIrritacao = NodePath("FundoTerminal/Margens/VBoxContainer/VBoxContainer/ColunaDireita/LblIrritacao")
 BtnEncerrar = NodePath("FundoTerminal/Margens/VBoxContainer/VBoxContainer/ColunaDireita/BtnEncerrar")
+BtnMusicas = NodePath("FundoTerminal/Margens/VBoxContainer/HBoxContainer/BtnMusicas")
+BtnPropagandaNoticias = NodePath("FundoTerminal/Margens/VBoxContainer/HBoxContainer/BtnPropagandaNoticia")
+BoxMusicas = NodePath("FundoTerminal/Margens/VBoxContainer/LayoutGridMusicas")
+BoxNoticiasPropaganda = NodePath("FundoTerminal/Margens/VBoxContainer/LayoutGridNoticias")
+ListaMusicas = NodePath("FundoTerminal/Margens/VBoxContainer/LayoutGridMusicas/ColunaEsquerda/ListaMusicas")
 
 [node name="FundoTerminal" type="ColorRect" parent="." unique_id=1884876571]
 layout_mode = 1
@@ -99,79 +104,112 @@ text = "[ ENCERRAR SESSÃO ]"
 [node name="HSeparator" type="HSeparator" parent="FundoTerminal/Margens/VBoxContainer" unique_id=14345914]
 layout_mode = 2
 
-[node name="LayoutGrid" type="HBoxContainer" parent="FundoTerminal/Margens/VBoxContainer" unique_id=656653739]
+[node name="HBoxContainer" type="HBoxContainer" parent="FundoTerminal/Margens/VBoxContainer" unique_id=464062081]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="BtnMusicas" type="Button" parent="FundoTerminal/Margens/VBoxContainer/HBoxContainer" unique_id=1520368074]
+layout_mode = 2
+text = "MUSICAS
+"
+
+[node name="BtnPropagandaNoticia" type="Button" parent="FundoTerminal/Margens/VBoxContainer/HBoxContainer" unique_id=1619218593]
+layout_mode = 2
+text = "NOTICIAS/PROPAGANDAS"
+
+[node name="HSeparator2" type="HSeparator" parent="FundoTerminal/Margens/VBoxContainer" unique_id=1309067473]
+layout_mode = 2
+
+[node name="LayoutGridNoticias" type="HBoxContainer" parent="FundoTerminal/Margens/VBoxContainer" unique_id=656653739]
 custom_minimum_size = Vector2(200, 0)
 layout_mode = 2
 theme_override_constants/separation = 48
 
-[node name="ColunaEsquerda" type="VBoxContainer" parent="FundoTerminal/Margens/VBoxContainer/LayoutGrid" unique_id=841306705]
+[node name="ColunaEsquerda" type="VBoxContainer" parent="FundoTerminal/Margens/VBoxContainer/LayoutGridNoticias" unique_id=841306705]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="LblInboxTitulo" type="Label" parent="FundoTerminal/Margens/VBoxContainer/LayoutGrid/ColunaEsquerda" unique_id=1748061643]
+[node name="LblInboxTitulo" type="Label" parent="FundoTerminal/Margens/VBoxContainer/LayoutGridNoticias/ColunaEsquerda" unique_id=1748061643]
 layout_mode = 2
 size_flags_horizontal = 4
 text = "--- INBOX ---"
 
-[node name="ListaNoticias" type="VBoxContainer" parent="FundoTerminal/Margens/VBoxContainer/LayoutGrid/ColunaEsquerda" unique_id=1472772250]
+[node name="ListaNoticias" type="VBoxContainer" parent="FundoTerminal/Margens/VBoxContainer/LayoutGridNoticias/ColunaEsquerda" unique_id=1472772250]
 layout_mode = 2
 
-[node name="ColunaCentro" type="VBoxContainer" parent="FundoTerminal/Margens/VBoxContainer/LayoutGrid" unique_id=532763202]
+[node name="ColunaCentro" type="VBoxContainer" parent="FundoTerminal/Margens/VBoxContainer/LayoutGridNoticias" unique_id=532763202]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 2.5
 
-[node name="LblTitulo" type="Label" parent="FundoTerminal/Margens/VBoxContainer/LayoutGrid/ColunaCentro" unique_id=1671532955]
+[node name="LblTitulo" type="Label" parent="FundoTerminal/Margens/VBoxContainer/LayoutGridNoticias/ColunaCentro" unique_id=1671532955]
 custom_minimum_size = Vector2(10, 0)
 layout_mode = 2
 text = "TITULO DA NOTÍCIA"
 autowrap_mode = 3
 
-[node name="LblRemetente" type="Label" parent="FundoTerminal/Margens/VBoxContainer/LayoutGrid/ColunaCentro" unique_id=1247995969]
+[node name="LblRemetente" type="Label" parent="FundoTerminal/Margens/VBoxContainer/LayoutGridNoticias/ColunaCentro" unique_id=1247995969]
 custom_minimum_size = Vector2(10, 0)
 layout_mode = 2
 text = "DE: Agência Central"
 autowrap_mode = 3
 
-[node name="LblTextoOriginal" type="RichTextLabel" parent="FundoTerminal/Margens/VBoxContainer/LayoutGrid/ColunaCentro" unique_id=527940427]
+[node name="LblTextoOriginal" type="RichTextLabel" parent="FundoTerminal/Margens/VBoxContainer/LayoutGridNoticias/ColunaCentro" unique_id=527940427]
 layout_mode = 2
 text = "Aqui entra o texto original da notícia..."
 fit_content = true
 
-[node name="HSeparator" type="HSeparator" parent="FundoTerminal/Margens/VBoxContainer/LayoutGrid/ColunaCentro" unique_id=356548410]
+[node name="HSeparator" type="HSeparator" parent="FundoTerminal/Margens/VBoxContainer/LayoutGridNoticias/ColunaCentro" unique_id=356548410]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="FundoTerminal/Margens/VBoxContainer/LayoutGrid/ColunaCentro" unique_id=1018535203]
+[node name="Label" type="Label" parent="FundoTerminal/Margens/VBoxContainer/LayoutGridNoticias/ColunaCentro" unique_id=1018535203]
 custom_minimum_size = Vector2(10, 0)
 layout_mode = 2
 text = "OPÇÕES EDITORIAIS:"
 autowrap_mode = 3
 
-[node name="OptIntegra" type="CheckBox" parent="FundoTerminal/Margens/VBoxContainer/LayoutGrid/ColunaCentro" unique_id=2073108180]
+[node name="OptIntegra" type="CheckBox" parent="FundoTerminal/Margens/VBoxContainer/LayoutGridNoticias/ColunaCentro" unique_id=2073108180]
 layout_mode = 2
 text = "1. Transmitir Íntegra"
 
-[node name="OptSuprimir" type="CheckBox" parent="FundoTerminal/Margens/VBoxContainer/LayoutGrid/ColunaCentro" unique_id=996176862]
+[node name="OptSuprimir" type="CheckBox" parent="FundoTerminal/Margens/VBoxContainer/LayoutGridNoticias/ColunaCentro" unique_id=996176862]
 layout_mode = 2
 text = "2. Suprimir Trecho"
 
-[node name="OptOficial" type="CheckBox" parent="FundoTerminal/Margens/VBoxContainer/LayoutGrid/ColunaCentro" unique_id=1576291256]
+[node name="OptOficial" type="CheckBox" parent="FundoTerminal/Margens/VBoxContainer/LayoutGridNoticias/ColunaCentro" unique_id=1576291256]
 layout_mode = 2
 text = "3. Nota Oficial"
 
-[node name="OptInvestigativo" type="CheckBox" parent="FundoTerminal/Margens/VBoxContainer/LayoutGrid/ColunaCentro" unique_id=221717830]
+[node name="OptInvestigativo" type="CheckBox" parent="FundoTerminal/Margens/VBoxContainer/LayoutGridNoticias/ColunaCentro" unique_id=221717830]
 layout_mode = 2
 text = "4. Foco Crítico"
 
-[node name="HSeparator2" type="HSeparator" parent="FundoTerminal/Margens/VBoxContainer/LayoutGrid/ColunaCentro" unique_id=59370669]
+[node name="HSeparator2" type="HSeparator" parent="FundoTerminal/Margens/VBoxContainer/LayoutGridNoticias/ColunaCentro" unique_id=59370669]
 layout_mode = 2
 
-[node name="LblPreview" type="Label" parent="FundoTerminal/Margens/VBoxContainer/LayoutGrid/ColunaCentro" unique_id=539807677]
+[node name="LblPreview" type="Label" parent="FundoTerminal/Margens/VBoxContainer/LayoutGridNoticias/ColunaCentro" unique_id=539807677]
 custom_minimum_size = Vector2(10, 0)
 layout_mode = 2
 text = "PREVIEW DA PAUTA:"
 autowrap_mode = 3
 
-[node name="BtnImprimir" type="Button" parent="FundoTerminal/Margens/VBoxContainer/LayoutGrid/ColunaCentro" unique_id=829695985]
+[node name="BtnImprimir" type="Button" parent="FundoTerminal/Margens/VBoxContainer/LayoutGridNoticias/ColunaCentro" unique_id=829695985]
 layout_mode = 2
 text = "[ ENVIAR PARA IMPRESSORA ]"
+
+[node name="LayoutGridMusicas" type="HBoxContainer" parent="FundoTerminal/Margens/VBoxContainer" unique_id=1062388726]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+theme_override_constants/separation = 48
+
+[node name="ColunaEsquerda" type="VBoxContainer" parent="FundoTerminal/Margens/VBoxContainer/LayoutGridMusicas" unique_id=678737626]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="LblInboxTitulo" type="Label" parent="FundoTerminal/Margens/VBoxContainer/LayoutGridMusicas/ColunaEsquerda" unique_id=30683793]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "--- MUSICAS ---"
+
+[node name="ListaMusicas" type="ItemList" parent="FundoTerminal/Margens/VBoxContainer/LayoutGridMusicas/ColunaEsquerda" unique_id=352828942]
+layout_mode = 2

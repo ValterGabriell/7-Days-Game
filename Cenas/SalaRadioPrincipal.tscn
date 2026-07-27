@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://cblc8wmuveb28" path="res://Cenas/Utilidades/Monitor.tscn" id="5_il6rv"]
 [ext_resource type="PackedScene" uid="uid://bgef3wuj8jd5y" path="res://Cenas/Utilidades/Radio.tscn" id="6_dmwlx"]
 [ext_resource type="PackedScene" uid="uid://3s4yx3fvr77y" path="res://Cenas/Utilidades/Cadeira.tscn" id="8_awft6"]
+[ext_resource type="PackedScene" uid="uid://q4gtkiy3ugva" path="res://Cenas/Utilidades/CalendarioRotinas.tscn" id="11_ghx4a"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_ef0sp"]
 size = Vector2(8, 8)
@@ -29,6 +30,9 @@ sky = SubResource("Sky_v5wr4")
 [node name="SalaRadioPrincipal" type="Node3D" unique_id=97208055]
 
 [node name="ConfiguracaoGlobal" type="Node" parent="." unique_id=1369820672]
+
+[node name="CalendarioRotinas" parent="ConfiguracaoGlobal" unique_id=842815142 instance=ExtResource("11_ghx4a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0787137, 1.0749853, -3.4490328)
 
 [node name="Chao" type="MeshInstance3D" parent="ConfiguracaoGlobal" unique_id=1632632857]
 mesh = SubResource("PlaneMesh_ef0sp")

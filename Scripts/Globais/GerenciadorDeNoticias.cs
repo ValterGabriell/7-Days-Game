@@ -11,8 +11,7 @@ namespace fiveyears3.Scripts.Globais
     {
         public static GerenciadorDeNoticias Instance { get; private set; }
 
-        [Signal]
-        public delegate void NoticiasCarregadasEventHandler();
+        public event Action NoticiasCarregadas;
 
         public List<NoticiaModel> NoticiasDoDia { get; private set; } = new List<NoticiaModel>();
 
@@ -85,7 +84,7 @@ namespace fiveyears3.Scripts.Globais
                 NoticiasDoDia.Clear();
             }
 
-            EmitSignal(SignalName.NoticiasCarregadas);
+            NoticiasCarregadas?.Invoke();
         }
     }
 }

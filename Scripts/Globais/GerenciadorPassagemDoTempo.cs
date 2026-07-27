@@ -7,8 +7,7 @@ namespace fiveyears3.Scripts.Globais
     {
         public static GerenciadorPassagemDoTempo Instance { get; private set; }
 
-        [Signal]
-        public delegate void DiaAlteradoEventHandler(int novoDia);
+        public event Action<int> DiaAlterado;
 
         public int DiaAtual { get; private set; } = 1;
 
@@ -27,13 +26,13 @@ namespace fiveyears3.Scripts.Globais
         public void AvancarDia()
         {
             DiaAtual++;
-            EmitSignal(SignalName.DiaAlterado, DiaAtual);
+            DiaAlterado?.Invoke(DiaAtual);
         }
 
         public void ResetarTempo()
         {
             DiaAtual = 1;
-            EmitSignal(SignalName.DiaAlterado, DiaAtual);
+            DiaAlterado?.Invoke(DiaAtual);
         }
     }
 }

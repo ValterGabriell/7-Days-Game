@@ -7,11 +7,8 @@ namespace fiveyears3.Scripts.Globais
     {
         public static GerenciadorDeAudiencia Instance { get; private set; }
 
-        [Signal]
-        public delegate void AudienciaAlteradaEventHandler(double novaAudiencia, double variacao);
-
-        [Signal]
-        public delegate void ClimaSocialAlteradoEventHandler(double esperanca, double irritacao);
+        public event Action<double, double> AudienciaAlterada;
+        public event Action<double, double> ClimaSocialAlterado;
 
         public double AudienciaAtual { get; private set; } = 50.0;
         public double EsperancaAtual { get; private set; } = 0.0;
@@ -39,8 +36,8 @@ namespace fiveyears3.Scripts.Globais
             EsperancaAtual += variacaoEsperanca;
             IrritacaoAtual += variacaoIrritacao;
 
-            EmitSignal(SignalName.AudienciaAlterada, AudienciaAtual, AudienciaAtual - audienciaAnterior);
-            EmitSignal(SignalName.ClimaSocialAlterado, EsperancaAtual, IrritacaoAtual);
+            AudienciaAlterada?.Invoke(AudienciaAtual, AudienciaAtual - audienciaAnterior);
+            ClimaSocialAlterado?.Invoke(EsperancaAtual, IrritacaoAtual);
         }
 
         public EstadoClimaSocial ObterEstadoClimaSocial()

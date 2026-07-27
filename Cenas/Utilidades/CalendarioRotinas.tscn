@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://q4gtkiy3ugva"]
+
+[ext_resource type="Script" uid="uid://co6c5cntuh61v" path="res://Scripts/Utilidades/Calendario/CalendarioRotinas.cs" id="1_8l2gm"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_v5wr4"]
+size = Vector3(1, 1, 0.041503906)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ef0sp"]
+size = Vector3(1, 1, 0.053710938)
+
+[node name="CalendarioRotinas" type="StaticBody3D" unique_id=842815142 node_paths=PackedStringArray("CanvasLayer", "ListaRotinas")]
+collision_layer = 16
+collision_mask = 2
+script = ExtResource("1_8l2gm")
+CanvasLayer = NodePath("CanvasLayer")
+ListaRotinas = NodePath("CanvasLayer/ItemList")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1364282529]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.47924805)
+mesh = SubResource("BoxMesh_v5wr4")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=62211420]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.47314453)
+shape = SubResource("BoxShape3D_ef0sp")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=123960515]
+visible = false
+
+[node name="ItemList" type="ItemList" parent="CanvasLayer" unique_id=826277962]
+offset_left = 417.0
+offset_top = 220.0
+offset_right = 1450.0
+offset_bottom = 838.0

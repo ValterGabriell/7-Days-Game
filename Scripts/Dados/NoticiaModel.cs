@@ -15,7 +15,6 @@ public class NoticiaModel
     public string TituloOriginal { get; set; }
     public string TextoOriginal { get; set; }
     
-
     public Dictionary<AcaoEditorial, VariacaoNoticia> Variacoes { get; set; } = new();
     public AcaoEditorial EscolhaJogador { get; set; } = AcaoEditorial.ORIGINAL;
 

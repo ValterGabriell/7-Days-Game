@@ -1,92 +1,137 @@
 [
-  {
-    "Id": "noticia_01",
-    "Remetente": "Ministério do Abastecimento",
-    "TituloOriginal": "Aumento na Ração Diária de Grãos",
-    "TextoOriginal": "A distribuição pública de grãos terá um acréscimo de 100g por família a partir deste mês.",
-    "EscolhaJogador": "ORIGINAL",
-    "Variacoes": {
-      "ORIGINAL": {
-        "TituloAlterado": "Aumento na Ração Diária de Grãos",
-        "TextoParaLer": "A distribuição pública de grãos terá um acréscimo de 100g por família a partir deste mês.",
-        "Impacto": {
-          "VariacaoEsperanca": 5.0,
-          "VariacaoIrritacao": -2.0,
-          "AudienciaGanha": 8.0
-        }
-      },
-      "OMITIR": {
-        "TituloAlterado": "Ajuste na Tabela de Grãos",
-        "TextoParaLer": "Foi atualizado o cronograma de entrega dos suprimentos alimentares do trimestre.",
-        "Impacto": {
-          "VariacaoEsperanca": 0.0,
-          "VariacaoIrritacao": 0.0,
-          "AudienciaGanha": 1.0
-        }
-      },
-      "MENTIR": {
-        "TituloAlterado": "Fim da Escassez de Alimentos na Província",
-        "TextoParaLer": "Os estoques estatais estão totalmente cheios e a distribuição de alimentos será ilimitada.",
-        "Impacto": {
-          "VariacaoEsperanca": 15.0,
-          "VariacaoIrritacao": -10.0,
-          "AudienciaGanha": 12.0
-        }
-      },
-      "DISTORCER": {
-        "TituloAlterado": "Sobras da Elite São Repassadas à População",
-        "TextoParaLer": "O governo libera apenas migalhas de grãos estragados enquanto os depósitos centrais esbanjam fartura.",
-        "Impacto": {
-          "VariacaoEsperanca": -12.0,
-          "VariacaoIrritacao": 18.0,
-          "AudienciaGanha": 20.0
-        }
-      }
-    }
-  },
-  {
-    "Id": "noticia_02",
-    "Remetente": "Departamento de Segurança Pública",
-    "TituloOriginal": "Novo Toque de Recolher Noturno",
-    "TextoOriginal": "A circulação de civis nas ruas está proibida após as 22h devido a operações de patrulha urbana.",
-    "EscolhaJogador": "ORIGINAL",
-    "Variacoes": {
-      "ORIGINAL": {
-        "TituloAlterado": "Novo Toque de Recolher Noturno",
-        "TextoParaLer": "A circulação de civis nas ruas está proibida após as 22h devido a operações de patrulha urbana.",
-        "Impacto": {
-          "VariacaoEsperanca": -5.0,
-          "VariacaoIrritacao": 8.0,
-          "AudienciaGanha": 10.0
-        }
-      },
-      "OMITIR": {
-        "TituloAlterado": "Reforço no Vigilantismo Noturno",
-        "TextoParaLer": "As forças de segurança intensificarão o monitoramento nas vias públicas durante a madrugada.",
-        "Impacto": {
-          "VariacaoEsperanca": 0.0,
-          "VariacaoIrritacao": 2.0,
-          "AudienciaGanha": 3.0
-        }
-      },
-      "MENTIR": {
-        "TituloAlterado": "Campanha Pró-Segurança Familiar",
-        "TextoParaLer": "O governo sugere o recolhimento voluntário às 22h para garantir o descanso e a proteção de todos.",
-        "Impacto": {
-          "VariacaoEsperanca": 3.0,
-          "VariacaoIrritacao": -3.0,
-          "AudienciaGanha": 4.0
-        }
-      },
-      "DISTORCER": {
-        "TituloAlterado": "Estado de Sítio e Prisão Domiciliar Noturna",
-        "TextoParaLer": "A polícia militarizará as ruas e prenderá qualquer cidadão que sair de casa após as 22h.",
-        "Impacto": {
-          "VariacaoEsperanca": -15.0,
-          "VariacaoIrritacao": 25.0,
-          "AudienciaGanha": 22.0
-        }
-      }
-    }
-  }
+	{
+		"Id": "noticia_01",
+		"Remetente": "Ministério do Abastecimento",
+		"TituloOriginal": "Aumento na Ração Diária de Grãos",
+		"TextoOriginal": "A distribuição pública de grãos terá um acréscimo de 100g por família a partir deste mês.",
+		"EscolhaJogador": "ORIGINAL",
+		"Variacoes": {
+			"ORIGINAL": {
+				"TituloAlterado": "Aumento na Ração Diária de Grãos",
+				"TextoParaLer": "A distribuição pública de grãos terá um acréscimo de 100g por família a partir deste mês.",
+				"Impacto": {
+					"VariacaoEsperanca": 5.0,
+					"VariacaoIrritacao": -2.0,
+					"AudienciaGanha": 8.0
+				}
+			},
+			"OMITIR": {
+				"TituloAlterado": "Ajuste na Tabela de Grãos",
+				"TextoParaLer": "Foi atualizado o cronograma de entrega dos suprimentos alimentares do trimestre.",
+				"Impacto": {
+					"VariacaoEsperanca": 0.0,
+					"VariacaoIrritacao": 0.0,
+					"AudienciaGanha": 1.0
+				}
+			},
+			"MENTIR": {
+				"TituloAlterado": "Fim da Escassez de Alimentos na Província",
+				"TextoParaLer": "Os estoques estatais estão totalmente cheios e a distribuição de alimentos será ilimitada.",
+				"Impacto": {
+					"VariacaoEsperanca": 15.0,
+					"VariacaoIrritacao": -10.0,
+					"AudienciaGanha": 12.0
+				}
+			},
+			"DISTORCER": {
+				"TituloAlterado": "Sobras da Elite São Repassadas à População",
+				"TextoParaLer": "O governo libera apenas migalhas de grãos estragados enquanto os depósitos centrais esbanjam fartura.",
+				"Impacto": {
+					"VariacaoEsperanca": -12.0,
+					"VariacaoIrritacao": 18.0,
+					"AudienciaGanha": 20.0
+				}
+			}
+		}
+	},
+	{
+		"Id": "noticia_02",
+		"Remetente": "Secretaria de Comunicação Estatal",
+		"TituloOriginal": "Propaganda: Campanha do Povo Unido",
+		"TextoOriginal": "A força da nossa nação vem do trabalho árduo e da lealdade aos ideais do Estado.",
+		"EscolhaJogador": "ORIGINAL",
+		"Variacoes": {
+			"ORIGINAL": {
+				"TituloAlterado": "Propaganda: Campanha do Povo Unido",
+				"TextoParaLer": "A força da nossa nação vem do trabalho árduo e da lealdade aos ideais do Estado.",
+				"Impacto": {
+					"VariacaoEsperanca": 4.0,
+					"VariacaoIrritacao": -1.0,
+					"AudienciaGanha": 5.0
+				}
+			},
+			"OMITIR": {
+				"TituloAlterado": "Informativo Institucional N° 12",
+				"TextoParaLer": "Aviso padrão referente ao cumprimento das diretrizes de trabalho comunitário.",
+				"Impacto": {
+					"VariacaoEsperanca": 0.0,
+					"VariacaoIrritacao": 0.0,
+					"AudienciaGanha": 1.0
+				}
+			},
+			"MENTIR": {
+				"TituloAlterado": "Propaganda: Prosperidade Inabalável da Nação",
+				"TextoParaLer": "Nossa indústria atingiu recordes históricos e somos o país mais seguro e feliz do continente.",
+				"Impacto": {
+					"VariacaoEsperanca": 10.0,
+					"VariacaoIrritacao": -8.0,
+					"AudienciaGanha": 10.0
+				}
+			},
+			"DISTORCER": {
+				"TituloAlterado": "Propaganda: Lavagem Cerebral e Exploração",
+				"TextoParaLer": "O Estado exige sua devoção cega enquanto consome a vida do cidadão em benefício dos generais.",
+				"Impacto": {
+					"VariacaoEsperanca": -15.0,
+					"VariacaoIrritacao": 22.0,
+					"AudienciaGanha": 18.0
+				}
+			}
+		}
+	},
+	{
+		"Id": "noticia_03",
+		"Remetente": "Gabinete do Supremo Comando",
+		"TituloOriginal": "Pronunciamento: Discurso de Segurança Nacional",
+		"TextoOriginal": "Medidas rígidas estão sendo tomadas para erradicar traidores e garantir a paz interna.",
+		"EscolhaJogador": "ORIGINAL",
+		"Variacoes": {
+			"ORIGINAL": {
+				"TituloAlterado": "Pronunciamento: Discurso de Segurança Nacional",
+				"TextoParaLer": "Medidas rígidas estão sendo tomadas para erradicar traidores e garantir a paz interna.",
+				"Impacto": {
+					"VariacaoEsperanca": -3.0,
+					"VariacaoIrritacao": 6.0,
+					"AudienciaGanha": 15.0
+				}
+			},
+			"OMITIR": {
+				"TituloAlterado": "Comunicado do Gabinete Executivo",
+				"TextoParaLer": "O governo segue monitorando a situação das províncias e aplicando diretrizes normais.",
+				"Impacto": {
+					"VariacaoEsperanca": 0.0,
+					"VariacaoIrritacao": 1.0,
+					"AudienciaGanha": 2.0
+				}
+			},
+			"MENTIR": {
+				"TituloAlterado": "Pronunciamento: Anúncio do Perdão Geral e Harmonia",
+				"TextoParaLer": "O Comandante Supremo anuncia anistia a todos os rebeldes e a criação de novos direitos civis.",
+				"Impacto": {
+					"VariacaoEsperanca": 20.0,
+					"VariacaoIrritacao": -15.0,
+					"AudienciaGanha": 25.0
+				}
+			},
+			"DISTORCER": {
+				"TituloAlterado": "Pronunciamento: Declaração de Guerra à População",
+				"TextoParaLer": "O exército recebeu ordens para tratar qualquer opositor como inimigo de guerra a partir de hoje.",
+				"Impacto": {
+					"VariacaoEsperanca": -25.0,
+					"VariacaoIrritacao": 30.0,
+					"AudienciaGanha": 30.0
+				}
+			}
+		}
+	}
 ]

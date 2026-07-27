@@ -7,6 +7,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="scripts\dados\jsons\dia_01\Noticias.json" />
+    <Content Include="scripts\dados\jsons\rotinas_semanais.json" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Scripts\Dados\JSONS\Dia_01\" />

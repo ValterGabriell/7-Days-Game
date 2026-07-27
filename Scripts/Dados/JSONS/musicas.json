@@ -1,0 +1,77 @@
+[
+  {
+	"Id": "musica_01",
+	"Titulo": "Marcha do Progresso Unificado",
+	"Artista": "Orquestra Estatal da Província",
+	"Genero": "MARCHA_MILITAR",
+	"CaminhoAudio": "res://Audio/Musicas/marcha_progresso.ogg",
+	"DuracaoSegundos": 180,
+	"EfeitoDominante": "ANIMAR",
+	"DescricaoEfeito": "Instiga um patriotismo cego e aumenta a sensação de ordem.",
+	"Impacto": {
+	  "VariacaoEsperanca": 4.0,
+	  "VariacaoIrritacao": 2.0,
+	  "AudienciaGanha": 5.0
+	}
+  },
+  {
+	"Id": "musica_02",
+	"Titulo": "Sussurros do Rio Sem Nome",
+	"Artista": "Clara Vance",
+	"Genero": "FOLK_MELANCOLICO",
+	"CaminhoAudio": "res://Audio/Musicas/sussurros_rio.ogg",
+	"DuracaoSegundos": 210,
+	"EfeitoDominante": "DESANIMAR",
+	"DescricaoEfeito": "Traz saudade dos velhos tempos e deixa o ouvinte melancólico.",
+	"Impacto": {
+	  "VariacaoEsperanca": -6.0,
+	  "VariacaoIrritacao": -4.0,
+	  "AudienciaGanha": 12.0
+	}
+  },
+  {
+	"Id": "musica_03",
+	"Titulo": "Amanhecer Dourado",
+	"Artista": "Coral dos Trabalhadores",
+	"Genero": "HINO_OPTIMISTA",
+	"CaminhoAudio": "res://Audio/Musicas/amanhecer_dourado.ogg",
+	"DuracaoSegundos": 195,
+	"EfeitoDominante": "ESPERANCAR",
+	"DescricaoEfeito": "Renova a fé da população em um futuro melhor e mais próspero.",
+	"Impacto": {
+	  "VariacaoEsperanca": 10.0,
+	  "VariacaoIrritacao": -5.0,
+	  "AudienciaGanha": 8.0
+	}
+  },
+  {
+	"Id": "musica_04",
+	"Titulo": "Ritmo das Engrenagens",
+	"Artista": "Sindicato do Som",
+	"Genero": "JAZZ_URBANO",
+	"CaminhoAudio": "res://Audio/Musicas/ritmo_engrenagens.ogg",
+	"DuracaoSegundos": 160,
+	"EfeitoDominante": "ACALMAR",
+	"DescricaoEfeito": "Distrai a mente dos problemas cotidianos e reduz a tensão social.",
+	"Impacto": {
+	  "VariacaoEsperanca": 2.0,
+	  "VariacaoIrritacao": -8.0,
+	  "AudienciaGanha": 15.0
+	}
+  },
+  {
+	"Id": "musica_05",
+	"Titulo": "Eco dos Corações Livres",
+	"Artista": "Os Anônimos",
+	"Genero": "REVOLTA_SUBVERSIVA",
+	"CaminhoAudio": "res://Audio/Musicas/eco_coracoes.ogg",
+	"DuracaoSegundos": 175,
+	"EfeitoDominante": "REVOLTAR",
+	"DescricaoEfeito": "Possui mensagens implícitas de resistência que acendem a raiva do povo.",
+	"Impacto": {
+	  "VariacaoEsperanca": -3.0,
+	  "VariacaoIrritacao": 15.0,
+	  "AudienciaGanha": 20.0
+	}
+  }
+]

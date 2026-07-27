@@ -1,6 +1,9 @@
 using Godot;
 using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 using fiveyears3.Scripts.Globais;
 
 namespace fiveyears3.Scripts.UI
@@ -25,10 +28,30 @@ namespace fiveyears3.Scripts.UI
         [Export] public Label LblIrritacao;
         [Export] public Button BtnEncerrar;
 
+        [ExportGroup("ABAS")]
+        [Export] public Button BtnMusicas;
+        [Export] public Button BtnPropagandaNoticias;
+        [Export] public BoxContainer BoxMusicas;
+        [Export] public BoxContainer BoxNoticiasPropaganda;
+        [Export] public ItemList ListaMusicas;
+
         private NoticiaModel _noticiaSelecionada;
         private int _pautasImpressasCount = 0;
         private const int MAX_PAUTAS_DIA = 3;
         private ButtonGroup _grupoOpcoesEditoriais;
+        private readonly List<MusicaModel> _musicasDisponiveis = new();
+
+        private ItemList ObterListaMusicas()
+        {
+            if (ListaMusicas != null) return ListaMusicas;
+            if (BoxMusicas == null) return null;
+
+            var encontrados = BoxMusicas.FindChildren("*", "ItemList", true, false);
+            if (encontrados.Count <= 0) return null;
+
+            ListaMusicas = encontrados[0] as ItemList;
+            return ListaMusicas;
+        }
 
         public override void _Ready()
         {
@@ -39,6 +62,12 @@ namespace fiveyears3.Scripts.UI
                 GerenciadorDeNoticias.Instance.NoticiasCarregadas += AtualizarListaNoticias;
             }
 
+            if (GerenciadorNoticiasImpressas.Instance != null)
+            {
+                GerenciadorNoticiasImpressas.Instance.MusicaEnviadaNoRadio += OnMusicaEnviadaNoRadio;
+                GerenciadorNoticiasImpressas.Instance.MusicaFinalizadaTransmissao += OnMusicaFinalizadaTransmissao;
+            }
+
             OptIntegra.Pressed += () => SelecionarAcaoEditorial(AcaoEditorial.ORIGINAL);
             OptSuprimir.Pressed += () => SelecionarAcaoEditorial(AcaoEditorial.OMITIR);
             OptOficial.Pressed += () => SelecionarAcaoEditorial(AcaoEditorial.MENTIR);
@@ -47,8 +76,142 @@ namespace fiveyears3.Scripts.UI
             BtnImprimir.Pressed += OnImprimirPauta;
             BtnEncerrar.Pressed += OnEncerrarSessao;
 
+            if (BtnMusicas != null)
+            {
+                BtnMusicas.Pressed += () => ExibirAba(true);
+            }
+
+            if (BtnPropagandaNoticias != null)
+            {
+                BtnPropagandaNoticias.Pressed += () => ExibirAba(false);
+            }
+
+            ItemList listaMusicas = ObterListaMusicas();
+            if (listaMusicas != null)
+            {
+                listaMusicas.ItemSelected += OnMusicaSelecionada;
+            }
+
             LimparPainelCentral();
             AtualizarStatusDia();
+            CarregarMusicasDisponiveis();
+            AtualizarListaMusicas();
+            ExibirAba(false);
+        }
+
+        public override void _ExitTree()
+        {
+            if (GerenciadorDeNoticias.Instance != null)
+            {
+                GerenciadorDeNoticias.Instance.NoticiasCarregadas -= AtualizarListaNoticias;
+            }
+
+            if (GerenciadorNoticiasImpressas.Instance != null)
+            {
+                GerenciadorNoticiasImpressas.Instance.MusicaEnviadaNoRadio -= OnMusicaEnviadaNoRadio;
+                GerenciadorNoticiasImpressas.Instance.MusicaFinalizadaTransmissao -= OnMusicaFinalizadaTransmissao;
+            }
+
+            ItemList listaMusicas = ObterListaMusicas();
+            if (listaMusicas != null)
+            {
+                listaMusicas.ItemSelected -= OnMusicaSelecionada;
+            }
+        }
+
+        private void ExibirAba(bool mostrarMusicas)
+        {
+            if (BoxMusicas != null)
+            {
+                BoxMusicas.Visible = mostrarMusicas;
+            }
+
+            if (BoxNoticiasPropaganda != null)
+            {
+                BoxNoticiasPropaganda.Visible = !mostrarMusicas;
+            }
+
+            if (mostrarMusicas)
+            {
+                AtualizarListaMusicas();
+            }
+        }
+
+        private void CarregarMusicasDisponiveis()
+        {
+            _musicasDisponiveis.Clear();
+
+            string caminhoRelativo = "res://Scripts/Dados/JSONS/musicas.json";
+            string caminhoAbsoluto = ProjectSettings.GlobalizePath(caminhoRelativo);
+            if (!File.Exists(caminhoAbsoluto)) return;
+
+            string jsonString = File.ReadAllText(caminhoAbsoluto);
+            JsonSerializerOptions opcoes = new()
+            {
+                PropertyNameCaseInsensitive = true,
+                Converters = { new JsonStringEnumConverter() }
+            };
+
+            List<MusicaModel> musicas = JsonSerializer.Deserialize<List<MusicaModel>>(jsonString, opcoes);
+            if (musicas == null) return;
+
+            GD.Print($"[InterfaceOSUI] Músicas carregadas: {musicas.Count}");
+            _musicasDisponiveis.AddRange(musicas);
+        }
+
+        private void AtualizarListaMusicas()
+        {
+            ItemList listaMusicas = ObterListaMusicas();
+            if (listaMusicas == null)
+            {
+                GD.PrintErr("[InterfaceOSUI] ListaMusicas não encontrada. Vincule no Inspector ou adicione um ItemList dentro de BoxMusicas.");
+                return;
+            }
+
+            listaMusicas.Clear();
+
+            foreach (MusicaModel musica in _musicasDisponiveis)
+            {
+                bool jaEnviada = GerenciadorNoticiasImpressas.Instance?.MusicasEnviadasDoDia.Exists(m => m.Id == musica.Id) == true;
+                bool jaTransmitida = GerenciadorNoticiasImpressas.Instance?.MusicasTransmitidasDoDia.Exists(m => m.Id == musica.Id) == true;
+                bool emTransmissao = GerenciadorNoticiasImpressas.Instance?.MusicaEmTransmissao?.Id == musica.Id;
+
+                string prefixo = jaEnviada || jaTransmitida || emTransmissao ? "[ENVIADA]" : "[MÚSICA]";
+                listaMusicas.AddItem($"{prefixo} {musica.Titulo}");
+
+                Color corItem = jaEnviada || jaTransmitida || emTransmissao
+                    ? new Color(0.75f, 0.75f, 0.75f)
+                    : new Color(0.75f, 1.0f, 0.75f);
+
+                listaMusicas.SetItemCustomFgColor(listaMusicas.ItemCount - 1, corItem);
+            }
+
+            GD.Print($"[InterfaceOSUI] Itens exibidos na ListaMusicas: {listaMusicas.ItemCount}");
+        }
+
+        private void OnMusicaSelecionada(long index)
+        {
+            int idx = (int)index;
+            if (idx < 0 || idx >= _musicasDisponiveis.Count) return;
+            if (GerenciadorNoticiasImpressas.Instance == null) return;
+
+            MusicaModel musicaSelecionada = _musicasDisponiveis[idx];
+            bool enviada = GerenciadorNoticiasImpressas.Instance.EnviarMusicaParaRadio(musicaSelecionada);
+
+            if (enviada)
+            {
+                AtualizarListaMusicas();
+            }
+        }
+
+        private void OnMusicaEnviadaNoRadio(MusicaModel musica)
+        {
+            AtualizarListaMusicas();
+        }
+
+        private void OnMusicaFinalizadaTransmissao(MusicaModel musica)
+        {
+            AtualizarListaMusicas();
         }
 
         private void ConfigurarGrupoDeOpcoes()
@@ -116,11 +279,14 @@ namespace fiveyears3.Scripts.UI
             }
 
             AtualizarPreview();
+            AtualizarEstadoBotaoImprimir();
+            AtualizarEstadoOpcoesEditoriais();
         }
 
         private void SelecionarAcaoEditorial(AcaoEditorial acao)
         {
             if (_noticiaSelecionada == null) return;
+            if (NoticiaSelecionadaJaEnviada()) return;
 
             _noticiaSelecionada.EscolhaJogador = acao;
             AtualizarPreview();
@@ -149,8 +315,9 @@ namespace fiveyears3.Scripts.UI
         private void OnImprimirPauta()
         {
             GD.Print($"[InterfaceOSUI] Imprimir pauta");
-            GD.Print($"[InterfaceOSUI] Notícia selecionada: {_noticiaSelecionada.TituloOriginal}");
             if (_noticiaSelecionada == null) return;
+
+            GD.Print($"[InterfaceOSUI] Notícia selecionada: {_noticiaSelecionada.TituloOriginal}");
 
             GD.Print($"[InterfaceOSUI] GerenciadorNoticiasImpressas.Instance: {GerenciadorNoticiasImpressas.Instance}");
             if (GerenciadorNoticiasImpressas.Instance != null)
@@ -161,8 +328,51 @@ namespace fiveyears3.Scripts.UI
                 {
                     _pautasImpressasCount++;
                     AtualizarStatusDia();
+                    AtualizarEstadoBotaoImprimir();
+                    AtualizarEstadoOpcoesEditoriais();
                 }
             }
+        }
+
+        private void AtualizarEstadoOpcoesEditoriais()
+        {
+            bool desabilitar = _noticiaSelecionada == null || NoticiaSelecionadaJaEnviada();
+
+            if (OptIntegra != null) OptIntegra.Disabled = desabilitar;
+            if (OptSuprimir != null) OptSuprimir.Disabled = desabilitar;
+            if (OptOficial != null) OptOficial.Disabled = desabilitar;
+            if (OptInvestigativo != null) OptInvestigativo.Disabled = desabilitar;
+        }
+
+        private bool NoticiaSelecionadaJaEnviada()
+        {
+            if (_noticiaSelecionada == null || GerenciadorNoticiasImpressas.Instance == null) return false;
+
+            bool jaImpressa = GerenciadorNoticiasImpressas.Instance.NoticiasImpressasDoDia.Exists(n => n.Id == _noticiaSelecionada.Id);
+            bool jaTransmitida = GerenciadorNoticiasImpressas.Instance.NoticiasTransmitidasDoDia.Exists(n => n.Id == _noticiaSelecionada.Id);
+            bool emTransmissao = GerenciadorNoticiasImpressas.Instance.NoticiaEmTransmissao?.Id == _noticiaSelecionada.Id;
+
+            return jaImpressa || jaTransmitida || emTransmissao;
+        }
+
+        private void AtualizarEstadoBotaoImprimir()
+        {
+            if (BtnImprimir == null) return;
+
+            bool semSelecao = _noticiaSelecionada == null;
+            if (semSelecao)
+            {
+                BtnImprimir.Disabled = true;
+                return;
+            }
+
+            if (GerenciadorNoticiasImpressas.Instance == null)
+            {
+                BtnImprimir.Disabled = false;
+                return;
+            }
+
+            BtnImprimir.Disabled = NoticiaSelecionadaJaEnviada();
         }
 
         private void OnEncerrarSessao()
@@ -189,6 +399,8 @@ namespace fiveyears3.Scripts.UI
             LblRemetente.Text = "";
             LblTextoOriginal.Text = "Nenhuma notícia selecionada no momento.";
             LblPreview.Text = "";
+            AtualizarEstadoBotaoImprimir();
+            AtualizarEstadoOpcoesEditoriais();
         }
     }
 }

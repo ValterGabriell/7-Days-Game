@@ -1,0 +1,205 @@
+[
+  {
+	"Dia": 1,
+	"NotaGoverno": "Instrução Direta: Mantenha o clima pacífico. As notícias sobre ração e infraestrutura devem ser intercaladas com momentos de entretenimento musical.",
+	"Programacao": [
+	  {
+		"OrdemSugerida": 1,
+		"Tipo": "MUSICA",
+		"NoticiaIdRelacionada": "",
+		"DescricaoObrigacao": "Executar qualquer Música de Abertura",
+		"Obrigatorio": false
+	  },
+	  {
+		"OrdemSugerida": 2,
+		"Tipo": "NOTICIA",
+		"NoticiaIdRelacionada": "noticia_01",
+		"DescricaoObrigacao": "Anúncio sobre a Distribuição de Grãos",
+		"Obrigatorio": true
+	  },
+	  {
+		"OrdemSugerida": 3,
+		"Tipo": "NOTICIA",
+		"NoticiaIdRelacionada": "noticia_02",
+		"DescricaoObrigacao": "Boletim do Transporte Público",
+		"Obrigatorio": true
+	  },
+	  {
+		"OrdemSugerida": 4,
+		"Tipo": "PROPAGANDA",
+		"NoticiaIdRelacionada": "",
+		"DescricaoObrigacao": "Propaganda Institucional do Governo",
+		"Obrigatorio": true
+	  }
+	]
+  },
+  {
+	"Dia": 2,
+	"NotaGoverno": "Instrução Direta: Suavize o impacto do Toque de Recolher. Transmita após uma música que acalme os ânimos.",
+	"Programacao": [
+	  {
+		"OrdemSugerida": 1,
+		"Tipo": "NOTICIA",
+		"NoticiaIdRelacionada": "noticia_03",
+		"DescricaoObrigacao": "Nota sobre o Novo Toque de Recolher Noturno",
+		"Obrigatorio": true
+	  },
+	  {
+		"OrdemSugerida": 2,
+		"Tipo": "MUSICA",
+		"NoticiaIdRelacionada": "",
+		"DescricaoObrigacao": "Música Livre (Recomendado tom pacífico)",
+		"Obrigatorio": false
+	  },
+	  {
+		"OrdemSugerida": 3,
+		"Tipo": "NOTICIA",
+		"NoticiaIdRelacionada": "noticia_04",
+		"DescricaoObrigacao": "Relatório Sanitário Regional",
+		"Obrigatorio": true
+	  }
+	]
+  },
+  {
+	"Dia": 3,
+	"NotaGoverno": "ALERTA DA CENSURA: Relatos de sabotagem na fábrica. Desvie o foco público com a grande obra do Estado.",
+	"Programacao": [
+	  {
+		"OrdemSugerida": 1,
+		"Tipo": "NOTICIA",
+		"NoticiaIdRelacionada": "noticia_05",
+		"DescricaoObrigacao": "Inauguração da Nova Usina Hidrelétrica",
+		"Obrigatorio": true
+	  },
+	  {
+		"OrdemSugerida": 2,
+		"Tipo": "PRONUNCIAMENTO",
+		"NoticiaIdRelacionada": "",
+		"DescricaoObrigacao": "Pronunciamento Oficial do Comandante Militar",
+		"Obrigatorio": true
+	  },
+	  {
+		"OrdemSugerida": 3,
+		"Tipo": "NOTICIA",
+		"NoticiaIdRelacionada": "noticia_06",
+		"DescricaoObrigacao": "Aumento dos Postos de Trabalho no Setor Industrial",
+		"Obrigatorio": false
+	  }
+	]
+  },
+  {
+	"Dia": 4,
+	"NotaGoverno": "Instrução Direta: Sobras de ração e corte de combustível. Intercale obrigatoriamente com marchas estatais.",
+	"Programacao": [
+	  {
+		"OrdemSugerida": 1,
+		"Tipo": "NOTICIA",
+		"NoticiaIdRelacionada": "noticia_07",
+		"DescricaoObrigacao": "Racionamento de Combustível nos Setores Rurais",
+		"Obrigatorio": true
+	  },
+	  {
+		"OrdemSugerida": 2,
+		"Tipo": "PROPAGANDA",
+		"NoticiaIdRelacionada": "",
+		"DescricaoObrigacao": "Anúncio do Ministério da Economia",
+		"Obrigatorio": true
+	  },
+	  {
+		"OrdemSugerida": 3,
+		"Tipo": "NOTICIA",
+		"NoticiaIdRelacionada": "noticia_08",
+		"DescricaoObrigacao": "Campanha de Doação Voluntária de Sangue",
+		"Obrigatorio": true
+	  },
+	  {
+		"OrdemSugerida": 4,
+		"Tipo": "NOTICIA",
+		"NoticiaIdRelacionada": "noticia_09",
+		"DescricaoObrigacao": "Aviso de Corte Temporário de Energia",
+		"Obrigatorio": false
+	  }
+	]
+  },
+  {
+	"Dia": 5,
+	"NotaGoverno": "Atenção: Tensão geopolítica crescente. Priorize boletins de segurança e união da província.",
+	"Programacao": [
+	  {
+		"OrdemSugerida": 1,
+		"Tipo": "NOTICIA",
+		"NoticiaIdRelacionada": "noticia_10",
+		"DescricaoObrigacao": "Fechamento das Fronteiras Estaduais",
+		"Obrigatorio": true
+	  },
+	  {
+		"OrdemSugerida": 2,
+		"Tipo": "MUSICA",
+		"NoticiaIdRelacionada": "",
+		"DescricaoObrigacao": "Música Patriótica ou Relaxante",
+		"Obrigatorio": false
+	  },
+	  {
+		"OrdemSugerida": 3,
+		"Tipo": "NOTICIA",
+		"NoticiaIdRelacionada": "noticia_11",
+		"DescricaoObrigacao": "Recenseamento Populacional Obrigatório",
+		"Obrigatorio": true
+	  }
+	]
+  },
+  {
+	"Dia": 6,
+	"NotaGoverno": "URGENTE: Tumultos relatados no distrito central. Notícias de prisões devem vir acompanhadas de avisos calmantes.",
+	"Programacao": [
+	  {
+		"OrdemSugerida": 1,
+		"Tipo": "PROPAGANDA",
+		"NoticiaIdRelacionada": "",
+		"DescricaoObrigacao": "Aviso de Segurança e Ordem Pública",
+		"Obrigatorio": true
+	  },
+	  {
+		"OrdemSugerida": 2,
+		"Tipo": "NOTICIA",
+		"NoticiaIdRelacionada": "noticia_12",
+		"DescricaoObrigacao": "Prisão de Agitadores no Distrito Central",
+		"Obrigatorio": true
+	  },
+	  {
+		"OrdemSugerida": 3,
+		"Tipo": "NOTICIA",
+		"NoticiaIdRelacionada": "noticia_13",
+		"DescricaoObrigacao": "Convocação de Voluntários para Defesa Civil",
+		"Obrigatorio": true
+	  }
+	]
+  },
+  {
+	"Dia": 7,
+	"NotaGoverno": "Instrução Final: Discurso do Supremo Governador. Transmissão prioritária de abertura de programa.",
+	"Programacao": [
+	  {
+		"OrdemSugerida": 1,
+		"Tipo": "PRONUNCIAMENTO",
+		"NoticiaIdRelacionada": "",
+		"DescricaoObrigacao": "Discurso Anual de Unificação da Nação",
+		"Obrigatorio": true
+	  },
+	  {
+		"OrdemSugerida": 2,
+		"Tipo": "NOTICIA",
+		"NoticiaIdRelacionada": "noticia_14",
+		"DescricaoObrigacao": "Aprovação da Reforma Constitucional",
+		"Obrigatorio": true
+	  },
+	  {
+		"OrdemSugerida": 3,
+		"Tipo": "NOTICIA",
+		"NoticiaIdRelacionada": "noticia_15",
+		"DescricaoObrigacao": "Concessão de Anistia Parcial a Pequenos Infratores",
+		"Obrigatorio": false
+	  }
+	]
+  }
+]
