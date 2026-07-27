@@ -2,7 +2,8 @@
 
 [ext_resource type="Script" uid="uid://djcu2jhupab4g" path="res://Scripts/Utilidades/Radio.cs" id="1_dm8lf"]
 [ext_resource type="ArrayMesh" uid="uid://p5qxq5oq0w1q" path="res://Arte/Prototipo/radio/radio.obj" id="1_u7ahc"]
-[ext_resource type="Script" uid="uid://byff6rf03hc2r" path="res://Scripts/UiProvisoriaNoticias.cs" id="3_1e08p"]
+[ext_resource type="Script" uid="uid://cgodtm7h2ufeu" path="res://Scripts/Utilidades/UiNoticiasRadio.cs" id="3_1e08p"]
+[ext_resource type="Script" uid="uid://xlyvn8pn14jl" path="res://Scripts/Utilidades/TocarNoticiaNoRadio.cs" id="4_swqt4"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ef0sp"]
 size = Vector3(0.21435547, 0.14257813, 0.16503906)
@@ -25,6 +26,12 @@ ListaNoticias = NodePath("ItemList")
 
 [node name="ItemList" type="ItemList" parent="UI_PROVISORIA_NOTICIAS" unique_id=1775020858]
 offset_left = 1386.0
-offset_top = 418.0
+offset_top = 201.0
 offset_right = 1720.0
 offset_bottom = 752.0
+
+[node name="TocarNoticiaNoRadio" type="Node" parent="." unique_id=426073048 node_paths=PackedStringArray("PlayerAudio")]
+script = ExtResource("4_swqt4")
+PlayerAudio = NodePath("../AudioStreamPlayer3D")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." unique_id=250027440]

@@ -211,5 +211,5 @@ layout_mode = 2
 size_flags_horizontal = 4
 text = "--- MUSICAS ---"
 
-[node name="ListaMusicas" type="ItemList" parent="FundoTerminal/Margens/VBoxContainer/LayoutGridMusicas/ColunaEsquerda" unique_id=352828942]
+[node name="ListaMusicas" type="VBoxContainer" parent="FundoTerminal/Margens/VBoxContainer/LayoutGridMusicas/ColunaEsquerda" unique_id=2008677854]
 layout_mode = 2

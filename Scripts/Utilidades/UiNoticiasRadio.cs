@@ -43,7 +43,9 @@ public partial class UiNoticiasRadio : CanvasLayer
         if (GerenciadorNoticiasImpressas.Instance == null || !_inscritoNoGerenciador) return;
 
         GerenciadorNoticiasImpressas.Instance.NoticiaImpressa -= OnNoticiaRecebida;
+        GerenciadorNoticiasImpressas.Instance.NoticiaRemovidaDaFila -= OnNoticiaRemovida;
         GerenciadorNoticiasImpressas.Instance.MusicaEnviadaNoRadio -= OnMusicaRecebida;
+        GerenciadorNoticiasImpressas.Instance.MusicaRemovidaDaFila -= OnMusicaRemovida;
         GerenciadorNoticiasImpressas.Instance.NoticiaFinalizadaTransmissao -= OnNoticiaFinalizadaTransmissao;
         GerenciadorNoticiasImpressas.Instance.MusicaFinalizadaTransmissao -= OnMusicaFinalizadaTransmissao;
         _inscritoNoGerenciador = false;
@@ -69,12 +71,24 @@ public partial class UiNoticiasRadio : CanvasLayer
         AtualizarLista();
     }
 
+    private void OnNoticiaRemovida(NoticiaModel noticia)
+    {
+        AtualizarLista();
+    }
+
+    private void OnMusicaRemovida(MusicaModel musica)
+    {
+        AtualizarLista();
+    }
+
     private void TentarInscreverNoGerenciador()
     {
         if (_inscritoNoGerenciador || GerenciadorNoticiasImpressas.Instance == null) return;
 
         GerenciadorNoticiasImpressas.Instance.NoticiaImpressa += OnNoticiaRecebida;
+        GerenciadorNoticiasImpressas.Instance.NoticiaRemovidaDaFila += OnNoticiaRemovida;
         GerenciadorNoticiasImpressas.Instance.MusicaEnviadaNoRadio += OnMusicaRecebida;
+        GerenciadorNoticiasImpressas.Instance.MusicaRemovidaDaFila += OnMusicaRemovida;
         GerenciadorNoticiasImpressas.Instance.NoticiaFinalizadaTransmissao += OnNoticiaFinalizadaTransmissao;
         GerenciadorNoticiasImpressas.Instance.MusicaFinalizadaTransmissao += OnMusicaFinalizadaTransmissao;
         _inscritoNoGerenciador = true;
