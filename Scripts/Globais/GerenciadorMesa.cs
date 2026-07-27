@@ -1,5 +1,6 @@
 using Godot;
 using Scripts.Personagens.Principal;
+using System;
 
 namespace fiveyears3.Scripts.Globais
 {
@@ -29,6 +30,9 @@ namespace fiveyears3.Scripts.Globais
 
         [ExportGroup("UI")]
         [Export] public CanvasLayer UI;
+
+        [ExportGroup("Equipamentos")]
+        [Export] public Radio Radio;
 
         public bool EstaFocadoNoEquipamento { get; private set; } = false;
 
@@ -86,7 +90,7 @@ namespace fiveyears3.Scripts.Globais
             {
                 DesfocarDoEquipamento();
             }
-
+          
             EquipamentoAtual = novoEquipamento;
 
             if (Jogador != null)
@@ -128,7 +132,7 @@ namespace fiveyears3.Scripts.Globais
         public void EntrarFocoNoEquipamento()
         {
             Camera3D cameraAlvo = ObterCameraEquipamento(EquipamentoAtual);
-
+            LidaComFocoCasoSejaRadio(EquipamentoAtual == EquipamentoMesa.Radio);
             if (cameraAlvo != null)
             {
                 cameraAlvo.MakeCurrent();
@@ -142,12 +146,21 @@ namespace fiveyears3.Scripts.Globais
             }
         }
 
+        private void LidaComFocoCasoSejaRadio(bool isRadio)
+        {
+            if (isRadio)
+            {
+                Radio.FocandoNoRadio();
+            }
+        }
+
         public void DesfocarDoEquipamento()
         {
             EstaFocadoNoEquipamento = false;
             AtivarCameraMesa();
             Input.MouseMode = Input.MouseModeEnum.Captured;
             GD.Print("Voltou para a câmera geral da mesa.");
+            Radio.DesfocandoNoRadio();
         }
 
         private void AtivarCameraMesa()

@@ -8,6 +8,7 @@
 [ext_resource type="Script" uid="uid://bhlyp6t0jy560" path="res://Scripts/Globais/GerenciadorMesa.cs" id="4_dbo6t"]
 [ext_resource type="PackedScene" uid="uid://do76cstbmgfj8" path="res://Arte/Prototipo/PSX Computer asset pack/PSX Computer asset pack/fbx/computer.fbx" id="4_il6rv"]
 [ext_resource type="PackedScene" uid="uid://cblc8wmuveb28" path="res://Cenas/Utilidades/Monitor.tscn" id="5_il6rv"]
+[ext_resource type="PackedScene" uid="uid://bgef3wuj8jd5y" path="res://Cenas/Utilidades/Radio.tscn" id="6_dmwlx"]
 [ext_resource type="PackedScene" uid="uid://3s4yx3fvr77y" path="res://Cenas/Utilidades/Cadeira.tscn" id="8_awft6"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_ef0sp"]
@@ -125,34 +126,51 @@ light_size = 0.159
 [node name="PersonagemPrincipal" parent="Personagens" unique_id=1772752661 instance=ExtResource("1_hudp4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7947912, 0.75348556, 3.0642219)
 
-[node name="MesaDeTrabalho" type="Node3D" parent="." unique_id=726947653 node_paths=PackedStringArray("CameraMesa", "CameraRadio", "CameraComputador", "CameraTelefone", "PontoRadio", "PontoComputador", "PontoTelefone", "Jogador", "UI")]
+[node name="MesaDeTrabalho" type="Node3D" parent="." unique_id=726947653 node_paths=PackedStringArray("CameraMesa", "CameraRadio", "CameraComputador", "CameraTelefone", "PontoRadio", "PontoComputador", "PontoTelefone", "Jogador", "UI", "Radio")]
 script = ExtResource("4_dbo6t")
 CameraMesa = NodePath("Cameras/CameraDaMesa")
 CameraRadio = NodePath("Cameras/CameraRadio")
 CameraComputador = NodePath("Cameras/CameraMonitor")
 CameraTelefone = NodePath("Cameras/CameraTelefone")
-PontoRadio = NodePath("PontoRadio")
-PontoComputador = NodePath("PontoComputador")
+PontoRadio = NodePath("Radio/PontoRadio")
+PontoComputador = NodePath("Computador/PontoComputador")
 PontoTelefone = NodePath("PontoTelefone")
 Jogador = NodePath("../Personagens/PersonagemPrincipal")
 UI = NodePath("UI_Mesa")
+Radio = NodePath("Radio/Radio")
 
-[node name="desk" parent="MesaDeTrabalho" unique_id=1665067259 instance=ExtResource("3_qjbho")]
+[node name="Radio" type="Node3D" parent="MesaDeTrabalho" unique_id=1214946054]
+
+[node name="PontoRadio" type="Marker3D" parent="MesaDeTrabalho/Radio" unique_id=1949511537]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.9668684, 0.8887565, -2.4633632)
+
+[node name="desk" parent="MesaDeTrabalho/Radio" unique_id=1665067259 instance=ExtResource("3_qjbho")]
+transform = Transform3D(-0.09374468, 0, 0.99559635, 0, 1, 0, -0.99559635, 0, -0.09374468, -0.9274739, 0.018798828, -2.5488172)
+
+[node name="Radio" parent="MesaDeTrabalho/Radio" unique_id=1314951989 instance=ExtResource("6_dmwlx")]
+transform = Transform3D(-0.004410058, 0, 0.9999903, 0, 1, 0, -0.9999903, 0, -0.004410058, -0.7304252, 0.8153093, -2.5534182)
+
+[node name="Computador" type="Node3D" parent="MesaDeTrabalho" unique_id=1192573735]
+
+[node name="desk" parent="MesaDeTrabalho/Computador" unique_id=315086989 instance=ExtResource("3_qjbho")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16412771, 0.018798828, -3.2983959)
 
-[node name="computer" parent="MesaDeTrabalho" unique_id=1189384088 instance=ExtResource("4_il6rv")]
+[node name="computer" parent="MesaDeTrabalho/Computador" unique_id=1189384088 instance=ExtResource("4_il6rv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7073078, 0.76739895, -3.3194888)
 
-[node name="Monitor" parent="MesaDeTrabalho" unique_id=280688919 node_paths=PackedStringArray("SubViewportPC", "Jogador") instance=ExtResource("5_il6rv")]
+[node name="Monitor" parent="MesaDeTrabalho/Computador" unique_id=280688919 node_paths=PackedStringArray("SubViewportPC", "Jogador") instance=ExtResource("5_il6rv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.69350696, -3.3506498)
 SubViewportPC = NodePath("SubViewport")
-Jogador = NodePath("../../Personagens/PersonagemPrincipal")
+Jogador = NodePath("../../../Personagens/PersonagemPrincipal")
 
-[node name="SubViewport" type="SubViewport" parent="MesaDeTrabalho/Monitor" unique_id=402928208]
+[node name="SubViewport" type="SubViewport" parent="MesaDeTrabalho/Computador/Monitor" unique_id=402928208]
 size = Vector2i(1024, 768)
 render_target_update_mode = 4
 
-[node name="InterfaceOS" parent="MesaDeTrabalho/Monitor/SubViewport" unique_id=1710706125 instance=ExtResource("2_ncvnv")]
+[node name="InterfaceOS" parent="MesaDeTrabalho/Computador/Monitor/SubViewport" unique_id=1710706125 instance=ExtResource("2_ncvnv")]
+
+[node name="PontoComputador" type="Marker3D" parent="MesaDeTrabalho/Computador" unique_id=633035859]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.08552706, 0.8887565, -3.0820653)
 
 [node name="Cadeira" parent="MesaDeTrabalho" unique_id=1157801776 node_paths=PackedStringArray("PontoAssento", "Jogador") instance=ExtResource("8_awft6")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.024380445, 0.018798947, -2.5266366)
@@ -180,16 +198,10 @@ size = 0.45
 near = 0.032
 
 [node name="CameraRadio" type="Camera3D" parent="MesaDeTrabalho/Cameras" unique_id=1962701620]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -0.14918327, 1.0023255, -2.8946724)
+transform = Transform3D(-4.2070326e-08, -0.2714347, 0.9624569, -1.1864787e-08, 0.9624569, 0.2714347, -1, 0, -4.371139e-08, -0.3722371, 0.9904187, -2.4976263)
 fov = 73.47248
 size = 0.45
 near = 0.032
-
-[node name="PontoRadio" type="Marker3D" parent="MesaDeTrabalho" unique_id=1949511537]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.9668684, 0.8887565, -2.4633632)
-
-[node name="PontoComputador" type="Marker3D" parent="MesaDeTrabalho" unique_id=633035859]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.08552706, 0.8887565, -3.0820653)
 
 [node name="PontoTelefone" type="Marker3D" parent="MesaDeTrabalho" unique_id=571074231]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4526633, 0.8887565, -2.508583)
