@@ -17,13 +17,11 @@ public partial class Radio : StaticBody3D, IItemInteracao
 
     public void FocandoNoRadio()
     {
-        GD.Print("[a]Focando no rádio");
         ListaNoticiasRadios.Visible = true;
     }
 
     public void DesfocandoNoRadio()
     {
-        GD.Print("Desfocando no rádio");
         ListaNoticiasRadios.Visible = false;
     }
 }

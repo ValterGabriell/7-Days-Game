@@ -43,6 +43,7 @@ public partial class UiProvisoriaNoticias : CanvasLayer
 
     private void OnNoticiaRecebida(NoticiaModel noticia, VariacaoNoticia variacao)
     {
+        GD.Print($"[UiProvisoriaNoticias]Notícia recebida: {noticia.TituloOriginal}");
         if (Visible)
         {
             AtualizarLista();
@@ -59,7 +60,7 @@ public partial class UiProvisoriaNoticias : CanvasLayer
         if (GerenciadorNoticiasImpressas.Instance == null) return;
 
         var noticiasPautadas = GerenciadorNoticiasImpressas.Instance.NoticiasImpressasDoDia;
-
+        GD.Print("[UiProvisoriaNoticias]NoticiasPautadas");
         foreach (var noticia in noticiasPautadas)
         {
             _noticiasExibidas.Add(noticia);
@@ -67,6 +68,7 @@ public partial class UiProvisoriaNoticias : CanvasLayer
             string tituloExibicao = ObterTituloDeAcordoComEscolha(noticia);
             ListaNoticias.AddItem(tituloExibicao);
         }
+        GD.Print($"[UiProvisoriaNoticias]Noticias exibidas: {_noticiasExibidas.Count}");
     }
 
     private string ObterTituloDeAcordoComEscolha(NoticiaModel noticia)

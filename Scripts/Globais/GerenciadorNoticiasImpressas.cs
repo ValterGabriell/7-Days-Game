@@ -45,6 +45,8 @@ namespace fiveyears3.Scripts.Globais
             if (jaExiste) return false;
 
             NoticiasImpressasDoDia.Add(noticia);
+            GD.Print($"[GerenciadorNoticiasImpressas]Notícia impressa: {noticia.TituloOriginal}");
+            GD.Print($"[GerenciadorNoticiasImpressas]Noticias impressas do dia: {NoticiasImpressasDoDia.Count}");
 
             VariacaoNoticia variacaoUsada = null;
             bool temVariacoes = noticia.Variacoes != null;

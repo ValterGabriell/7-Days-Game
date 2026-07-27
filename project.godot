@@ -21,6 +21,7 @@ GerenciadorDeTela="*uid://cjjymhir2ncqa"
 GerenciadorDeAudiencia="*uid://dqyl0vlmtqjb1"
 GerenciadorDeNoticias="*uid://ucye0y73a8el"
 GerenciadorPassagemDoTempo="*uid://d0fm2w4q7denx"
+GerenciadorNoticiasImpressas="*uid://dgobvfajuexs4"
 
 [display]
 

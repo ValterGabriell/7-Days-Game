@@ -129,10 +129,10 @@ namespace fiveyears3.Scripts.Globais
             GD.Print($"Olhando para o equipamento: {EquipamentoAtual}");
         }
 
-        public void EntrarFocoNoEquipamento()
+        public void PressinouInteragirEEntrouNoFocoNoEquipamento()
         {
             Camera3D cameraAlvo = ObterCameraEquipamento(EquipamentoAtual);
-            LidaComFocoCasoSejaRadio(EquipamentoAtual == EquipamentoMesa.Radio);
+            LidaComFocoNoEquipamentoCorrente(EquipamentoAtual);
             if (cameraAlvo != null)
             {
                 cameraAlvo.MakeCurrent();
@@ -146,12 +146,10 @@ namespace fiveyears3.Scripts.Globais
             }
         }
 
-        private void LidaComFocoCasoSejaRadio(bool isRadio)
+        private void LidaComFocoNoEquipamentoCorrente(EquipamentoMesa equipamento)
         {
-            if (isRadio)
-            {
+            if (equipamento == EquipamentoMesa.Radio)
                 Radio.FocandoNoRadio();
-            }
         }
 
         public void DesfocarDoEquipamento()
@@ -239,13 +237,11 @@ namespace fiveyears3.Scripts.Globais
             if (@event.IsActionPressed("interagir"))
             {
                 if (EstaFocadoNoEquipamento) return;
-
-                if (TentarObterEquipamentoPorSubEstado(Jogador.SubEstadoAtual, out EquipamentoMesa equipamentoSubEstado))
-                {
-                    FocarEquipamento(equipamentoSubEstado, instantaneo: true);
-                }
-
-                EntrarFocoNoEquipamento();
+                //if (TentarObterEquipamentoPorSubEstado(Jogador.SubEstadoAtual, out EquipamentoMesa equipamentoSubEstado))
+                //{
+                //    FocarEquipamento(equipamentoSubEstado, instantaneo: true);
+                //}
+                PressinouInteragirEEntrouNoFocoNoEquipamento();
                 GetViewport().SetInputAsHandled();
                 return;
             }

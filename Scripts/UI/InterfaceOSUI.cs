@@ -148,8 +148,11 @@ namespace fiveyears3.Scripts.UI
 
         private void OnImprimirPauta()
         {
+            GD.Print($"[InterfaceOSUI] Imprimir pauta");
+            GD.Print($"[InterfaceOSUI] Notícia selecionada: {_noticiaSelecionada.TituloOriginal}");
             if (_noticiaSelecionada == null) return;
 
+            GD.Print($"[InterfaceOSUI] GerenciadorNoticiasImpressas.Instance: {GerenciadorNoticiasImpressas.Instance}");
             if (GerenciadorNoticiasImpressas.Instance != null)
             {
                 bool impressaComSucesso = GerenciadorNoticiasImpressas.Instance.ImprimirNoticia(_noticiaSelecionada);
