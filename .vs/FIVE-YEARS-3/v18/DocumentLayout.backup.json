@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Dev\\ProjetosPessoais\\five-years-3\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|c:\\dev\\projetospessoais\\five-years-3\\coisas_feitas.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|solutionrelative:coisas_feitas.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|c:\\dev\\projetospessoais\\five-years-3\\scripts\\ui\\interfaceosui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|solutionrelative:scripts\\ui\\interfaceosui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -103,10 +107,6 @@
       "RelativeMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|solutionrelative:gdd.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|c:\\dev\\projetospessoais\\five-years-3\\coisas_feitas.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
-      "RelativeMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|solutionrelative:coisas_feitas.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|c:\\dev\\projetospessoais\\five-years-3\\scripts\\personagens\\personagemprincipal.movimentocamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|solutionrelative:scripts\\personagens\\personagemprincipal.movimentocamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -130,7 +130,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "MusicaModel.cs",
               "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Dados\\MusicaModel.cs",
               "RelativeDocumentMoniker": "Scripts\\Dados\\MusicaModel.cs",
@@ -143,7 +143,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
+              "Title": "InterfaceOSUI.cs",
+              "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\UI\\InterfaceOSUI.cs",
+              "RelativeDocumentMoniker": "Scripts\\UI\\InterfaceOSUI.cs",
+              "ToolTip": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\UI\\InterfaceOSUI.cs",
+              "RelativeToolTip": "Scripts\\UI\\InterfaceOSUI.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAApwCsAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-27T13:09:39.622Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "coisas_feitas.md",
+              "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\coisas_feitas.md",
+              "RelativeDocumentMoniker": "coisas_feitas.md",
+              "ToolTip": "C:\\Dev\\ProjetosPessoais\\five-years-3\\coisas_feitas.md",
+              "RelativeToolTip": "coisas_feitas.md",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-07-27T13:50:31.138Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "CalendarioRotinas.cs",
               "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Utilidades\\Calendario\\CalendarioRotinas.cs",
               "RelativeDocumentMoniker": "Scripts\\Utilidades\\Calendario\\CalendarioRotinas.cs",
@@ -156,20 +182,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "InterfaceOSUI.cs",
-              "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\UI\\InterfaceOSUI.cs",
-              "RelativeDocumentMoniker": "Scripts\\UI\\InterfaceOSUI.cs",
-              "ToolTip": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\UI\\InterfaceOSUI.cs",
-              "RelativeToolTip": "Scripts\\UI\\InterfaceOSUI.cs",
-              "ViewState": "AgIAAAwBAAAAAAAAAAApwCsAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-27T13:09:39.622Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "RotinaModel.cs",
               "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Dados\\Rotina\\RotinaModel.cs",
               "RelativeDocumentMoniker": "Scripts\\Dados\\Rotina\\RotinaModel.cs",
@@ -182,7 +195,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "TocarNoticiaNoRadio.cs",
               "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Utilidades\\TocarNoticiaNoRadio.cs",
               "RelativeDocumentMoniker": "Scripts\\Utilidades\\TocarNoticiaNoRadio.cs",
@@ -195,7 +208,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "rotinas_semanais.json",
               "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Dados\\JSONS\\rotinas_semanais.json",
               "RelativeDocumentMoniker": "Scripts\\Dados\\JSONS\\rotinas_semanais.json",
@@ -208,7 +221,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Noticias.json",
               "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Dados\\JSONS\\Dia_01\\Noticias.json",
               "RelativeDocumentMoniker": "Scripts\\Dados\\JSONS\\Dia_01\\Noticias.json",
@@ -221,7 +234,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Personagem.Interacao.cs",
               "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Personagens\\Personagem.Interacao.cs",
               "RelativeDocumentMoniker": "Scripts\\Personagens\\Personagem.Interacao.cs",
@@ -234,7 +247,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "GerenciadorPassagemDoTempo.cs",
               "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Globais\\GerenciadorPassagemDoTempo.cs",
               "RelativeDocumentMoniker": "Scripts\\Globais\\GerenciadorPassagemDoTempo.cs",
@@ -247,7 +260,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "UIConfiguracaoDeTela.cs",
               "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\UI\\UIConfiguracaoDeTela.cs",
               "RelativeDocumentMoniker": "Scripts\\UI\\UIConfiguracaoDeTela.cs",
@@ -260,7 +273,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "NoticiaModel.cs",
               "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Dados\\NoticiaModel.cs",
               "RelativeDocumentMoniker": "Scripts\\Dados\\NoticiaModel.cs",
@@ -273,7 +286,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "ImpactoSocial.cs",
               "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Dados\\ImpactoSocial.cs",
               "RelativeDocumentMoniker": "Scripts\\Dados\\ImpactoSocial.cs",
@@ -286,33 +299,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "UiNoticiasRadio.cs",
               "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Utilidades\\UiNoticiasRadio.cs",
               "RelativeDocumentMoniker": "Scripts\\Utilidades\\UiNoticiasRadio.cs",
               "ToolTip": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Utilidades\\UiNoticiasRadio.cs",
               "RelativeToolTip": "Scripts\\Utilidades\\UiNoticiasRadio.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFMAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAAAqwGEAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-27T17:57:43.131Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "GerenciadorNoticiasImpressas.cs",
               "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Globais\\GerenciadorNoticiasImpressas.cs",
               "RelativeDocumentMoniker": "Scripts\\Globais\\GerenciadorNoticiasImpressas.cs",
               "ToolTip": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Globais\\GerenciadorNoticiasImpressas.cs",
               "RelativeToolTip": "Scripts\\Globais\\GerenciadorNoticiasImpressas.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAABJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-27T13:42:21.686Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "GerenciadorDeNoticias.cs",
               "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Globais\\GerenciadorDeNoticias.cs",
               "RelativeDocumentMoniker": "Scripts\\Globais\\GerenciadorDeNoticias.cs",
@@ -325,7 +338,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "GerenciadorDeAudiencia.cs",
               "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Globais\\GerenciadorDeAudiencia.cs",
               "RelativeDocumentMoniker": "Scripts\\Globais\\GerenciadorDeAudiencia.cs",
@@ -338,7 +351,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "GerenciadorMesa.cs",
               "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Globais\\GerenciadorMesa.cs",
               "RelativeDocumentMoniker": "Scripts\\Globais\\GerenciadorMesa.cs",
@@ -351,7 +364,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "MonitorPC.cs",
               "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Utilidades\\MonitorPC\\MonitorPC.cs",
               "RelativeDocumentMoniker": "Scripts\\Utilidades\\MonitorPC\\MonitorPC.cs",
@@ -364,7 +377,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "Radio.cs",
               "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Utilidades\\Radio.cs",
               "RelativeDocumentMoniker": "Scripts\\Utilidades\\Radio.cs",
@@ -377,7 +390,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "GerenciadorDeTela.cs",
               "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Globais\\GerenciadorDeTela.cs",
               "RelativeDocumentMoniker": "Scripts\\Globais\\GerenciadorDeTela.cs",
@@ -390,7 +403,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "PersonagemPrincipal.cs",
               "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Personagens\\PersonagemPrincipal.cs",
               "RelativeDocumentMoniker": "Scripts\\Personagens\\PersonagemPrincipal.cs",
@@ -403,7 +416,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "VariacaoNoticia.cs",
               "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Dados\\VariacaoNoticia.cs",
               "RelativeDocumentMoniker": "Scripts\\Dados\\VariacaoNoticia.cs",
@@ -415,7 +428,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "IItemInteracao.cs",
               "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Utilidades\\IItemInteracao.cs",
               "RelativeDocumentMoniker": "Scripts\\Utilidades\\IItemInteracao.cs",
@@ -427,7 +440,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "Cadeira.cs",
               "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Utilidades\\Cadeira.cs",
               "RelativeDocumentMoniker": "Scripts\\Utilidades\\Cadeira.cs",
@@ -439,7 +452,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "gdd.md",
               "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\gdd.md",
               "RelativeDocumentMoniker": "gdd.md",
@@ -448,18 +461,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
               "WhenOpened": "2026-07-27T13:49:18.811Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "coisas_feitas.md",
-              "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\coisas_feitas.md",
-              "RelativeDocumentMoniker": "coisas_feitas.md",
-              "ToolTip": "C:\\Dev\\ProjetosPessoais\\five-years-3\\coisas_feitas.md",
-              "RelativeToolTip": "coisas_feitas.md",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2026-07-27T13:50:31.138Z"
             },
             {
               "$type": "Document",

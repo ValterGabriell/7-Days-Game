@@ -30,8 +30,20 @@ offset_top = 201.0
 offset_right = 1720.0
 offset_bottom = 752.0
 
-[node name="TocarNoticiaNoRadio" type="Node" parent="." unique_id=426073048 node_paths=PackedStringArray("PlayerAudio")]
+[node name="TocarNoticiaNoRadio" type="Node" parent="." unique_id=426073048 node_paths=PackedStringArray("PlayerAudio", "CanvasLayerRadio", "LabelRadio")]
 script = ExtResource("4_swqt4")
 PlayerAudio = NodePath("../AudioStreamPlayer3D")
+CanvasLayerRadio = NodePath("../CanvasLayer")
+LabelRadio = NodePath("../CanvasLayer/LblTempoDaMusica")
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." unique_id=250027440]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1722797018]
+visible = false
+
+[node name="LblTempoDaMusica" type="Label" parent="CanvasLayer" unique_id=1525883238]
+offset_left = 778.0
+offset_top = 980.0
+offset_right = 1058.0
+offset_bottom = 1003.0
+text = "TEMPO QUE TA TOCANDO A MUSICA"

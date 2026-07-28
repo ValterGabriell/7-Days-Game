@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://dcwtuba2ktbea" path="res://Cenas/Globais/UI/ConfiguracaoDeTela.tscn" id="2_3iwg5"]
 [ext_resource type="PackedScene" uid="uid://50iioxb1e5pe" path="res://Cenas/Utilidades/InterfaceOS_PC.tscn" id="2_ncvnv"]
 [ext_resource type="PackedScene" uid="uid://r1idoxctvvqp" path="res://Arte/Prototipo/PSX Computer asset pack/PSX Computer asset pack/fbx/desk.fbx" id="3_qjbho"]
+[ext_resource type="Script" uid="uid://duiytba1bj83v" path="res://Scripts/UI/UiAudiencia.cs" id="4_1q5f8"]
 [ext_resource type="Script" uid="uid://bhlyp6t0jy560" path="res://Scripts/Globais/GerenciadorMesa.cs" id="4_dbo6t"]
 [ext_resource type="PackedScene" uid="uid://do76cstbmgfj8" path="res://Arte/Prototipo/PSX Computer asset pack/PSX Computer asset pack/fbx/computer.fbx" id="4_il6rv"]
 [ext_resource type="PackedScene" uid="uid://cblc8wmuveb28" path="res://Cenas/Utilidades/Monitor.tscn" id="5_il6rv"]
@@ -124,6 +125,25 @@ light_energy = 5.0
 light_indirect_energy = 5.0
 light_volumetric_fog_energy = 2.313
 light_size = 0.159
+
+[node name="UIAudiencia" type="CanvasLayer" parent="ConfiguracaoGlobal" unique_id=874994396 node_paths=PackedStringArray("LabelAudiencia", "BarraAudiencia")]
+script = ExtResource("4_1q5f8")
+LabelAudiencia = NodePath("Label")
+BarraAudiencia = NodePath("ProgressBar")
+
+[node name="Label" type="Label" parent="ConfiguracaoGlobal/UIAudiencia" unique_id=1088039978]
+offset_left = 1451.0
+offset_top = 21.0
+offset_right = 1491.0
+offset_bottom = 44.0
+text = "Audiencia
+ClimaSocial"
+
+[node name="ProgressBar" type="ProgressBar" parent="ConfiguracaoGlobal/UIAudiencia" unique_id=1552331017]
+offset_left = 1469.0
+offset_top = 91.0
+offset_right = 1473.0
+offset_bottom = 118.0
 
 [node name="Personagens" type="Node" parent="." unique_id=938030835]
 

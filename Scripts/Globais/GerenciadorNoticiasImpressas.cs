@@ -19,6 +19,7 @@ namespace fiveyears3.Scripts.Globais
         public event Action<MusicaModel> MusicaRemovidaDaFila;
         public event Action<NoticiaModel> NoticiaTransmitida;
         public event Action<MusicaModel> MusicaTransmitida;
+
         public event Action<NoticiaModel> NoticiaFinalizadaTransmissao;
         public event Action<MusicaModel> MusicaFinalizadaTransmissao;
 
