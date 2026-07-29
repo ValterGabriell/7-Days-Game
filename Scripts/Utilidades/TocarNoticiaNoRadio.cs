@@ -19,6 +19,18 @@ public partial class TocarNoticiaNoRadio : Node
     private double tempoEmSilencio = 0.0;
     private double proximoIntervaloDePunicao = TEMPO_DE_SILENCIO_PARA_PERDA_DE_AUDIENCIA;
 
+    private readonly Dictionary<int, FlagsCondicionais> _flagsAoIniciar = new()
+    {
+        { 0, FlagsCondicionais.PRIMEIRA_MUSICA_DISPARADA_RADIO },
+        { 1, FlagsCondicionais.SEGUNDA_MUSICA_DISPARADA_RADIO }
+    };
+
+    private readonly Dictionary<int, FlagsCondicionais> _flagsAoFinalizar = new()
+    {
+        { 1, FlagsCondicionais.PRIMEIRA_MUSICA_TOCADA },
+        { 2, FlagsCondicionais.SEGUNDA_MUSICA_TOCADA }
+    };
+
     public override void _Ready()
     {
         CanvasLayerRadio.Visible = false;
@@ -95,6 +107,10 @@ public partial class TocarNoticiaNoRadio : Node
         if (model == null || PlayerAudio == null) return;
 
         _noticiaAtual = model;
+        _musicaAtual = null;
+
+        _estadoAtualDaTransmissao = EstadoDaTransmissao.TransmitindoNoticia;
+        ResetarContadoresDeSilencio();
 
         int diaAtual = GerenciadorPassagemDoTempo.Instance != null ? GerenciadorPassagemDoTempo.Instance.DiaAtual : 1;
         string diaFormatado = $"Dia_{diaAtual:D2}"; // Dia_01
@@ -126,26 +142,6 @@ public partial class TocarNoticiaNoRadio : Node
         }
     }
 
-    private void OnAudioFinished()
-    {
-        PlayerAudio.Stop();
-        CanvasLayerRadio.Visible = false;
-
-        if (LabelRadio != null)
-        {
-            LabelRadio.Modulate = Colors.White; // Reseta a cor para branco ao finalizar
-        }
-
-        FinalizarTransmissao();
-    }
-
-    private string FormatarTempo(double tempoEmSegundos)
-    {
-        int minutos = (int)(tempoEmSegundos / 60);
-        int segundos = (int)(tempoEmSegundos % 60);
-        return $"{minutos:D2}:{segundos:D2}";
-    }
-
     private void OnTransmitirMusicaNoRadio(MusicaModel model)
     {
         ProcessaPrimeiraTransmissaoDoDia(model);
@@ -154,6 +150,10 @@ public partial class TocarNoticiaNoRadio : Node
 
         _musicaAtual = model;
         _noticiaAtual = null;
+
+        _estadoAtualDaTransmissao = EstadoDaTransmissao.TransmitindoMusica;
+
+        ResetarContadoresDeSilencio();
 
         string caminhoAudio = model.CaminhoAudio;
         GD.Print($"[TocarNoticiaNoRadio] Carregando música: {caminhoAudio}");
@@ -177,9 +177,29 @@ public partial class TocarNoticiaNoRadio : Node
         GD.PrintErr($"[TocarNoticiaNoRadio] Arquivo de música não encontrado no caminho: {caminhoAudio}");
         FinalizarTransmissao();
     }
+
+    private void OnAudioFinished()
+    {
+        PlayerAudio.Stop();
+        CanvasLayerRadio.Visible = false;
+
+        if (LabelRadio != null)
+        {
+            LabelRadio.Modulate = Colors.White; // Reseta a cor para branco ao finalizar
+        }
+
+        FinalizarTransmissao();
+    }
+
+    private string FormatarTempo(double tempoEmSegundos)
+    {
+        int minutos = (int)(tempoEmSegundos / 60);
+        int segundos = (int)(tempoEmSegundos % 60);
+        return $"{minutos:D2}:{segundos:D2}";
+    }
+
     private bool EstaMudoNoRadioMasATransmissaoJaIniciou()
     {
-
         return this._estadoAtualDaTransmissao == EstadoDaTransmissao.Nenhuma && this._noticiasJaTransmitidas.Count > 0;
     }
 
@@ -189,11 +209,11 @@ public partial class TocarNoticiaNoRadio : Node
         if (GerenciadorPassagemDoTempo.Instance.EstadoAtual == GerenciadorPassagemDoTempo.EstadoDoDia.Parado &&
                     this._estadoAtualDaTransmissao == EstadoDaTransmissao.Nenhuma)
         {
-            this._estadoAtualDaTransmissao = EstadoDaTransmissao.TransmitindoNoticia;
+            this._estadoAtualDaTransmissao = EstadoDaTransmissao.TransmitindoMusica; // FIX: ajustado para música
             GerenciadorPassagemDoTempo.Instance.IniciarHorarioDeTrabalho();
         }
-
     }
+
     private void ProcessaPrimeiraTransmissaoDoDia(NoticiaModel noticiaModel)
     {
         if (GerenciadorPassagemDoTempo.Instance.EstadoAtual == GerenciadorPassagemDoTempo.EstadoDoDia.Parado &&
@@ -203,7 +223,6 @@ public partial class TocarNoticiaNoRadio : Node
             GerenciadorPassagemDoTempo.Instance.IniciarHorarioDeTrabalho();
         }
     }
-
 
     private void FinalizarTransmissao()
     {
@@ -222,39 +241,37 @@ public partial class TocarNoticiaNoRadio : Node
             _noticiasJaTransmitidas.Add(_musicaAtual.Id, true);
             _musicaAtual = null;
         }
+
         this._estadoAtualDaTransmissao = EstadoDaTransmissao.Nenhuma;
+        ResetarContadoresDeSilencio(); // FIX: garante que o contador de silêncio recomeça limpo após o áudio terminar
         ProcessarFlagsAoFinalizarTransmissao();
         GD.Print($"[TocarNoticiaNoRadio] Transmissão finalizada. Total de transmissões hoje: {_noticiasJaTransmitidas.Count}");
         GD.Print($"[TocarNoticiaNoRadio] Estado atual da transmissão: {_estadoAtualDaTransmissao}");
     }
 
-    private void ProcessarFlagsAoFinalizarTransmissao()
+    private void ProcessarFlagsAoIniciarTransmissao()
     {
         if (GerenciadorDeFlagsNarrativas.Instance == null) return;
-        switch (this._noticiasJaTransmitidas.Count)
+
+        if (_flagsAoIniciar.TryGetValue(_noticiasJaTransmitidas.Count, out var flag))
         {
-            case 1:
-                GerenciadorDeFlagsNarrativas.Instance.AtivarFlagCondicional(FlagsCondicionais.PRIMEIRA_MUSICA_TOCADA);
-                break;
-            case 2:
-                GerenciadorDeFlagsNarrativas.Instance.AtivarFlagCondicional(FlagsCondicionais.SEGUNDA_MUSICA_TOCADA );
-                break;
+            GerenciadorDeFlagsNarrativas.Instance.AtivarFlagCondicional(flag);
         }
     }
 
-    private void ProcessarFlagsAoIniciarTransmissao()
+    private void ProcessarFlagsAoFinalizarTransmissao()
     {
-        GD.Print($"[TocarNoticiaNoRadio] ProcessarFlagsAoIniciarTransmissao. Total de transmissões hoje: {_noticiasJaTransmitidas.Count}");
-        GD.Print($"[TocarNoticiaNoRadio] GerenciadorDeFlagsNarrativas.Instance: {GerenciadorDeFlagsNarrativas.Instance}");
         if (GerenciadorDeFlagsNarrativas.Instance == null) return;
-        switch (this._noticiasJaTransmitidas.Count)
+
+        if (_flagsAoFinalizar.TryGetValue(_noticiasJaTransmitidas.Count, out var flag))
         {
-            case 0:
-                GerenciadorDeFlagsNarrativas.Instance.AtivarFlagCondicional(FlagsCondicionais.PRIMEIRA_MUSICA_DISPARADA_RADIO);
-                break;
-            case 1:
-                GerenciadorDeFlagsNarrativas.Instance.AtivarFlagCondicional(FlagsCondicionais.SEGUNDA_MUSICA_DISPARADA_RADIO);
-                break;
+            GerenciadorDeFlagsNarrativas.Instance.AtivarFlagCondicional(flag);
         }
+    }
+
+    private void ResetarContadoresDeSilencio()
+    {
+        tempoEmSilencio = 0.0;
+        proximoIntervaloDePunicao = TEMPO_DE_SILENCIO_PARA_PERDA_DE_AUDIENCIA;
     }
 }

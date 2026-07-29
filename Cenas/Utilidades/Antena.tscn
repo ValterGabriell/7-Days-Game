@@ -34,8 +34,6 @@ mesh = SubResource("BoxMesh_ef0sp")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=248077540]
 stream = ExtResource("2_oeex0")
-volume_db = 24.0
 
 [node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="." unique_id=1270653423]
 stream = ExtResource("3_8qhpn")
-volume_db = 24.0
