@@ -16,6 +16,7 @@ namespace fiveyears3.Scripts.Globais
         [Export] public Camera3D CameraRadio;
         [Export] public Camera3D CameraComputador;
         [Export] public Camera3D CameraTelefone;
+        [Export] public Camera3D CameraAntena;
 
         [ExportGroup("Marcações (Pontos na Mesa)")]
         [Export] public Marker3D PontoRadio;
@@ -77,6 +78,8 @@ namespace fiveyears3.Scripts.Globais
         {
             DesfocarDoEquipamento();
             if (CameraMesa != null) CameraMesa.Current = false;
+            if (CameraAntena != null) CameraAntena.Current = false;
+
             if (UI != null) UI.Visible = false;
 
             Jogador?.DefinirSubEstadoMesa(PersonagemPrincipal.SubEstadoMesa.Nenhum);
@@ -126,7 +129,7 @@ namespace fiveyears3.Scripts.Globais
                 _emTransicao = true;
             }
 
-            GD.Print($"Olhando para o equipamento: {EquipamentoAtual}");
+            GD.Print($"[Gerenciador Mesa] Olhando para o equipamento: {EquipamentoAtual}");
         }
 
         public void PressinouInteragirEEntrouNoFocoNoEquipamento()
@@ -138,11 +141,11 @@ namespace fiveyears3.Scripts.Globais
                 cameraAlvo.MakeCurrent();
                 EstaFocadoNoEquipamento = true;
                 Input.MouseMode = Input.MouseModeEnum.Visible;
-                GD.Print($"Entrou no zoom do equipamento: {EquipamentoAtual}");
+                GD.Print($"[Gerenciador Mesa] Entrou no zoom do equipamento: {EquipamentoAtual}");
             }
             else
             {
-                GD.PrintErr($"Nenhuma câmera configurada para o equipamento: {EquipamentoAtual}");
+                GD.PrintErr($"[Gerenciador Mesa] Nenhuma câmera configurada para o equipamento: {EquipamentoAtual}");
             }
         }
 
@@ -157,7 +160,7 @@ namespace fiveyears3.Scripts.Globais
             EstaFocadoNoEquipamento = false;
             AtivarCameraMesa();
             Input.MouseMode = Input.MouseModeEnum.Captured;
-            GD.Print("Voltou para a câmera geral da mesa.");
+            GD.Print("[Gerenciador Mesa] Voltou para a câmera geral da mesa.");
             Radio.DesfocandoNoRadio();
         }
 
@@ -191,19 +194,7 @@ namespace fiveyears3.Scripts.Globais
             };
         }
 
-        private bool TentarObterEquipamentoPorSubEstado(PersonagemPrincipal.SubEstadoMesa subEstado, out EquipamentoMesa equipamento)
-        {
-            equipamento = subEstado switch
-            {
-                PersonagemPrincipal.SubEstadoMesa.Radio => EquipamentoMesa.Radio,
-                PersonagemPrincipal.SubEstadoMesa.Computador => EquipamentoMesa.Computador,
-                PersonagemPrincipal.SubEstadoMesa.Telefone => EquipamentoMesa.Telefone,
-                _ => EquipamentoAtual
-            };
-
-            return subEstado != PersonagemPrincipal.SubEstadoMesa.Nenhum;
-        }
-
+  
         private EquipamentoMesa ObterEquipamentoEsquerda(EquipamentoMesa equipamentoAtual)
         {
             return equipamentoAtual switch

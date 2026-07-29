@@ -193,12 +193,13 @@ size = 4.265
 [node name="PersonagemPrincipal" parent="Personagens" unique_id=1772752661 instance=ExtResource("1_hudp4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.9287748, 4.742219, 3.0642219)
 
-[node name="MesaDeTrabalho" type="Node3D" parent="." unique_id=726947653 node_paths=PackedStringArray("CameraMesa", "CameraRadio", "CameraComputador", "CameraTelefone", "PontoRadio", "PontoComputador", "PontoTelefone", "Jogador", "UI", "Radio")]
+[node name="MesaDeTrabalho" type="Node3D" parent="." unique_id=726947653 node_paths=PackedStringArray("CameraMesa", "CameraRadio", "CameraComputador", "CameraTelefone", "CameraAntena", "PontoRadio", "PontoComputador", "PontoTelefone", "Jogador", "UI", "Radio")]
 script = ExtResource("4_dbo6t")
 CameraMesa = NodePath("Cameras/CameraDaMesa")
 CameraRadio = NodePath("Cameras/CameraRadio")
 CameraComputador = NodePath("Cameras/CameraMonitor")
 CameraTelefone = NodePath("Cameras/CameraTelefone")
+CameraAntena = NodePath("../ConfiguracaoGlobal/Cameras/CameraAntena")
 PontoRadio = NodePath("Radio/PontoRadio")
 PontoComputador = NodePath("Computador/PontoComputador")
 PontoTelefone = NodePath("PontoTelefone")

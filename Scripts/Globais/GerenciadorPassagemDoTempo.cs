@@ -50,5 +50,12 @@ namespace fiveyears3.Scripts.Globais
             EstadoAtual = EstadoDoDia.EmAndamento;
             HorarioDeTrabalhoIniciado?.Invoke();
         }
+
+        public void FinalizarHorarioDeTrabalho()
+        {
+            EstadoAtual = EstadoDoDia.Parado;
+            this.DiaAtual += 1;
+            DiaAlterado?.Invoke(DiaAtual);
+        }
     }
 }

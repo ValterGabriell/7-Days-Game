@@ -22,6 +22,8 @@ GerenciadorDeAudiencia="*uid://dqyl0vlmtqjb1"
 GerenciadorDeNoticias="*uid://ucye0y73a8el"
 GerenciadorPassagemDoTempo="*uid://d0fm2w4q7denx"
 GerenciadorNoticiasImpressas="*uid://dgobvfajuexs4"
+GerenciadorDeEventoAleatorio="*uid://blopkn7xd1iis"
+GerenciadorDeFlagsNarrativas="*uid://che7l1mtwupuc"
 
 [display]
 

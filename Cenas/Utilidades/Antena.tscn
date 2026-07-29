@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://dpb60xf64k83v"]
 
 [ext_resource type="Script" uid="uid://dd5xmektn46o3" path="res://Scripts/Utilidades/Antena.cs" id="1_l64u8"]
+[ext_resource type="AudioStream" uid="uid://cs4ov1613e6ol" path="res://Arte/Audio/Efeitos/quebrando_antena.mp3" id="2_oeex0"]
+[ext_resource type="AudioStream" uid="uid://g6vmcpk75mat" path="res://Arte/Audio/Efeitos/sucesso.mp3" id="3_8qhpn"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ef0sp"]
 radius = 0.39648438
@@ -11,10 +13,12 @@ height = 3.2785645
 [sub_resource type="BoxMesh" id="BoxMesh_ef0sp"]
 size = Vector3(0.25390625, 1.8496094, 0.34423828)
 
-[node name="Antena" type="StaticBody3D" unique_id=2120105727]
+[node name="Antena" type="StaticBody3D" unique_id=2120105727 node_paths=PackedStringArray("AudioAntenaQuebrando", "AudioAntenaConcertando")]
 collision_layer = 64
 collision_mask = 2
 script = ExtResource("1_l64u8")
+AudioAntenaQuebrando = NodePath("AudioStreamPlayer")
+AudioAntenaConcertando = NodePath("AudioStreamPlayer2")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=777512231]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.033444166, 1.4905738, 0.057899833)
@@ -27,3 +31,11 @@ mesh = SubResource("PrismMesh_ef0sp")
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="." unique_id=12570105]
 transform = Transform3D(1.1312494, 0, 0, 0, 1.3130443, 0, 0, 0, 1, 0.03563893, 1.1521525, 0.057899833)
 mesh = SubResource("BoxMesh_ef0sp")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=248077540]
+stream = ExtResource("2_oeex0")
+volume_db = 24.0
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="." unique_id=1270653423]
+stream = ExtResource("3_8qhpn")
+volume_db = 24.0

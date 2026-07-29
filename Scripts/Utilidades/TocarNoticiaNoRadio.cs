@@ -1,4 +1,5 @@
 using fiveyears3.Scripts.Globais;
+using Flags;
 using Godot;
 using Godot.Collections;
 using System;
@@ -16,7 +17,7 @@ public partial class TocarNoticiaNoRadio : Node
     private Dictionary<string, bool> _noticiasJaTransmitidas = new Dictionary<string, bool>();
     private const double TEMPO_DE_SILENCIO_PARA_PERDA_DE_AUDIENCIA = 5.0;
     private double tempoEmSilencio = 0.0;
-    private double proximoIntervaloDePunicao = TEMPO_DE_SILENCIO_PARA_PERDA_DE_AUDIENCIA; 
+    private double proximoIntervaloDePunicao = TEMPO_DE_SILENCIO_PARA_PERDA_DE_AUDIENCIA;
 
     public override void _Ready()
     {
@@ -89,8 +90,8 @@ public partial class TocarNoticiaNoRadio : Node
 
     private void OnTransmitirNoticiaNoRadio(NoticiaModel model)
     {
-        //o dia ainda nao inicou, essa é a primeira transmissao do dia, iniciando ele propriamente dito
         ProcessaPrimeiraTransmissaoDoDia(model);
+        ProcessarFlagsAoIniciarTransmissao();
         if (model == null || PlayerAudio == null) return;
 
         _noticiaAtual = model;
@@ -125,7 +126,6 @@ public partial class TocarNoticiaNoRadio : Node
         }
     }
 
- 
     private void OnAudioFinished()
     {
         PlayerAudio.Stop();
@@ -149,6 +149,7 @@ public partial class TocarNoticiaNoRadio : Node
     private void OnTransmitirMusicaNoRadio(MusicaModel model)
     {
         ProcessaPrimeiraTransmissaoDoDia(model);
+        ProcessarFlagsAoIniciarTransmissao();
         if (model == null || PlayerAudio == null) return;
 
         _musicaAtual = model;
@@ -178,7 +179,7 @@ public partial class TocarNoticiaNoRadio : Node
     }
     private bool EstaMudoNoRadioMasATransmissaoJaIniciou()
     {
-        
+
         return this._estadoAtualDaTransmissao == EstadoDaTransmissao.Nenhuma && this._noticiasJaTransmitidas.Count > 0;
     }
 
@@ -222,7 +223,38 @@ public partial class TocarNoticiaNoRadio : Node
             _musicaAtual = null;
         }
         this._estadoAtualDaTransmissao = EstadoDaTransmissao.Nenhuma;
+        ProcessarFlagsAoFinalizarTransmissao();
         GD.Print($"[TocarNoticiaNoRadio] Transmissão finalizada. Total de transmissões hoje: {_noticiasJaTransmitidas.Count}");
         GD.Print($"[TocarNoticiaNoRadio] Estado atual da transmissão: {_estadoAtualDaTransmissao}");
+    }
+
+    private void ProcessarFlagsAoFinalizarTransmissao()
+    {
+        if (GerenciadorDeFlagsNarrativas.Instance == null) return;
+        switch (this._noticiasJaTransmitidas.Count)
+        {
+            case 1:
+                GerenciadorDeFlagsNarrativas.Instance.AtivarFlagCondicional(FlagsCondicionais.PRIMEIRA_MUSICA_TOCADA);
+                break;
+            case 2:
+                GerenciadorDeFlagsNarrativas.Instance.AtivarFlagCondicional(FlagsCondicionais.SEGUNDA_MUSICA_TOCADA );
+                break;
+        }
+    }
+
+    private void ProcessarFlagsAoIniciarTransmissao()
+    {
+        GD.Print($"[TocarNoticiaNoRadio] ProcessarFlagsAoIniciarTransmissao. Total de transmissões hoje: {_noticiasJaTransmitidas.Count}");
+        GD.Print($"[TocarNoticiaNoRadio] GerenciadorDeFlagsNarrativas.Instance: {GerenciadorDeFlagsNarrativas.Instance}");
+        if (GerenciadorDeFlagsNarrativas.Instance == null) return;
+        switch (this._noticiasJaTransmitidas.Count)
+        {
+            case 0:
+                GerenciadorDeFlagsNarrativas.Instance.AtivarFlagCondicional(FlagsCondicionais.PRIMEIRA_MUSICA_DISPARADA_RADIO);
+                break;
+            case 1:
+                GerenciadorDeFlagsNarrativas.Instance.AtivarFlagCondicional(FlagsCondicionais.SEGUNDA_MUSICA_DISPARADA_RADIO);
+                break;
+        }
     }
 }
