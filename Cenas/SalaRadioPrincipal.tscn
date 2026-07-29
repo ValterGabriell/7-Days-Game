@@ -9,15 +9,11 @@
 [ext_resource type="Script" uid="uid://bhlyp6t0jy560" path="res://Scripts/Globais/GerenciadorMesa.cs" id="4_dbo6t"]
 [ext_resource type="PackedScene" uid="uid://do76cstbmgfj8" path="res://Arte/Prototipo/PSX Computer asset pack/PSX Computer asset pack/fbx/computer.fbx" id="4_il6rv"]
 [ext_resource type="PackedScene" uid="uid://cblc8wmuveb28" path="res://Cenas/Utilidades/Monitor.tscn" id="5_il6rv"]
+[ext_resource type="PackedScene" uid="uid://cpdkbjiwwpd5v" path="res://Cenas/Utilidades/Escada.tscn" id="5_x15hw"]
 [ext_resource type="PackedScene" uid="uid://bgef3wuj8jd5y" path="res://Cenas/Utilidades/Radio.tscn" id="6_dmwlx"]
+[ext_resource type="PackedScene" uid="uid://dpb60xf64k83v" path="res://Cenas/Utilidades/Antena.tscn" id="6_tuyos"]
 [ext_resource type="PackedScene" uid="uid://3s4yx3fvr77y" path="res://Cenas/Utilidades/Cadeira.tscn" id="8_awft6"]
 [ext_resource type="PackedScene" uid="uid://q4gtkiy3ugva" path="res://Cenas/Utilidades/CalendarioRotinas.tscn" id="11_ghx4a"]
-
-[sub_resource type="PlaneMesh" id="PlaneMesh_ef0sp"]
-size = Vector2(8, 8)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_exfc0"]
-size = Vector3(8.015099, 0.037597656, 8.312317)
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_exfc0"]
 
@@ -28,83 +24,18 @@ sky_material = SubResource("ProceduralSkyMaterial_exfc0")
 background_mode = 2
 sky = SubResource("Sky_v5wr4")
 
+[sub_resource type="PlaneMesh" id="PlaneMesh_ef0sp"]
+size = Vector2(8, 8)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_exfc0"]
+size = Vector3(8.015099, 0.037597656, 8.312317)
+
 [node name="SalaRadioPrincipal" type="Node3D" unique_id=97208055]
 
 [node name="ConfiguracaoGlobal" type="Node" parent="." unique_id=1369820672]
 
 [node name="CalendarioRotinas" parent="ConfiguracaoGlobal" unique_id=842815142 instance=ExtResource("11_ghx4a")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0787137, 1.0749853, -3.4490328)
-
-[node name="Chao" type="MeshInstance3D" parent="ConfiguracaoGlobal" unique_id=1632632857]
-mesh = SubResource("PlaneMesh_ef0sp")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="ConfiguracaoGlobal/Chao" unique_id=2014523829]
-collision_mask = 2
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="ConfiguracaoGlobal/Chao/StaticBody3D" unique_id=668260349]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.015361786, 0, -0.12503052)
-shape = SubResource("BoxShape3D_exfc0")
-debug_color = Color(0, 0, 15.863711, 1)
-
-[node name="Chao6" type="MeshInstance3D" parent="ConfiguracaoGlobal" unique_id=1639063069]
-transform = Transform3D(-1, -8.742278e-08, 0, 8.742278e-08, -1, 0, 0, 0, 1, 0, 3.1305373, 0)
-mesh = SubResource("PlaneMesh_ef0sp")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="ConfiguracaoGlobal/Chao6" unique_id=1640575830]
-collision_mask = 2
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="ConfiguracaoGlobal/Chao6/StaticBody3D" unique_id=1597389086]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.015361786, 0, -0.12503052)
-shape = SubResource("BoxShape3D_exfc0")
-debug_color = Color(0, 0, 15.863711, 1)
-
-[node name="Chao2" type="MeshInstance3D" parent="ConfiguracaoGlobal" unique_id=625721745]
-transform = Transform3D(1, 0, 0, 0, -4.3711385e-08, 0.38993838, 0, -0.99999994, -1.7044748e-08, 0, 1.5692697, 3.9702606)
-mesh = SubResource("PlaneMesh_ef0sp")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="ConfiguracaoGlobal/Chao2" unique_id=2062581773]
-collision_mask = 2
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="ConfiguracaoGlobal/Chao2/StaticBody3D" unique_id=2032880700]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.015361786, 0, -0.12503052)
-shape = SubResource("BoxShape3D_exfc0")
-debug_color = Color(0, 0, 15.863711, 1)
-
-[node name="Chao5" type="MeshInstance3D" parent="ConfiguracaoGlobal" unique_id=1016421844]
-transform = Transform3D(1, 0, 0, 0, -4.3711385e-08, -0.38993838, 0, 0.99999994, -1.7044748e-08, 0, 1.5692697, -3.9678316)
-mesh = SubResource("PlaneMesh_ef0sp")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="ConfiguracaoGlobal/Chao5" unique_id=347814999]
-collision_mask = 2
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="ConfiguracaoGlobal/Chao5/StaticBody3D" unique_id=1780206769]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.015361786, 0, -0.12503052)
-shape = SubResource("BoxShape3D_exfc0")
-debug_color = Color(0, 0, 15.863711, 1)
-
-[node name="Chao3" type="MeshInstance3D" parent="ConfiguracaoGlobal" unique_id=1789421966]
-transform = Transform3D(-4.371139e-08, -0.99999994, -1.7044748e-08, 0, -4.3711385e-08, 0.38993838, -1, 4.3711385e-08, 7.450496e-16, 3.9711466, 1.5513914, -0.022540689)
-mesh = SubResource("PlaneMesh_ef0sp")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="ConfiguracaoGlobal/Chao3" unique_id=831788240]
-collision_mask = 2
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="ConfiguracaoGlobal/Chao3/StaticBody3D" unique_id=1449825555]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.015361786, 0, -0.12503052)
-shape = SubResource("BoxShape3D_exfc0")
-debug_color = Color(0, 0, 15.863711, 1)
-
-[node name="Chao4" type="MeshInstance3D" parent="ConfiguracaoGlobal" unique_id=1210368258]
-transform = Transform3D(-4.371139e-08, 0.99999994, 1.7044748e-08, 0, -4.3711385e-08, 0.38993838, 1, 4.3711385e-08, 7.450496e-16, -3.9930243, 1.5513914, -0.022540689)
-mesh = SubResource("PlaneMesh_ef0sp")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="ConfiguracaoGlobal/Chao4" unique_id=1682384686]
-collision_mask = 2
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="ConfiguracaoGlobal/Chao4/StaticBody3D" unique_id=1834434871]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.015361786, 0, -0.12503052)
-shape = SubResource("BoxShape3D_exfc0")
-debug_color = Color(0, 0, 15.863711, 1)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="ConfiguracaoGlobal" unique_id=1863400236]
 environment = SubResource("Environment_ef0sp")
@@ -140,15 +71,127 @@ text = "Audiencia
 ClimaSocial"
 
 [node name="ProgressBar" type="ProgressBar" parent="ConfiguracaoGlobal/UIAudiencia" unique_id=1552331017]
-offset_left = 1469.0
-offset_top = 91.0
-offset_right = 1473.0
-offset_bottom = 118.0
+offset_left = 1447.0
+offset_top = 80.0
+offset_right = 1614.0
+offset_bottom = 107.0
+
+[node name="Escada" parent="ConfiguracaoGlobal" unique_id=1710976128 instance=ExtResource("5_x15hw")]
+transform = Transform3D(-0.026860865, 0, 0.99963915, 0, 2.45, 0, -0.99963915, 0, -0.026860865, -0.74196804, 1.0603976, 0.32194662)
+
+[node name="Antena" parent="ConfiguracaoGlobal" unique_id=2120105727 node_paths=PackedStringArray("CameraAntena", "_jogadorEmUso") instance=ExtResource("6_tuyos")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.726985, 4.415974, 0.19930506)
+CameraAntena = NodePath("../Cameras/CameraAntena")
+_jogadorEmUso = NodePath("../../Personagens/PersonagemPrincipal")
+
+[node name="Estruturas" type="Node3D" parent="ConfiguracaoGlobal" unique_id=1467860444]
+
+[node name="Chao" type="MeshInstance3D" parent="ConfiguracaoGlobal/Estruturas" unique_id=1632632857]
+mesh = SubResource("PlaneMesh_ef0sp")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="ConfiguracaoGlobal/Estruturas/Chao" unique_id=2014523829]
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ConfiguracaoGlobal/Estruturas/Chao/StaticBody3D" unique_id=668260349]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.015361786, 0, -0.12503052)
+shape = SubResource("BoxShape3D_exfc0")
+debug_color = Color(0, 0, 15.863711, 1)
+
+[node name="Chao7" type="MeshInstance3D" parent="ConfiguracaoGlobal/Estruturas" unique_id=71989291]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.2198076, 4.3350186, 0)
+mesh = SubResource("PlaneMesh_ef0sp")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="ConfiguracaoGlobal/Estruturas/Chao7" unique_id=1260865712]
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ConfiguracaoGlobal/Estruturas/Chao7/StaticBody3D" unique_id=1475327363]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.015361786, 0, -0.12503052)
+shape = SubResource("BoxShape3D_exfc0")
+debug_color = Color(0, 0, 15.863711, 1)
+
+[node name="Chao6" type="MeshInstance3D" parent="ConfiguracaoGlobal/Estruturas" unique_id=1639063069]
+transform = Transform3D(-0.24028832, -8.742277e-08, 0, 2.1006672e-08, -0.99999994, 0, 0, 0, 1, -2.7780056, 3.1305373, 0)
+mesh = SubResource("PlaneMesh_ef0sp")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="ConfiguracaoGlobal/Estruturas/Chao6" unique_id=1640575830]
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ConfiguracaoGlobal/Estruturas/Chao6/StaticBody3D" unique_id=1597389086]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.015361786, 0, -0.12503052)
+shape = SubResource("BoxShape3D_exfc0")
+debug_color = Color(0, 0, 15.863711, 1)
+
+[node name="Chao8" type="MeshInstance3D" parent="ConfiguracaoGlobal/Estruturas" unique_id=1263773823]
+transform = Transform3D(-0.5153235, -8.742277e-08, 0, 4.5051014e-08, -0.99999994, 0, 0, 0, 1, 1.8405651, 3.1305373, 0)
+mesh = SubResource("PlaneMesh_ef0sp")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="ConfiguracaoGlobal/Estruturas/Chao8" unique_id=1815113302]
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ConfiguracaoGlobal/Estruturas/Chao8/StaticBody3D" unique_id=225352357]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.015361786, 0, -0.12503052)
+shape = SubResource("BoxShape3D_exfc0")
+debug_color = Color(0, 0, 15.863711, 1)
+
+[node name="Chao2" type="MeshInstance3D" parent="ConfiguracaoGlobal/Estruturas" unique_id=625721745]
+transform = Transform3D(1, 0, 0, 0, -4.3711385e-08, 0.38993838, 0, -0.99999994, -1.7044748e-08, 0, 1.5692697, 3.9702606)
+mesh = SubResource("PlaneMesh_ef0sp")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="ConfiguracaoGlobal/Estruturas/Chao2" unique_id=2062581773]
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ConfiguracaoGlobal/Estruturas/Chao2/StaticBody3D" unique_id=2032880700]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.015361786, 0, -0.12503052)
+shape = SubResource("BoxShape3D_exfc0")
+debug_color = Color(0, 0, 15.863711, 1)
+
+[node name="Chao5" type="MeshInstance3D" parent="ConfiguracaoGlobal/Estruturas" unique_id=1016421844]
+transform = Transform3D(1, 0, 0, 0, -4.3711385e-08, -0.38993838, 0, 0.99999994, -1.7044748e-08, 0, 1.5692697, -3.9678316)
+mesh = SubResource("PlaneMesh_ef0sp")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="ConfiguracaoGlobal/Estruturas/Chao5" unique_id=347814999]
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ConfiguracaoGlobal/Estruturas/Chao5/StaticBody3D" unique_id=1780206769]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.015361786, 0, -0.12503052)
+shape = SubResource("BoxShape3D_exfc0")
+debug_color = Color(0, 0, 15.863711, 1)
+
+[node name="Chao3" type="MeshInstance3D" parent="ConfiguracaoGlobal/Estruturas" unique_id=1789421966]
+transform = Transform3D(-4.371139e-08, -0.99999994, -1.7044748e-08, 0, -4.3711385e-08, 0.38993838, -1, 4.3711385e-08, 7.450496e-16, 3.9711466, 1.5513914, -0.022540689)
+mesh = SubResource("PlaneMesh_ef0sp")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="ConfiguracaoGlobal/Estruturas/Chao3" unique_id=831788240]
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ConfiguracaoGlobal/Estruturas/Chao3/StaticBody3D" unique_id=1449825555]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.015361786, 0, -0.12503052)
+shape = SubResource("BoxShape3D_exfc0")
+debug_color = Color(0, 0, 15.863711, 1)
+
+[node name="Chao4" type="MeshInstance3D" parent="ConfiguracaoGlobal/Estruturas" unique_id=1210368258]
+transform = Transform3D(-4.371139e-08, 0.99999994, 1.7044748e-08, 0, -4.3711385e-08, 0.38993838, 1, 4.3711385e-08, 7.450496e-16, -3.9930243, 1.5513914, -0.022540689)
+mesh = SubResource("PlaneMesh_ef0sp")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="ConfiguracaoGlobal/Estruturas/Chao4" unique_id=1682384686]
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ConfiguracaoGlobal/Estruturas/Chao4/StaticBody3D" unique_id=1834434871]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.015361786, 0, -0.12503052)
+shape = SubResource("BoxShape3D_exfc0")
+debug_color = Color(0, 0, 15.863711, 1)
+
+[node name="Cameras" type="Node3D" parent="ConfiguracaoGlobal" unique_id=370361060]
+
+[node name="CameraAntena" type="Camera3D" parent="ConfiguracaoGlobal/Cameras" unique_id=21613315]
+transform = Transform3D(1, 0, 0, 0, 0.9361152, 0.35169348, 0, -0.35169348, 0.9361152, -5.808406, 7.2297873, 2.9643002)
+projection = 1
+size = 4.265
 
 [node name="Personagens" type="Node" parent="." unique_id=938030835]
 
 [node name="PersonagemPrincipal" parent="Personagens" unique_id=1772752661 instance=ExtResource("1_hudp4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7947912, 0.75348556, 3.0642219)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.9287748, 4.742219, 3.0642219)
 
 [node name="MesaDeTrabalho" type="Node3D" parent="." unique_id=726947653 node_paths=PackedStringArray("CameraMesa", "CameraRadio", "CameraComputador", "CameraTelefone", "PontoRadio", "PontoComputador", "PontoTelefone", "Jogador", "UI", "Radio")]
 script = ExtResource("4_dbo6t")

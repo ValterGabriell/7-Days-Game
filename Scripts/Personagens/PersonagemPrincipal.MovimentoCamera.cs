@@ -1,16 +1,13 @@
 using Godot;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Scripts.Personagens.Principal;
 
 public partial class PersonagemPrincipal : CharacterBody3D
 {
     [ExportCategory("Configurações da Câmera")]
-    [Export] public Node3D CameraPivot;         
+    [Export] public Camera3D CameraJogador;
+    [Export] public Node3D CameraPivot;
     [Export] public float SensibilidadeDoMouse = 0.002f;
     [Export] public float SensibilidadeDoControle = 0.03f;
     private float _cameraRotationX = 0.0f;

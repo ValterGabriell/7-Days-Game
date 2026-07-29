@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://cpdkbjiwwpd5v"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ef0sp"]
+size = Vector3(0.26757813, 1.8579102, 0.12451172)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ef0sp"]
+size = Vector3(0.24902344, 1.8515625, 0.087402344)
+
+[node name="Escada" type="StaticBody3D" unique_id=1710976128]
+collision_layer = 32
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=976106224]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.36621094, 0.42895508, -0.43774414)
+shape = SubResource("BoxShape3D_ef0sp")
+debug_color = Color(8.591528, 0, 0, 0.41960785)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=569665230]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.37548828, 0.42578125, -0.45629883)
+mesh = SubResource("BoxMesh_ef0sp")

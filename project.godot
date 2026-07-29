@@ -105,6 +105,8 @@ interagir={
 3d_physics/layer_3="computador_monitor"
 3d_physics/layer_4="cadeira"
 3d_physics/layer_5="calendario"
+3d_physics/layer_6="escada"
+3d_physics/layer_7="antena"
 
 [physics]
 

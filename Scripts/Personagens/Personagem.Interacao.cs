@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace Scripts.Personagens.Principal;
 
+//personagem principal iteracao
 public partial class PersonagemPrincipal : CharacterBody3D
 {
     [ExportCategory("Configuracao de Iteração")]
