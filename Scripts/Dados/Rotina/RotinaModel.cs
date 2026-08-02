@@ -3,10 +3,7 @@ using System.Collections.Generic;
 public enum TipoBlocoRotina
 {
     NOTICIA,
-    PRONUNCIAMENTO,
-    MUSICA,
-    PROPAGANDA,
-    ENTREVISTA
+    MUSICA
 }
 
 public class BlocoRotinaModel

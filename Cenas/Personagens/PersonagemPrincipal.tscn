@@ -31,4 +31,4 @@ current = true
 
 [node name="RayCast3D" type="RayCast3D" parent="PivotCamera" unique_id=186265043]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0.49587226, 0)
-collision_mask = 120
+collision_mask = 248

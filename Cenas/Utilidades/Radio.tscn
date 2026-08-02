@@ -37,6 +37,7 @@ CanvasLayerRadio = NodePath("../CanvasLayer")
 LabelRadio = NodePath("../CanvasLayer/LblTempoDaMusica")
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." unique_id=250027440]
+volume_db = 23.881
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1722797018]
 visible = false

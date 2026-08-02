@@ -1,0 +1,53 @@
+{
+  "VersaoSave": "1.0.0",
+  "DataEHoraSave": "2026-08-01 21:58:38",
+  "EstadoAtualDoJogador": {
+	"DiaAtual": 2,
+	"Reputacao": {
+	  "LealdadeGoverno": 65.0,
+	  "ConfiancaResistencia": 20.0,
+	  "AudienciaPopular": 78.5,
+	  "EsperancaPopulacional": 50.0,
+	  "IrritacaoPopulacional": 15.0
+	},
+	"AdvertenciasGoverno": 1,
+	"FlagsHistoricas": {
+	  "ConheceResistencia": true,
+	  "AjudouRebeldesDia1": false
+	}
+  },
+  "EstatisticasGerais": {
+	"TempoDeInatividadeGeral": 75,
+	"TotalNoticiasTransmitidas": 8,
+	"TotalNoticiasCensuradas": 2,
+	"EscolhasAcumuladas": {
+	  "ORIGINAL": 4,
+	  "OMITIR": 2,
+	  "MENTIR": 1,
+	  "DISTORCER": 1
+	}
+  },
+  "HistoricoDiasConcluidos": [
+	{
+	  "Dia": 1,
+	  "TempoDeInatividadeDoDia": 30,
+	  "ClassificacaoInatividade": "EXCELENTE",
+	  "CumpriturouObrigacoesDoGoverno": true,
+	  "NoticiasEscolhas": [
+		{
+		  "IDNoticia": "noticia_01",
+		  "VariacaoEscolhida": "ORIGINAL"
+		},
+		{
+		  "IDNoticia": "noticia_02",
+		  "VariacaoEscolhida": "OMITIR"
+		}
+	  ],
+	  "ResumoImpactosDoDia": {
+		"DeltaLealdadeGoverno": 3.0,
+		"DeltaConfiancaResistencia": -2.0,
+		"DeltaAudiencia": 9.0
+	  }
+	}
+  ]
+}

@@ -14,6 +14,8 @@
 [ext_resource type="PackedScene" uid="uid://dpb60xf64k83v" path="res://Cenas/Utilidades/Antena.tscn" id="6_tuyos"]
 [ext_resource type="PackedScene" uid="uid://3s4yx3fvr77y" path="res://Cenas/Utilidades/Cadeira.tscn" id="8_awft6"]
 [ext_resource type="PackedScene" uid="uid://q4gtkiy3ugva" path="res://Cenas/Utilidades/CalendarioRotinas.tscn" id="11_ghx4a"]
+[ext_resource type="PackedScene" uid="uid://bgur87spl30ky" path="res://Cenas/Utilidades/Minigames/Pinball/Pinball.tscn" id="15_feelk"]
+[ext_resource type="PackedScene" uid="uid://bsnrqevjiexrg" path="res://Cenas/Utilidades/Minigames/Pinball/BolaPinball.tscn" id="16_bgd4d"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_exfc0"]
 
@@ -191,7 +193,7 @@ size = 4.265
 [node name="Personagens" type="Node" parent="." unique_id=938030835]
 
 [node name="PersonagemPrincipal" parent="Personagens" unique_id=1772752661 instance=ExtResource("1_hudp4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.9287748, 4.742219, 3.0642219)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.9287748, 1.1177015, 3.0642219)
 
 [node name="MesaDeTrabalho" type="Node3D" parent="." unique_id=726947653 node_paths=PackedStringArray("CameraMesa", "CameraRadio", "CameraComputador", "CameraTelefone", "CameraAntena", "PontoRadio", "PontoComputador", "PontoTelefone", "Jogador", "UI", "Radio")]
 script = ExtResource("4_dbo6t")
@@ -284,3 +286,17 @@ offset_right = 1127.0
 offset_bottom = 994.0
 theme_override_font_sizes/font_size = 24
 text = "PRESSIONE E PARA FOCAR"
+
+[node name="Minigames" type="Node3D" parent="." unique_id=127004171]
+visible = false
+
+[node name="Pinball" parent="Minigames" unique_id=1466378862 node_paths=PackedStringArray("Bola", "PontoDeSpawDaBola", "Jogador") instance=ExtResource("15_feelk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.927342, 0, 0)
+Bola = NodePath("../RigidBody3D")
+PontoDeSpawDaBola = NodePath("../Marker3D")
+Jogador = NodePath("../../Personagens/PersonagemPrincipal")
+
+[node name="Marker3D" type="Marker3D" parent="Minigames" unique_id=1806856221]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.667945, 0.3568577, -0.2656163)
+
+[node name="RigidBody3D" parent="Minigames" unique_id=797040873 instance=ExtResource("16_bgd4d")]

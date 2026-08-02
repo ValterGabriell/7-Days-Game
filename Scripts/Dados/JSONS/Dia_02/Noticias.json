@@ -1,0 +1,137 @@
+[
+	{
+		"Id": "noticia_01",
+		"Remetente": "[DIA 02]Secretaria de Saneamento e Recursos Hídricos",
+		"TituloOriginal": "Contaminação e Racionamento de Água no Setor Sul",
+		"TextoOriginal": "Os reservatórios de água do Setor Sul foram contaminados durante os distúrbios de ontem. O suprimento potável restante dura apenas 24 horas e haverá cortes programados.",
+		"EscolhaJogador": "ORIGINAL",
+		"Variacoes": {
+			"ORIGINAL": {
+				"TituloAlterado": "Contaminação e Racionamento de Água no Setor Sul",
+				"TextoParaLer": "Os reservatórios do Setor Sul sofreram danos e o suprimento de água potável dura 24 horas. O racionamento começa imediatamente.",
+				"Impacto": {
+					"VariacaoEsperanca": -8.0,
+					"VariacaoIrritacao": 15.0,
+					"AudienciaGanha": 18.0
+				}
+			},
+			"OMITIR": {
+				"TituloAlterado": "Manutenção Preventiva na Rede de Distribuição de Água",
+				"TextoParaLer": "Informamos que manutenções de rotina na rede hídrica do Setor Sul podem causar oscilações temporárias no fluxo de água hoje.",
+				"Impacto": {
+					"VariacaoEsperanca": 0.0,
+					"VariacaoIrritacao": 2.0,
+					"AudienciaGanha": 3.0
+				}
+			},
+			"MENTIR": {
+				"TituloAlterado": "Modernização da Rede de Água do Setor Sul Concluída",
+				"TextoParaLer": "A nova estação de purificação entrou em operação no Setor Sul, garantindo água limpa e abundante para todas as famílias.",
+				"Impacto": {
+					"VariacaoEsperanca": 18.0,
+					"VariacaoIrritacao": -12.0,
+					"AudienciaGanha": 14.0
+				}
+			},
+			"DISTORCER": {
+				"TituloAlterado": "Governo Envenena Reservatório do Setor Sul para Contenção",
+				"TextoParaLer": "Relatórios confirmam que o Estado contaminou propositalmente a água do Setor Sul para enfraquecer o movimento comunitário.",
+				"Impacto": {
+					"VariacaoEsperanca": -22.0,
+					"VariacaoIrritacao": 30.0,
+					"AudienciaGanha": 25.0
+				}
+			}
+		}
+	},
+	{
+		"Id": "noticia_02",
+		"Remetente": "[DIA 02]Ministério do Abastecimento Popular",
+		"TituloOriginal": "Redução das Cotas de Proteínas e Grãos nas Filas Oficiais",
+		"TextoOriginal": "Devido ao bloqueio das rotas de transporte regionais, os postos estatais de distribuição de comida entregarão metade da cota diária por família.",
+		"EscolhaJogador": "ORIGINAL",
+		"Variacoes": {
+			"ORIGINAL": {
+				"TituloAlterado": "Redução Temporária nas Cotas de Ração Alimentar",
+				"TextoParaLer": "Problemas de logística nas estradas forçaram a redução temporária de 50% na cota alimentar diária retirada nos postos estatais.",
+				"Impacto": {
+					"VariacaoEsperanca": -10.0,
+					"VariacaoIrritacao": 18.0,
+					"AudienciaGanha": 15.0
+				}
+			},
+			"OMITIR": {
+				"TituloAlterado": "Reorganização Operacional dos Postos de Abastecimento",
+				"TextoParaLer": "Os postos de distribuição de alimentos operam hoje com horários estendidos para atender a demanda das famílias.",
+				"Impacto": {
+					"VariacaoEsperanca": 1.0,
+					"VariacaoIrritacao": 1.0,
+					"AudienciaGanha": 2.0
+				}
+			},
+			"MENTIR": {
+				"TituloAlterado": "Garantia de Abastecimento Duplo nas Cestas Básicas",
+				"TextoParaLer": "O Ministério do Abastecimento anuncia a chegada de comboios especiais e garante comida extra para todas as famílias cadastradas.",
+				"Impacto": {
+					"VariacaoEsperanca": 16.0,
+					"VariacaoIrritacao": -10.0,
+					"AudienciaGanha": 12.0
+				}
+			},
+			"DISTORCER": {
+				"TituloAlterado": "Elite Confisca Alimentos e Deixa Restos para a População",
+				"TextoParaLer": "Caminhões do Governo foram vistos desviando toneladas de alimentos das filas populares direto para os bunkers da administração central.",
+				"Impacto": {
+					"VariacaoEsperanca": -20.0,
+					"VariacaoIrritacao": 28.0,
+					"AudienciaGanha": 22.0
+				}
+			}
+		}
+	},
+	{
+		"Id": "noticia_03",
+		"Remetente": "[DIA 02]Comando Geral de Segurança Urbana",
+		"TituloOriginal": "Decreto de Toque de Recolher Noturno nas Áreas Comerciais",
+		"TextoOriginal": "Devido ao saque de depósitos de suprimentos na madrugada, está proibida a circulação de civis entre 20h e 06h.",
+		"EscolhaJogador": "ORIGINAL",
+		"Variacoes": {
+			"ORIGINAL": {
+				"TituloAlterado": "Toque de Recolher Decretado nas Zonas Comerciais",
+				"TextoParaLer": "Para conter saques a armazéns, as autoridades decretaram toque de recolher obrigatório a partir das 20h na região central.",
+				"Impacto": {
+					"VariacaoEsperanca": -5.0,
+					"VariacaoIrritacao": 12.0,
+					"AudienciaGanha": 10.0
+				}
+			},
+			"OMITIR": {
+				"TituloAlterado": "Reforço no Patrulhamento das Vias Principais",
+				"TextoParaLer": "As forças de segurança intensificaram a presença nas ruas centrais para garantir a ordem pública durante o dia de hoje.",
+				"Impacto": {
+					"VariacaoEsperanca": 0.0,
+					"VariacaoIrritacao": 0.0,
+					"AudienciaGanha": 1.0
+				}
+			},
+			"MENTIR": {
+				"TituloAlterado": "Medida de Proteção Especial para Tranquilidade dos Moradores",
+				"TextoParaLer": "Um novo protocolo de segurança foi implementado para que as famílias possam descansar tranquilas em suas residências sem ameaça de saques.",
+				"Impacto": {
+					"VariacaoEsperanca": 10.0,
+					"VariacaoIrritacao": -8.0,
+					"AudienciaGanha": 8.0
+				}
+			},
+			"DISTORCER": {
+				"TituloAlterado": "Estado Prepara Caçada Humana com Toque de Recolher",
+				"TextoParaLer": "As forças policiais preparam operações truculentas com autorização para disparar contra qualquer cidadão que sair de casa à noite.",
+				"Impacto": {
+					"VariacaoEsperanca": -18.0,
+					"VariacaoIrritacao": 25.0,
+					"AudienciaGanha": 20.0
+				}
+			}
+		}
+	}
+]

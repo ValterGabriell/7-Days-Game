@@ -1,12 +1,13 @@
 using Godot;
+using Scripts.SaveSystem;
 using System;
 
 namespace fiveyears3.Scripts.Globais
 {
     public partial class GerenciadorPassagemDoTempo : Node
     {
-        public enum EstadoDoDia { Parado, EmAndamento}
-        public enum DiaCorrente { Primeiro, Segundo, Terceiro, Quarto, Quinto, Sexto, Setimo}
+        public enum EstadoDoDia { Parado, EmAndamento }
+        public enum DiaCorrente { Primeiro, Segundo, Terceiro, Quarto, Quinto, Sexto, Setimo }
         public static GerenciadorPassagemDoTempo Instance { get; private set; }
 
         public event Action<int> DiaAlterado;
@@ -14,6 +15,8 @@ namespace fiveyears3.Scripts.Globais
 
         public EstadoDoDia EstadoAtual { get; private set; } = EstadoDoDia.Parado;
         public DiaCorrente DiaCorrenteAtual { get; private set; } = DiaCorrente.Primeiro;
+
+        public double TempoEmSilencioNoDiaAtual { get; set; } = 0.0;
 
         public int DiaAtual { get; private set; } = 1;
 
@@ -31,7 +34,7 @@ namespace fiveyears3.Scripts.Globais
 
         public void AvancarDia()
         {
-            DiaAtual++;
+            FinalizarDiaDeTrabalho();
             DiaAlterado?.Invoke(DiaAtual);
         }
 
@@ -41,9 +44,10 @@ namespace fiveyears3.Scripts.Globais
             DiaAlterado?.Invoke(DiaAtual);
         }
 
-        public void IniciarHorarioDeTrabalho()
+        public void IniciarDiaDeTrabalho()
         {
-            if(DiaAtual == 1)
+            GD.Print($"[GerenciadorPassagemDoTempo] Iniciando o dia {DiaAtual} de trabalho.");
+            if (DiaAtual == 1)
             {
                 GerenciadorDeAudiencia.Instance?.RegistrarImpactoAoIniciarOPrimeiroDia();
             }
@@ -51,11 +55,55 @@ namespace fiveyears3.Scripts.Globais
             HorarioDeTrabalhoIniciado?.Invoke();
         }
 
-        public void FinalizarHorarioDeTrabalho()
+        public async void FinalizarDiaDeTrabalho()
         {
+            GD.Print($"[GerenciadorPassagemDoTempo] Finalizando o dia {DiaAtual} de trabalho.");
             EstadoAtual = EstadoDoDia.Parado;
+
+            // 1. Guarda o dia que acabou de ser concluído antes de incrementar
+            int diaConcluidoIndex = this.DiaAtual;
+
+            // 2. Calcula os impactos acumulados no GerenciadorDeConfiabilidade
+            var resumoImpactos = GerenciadorDeConfiabilidade.Instance != null
+                ? GerenciadorDeConfiabilidade.Instance.GerarResumoImpactosDoDia()
+                : ResumoImpactosSave.CriarNovoResumoImpactos(0f, 0f, 0f);
+
+            // 3. Cria a estrutura do dia concluído
+            var escolhasDoDia = GerenciadorDeSave.Instance.VariavelAuxiliarQueVaiGuardarAsEscolhasFeitasEmUmDeterminadoDia;
+
+            var novoDiaConcluido = DiaConcluidoSave.CriarNovoDiaConcluido(
+                diaConcluidoIndex,
+                (float)TempoEmSilencioNoDiaAtual,
+                escolhasDoDia,
+                resumoImpactos
+            );
+
+            // 4. Obtém o Save ativo ou cria um novo se ainda não existir
+            DadosSave save = GerenciadorDeSave.Instance.SaveAtual ?? DadosSave.CriarNovoSave();
+
+            // 5. Adiciona o dia concluído ao histórico
+            save.HistoricoDiasConcluidos.Add(novoDiaConcluido);
+
+            // 6. Atualiza o estado do jogador para o próximo dia no Save
             this.DiaAtual += 1;
-            DiaAlterado?.Invoke(DiaAtual);
+            save.EstadoAtualDoJogador.DiaAtual = this.DiaAtual;
+
+            // Atualiza as reputações globais acumuladas com o delta do dia
+            save.EstadoAtualDoJogador.Reputacao.LealdadeGoverno += resumoImpactos.DeltaLealdadeGoverno;
+            save.EstadoAtualDoJogador.Reputacao.ConfiancaResistencia += resumoImpactos.DeltaConfiancaResistencia;
+            save.EstadoAtualDoJogador.Reputacao.AudienciaPopular += resumoImpactos.DeltaAudiencia;
+
+            // 7. Notifica a mudança de dia para o restante do jogo
+            DiaAlterado?.Invoke(this.DiaAtual);
+
+            // 8. Salva o progresso em disco (SLOT_1)
+            GerenciadorDeSave.Instance.SalvarJogo("SLOT_1", save);
+
+            // 9. Reseta o acúmulo de tempo em silêncio e deltas para o próximo dia
+            TempoEmSilencioNoDiaAtual = 0;
+            GerenciadorDeConfiabilidade.Instance?.ResetarDeltasDoDia();
+            GerenciadorDeNoticias.Instance?.ResetarValoresDeNoticiasEMusicasQueDevemSerTransmitidasNoDia();
+            GD.Print($"[GerenciadorPassagemDoTempo] Dia {DiaAtual} finalizado.");
         }
     }
 }

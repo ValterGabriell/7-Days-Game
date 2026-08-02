@@ -210,7 +210,7 @@ public partial class TocarNoticiaNoRadio : Node
                     this._estadoAtualDaTransmissao == EstadoDaTransmissao.Nenhuma)
         {
             this._estadoAtualDaTransmissao = EstadoDaTransmissao.TransmitindoMusica; // FIX: ajustado para música
-            GerenciadorPassagemDoTempo.Instance.IniciarHorarioDeTrabalho();
+            GerenciadorPassagemDoTempo.Instance.IniciarDiaDeTrabalho();
         }
     }
 
@@ -220,7 +220,7 @@ public partial class TocarNoticiaNoRadio : Node
                     this._estadoAtualDaTransmissao == EstadoDaTransmissao.Nenhuma)
         {
             this._estadoAtualDaTransmissao = EstadoDaTransmissao.TransmitindoNoticia;
-            GerenciadorPassagemDoTempo.Instance.IniciarHorarioDeTrabalho();
+            GerenciadorPassagemDoTempo.Instance.IniciarDiaDeTrabalho();
         }
     }
 

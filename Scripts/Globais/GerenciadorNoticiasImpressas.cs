@@ -110,6 +110,7 @@ namespace fiveyears3.Scripts.Globais
             MusicaEmTransmissao = null;
             EstadoAtualTransmissao = EstadoTransmissaoNoticia.NaoPodeTransmitirPoisEstaEmTransmissao;
             NoticiaTransmitida?.Invoke(noticia);
+            GerenciadorDeNoticias.Instance.AtualizarValoresDeNoticiasQueForamTransmitidasNoDiaAtual();
         }
 
         public bool DesfazerImpressaoNoticia(NoticiaModel noticia)
@@ -167,6 +168,7 @@ namespace fiveyears3.Scripts.Globais
             NoticiaEmTransmissao = null;
             EstadoAtualTransmissao = EstadoTransmissaoNoticia.NaoPodeTransmitirPoisEstaEmTransmissao;
             MusicaTransmitida?.Invoke(musica);
+            GerenciadorDeNoticias.Instance.AtualizarValoresDeMusicasQueForamTransmitidasNoDiaAtual();
         }
 
         private void OnNoticiaFinalizadaTransmissao(NoticiaModel model)
@@ -177,6 +179,7 @@ namespace fiveyears3.Scripts.Globais
             EstadoAtualTransmissao = EstadoTransmissaoNoticia.PodeTransmitir;
             NoticiasTransmitidasDoDia.Add(model);
             NoticiaEmTransmissao = null;
+            GerenciadorDeConfiabilidade.Instance?.ProcessarImpactoNoticia(model);
         }
 
         private void OnMusicaFinalizadaTransmissao(MusicaModel model)

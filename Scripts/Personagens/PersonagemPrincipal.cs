@@ -6,7 +6,7 @@ namespace Scripts.Personagens.Principal;
 // Personagem principal - Movimento do Corpo
 public partial class PersonagemPrincipal : CharacterBody3D
 {
-    public enum EstadoJogador { Normal, Sentado, InteragindoAntena }
+    public enum EstadoJogador { Normal, Sentado, InteragindoAntena, InteragindoPinball }
     public enum SubEstadoMesa { Nenhum, Computador, Radio, Telefone }
     private const string ESCADA_NOME = "Escada";
 
@@ -24,7 +24,7 @@ public partial class PersonagemPrincipal : CharacterBody3D
         GD.Print($"Alternando estado do jogador de {EstadoAtual} para {novoEstado}");
         EstadoAtual = novoEstado;
 
-        if (EstadoAtual == EstadoJogador.Sentado || EstadoAtual == EstadoJogador.InteragindoAntena)
+        if (JogadorEstaInteragindoComAlgumaCoisa())
         {
             Velocity = Vector3.Zero;
         }
@@ -42,7 +42,8 @@ public partial class PersonagemPrincipal : CharacterBody3D
 
     public override void _Input(InputEvent @event)
     {
-        if (EstadoAtual == EstadoJogador.Sentado || EstadoAtual == EstadoJogador.InteragindoAntena) return;
+        if (JogadorEstaInteragindoComAlgumaCoisa()) 
+            return;
 
         MoveCameraComMouse(@event);
         TentouInteragirComAlgoIterativo(@event);
@@ -50,7 +51,8 @@ public partial class PersonagemPrincipal : CharacterBody3D
 
     public override void _PhysicsProcess(double delta)
     {
-        if (EstadoAtual == EstadoJogador.Sentado || EstadoAtual == EstadoJogador.InteragindoAntena) return;
+        if (JogadorEstaInteragindoComAlgumaCoisa())
+            return;
 
         Vector3 velocity = Velocity;
         MoveCameraComControle();
@@ -89,6 +91,11 @@ public partial class PersonagemPrincipal : CharacterBody3D
 
         Velocity = velocity;
         MoveAndSlide();
+    }
+
+    private bool JogadorEstaInteragindoComAlgumaCoisa()
+    {
+        return EstadoAtual == EstadoJogador.Sentado || EstadoAtual == EstadoJogador.InteragindoAntena || EstadoAtual == EstadoJogador.InteragindoPinball;
     }
 
     private bool EstaNaEscada(float delta)

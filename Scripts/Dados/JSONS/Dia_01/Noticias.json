@@ -1,7 +1,7 @@
 [
 	{
 		"Id": "noticia_01",
-		"Remetente": "Ministério do Abastecimento",
+		"Remetente": "[DIA 01]Ministério do Abastecimento",
 		"TituloOriginal": "Aumento na Ração Diária de Grãos",
 		"TextoOriginal": "A distribuição pública de grãos terá um acréscimo de 100g por família a partir deste mês.",
 		"EscolhaJogador": "ORIGINAL",
@@ -46,7 +46,7 @@
 	},
 	{
 		"Id": "noticia_02",
-		"Remetente": "Secretaria de Comunicação Estatal",
+		"Remetente": "[DIA 01]Secretaria de Comunicação Estatal",
 		"TituloOriginal": "Propaganda: Campanha do Povo Unido",
 		"TextoOriginal": "A força da nossa nação vem do trabalho árduo e da lealdade aos ideais do Estado.",
 		"EscolhaJogador": "ORIGINAL",
@@ -85,51 +85,6 @@
 					"VariacaoEsperanca": -15.0,
 					"VariacaoIrritacao": 22.0,
 					"AudienciaGanha": 18.0
-				}
-			}
-		}
-	},
-	{
-		"Id": "noticia_03",
-		"Remetente": "Gabinete do Supremo Comando",
-		"TituloOriginal": "Pronunciamento: Discurso de Segurança Nacional",
-		"TextoOriginal": "Medidas rígidas estão sendo tomadas para erradicar traidores e garantir a paz interna.",
-		"EscolhaJogador": "ORIGINAL",
-		"Variacoes": {
-			"ORIGINAL": {
-				"TituloAlterado": "Pronunciamento: Discurso de Segurança Nacional",
-				"TextoParaLer": "Medidas rígidas estão sendo tomadas para erradicar traidores e garantir a paz interna.",
-				"Impacto": {
-					"VariacaoEsperanca": -3.0,
-					"VariacaoIrritacao": 6.0,
-					"AudienciaGanha": 15.0
-				}
-			},
-			"OMITIR": {
-				"TituloAlterado": "Comunicado do Gabinete Executivo",
-				"TextoParaLer": "O governo segue monitorando a situação das províncias e aplicando diretrizes normais.",
-				"Impacto": {
-					"VariacaoEsperanca": 0.0,
-					"VariacaoIrritacao": 1.0,
-					"AudienciaGanha": 2.0
-				}
-			},
-			"MENTIR": {
-				"TituloAlterado": "Pronunciamento: Anúncio do Perdão Geral e Harmonia",
-				"TextoParaLer": "O Comandante Supremo anuncia anistia a todos os rebeldes e a criação de novos direitos civis.",
-				"Impacto": {
-					"VariacaoEsperanca": 20.0,
-					"VariacaoIrritacao": -15.0,
-					"AudienciaGanha": 25.0
-				}
-			},
-			"DISTORCER": {
-				"TituloAlterado": "Pronunciamento: Declaração de Guerra à População",
-				"TextoParaLer": "O exército recebeu ordens para tratar qualquer opositor como inimigo de guerra a partir de hoje.",
-				"Impacto": {
-					"VariacaoEsperanca": -25.0,
-					"VariacaoIrritacao": 30.0,
-					"AudienciaGanha": 30.0
 				}
 			}
 		}

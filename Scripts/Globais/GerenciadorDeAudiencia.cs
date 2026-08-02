@@ -49,6 +49,8 @@ namespace fiveyears3.Scripts.Globais
 
         public void RegistrarImpactoCasoFiqueSilencioDuranteATransmissaoJaIniciada(double tempoDeSilencio)
         {
+            GerenciadorPassagemDoTempo.Instance.TempoEmSilencioNoDiaAtual = tempoDeSilencio;
+
             double audienciaAnterior = AudienciaAtual;
 
             // Perde ~0.833% de audiência por segundo de silêncio.

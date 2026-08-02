@@ -1,0 +1,169 @@
+{
+  "Dia": 1,
+  "TituloResumo": "Relatório de Impacto - Dia 1",
+  "Noticias": [
+	{
+	  "NoticiaId": "noticia_01",
+	  "TituloOriginal": "Aumento na Ração Diária de Grãos",
+	  "Escolhas": {
+		"ORIGINAL": {
+		  "TituloExibido": "Aumento na Ração Diária de Grãos",
+		  "TextoResumoImpacto": "A população recebeu a notícia do acréscimo de alimentos com otimismo moderado. As filas nos postos de distribuição fluíram de forma pacífica.",
+		  "FeedbackGoverno": "O Ministério do Abastecimento aprovou a divulgação transparente das novas cotas de grãos.",
+		  "FeedbackResistencia": "A oposição considera que você apenas serviu de alto-falante para as migalhas oferecidas pelo governo.",
+		  "Impacto": {
+			"VariacaoEsperanca": 5.0,
+			"VariacaoIrritacao": -2.0,
+			"AudienciaGanha": 8.0,
+			"AjusteLealdadeGoverno": 5,
+			"AjusteConfiancaResistencia": 0
+		  }
+		},
+		"OMITIR": {
+		  "TituloExibido": "Ajuste na Tabela de Grãos",
+		  "TextoResumoImpacto": "A notícia passou despercebida pela maior parte dos ouvintes. A população continuou sem saber do aumento na distribuição de alimentos.",
+		  "FeedbackGoverno": "A censura notou a suavização do anúncio oficial, mas considerou aceitável por não gerar alarde.",
+		  "FeedbackResistencia": "A resistência notou que você evitou fazer propaganda direta sobre as benfeitorias do Estado.",
+		  "Impacto": {
+			"VariacaoEsperanca": 0.0,
+			"VariacaoIrritacao": 0.0,
+			"AudienciaGanha": 1.0,
+			"AjusteLealdadeGoverno": -2,
+			"AjusteConfiancaResistencia": 2
+		  }
+		},
+		"MENTIR": {
+		  "TituloExibido": "Fim da Escassez de Alimentos na Província",
+		  "TextoResumoImpacto": "Sua declaração gerou euforia imediata nas ruas, provocando corridas aos armazéns estatais. O choque de realidade ao encontrarem racionamento pode gerar problemas futuros.",
+		  "FeedbackGoverno": "O Ministério aprovou o pico de esperança popular, embora patrulhas tenham tido trabalho com multidões nos armazéns.",
+		  "FeedbackResistencia": "A oposição repudia a criação de falsas expectativas que iludem os cidadãos esfomeados.",
+		  "Impacto": {
+			"VariacaoEsperanca": 15.0,
+			"VariacaoIrritacao": -10.0,
+			"AudienciaGanha": 12.0,
+			"AjusteLealdadeGoverno": 10,
+			"AjusteConfiancaResistencia": -5
+		  }
+		},
+		"DISTORCER": {
+		  "TituloExibido": "Sobras da Elite São Repassadas à População",
+		  "TextoResumoImpacto": "Acusações de corrupção incendiaram a raiva da população contra os oficiais do Ministério. Protestos isolados eclodiram perto do centro de suprimentos.",
+		  "FeedbackGoverno": "ALERTA DA CENSURA: Seu discurso incentivou a insubordinação civil contra o Ministério do Abastecimento.",
+		  "FeedbackResistencia": "Os rebeldes comemoraram a exposição das injustiças estatais na rádio aberta.",
+		  "Impacto": {
+			"VariacaoEsperanca": -12.0,
+			"VariacaoIrritacao": 18.0,
+			"AudienciaGanha": 20.0,
+			"AjusteLealdadeGoverno": -20,
+			"AjusteConfiancaResistencia": 15
+		  }
+		}
+	  }
+	},
+	{
+	  "NoticiaId": "noticia_02",
+	  "TituloOriginal": "Propaganda: Campanha do Povo Unido",
+	  "Escolhas": {
+		"ORIGINAL": {
+		  "TituloExibido": "Propaganda: Campanha do Povo Unido",
+		  "TextoResumoImpacto": "A transmissão do boletim patriótico manteve o tom de normalidade e controle desejado pelas autoridades na província.",
+		  "FeedbackGoverno": "A Secretaria de Comunicação elogiou sua postura alinhada com as diretrizes do regime.",
+		  "FeedbackResistencia": "Para os rebeldes, sua rádio continua sendo apenas um veículo de alienação de massas.",
+		  "Impacto": {
+			"VariacaoEsperanca": 4.0,
+			"VariacaoIrritacao": -1.0,
+			"AudienciaGanha": 5.0,
+			"AjusteLealdadeGoverno": 8,
+			"AjusteConfiancaResistencia": -3
+		  }
+		},
+		"OMITIR": {
+		  "TituloExibido": "Informativo Institucional N° 12",
+		  "TextoResumoImpacto": "Ao burocratizar o comunicado, a propaganda perdeu todo o impacto emocional e a população ignorou o apelo nacionalista.",
+		  "FeedbackGoverno": "O Gabinete de Censura considerou sua leitura fria e desprovida de fervor patriótico.",
+		  "FeedbackResistencia": "A oposição apreciou a neutralização da carga ideológica da propaganda.",
+		  "Impacto": {
+			"VariacaoEsperanca": 0.0,
+			"VariacaoIrritacao": 0.0,
+			"AudienciaGanha": 1.0,
+			"AjusteLealdadeGoverno": -5,
+			"AjusteConfiancaResistencia": 5
+		  }
+		},
+		"MENTIR": {
+		  "TituloExibido": "Propaganda: Prosperidade Inabalável da Nação",
+		  "TextoResumoImpacto": "Os relatórios triunfalistas agradaram os setores leais ao governo, embora a discrepância com a vida real tenha levantado dúvidas em parte do público.",
+		  "FeedbackGoverno": "A propaganda ufanista foi amplamente celebrada pelos censores do Estado.",
+		  "FeedbackResistencia": "Os insurgentes criticam abertamente a propagação de mitos ufanistas em meio à crise.",
+		  "Impacto": {
+			"VariacaoEsperanca": 10.0,
+			"VariacaoIrritacao": -8.0,
+			"AudienciaGanha": 10.0,
+			"AjusteLealdadeGoverno": 12,
+			"AjusteConfiancaResistencia": -8
+		  }
+		},
+		"DISTORCER": {
+		  "TituloExibido": "Propaganda: Lavagem Cerebral e Exploração",
+		  "TextoResumoImpacto": "Seus comentários antiestatais geraram choque nos ouvintes e pânico entre os funcionários da emissora.",
+		  "FeedbackGoverno": "GRAVE: O Ministério da Verdade classificou sua transmissão como ato direto de traição à nação.",
+		  "FeedbackResistencia": "A liderança rebelde considera você uma voz valiosa na luta contra a manipulação estatal.",
+		  "Impacto": {
+			"VariacaoEsperanca": -15.0,
+			"VariacaoIrritacao": 22.0,
+			"AudienciaGanha": 18.0,
+			"AjusteLealdadeGoverno": -25,
+			"AjusteConfiancaResistencia": 20
+		  }
+		}
+	  }
+	}
+  ],
+  "ImpactoTempoInatividade": {
+	"ConfiguracaoLimites": {
+	  "SegundosInatividadeTolerada": 30,
+	  "PerdaAudienciaPorSegundo": 0.5,
+	  "PenalidadeLealdadeGovernoPorSegundo": 0.2,
+	  "GanhoConfiancaResistenciaPorSegundo": 0.1
+	},
+	"faixas_impacto": [
+	  {
+		"FaixaId": "EXCELENTE",
+		"TempoSegundosMaximo": 15,
+		"TextoResumoImpacto": "O sinal da rádio permaneceu ativo e fluido durante todo o turno. A transmissão foi contínua e sem falhas.",
+		"FeedbackGoverno": "A Secretaria de Comunicação elogiou o profissionalismo e a pontualidade da emissora.",
+		"FeedbackResistencia": "A oposição não encontrou brechas na sua programação para interceptar a frequência.",
+		"AjusteLealdadeGoverno": 5,
+		"AjusteConfiancaResistencia": 0
+	  },
+	  {
+		"FaixaId": "MODERADO",
+		"TempoSegundosMaximo": 60,
+		"TextoResumoImpacto": "Pausas curtas e chiados na frequência deixaram os ouvintes momentaneamente confusos, reduzindo ligeiramente a sintonização.",
+		"FeedbackGoverno": "O fiscal de radiodifusão emitiu uma nota de observação sobre pequenos momentos de silêncio na grade.",
+		"FeedbackResistencia": "Breves momentos de silêncio permitiram que transmissões piratas de rádio amadora fossem captadas no distrito.",
+		"AjusteLealdadeGoverno": -5,
+		"AjusteConfiancaResistencia": 5
+	  },
+	  {
+		"FaixaId": "CRITICO",
+		"TempoSegundosMaximo": 9999,
+		"TextoResumoImpacto": "Longos períodos de silêncio estático causaram debandada geral da audiência. O público assumiu que a rádio havia sido tirada do ar.",
+		"FeedbackGoverno": "ALERTA DE NEGLIGÊNCIA: A censura acusou a estação de incitar dúvida e abandono de posto de trabalho pelo silêncio prolongado.",
+		"FeedbackResistencia": "A resistência aproveitou o vácuo de sinal para operar transmissões de emergência na mesma frequência.",
+		"AjusteLealdadeGoverno": -25,
+		"AjusteConfiancaResistencia": 15
+	  }
+	]
+  },
+  "AvaliacaoCumprimentoProgramacao": {
+	"SeguiuOrdemSugerida": {
+	  "TextoImpacto": "A sequência dos blocos atendeu aos padrões de modulação de audiência exigidos pela censura.",
+	  "AjusteLealdadeGoverno": 5
+	},
+	"ViolouProgramacaoObrigatoria": {
+	  "TextoImpacto": "A omissão de conteúdos obrigatórios gerou notificações de infração no relatório do inspetor estatal.",
+	  "AjusteLealdadeGoverno": -15
+	}
+  }
+}
