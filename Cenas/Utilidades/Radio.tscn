@@ -1,23 +1,22 @@
 [gd_scene format=3 uid="uid://bgef3wuj8jd5y"]
 
 [ext_resource type="Script" uid="uid://djcu2jhupab4g" path="res://Scripts/Utilidades/Radio.cs" id="1_dm8lf"]
-[ext_resource type="ArrayMesh" uid="uid://p5qxq5oq0w1q" path="res://Arte/Prototipo/radio/radio.obj" id="1_u7ahc"]
+[ext_resource type="PackedScene" uid="uid://7lr4h3mo44wq" path="res://Arte/Modelos3D/Radio.gltf" id="2_swqt4"]
 [ext_resource type="Script" uid="uid://cgodtm7h2ufeu" path="res://Scripts/Utilidades/UiNoticiasRadio.cs" id="3_1e08p"]
 [ext_resource type="Script" uid="uid://xlyvn8pn14jl" path="res://Scripts/Utilidades/TocarNoticiaNoRadio.cs" id="4_swqt4"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ef0sp"]
-size = Vector3(0.21435547, 0.14257813, 0.16503906)
+size = Vector3(0.5037842, 0.14257813, 0.7531738)
 
 [node name="Radio" type="StaticBody3D" unique_id=1314951989 node_paths=PackedStringArray("ListaNoticiasRadios")]
 script = ExtResource("1_dm8lf")
 ListaNoticiasRadios = NodePath("UI_PROVISORIA_NOTICIAS/ItemList")
 
-[node name="Radio" type="MeshInstance3D" parent="." unique_id=1274633832]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0028175116, 0, -0.053162813)
-mesh = ExtResource("1_u7ahc")
+[node name="blockbench_export" parent="." unique_id=1199505390 instance=ExtResource("2_swqt4")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1622038236]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.008385539, 0.056724936, -0.05795811)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0074700117, 0.056724936, -0.07614659)
 shape = SubResource("BoxShape3D_ef0sp")
 
 [node name="UI_PROVISORIA_NOTICIAS" type="CanvasLayer" parent="." unique_id=864340132 node_paths=PackedStringArray("ListaNoticias")]

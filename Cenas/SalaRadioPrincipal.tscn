@@ -4,7 +4,6 @@
 [ext_resource type="PackedScene" uid="uid://de05wlqki0ysv" path="res://Cenas/Personagens/PersonagemPrincipal.tscn" id="1_hudp4"]
 [ext_resource type="PackedScene" uid="uid://dcwtuba2ktbea" path="res://Cenas/Globais/UI/ConfiguracaoDeTela.tscn" id="2_3iwg5"]
 [ext_resource type="PackedScene" uid="uid://50iioxb1e5pe" path="res://Cenas/Utilidades/InterfaceOS_PC.tscn" id="2_ncvnv"]
-[ext_resource type="PackedScene" uid="uid://r1idoxctvvqp" path="res://Arte/Prototipo/PSX Computer asset pack/PSX Computer asset pack/fbx/desk.fbx" id="3_qjbho"]
 [ext_resource type="Script" uid="uid://duiytba1bj83v" path="res://Scripts/UI/UiAudiencia.cs" id="4_1q5f8"]
 [ext_resource type="Script" uid="uid://bhlyp6t0jy560" path="res://Scripts/Globais/GerenciadorMesa.cs" id="4_dbo6t"]
 [ext_resource type="PackedScene" uid="uid://do76cstbmgfj8" path="res://Arte/Prototipo/PSX Computer asset pack/PSX Computer asset pack/fbx/computer.fbx" id="4_il6rv"]
@@ -13,9 +12,13 @@
 [ext_resource type="PackedScene" uid="uid://bgef3wuj8jd5y" path="res://Cenas/Utilidades/Radio.tscn" id="6_dmwlx"]
 [ext_resource type="PackedScene" uid="uid://dpb60xf64k83v" path="res://Cenas/Utilidades/Antena.tscn" id="6_tuyos"]
 [ext_resource type="PackedScene" uid="uid://3s4yx3fvr77y" path="res://Cenas/Utilidades/Cadeira.tscn" id="8_awft6"]
+[ext_resource type="PackedScene" uid="uid://nl487geherjc" path="res://Arte/Modelos3D/MesaTrabalho/scene.gltf" id="9_bgd4d"]
 [ext_resource type="PackedScene" uid="uid://q4gtkiy3ugva" path="res://Cenas/Utilidades/CalendarioRotinas.tscn" id="11_ghx4a"]
 [ext_resource type="PackedScene" uid="uid://bgur87spl30ky" path="res://Cenas/Utilidades/Minigames/Pinball/Pinball.tscn" id="15_feelk"]
 [ext_resource type="PackedScene" uid="uid://bsnrqevjiexrg" path="res://Cenas/Utilidades/Minigames/Pinball/BolaPinball.tscn" id="16_bgd4d"]
+[ext_resource type="Texture2D" uid="uid://dbpogmyg2w7hw" path="res://Arte/Texturas/TexturaEspuma/AcousticFoam003.png" id="17_8p6dl"]
+[ext_resource type="Texture2D" uid="uid://b22a2fsnlkf38" path="res://Arte/Texturas/TexturaEspuma/AcousticFoam003_1K-JPG_NormalDX.jpg" id="18_c40mv"]
+[ext_resource type="Texture2D" uid="uid://b1bqmfnsyq3b0" path="res://Arte/Texturas/TexturaEspuma/AcousticFoam003_1K-JPG_Metalness.jpg" id="19_pg14x"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_exfc0"]
 
@@ -31,6 +34,18 @@ size = Vector2(8, 8)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_exfc0"]
 size = Vector3(8.015099, 0.037597656, 8.312317)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v5wr4"]
+albedo_texture = ExtResource("17_8p6dl")
+roughness_texture = ExtResource("19_pg14x")
+normal_enabled = true
+normal_texture = ExtResource("18_c40mv")
+uv1_scale = Vector3(32, 32, 32)
+uv1_offset = Vector3(64, 0, 0)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ef0sp"]
+material = SubResource("StandardMaterial3D_v5wr4")
+size = Vector3(1, 1, 0.13085938)
 
 [node name="SalaRadioPrincipal" type="Node3D" unique_id=97208055]
 
@@ -209,27 +224,25 @@ Jogador = NodePath("../Personagens/PersonagemPrincipal")
 UI = NodePath("UI_Mesa")
 Radio = NodePath("Radio/Radio")
 
+[node name="MesaTrabalho" parent="MesaDeTrabalho" unique_id=1781015561 instance=ExtResource("9_bgd4d")]
+transform = Transform3D(-0.099982254, 0, -0.0018837862, 0, 0.099999994, 0, 0.0018837862, 0, -0.099982254, -0.6627134, 0.76422226, -2.5609531)
+
 [node name="Radio" type="Node3D" parent="MesaDeTrabalho" unique_id=1214946054]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.20833147, 0, 0.09947467)
 
 [node name="PontoRadio" type="Marker3D" parent="MesaDeTrabalho/Radio" unique_id=1949511537]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.9668684, 0.8887565, -2.4633632)
-
-[node name="desk" parent="MesaDeTrabalho/Radio" unique_id=1665067259 instance=ExtResource("3_qjbho")]
-transform = Transform3D(-0.09374468, 0, 0.99559635, 0, 1, 0, -0.99559635, 0, -0.09374468, -0.9274739, 0.018798828, -2.5488172)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.803334, 0.8887565, -2.5332096)
 
 [node name="Radio" parent="MesaDeTrabalho/Radio" unique_id=1314951989 instance=ExtResource("6_dmwlx")]
-transform = Transform3D(-0.004410058, 0, 0.9999903, 0, 1, 0, -0.9999903, 0, -0.004410058, -0.7304252, 0.8153093, -2.5534182)
+transform = Transform3D(0.037329227, 0, 0.9993031, 0, 1, 0, -0.9993031, 0, 0.037329227, -0.8685659, 0.8153093, -2.5534182)
 
 [node name="Computador" type="Node3D" parent="MesaDeTrabalho" unique_id=1192573735]
 
-[node name="desk" parent="MesaDeTrabalho/Computador" unique_id=315086989 instance=ExtResource("3_qjbho")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16412771, 0.018798828, -3.2983959)
-
 [node name="computer" parent="MesaDeTrabalho/Computador" unique_id=1189384088 instance=ExtResource("4_il6rv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7073078, 0.76739895, -3.3194888)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.40713596, 0.76739895, -3.2917378)
 
 [node name="Monitor" parent="MesaDeTrabalho/Computador" unique_id=280688919 node_paths=PackedStringArray("SubViewportPC", "Jogador") instance=ExtResource("5_il6rv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.69350696, -3.3506498)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.81250143, -3.2564387)
 SubViewportPC = NodePath("SubViewport")
 Jogador = NodePath("../../../Personagens/PersonagemPrincipal")
 
@@ -300,3 +313,29 @@ Jogador = NodePath("../../Personagens/PersonagemPrincipal")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.667945, 0.3568577, -0.2656163)
 
 [node name="RigidBody3D" parent="Minigames" unique_id=797040873 instance=ExtResource("16_bgd4d")]
+
+[node name="Espumas" type="Node3D" parent="." unique_id=984145845]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Espumas" unique_id=1015720579]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5414034, -3.8070874)
+mesh = SubResource("BoxMesh_ef0sp")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Espumas" unique_id=2113997970]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.0732245, 2.3985095, -3.8070874)
+mesh = SubResource("BoxMesh_ef0sp")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Espumas" unique_id=2076458184]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.0732245, 1.0172043, -3.8070874)
+mesh = SubResource("BoxMesh_ef0sp")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Espumas" unique_id=2103715410]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3132396, 1.6826363, -3.8070874)
+mesh = SubResource("BoxMesh_ef0sp")
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="Espumas" unique_id=1744621403]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.580452, 2.4246018, -3.8070874)
+mesh = SubResource("BoxMesh_ef0sp")
+
+[node name="MeshInstance3D6" type="MeshInstance3D" parent="Espumas" unique_id=1557574999]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.3148592, 0.79804623, -3.8070874)
+mesh = SubResource("BoxMesh_ef0sp")

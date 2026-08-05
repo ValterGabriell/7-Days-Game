@@ -3,11 +3,40 @@
   "WorkspaceRootPath": "C:\\Dev\\ProjetosPessoais\\five-years-3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|c:\\dev\\projetospessoais\\five-years-3\\scripts\\dados\\save\\dadossave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|solutionrelative:scripts\\dados\\save\\dadossave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|c:\\dev\\projetospessoais\\five-years-3\\scripts\\utilidades\\calendario\\calendariorotinas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|solutionrelative:scripts\\utilidades\\calendario\\calendariorotinas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\vgabr\\.copilot\\plans\\plan-migrar-signals-godot-para-eventos-action-em-c.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|MarkdownSecurePreview"
+      "AbsoluteMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|c:\\dev\\projetospessoais\\five-years-3\\scripts\\globais\\gerenciadorpassagemdotempo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|solutionrelative:scripts\\globais\\gerenciadorpassagemdotempo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|c:\\dev\\projetospessoais\\five-years-3\\scripts\\globais\\gerenciadordenoticias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|solutionrelative:scripts\\globais\\gerenciadordenoticias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|c:\\dev\\projetospessoais\\five-years-3\\scripts\\globais\\gerenciadornoticiasimpressas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|solutionrelative:scripts\\globais\\gerenciadornoticiasimpressas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|c:\\dev\\projetospessoais\\five-years-3\\scripts\\dados\\jsons\\rotinas_semanais.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|solutionrelative:scripts\\dados\\jsons\\rotinas_semanais.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|c:\\dev\\projetospessoais\\five-years-3\\scripts\\dados\\jsons\\dia_02\\noticias.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|solutionrelative:scripts\\dados\\jsons\\dia_02\\noticias.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|c:\\dev\\projetospessoais\\five-years-3\\scripts\\dados\\jsons\\dia_01\\noticias.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|solutionrelative:scripts\\dados\\jsons\\dia_01\\noticias.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|c:\\dev\\projetospessoais\\five-years-3\\scripts\\globais\\gerenciadordesave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|solutionrelative:scripts\\globais\\gerenciadordesave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|c:\\dev\\projetospessoais\\five-years-3\\scripts\\dados\\rotina\\rotinamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|solutionrelative:scripts\\dados\\rotina\\rotinamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -17,36 +46,132 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GerenciadorDeNoticias.cs",
+              "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Globais\\GerenciadorDeNoticias.cs",
+              "RelativeDocumentMoniker": "Scripts\\Globais\\GerenciadorDeNoticias.cs",
+              "ToolTip": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Globais\\GerenciadorDeNoticias.cs",
+              "RelativeToolTip": "Scripts\\Globais\\GerenciadorDeNoticias.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAIAwwC0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-02T18:27:16.278Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GerenciadorNoticiasImpressas.cs",
+              "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Globais\\GerenciadorNoticiasImpressas.cs",
+              "RelativeDocumentMoniker": "Scripts\\Globais\\GerenciadorNoticiasImpressas.cs",
+              "ToolTip": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Globais\\GerenciadorNoticiasImpressas.cs",
+              "RelativeToolTip": "Scripts\\Globais\\GerenciadorNoticiasImpressas.cs",
+              "ViewState": "AgIAAIsAAAAAAAAAAADwv3AAAABjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-02T18:35:59.235Z",
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "DadosSave.cs",
-              "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Dados\\Save\\DadosSave.cs",
-              "RelativeDocumentMoniker": "Scripts\\Dados\\Save\\DadosSave.cs",
-              "ToolTip": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Dados\\Save\\DadosSave.cs",
-              "RelativeToolTip": "Scripts\\Dados\\Save\\DadosSave.cs",
-              "ViewState": "AgIAAGIAAAAAAAAAAAAQwG0AAAAvAAAAAAAAAA==",
+              "Title": "CalendarioRotinas.cs",
+              "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Utilidades\\Calendario\\CalendarioRotinas.cs",
+              "RelativeDocumentMoniker": "Scripts\\Utilidades\\Calendario\\CalendarioRotinas.cs",
+              "ToolTip": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Utilidades\\Calendario\\CalendarioRotinas.cs",
+              "RelativeToolTip": "Scripts\\Utilidades\\Calendario\\CalendarioRotinas.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAADwv6kAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-02T00:59:48.975Z",
+              "WhenOpened": "2026-08-02T18:38:06.058Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "plan-migrar-signals-godot-para-eventos-action-em-c.md [Visualiza\u00E7\u00E3o]",
-              "DocumentMoniker": "C:\\Users\\vgabr\\.copilot\\plans\\plan-migrar-signals-godot-para-eventos-action-em-c.md",
-              "RelativeDocumentMoniker": "..\\..\\..\\Users\\vgabr\\.copilot\\plans\\plan-migrar-signals-godot-para-eventos-action-em-c.md",
-              "ToolTip": "C:\\Users\\vgabr\\.copilot\\plans\\plan-migrar-signals-godot-para-eventos-action-em-c.md [Visualiza\u00E7\u00E3o]",
-              "RelativeToolTip": "..\\..\\..\\Users\\vgabr\\.copilot\\plans\\plan-migrar-signals-godot-para-eventos-action-em-c.md [Visualiza\u00E7\u00E3o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2026-08-02T00:59:22.547Z",
-              "EditorCaption": " [Visualiza\u00E7\u00E3o]"
+              "Title": "GerenciadorPassagemDoTempo.cs",
+              "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Globais\\GerenciadorPassagemDoTempo.cs",
+              "RelativeDocumentMoniker": "Scripts\\Globais\\GerenciadorPassagemDoTempo.cs",
+              "ToolTip": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Globais\\GerenciadorPassagemDoTempo.cs",
+              "RelativeToolTip": "Scripts\\Globais\\GerenciadorPassagemDoTempo.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAIA8wCQAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-02T18:38:15.168Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "rotinas_semanais.json",
+              "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Dados\\JSONS\\rotinas_semanais.json",
+              "RelativeDocumentMoniker": "Scripts\\Dados\\JSONS\\rotinas_semanais.json",
+              "ToolTip": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Dados\\JSONS\\rotinas_semanais.json",
+              "RelativeToolTip": "Scripts\\Dados\\JSONS\\rotinas_semanais.json",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAADIAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-08-02T18:37:54.942Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Noticias.json",
+              "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Dados\\JSONS\\Dia_02\\Noticias.json",
+              "RelativeDocumentMoniker": "Scripts\\Dados\\JSONS\\Dia_02\\Noticias.json",
+              "ToolTip": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Dados\\JSONS\\Dia_02\\Noticias.json",
+              "RelativeToolTip": "Scripts\\Dados\\JSONS\\Dia_02\\Noticias.json",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAAAF0AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-08-02T19:02:26.077Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Noticias.json",
+              "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Dados\\JSONS\\Dia_01\\Noticias.json",
+              "RelativeDocumentMoniker": "Scripts\\Dados\\JSONS\\Dia_01\\Noticias.json",
+              "ToolTip": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Dados\\JSONS\\Dia_01\\Noticias.json",
+              "RelativeToolTip": "Scripts\\Dados\\JSONS\\Dia_01\\Noticias.json",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAADAAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-08-02T19:02:57.887Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GerenciadorDeSave.cs",
+              "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Globais\\GerenciadorDeSave.cs",
+              "RelativeDocumentMoniker": "Scripts\\Globais\\GerenciadorDeSave.cs",
+              "ToolTip": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Globais\\GerenciadorDeSave.cs",
+              "RelativeToolTip": "Scripts\\Globais\\GerenciadorDeSave.cs",
+              "ViewState": "AgIAAGkAAAAAAAAAAAD4vxcAAABnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-02T18:58:46.034Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RotinaModel.cs",
+              "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Dados\\Rotina\\RotinaModel.cs",
+              "RelativeDocumentMoniker": "Scripts\\Dados\\Rotina\\RotinaModel.cs",
+              "ToolTip": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Dados\\Rotina\\RotinaModel.cs",
+              "RelativeToolTip": "Scripts\\Dados\\Rotina\\RotinaModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAUAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-02T18:34:25.319Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             }
           ]
         }

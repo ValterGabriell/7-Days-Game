@@ -3,87 +3,11 @@
   "WorkspaceRootPath": "C:\\Dev\\ProjetosPessoais\\five-years-3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|c:\\dev\\projetospessoais\\five-years-3\\scripts\\dados\\jsons\\rotinas_semanais.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|solutionrelative:scripts\\dados\\jsons\\rotinas_semanais.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|c:\\dev\\projetospessoais\\five-years-3\\scripts\\dados\\jsons\\dia_01\\noticias.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|solutionrelative:scripts\\dados\\jsons\\dia_01\\noticias.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|c:\\dev\\projetospessoais\\five-years-3\\scripts\\minigames\\pinball.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|solutionrelative:scripts\\minigames\\pinball.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|c:\\dev\\projetospessoais\\five-years-3\\scripts\\dados\\save\\dadossave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|solutionrelative:scripts\\dados\\save\\dadossave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\vgabr\\.copilot\\plans\\plan-migrar-signals-godot-para-eventos-action-em-c.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|MarkdownSecurePreview"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|c:\\dev\\projetospessoais\\five-years-3\\scripts\\personagens\\personagemprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|solutionrelative:scripts\\personagens\\personagemprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|c:\\dev\\projetospessoais\\five-years-3\\scripts\\personagens\\personagemprincipal.movimentocamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|solutionrelative:scripts\\personagens\\personagemprincipal.movimentocamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|c:\\dev\\projetospessoais\\five-years-3\\scripts\\personagens\\personagem.interacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|solutionrelative:scripts\\personagens\\personagem.interacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|c:\\dev\\projetospessoais\\five-years-3\\scripts\\utilidades\\tocarnoticianoradio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|solutionrelative:scripts\\utilidades\\tocarnoticianoradio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|c:\\dev\\projetospessoais\\five-years-3\\scripts\\dados\\musicamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|solutionrelative:scripts\\dados\\musicamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|c:\\dev\\projetospessoais\\five-years-3\\scripts\\dados\\noticiamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|solutionrelative:scripts\\dados\\noticiamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|c:\\dev\\projetospessoais\\five-years-3\\scripts\\globais\\gerenciadordeaudiencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|solutionrelative:scripts\\globais\\gerenciadordeaudiencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|c:\\dev\\projetospessoais\\five-years-3\\scripts\\utilidades\\radio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|solutionrelative:scripts\\utilidades\\radio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|c:\\dev\\projetospessoais\\five-years-3\\scripts\\ui\\uiaudiencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|solutionrelative:scripts\\ui\\uiaudiencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|c:\\dev\\projetospessoais\\five-years-3\\scripts\\utilidades\\antena.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|solutionrelative:scripts\\utilidades\\antena.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|c:\\dev\\projetospessoais\\five-years-3\\scripts\\globais\\gerenciadordeeventoaleatorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|solutionrelative:scripts\\globais\\gerenciadordeeventoaleatorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|c:\\dev\\projetospessoais\\five-years-3\\scripts\\globais\\gerenciadordeflagsnarrativas\\gerenciadordeflagsnarrativas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|solutionrelative:scripts\\globais\\gerenciadordeflagsnarrativas\\gerenciadordeflagsnarrativas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|c:\\dev\\projetospessoais\\five-years-3\\scripts\\globais\\gerenciadordeflagsnarrativas\\regraflagnarrativa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|solutionrelative:scripts\\globais\\gerenciadordeflagsnarrativas\\regraflagnarrativa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|c:\\dev\\projetospessoais\\five-years-3\\scripts\\globais\\gerenciadordeflagsnarrativas\\flagnarrativa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|solutionrelative:scripts\\globais\\gerenciadordeflagsnarrativas\\flagnarrativa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|c:\\dev\\projetospessoais\\five-years-3\\scripts\\globais\\gerenciadordeflagsnarrativas\\quandosaoativadas.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|solutionrelative:scripts\\globais\\gerenciadordeflagsnarrativas\\quandosaoativadas.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|c:\\dev\\projetospessoais\\five-years-3\\scripts\\globais\\gerenciadorpassagemdotempo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|solutionrelative:scripts\\globais\\gerenciadorpassagemdotempo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|c:\\dev\\projetospessoais\\five-years-3\\scripts\\globais\\gerenciadormesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|solutionrelative:scripts\\globais\\gerenciadormesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -93,7 +17,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -101,258 +25,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "DadosSave.cs",
+              "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Dados\\Save\\DadosSave.cs",
+              "RelativeDocumentMoniker": "Scripts\\Dados\\Save\\DadosSave.cs",
+              "ToolTip": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Dados\\Save\\DadosSave.cs",
+              "RelativeToolTip": "Scripts\\Dados\\Save\\DadosSave.cs",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAQwG0AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-02T00:59:48.975Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "plan-migrar-signals-godot-para-eventos-action-em-c.md [Visualiza\u00E7\u00E3o]",
               "DocumentMoniker": "C:\\Users\\vgabr\\.copilot\\plans\\plan-migrar-signals-godot-para-eventos-action-em-c.md",
               "RelativeDocumentMoniker": "..\\..\\..\\Users\\vgabr\\.copilot\\plans\\plan-migrar-signals-godot-para-eventos-action-em-c.md",
               "ToolTip": "C:\\Users\\vgabr\\.copilot\\plans\\plan-migrar-signals-godot-para-eventos-action-em-c.md [Visualiza\u00E7\u00E3o]",
               "RelativeToolTip": "..\\..\\..\\Users\\vgabr\\.copilot\\plans\\plan-migrar-signals-godot-para-eventos-action-em-c.md [Visualiza\u00E7\u00E3o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2026-08-02T00:16:12.194Z",
+              "WhenOpened": "2026-08-02T00:59:22.547Z",
               "EditorCaption": " [Visualiza\u00E7\u00E3o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Pinball.cs",
-              "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Minigames\\Pinball.cs",
-              "RelativeDocumentMoniker": "Scripts\\Minigames\\Pinball.cs",
-              "ToolTip": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Minigames\\Pinball.cs",
-              "RelativeToolTip": "Scripts\\Minigames\\Pinball.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-30T13:10:42.244Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "rotinas_semanais.json",
-              "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Dados\\JSONS\\rotinas_semanais.json",
-              "RelativeDocumentMoniker": "Scripts\\Dados\\JSONS\\rotinas_semanais.json",
-              "ToolTip": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Dados\\JSONS\\rotinas_semanais.json",
-              "RelativeToolTip": "Scripts\\Dados\\JSONS\\rotinas_semanais.json",
-              "ViewState": "AgIAAJ8AAAAAAAAAAAAkwM0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-07-29T18:15:22.76Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Noticias.json",
-              "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Dados\\JSONS\\Dia_01\\Noticias.json",
-              "RelativeDocumentMoniker": "Scripts\\Dados\\JSONS\\Dia_01\\Noticias.json",
-              "ToolTip": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Dados\\JSONS\\Dia_01\\Noticias.json",
-              "RelativeToolTip": "Scripts\\Dados\\JSONS\\Dia_01\\Noticias.json",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAkwIkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-07-29T18:15:18.845Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Personagem.Interacao.cs",
-              "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Personagens\\Personagem.Interacao.cs",
-              "RelativeDocumentMoniker": "Scripts\\Personagens\\Personagem.Interacao.cs",
-              "ToolTip": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Personagens\\Personagem.Interacao.cs",
-              "RelativeToolTip": "Scripts\\Personagens\\Personagem.Interacao.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-30T13:12:06.821Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "PersonagemPrincipal.MovimentoCamera.cs",
-              "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Personagens\\PersonagemPrincipal.MovimentoCamera.cs",
-              "RelativeDocumentMoniker": "Scripts\\Personagens\\PersonagemPrincipal.MovimentoCamera.cs",
-              "ToolTip": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Personagens\\PersonagemPrincipal.MovimentoCamera.cs",
-              "RelativeToolTip": "Scripts\\Personagens\\PersonagemPrincipal.MovimentoCamera.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAACwAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-30T13:12:02.667Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PersonagemPrincipal.cs",
-              "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Personagens\\PersonagemPrincipal.cs",
-              "RelativeDocumentMoniker": "Scripts\\Personagens\\PersonagemPrincipal.cs",
-              "ToolTip": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Personagens\\PersonagemPrincipal.cs",
-              "RelativeToolTip": "Scripts\\Personagens\\PersonagemPrincipal.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-30T13:12:02.81Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "MusicaModel.cs",
-              "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Dados\\MusicaModel.cs",
-              "RelativeDocumentMoniker": "Scripts\\Dados\\MusicaModel.cs",
-              "ToolTip": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Dados\\MusicaModel.cs",
-              "RelativeToolTip": "Scripts\\Dados\\MusicaModel.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAYwB0AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-29T18:33:58.36Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "NoticiaModel.cs",
-              "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Dados\\NoticiaModel.cs",
-              "RelativeDocumentMoniker": "Scripts\\Dados\\NoticiaModel.cs",
-              "ToolTip": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Dados\\NoticiaModel.cs",
-              "RelativeToolTip": "Scripts\\Dados\\NoticiaModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-29T18:33:50.028Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Radio.cs",
-              "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Utilidades\\Radio.cs",
-              "RelativeDocumentMoniker": "Scripts\\Utilidades\\Radio.cs",
-              "ToolTip": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Utilidades\\Radio.cs",
-              "RelativeToolTip": "Scripts\\Utilidades\\Radio.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-29T18:27:51.785Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "GerenciadorDeAudiencia.cs",
-              "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Globais\\GerenciadorDeAudiencia.cs",
-              "RelativeDocumentMoniker": "Scripts\\Globais\\GerenciadorDeAudiencia.cs",
-              "ToolTip": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Globais\\GerenciadorDeAudiencia.cs",
-              "RelativeToolTip": "Scripts\\Globais\\GerenciadorDeAudiencia.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAwwDEAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-29T17:44:20.159Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "TocarNoticiaNoRadio.cs",
-              "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Utilidades\\TocarNoticiaNoRadio.cs",
-              "RelativeDocumentMoniker": "Scripts\\Utilidades\\TocarNoticiaNoRadio.cs",
-              "ToolTip": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Utilidades\\TocarNoticiaNoRadio.cs",
-              "RelativeToolTip": "Scripts\\Utilidades\\TocarNoticiaNoRadio.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAkwPAAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-29T17:53:24.498Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "UiAudiencia.cs",
-              "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\UI\\UiAudiencia.cs",
-              "RelativeDocumentMoniker": "Scripts\\UI\\UiAudiencia.cs",
-              "ToolTip": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\UI\\UiAudiencia.cs",
-              "RelativeToolTip": "Scripts\\UI\\UiAudiencia.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-29T18:26:53.362Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "GerenciadorDeEventoAleatorio.cs",
-              "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Globais\\GerenciadorDeEventoAleatorio.cs",
-              "RelativeDocumentMoniker": "Scripts\\Globais\\GerenciadorDeEventoAleatorio.cs",
-              "ToolTip": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Globais\\GerenciadorDeEventoAleatorio.cs",
-              "RelativeToolTip": "Scripts\\Globais\\GerenciadorDeEventoAleatorio.cs",
-              "ViewState": "AgIAAEoAAAAAAAAAAAA7wF0AAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-29T17:38:22.01Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "GerenciadorDeFlagsNarrativas.cs",
-              "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Globais\\GerenciadorDeFlagsNarrativas\\GerenciadorDeFlagsNarrativas.cs",
-              "RelativeDocumentMoniker": "Scripts\\Globais\\GerenciadorDeFlagsNarrativas\\GerenciadorDeFlagsNarrativas.cs",
-              "ToolTip": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Globais\\GerenciadorDeFlagsNarrativas\\GerenciadorDeFlagsNarrativas.cs",
-              "RelativeToolTip": "Scripts\\Globais\\GerenciadorDeFlagsNarrativas\\GerenciadorDeFlagsNarrativas.cs",
-              "ViewState": "AgIAAHgAAAAAAAAAAAAowGAAAABMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-29T17:41:33.545Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "RegraFlagNarrativa.cs",
-              "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Globais\\GerenciadorDeFlagsNarrativas\\RegraFlagNarrativa.cs",
-              "RelativeDocumentMoniker": "Scripts\\Globais\\GerenciadorDeFlagsNarrativas\\RegraFlagNarrativa.cs",
-              "ToolTip": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Globais\\GerenciadorDeFlagsNarrativas\\RegraFlagNarrativa.cs",
-              "RelativeToolTip": "Scripts\\Globais\\GerenciadorDeFlagsNarrativas\\RegraFlagNarrativa.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAA5wCIAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-29T17:50:50.425Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "FlagNarrativa.cs",
-              "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Globais\\GerenciadorDeFlagsNarrativas\\FlagNarrativa.cs",
-              "RelativeDocumentMoniker": "Scripts\\Globais\\GerenciadorDeFlagsNarrativas\\FlagNarrativa.cs",
-              "ToolTip": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Globais\\GerenciadorDeFlagsNarrativas\\FlagNarrativa.cs",
-              "RelativeToolTip": "Scripts\\Globais\\GerenciadorDeFlagsNarrativas\\FlagNarrativa.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-29T17:48:07.115Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Antena.cs",
-              "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Utilidades\\Antena.cs",
-              "RelativeDocumentMoniker": "Scripts\\Utilidades\\Antena.cs",
-              "ToolTip": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Utilidades\\Antena.cs",
-              "RelativeToolTip": "Scripts\\Utilidades\\Antena.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAwwEgAAABrAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-29T18:03:03.071Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "QuandoSaoAtivadas.json",
-              "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Globais\\GerenciadorDeFlagsNarrativas\\QuandoSaoAtivadas.json",
-              "RelativeDocumentMoniker": "Scripts\\Globais\\GerenciadorDeFlagsNarrativas\\QuandoSaoAtivadas.json",
-              "ToolTip": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Globais\\GerenciadorDeFlagsNarrativas\\QuandoSaoAtivadas.json",
-              "RelativeToolTip": "Scripts\\Globais\\GerenciadorDeFlagsNarrativas\\QuandoSaoAtivadas.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-07-29T17:46:10.333Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "GerenciadorPassagemDoTempo.cs",
-              "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Globais\\GerenciadorPassagemDoTempo.cs",
-              "RelativeDocumentMoniker": "Scripts\\Globais\\GerenciadorPassagemDoTempo.cs",
-              "ToolTip": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Globais\\GerenciadorPassagemDoTempo.cs",
-              "RelativeToolTip": "Scripts\\Globais\\GerenciadorPassagemDoTempo.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAIwDkAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-29T17:59:57.581Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "GerenciadorMesa.cs",
-              "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Globais\\GerenciadorMesa.cs",
-              "RelativeDocumentMoniker": "Scripts\\Globais\\GerenciadorMesa.cs",
-              "ToolTip": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Globais\\GerenciadorMesa.cs",
-              "RelativeToolTip": "Scripts\\Globais\\GerenciadorMesa.cs",
-              "ViewState": "AgIAAPgAAAAAAAAAAAAtwIMAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-29T18:02:53.907Z"
             }
           ]
         }
