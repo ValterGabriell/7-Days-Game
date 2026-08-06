@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ct08re2ngu0db"
-path.s3tc="res://.godot/imported/AcousticFoam003_1K-JPG_Roughness.jpg-9d56d791245a5afc8ed2b0b80edd13e5.s3tc.ctex"
+uid="uid://h3knfe2b0byt"
+path.s3tc="res://.godot/imported/textura_parede.png-cc80dc29b50dcaa28d4a9a81658d84f3.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Arte/Texturas/TexturaEspuma/AcousticFoam003_1K-JPG_Roughness.jpg"
-dest_files=["res://.godot/imported/AcousticFoam003_1K-JPG_Roughness.jpg-9d56d791245a5afc8ed2b0b80edd13e5.s3tc.ctex"]
+source_file="res://Arte/Texturas/Pessoal/textura_parede.png"
+dest_files=["res://.godot/imported/textura_parede.png-cc80dc29b50dcaa28d4a9a81658d84f3.s3tc.ctex"]
 
 [params]
 

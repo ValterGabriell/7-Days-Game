@@ -2,17 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://6v66uoymahuf"
-path.s3tc="res://.godot/imported/Rubber001.png-e4542b39ada8ca3accf8b912128753ea.s3tc.ctex"
+uid="uid://odnv8ypu2h0x"
+path.s3tc="res://.godot/imported/Parede_0.png-c95f0b3a0537f91705f8f584499950f8.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
+generator_parameters={
+"md5": "1cfc8868f9521e43d3d35ec48152a8b1"
+}
 
 [deps]
 
-source_file="res://Arte/Texturas/Rubber001_1K-JPG/Rubber001.png"
-dest_files=["res://.godot/imported/Rubber001.png-e4542b39ada8ca3accf8b912128753ea.s3tc.ctex"]
+source_file="res://Arte/Modelos3D/Parede_0.png"
+dest_files=["res://.godot/imported/Parede_0.png-c95f0b3a0537f91705f8f584499950f8.s3tc.ctex"]
 
 [params]
 

@@ -11,14 +11,14 @@
 [ext_resource type="PackedScene" uid="uid://cpdkbjiwwpd5v" path="res://Cenas/Utilidades/Escada.tscn" id="5_x15hw"]
 [ext_resource type="PackedScene" uid="uid://bgef3wuj8jd5y" path="res://Cenas/Utilidades/Radio.tscn" id="6_dmwlx"]
 [ext_resource type="PackedScene" uid="uid://dpb60xf64k83v" path="res://Cenas/Utilidades/Antena.tscn" id="6_tuyos"]
+[ext_resource type="Texture2D" uid="uid://bilassski0cme" path="res://Arte/Texturas/grey_tiles_1k.gltf/textures/grey_tiles_diff_1k.jpg" id="7_4qy4w"]
 [ext_resource type="PackedScene" uid="uid://3s4yx3fvr77y" path="res://Cenas/Utilidades/Cadeira.tscn" id="8_awft6"]
+[ext_resource type="Texture2D" uid="uid://rtpdp6buvt2s" path="res://Arte/Texturas/grey_tiles_1k.gltf/textures/grey_tiles_nor_gl_1k.jpg" id="8_r6c1g"]
+[ext_resource type="Texture2D" uid="uid://h3knfe2b0byt" path="res://Arte/Texturas/Pessoal/textura_parede.png" id="9_a5ha3"]
 [ext_resource type="PackedScene" uid="uid://nl487geherjc" path="res://Arte/Modelos3D/MesaTrabalho/scene.gltf" id="9_bgd4d"]
+[ext_resource type="Texture2D" uid="uid://if4edww4i7u6" path="res://Arte/Texturas/Pessoal/textura_parede_normal.png" id="10_4qy4w"]
+[ext_resource type="Texture2D" uid="uid://kdhlw5dx025v" path="res://Arte/Texturas/Pessoal/textura_parede_02.png" id="10_sksnr"]
 [ext_resource type="PackedScene" uid="uid://q4gtkiy3ugva" path="res://Cenas/Utilidades/CalendarioRotinas.tscn" id="11_ghx4a"]
-[ext_resource type="PackedScene" uid="uid://bgur87spl30ky" path="res://Cenas/Utilidades/Minigames/Pinball/Pinball.tscn" id="15_feelk"]
-[ext_resource type="PackedScene" uid="uid://bsnrqevjiexrg" path="res://Cenas/Utilidades/Minigames/Pinball/BolaPinball.tscn" id="16_bgd4d"]
-[ext_resource type="Texture2D" uid="uid://dbpogmyg2w7hw" path="res://Arte/Texturas/TexturaEspuma/AcousticFoam003.png" id="17_8p6dl"]
-[ext_resource type="Texture2D" uid="uid://b22a2fsnlkf38" path="res://Arte/Texturas/TexturaEspuma/AcousticFoam003_1K-JPG_NormalDX.jpg" id="18_c40mv"]
-[ext_resource type="Texture2D" uid="uid://b1bqmfnsyq3b0" path="res://Arte/Texturas/TexturaEspuma/AcousticFoam003_1K-JPG_Metalness.jpg" id="19_pg14x"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_exfc0"]
 
@@ -29,19 +29,45 @@ sky_material = SubResource("ProceduralSkyMaterial_exfc0")
 background_mode = 2
 sky = SubResource("Sky_v5wr4")
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_frcww"]
+albedo_texture = ExtResource("7_4qy4w")
+roughness_texture = ExtResource("7_4qy4w")
+normal_enabled = true
+normal_texture = ExtResource("8_r6c1g")
+
 [sub_resource type="PlaneMesh" id="PlaneMesh_ef0sp"]
+material = SubResource("StandardMaterial3D_frcww")
 size = Vector2(8, 8)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_exfc0"]
 size = Vector3(8.015099, 0.037597656, 8.312317)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v5wr4"]
-albedo_texture = ExtResource("17_8p6dl")
-roughness_texture = ExtResource("19_pg14x")
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c40mv"]
+albedo_texture = ExtResource("9_a5ha3")
 normal_enabled = true
-normal_texture = ExtResource("18_c40mv")
-uv1_scale = Vector3(32, 32, 32)
-uv1_offset = Vector3(64, 0, 0)
+normal_texture = ExtResource("10_4qy4w")
+uv1_scale = Vector3(12, 1.985, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pg14x"]
+albedo_texture = ExtResource("10_sksnr")
+normal_enabled = true
+normal_texture = ExtResource("10_4qy4w")
+detail_enabled = true
+detail_mask = ExtResource("10_sksnr")
+detail_blend_mode = 3
+uv1_scale = Vector3(10, 2.005, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_v5wr4"]
+material = SubResource("StandardMaterial3D_pg14x")
+size = Vector3(8, 3.3, 1)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_8p6dl"]
+data = PackedVector3Array(-4.02, 0.80259997, 0.5, 4.02, 0.80259997, 0.5, -4.02, -0.80259997, 0.5, 4.02, 0.80259997, 0.5, 4.02, -0.80259997, 0.5, -4.02, -0.80259997, 0.5, 4.02, 0.80259997, -0.5, -4.02, 0.80259997, -0.5, 4.02, -0.80259997, -0.5, -4.02, 0.80259997, -0.5, -4.02, -0.80259997, -0.5, 4.02, -0.80259997, -0.5, 4.02, 0.80259997, 0.5, 4.02, 0.80259997, -0.5, 4.02, -0.80259997, 0.5, 4.02, 0.80259997, -0.5, 4.02, -0.80259997, -0.5, 4.02, -0.80259997, 0.5, -4.02, 0.80259997, -0.5, -4.02, 0.80259997, 0.5, -4.02, -0.80259997, -0.5, -4.02, 0.80259997, 0.5, -4.02, -0.80259997, 0.5, -4.02, -0.80259997, -0.5, 4.02, 0.80259997, 0.5, -4.02, 0.80259997, 0.5, 4.02, 0.80259997, -0.5, -4.02, 0.80259997, 0.5, -4.02, 0.80259997, -0.5, 4.02, 0.80259997, -0.5, -4.02, -0.80259997, 0.5, 4.02, -0.80259997, 0.5, -4.02, -0.80259997, -0.5, 4.02, -0.80259997, 0.5, 4.02, -0.80259997, -0.5, -4.02, -0.80259997, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v5wr4"]
+normal_enabled = true
+uv1_scale = Vector3(2.03, 2.03, 2.03)
+uv1_offset = Vector3(1.185, 1, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_ef0sp"]
 material = SubResource("StandardMaterial3D_v5wr4")
@@ -150,53 +176,57 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.015361786, 0, -0.12503052)
 shape = SubResource("BoxShape3D_exfc0")
 debug_color = Color(0, 0, 15.863711, 1)
 
-[node name="Chao2" type="MeshInstance3D" parent="ConfiguracaoGlobal/Estruturas" unique_id=625721745]
-transform = Transform3D(1, 0, 0, 0, -4.3711385e-08, 0.38993838, 0, -0.99999994, -1.7044748e-08, 0, 1.5692697, 3.9702606)
-mesh = SubResource("PlaneMesh_ef0sp")
+[node name="PAREDE" type="Node3D" parent="ConfiguracaoGlobal/Estruturas" unique_id=462564352]
 
-[node name="StaticBody3D" type="StaticBody3D" parent="ConfiguracaoGlobal/Estruturas/Chao2" unique_id=2062581773]
+[node name="PARECE_CIMA" type="MeshInstance3D" parent="ConfiguracaoGlobal/Estruturas/PAREDE" unique_id=832147931]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.018066406, 1.6531372, -4.2870445)
+material_override = SubResource("StandardMaterial3D_c40mv")
+mesh = SubResource("BoxMesh_v5wr4")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="ConfiguracaoGlobal/Estruturas/PAREDE/PARECE_CIMA" unique_id=168142686]
 collision_mask = 2
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="ConfiguracaoGlobal/Estruturas/Chao2/StaticBody3D" unique_id=2032880700]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.015361786, 0, -0.12503052)
-shape = SubResource("BoxShape3D_exfc0")
-debug_color = Color(0, 0, 15.863711, 1)
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ConfiguracaoGlobal/Estruturas/PAREDE/PARECE_CIMA/StaticBody3D" unique_id=442837521]
+shape = SubResource("ConcavePolygonShape3D_8p6dl")
 
-[node name="Chao5" type="MeshInstance3D" parent="ConfiguracaoGlobal/Estruturas" unique_id=1016421844]
-transform = Transform3D(1, 0, 0, 0, -4.3711385e-08, -0.38993838, 0, 0.99999994, -1.7044748e-08, 0, 1.5692697, -3.9678316)
-mesh = SubResource("PlaneMesh_ef0sp")
+[node name="PAREDE4" type="Node3D" parent="ConfiguracaoGlobal/Estruturas" unique_id=1456815505]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.7128185, 8.10306)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="ConfiguracaoGlobal/Estruturas/Chao5" unique_id=347814999]
+[node name="PARECE_CIMA" type="MeshInstance3D" parent="ConfiguracaoGlobal/Estruturas/PAREDE4" unique_id=1018543664]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.018066406, 2.4801025, -4.2870445)
+mesh = SubResource("BoxMesh_v5wr4")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="ConfiguracaoGlobal/Estruturas/PAREDE4/PARECE_CIMA" unique_id=1300587459]
 collision_mask = 2
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="ConfiguracaoGlobal/Estruturas/Chao5/StaticBody3D" unique_id=1780206769]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.015361786, 0, -0.12503052)
-shape = SubResource("BoxShape3D_exfc0")
-debug_color = Color(0, 0, 15.863711, 1)
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ConfiguracaoGlobal/Estruturas/PAREDE4/PARECE_CIMA/StaticBody3D" unique_id=2089645132]
+shape = SubResource("ConcavePolygonShape3D_8p6dl")
 
-[node name="Chao3" type="MeshInstance3D" parent="ConfiguracaoGlobal/Estruturas" unique_id=1789421966]
-transform = Transform3D(-4.371139e-08, -0.99999994, -1.7044748e-08, 0, -4.3711385e-08, 0.38993838, -1, 4.3711385e-08, 7.450496e-16, 3.9711466, 1.5513914, -0.022540689)
-mesh = SubResource("PlaneMesh_ef0sp")
+[node name="PAREDE2" type="Node3D" parent="ConfiguracaoGlobal/Estruturas" unique_id=476744472]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -0.15406227, -0.7128185, 0)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="ConfiguracaoGlobal/Estruturas/Chao3" unique_id=831788240]
+[node name="PARECE_CIMA" type="MeshInstance3D" parent="ConfiguracaoGlobal/Estruturas/PAREDE2" unique_id=64653664]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.018066408, 2.4801025, -4.2870445)
+mesh = SubResource("BoxMesh_v5wr4")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="ConfiguracaoGlobal/Estruturas/PAREDE2/PARECE_CIMA" unique_id=264413184]
 collision_mask = 2
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="ConfiguracaoGlobal/Estruturas/Chao3/StaticBody3D" unique_id=1449825555]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.015361786, 0, -0.12503052)
-shape = SubResource("BoxShape3D_exfc0")
-debug_color = Color(0, 0, 15.863711, 1)
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ConfiguracaoGlobal/Estruturas/PAREDE2/PARECE_CIMA/StaticBody3D" unique_id=638717610]
+shape = SubResource("ConcavePolygonShape3D_8p6dl")
 
-[node name="Chao4" type="MeshInstance3D" parent="ConfiguracaoGlobal/Estruturas" unique_id=1210368258]
-transform = Transform3D(-4.371139e-08, 0.99999994, 1.7044748e-08, 0, -4.3711385e-08, 0.38993838, 1, 4.3711385e-08, 7.450496e-16, -3.9930243, 1.5513914, -0.022540689)
-mesh = SubResource("PlaneMesh_ef0sp")
+[node name="PAREDE3" type="Node3D" parent="ConfiguracaoGlobal/Estruturas" unique_id=1850696542]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -0.06366062, -0.712819, 0)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="ConfiguracaoGlobal/Estruturas/Chao4" unique_id=1682384686]
+[node name="PARECE_CIMA" type="MeshInstance3D" parent="ConfiguracaoGlobal/Estruturas/PAREDE3" unique_id=531594066]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.018066406, 2.4801025, -4.2870445)
+mesh = SubResource("BoxMesh_v5wr4")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="ConfiguracaoGlobal/Estruturas/PAREDE3/PARECE_CIMA" unique_id=1930984443]
 collision_mask = 2
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="ConfiguracaoGlobal/Estruturas/Chao4/StaticBody3D" unique_id=1834434871]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.015361786, 0, -0.12503052)
-shape = SubResource("BoxShape3D_exfc0")
-debug_color = Color(0, 0, 15.863711, 1)
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ConfiguracaoGlobal/Estruturas/PAREDE3/PARECE_CIMA/StaticBody3D" unique_id=528703472]
+shape = SubResource("ConcavePolygonShape3D_8p6dl")
 
 [node name="Cameras" type="Node3D" parent="ConfiguracaoGlobal" unique_id=370361060]
 
@@ -266,10 +296,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.46463966, 0.17889428)
 [node name="Cameras" type="Node3D" parent="MesaDeTrabalho" unique_id=1776447465]
 
 [node name="CameraDaMesa" type="Camera3D" parent="MesaDeTrabalho/Cameras" unique_id=1651172819]
-transform = Transform3D(1, 0, 0, 0, 0.98379755, 0.17928296, 0, -0.17928296, 0.98379755, 0, 1.0794214, -2.3536956)
+transform = Transform3D(1, 0, 0, 0, 0.8385325, 0.54485166, 0, -0.54485166, 0.8385325, 0, 1.2622224, -2.1114922)
 
 [node name="CameraMonitor" type="Camera3D" parent="MesaDeTrabalho/Cameras" unique_id=474360464]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.0023255, -2.8946724)
+transform = Transform3D(1, 0, 0, 0, 0.9989114, 0.046647888, 0, -0.046647888, 0.9989114, 0, 1.131279, -2.7913108)
 fov = 73.47248
 size = 0.45
 near = 0.032
@@ -281,7 +311,7 @@ size = 0.45
 near = 0.032
 
 [node name="CameraRadio" type="Camera3D" parent="MesaDeTrabalho/Cameras" unique_id=1962701620]
-transform = Transform3D(-4.2070326e-08, -0.2714347, 0.9624569, -1.1864787e-08, 0.9624569, 0.2714347, -1, 0, -4.371139e-08, -0.3722371, 0.9904187, -2.4976263)
+transform = Transform3D(-7.072379e-09, -0.98682404, 0.16179723, -4.313544e-08, 0.16179723, 0.98682404, -1, -8.881784e-16, -4.3711378e-08, -0.70755255, 1.1766639, -2.4976263)
 fov = 73.47248
 size = 0.45
 near = 0.032
@@ -299,20 +329,6 @@ offset_right = 1127.0
 offset_bottom = 994.0
 theme_override_font_sizes/font_size = 24
 text = "PRESSIONE E PARA FOCAR"
-
-[node name="Minigames" type="Node3D" parent="." unique_id=127004171]
-visible = false
-
-[node name="Pinball" parent="Minigames" unique_id=1466378862 node_paths=PackedStringArray("Bola", "PontoDeSpawDaBola", "Jogador") instance=ExtResource("15_feelk")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.927342, 0, 0)
-Bola = NodePath("../RigidBody3D")
-PontoDeSpawDaBola = NodePath("../Marker3D")
-Jogador = NodePath("../../Personagens/PersonagemPrincipal")
-
-[node name="Marker3D" type="Marker3D" parent="Minigames" unique_id=1806856221]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.667945, 0.3568577, -0.2656163)
-
-[node name="RigidBody3D" parent="Minigames" unique_id=797040873 instance=ExtResource("16_bgd4d")]
 
 [node name="Espumas" type="Node3D" parent="." unique_id=984145845]
 

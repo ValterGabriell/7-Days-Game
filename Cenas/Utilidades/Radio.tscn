@@ -3,14 +3,21 @@
 [ext_resource type="Script" uid="uid://djcu2jhupab4g" path="res://Scripts/Utilidades/Radio.cs" id="1_dm8lf"]
 [ext_resource type="PackedScene" uid="uid://7lr4h3mo44wq" path="res://Arte/Modelos3D/Radio.gltf" id="2_swqt4"]
 [ext_resource type="Script" uid="uid://cgodtm7h2ufeu" path="res://Scripts/Utilidades/UiNoticiasRadio.cs" id="3_1e08p"]
+[ext_resource type="Script" uid="uid://blgk7tc52b7xm" path="res://Scripts/Utilidades/RadioVisor3DArea.cs" id="4_fsexi"]
 [ext_resource type="Script" uid="uid://xlyvn8pn14jl" path="res://Scripts/Utilidades/TocarNoticiaNoRadio.cs" id="4_swqt4"]
+[ext_resource type="Script" uid="uid://20auwemdiymx" path="res://TesteItemList.cs" id="6_ls5wi"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ef0sp"]
 size = Vector3(0.5037842, 0.14257813, 0.7531738)
 
+[sub_resource type="PlaneMesh" id="PlaneMesh_v5wr4"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_v5wr4"]
+size = Vector3(0.3019867, 0.080200195, 0.1751709)
+
 [node name="Radio" type="StaticBody3D" unique_id=1314951989 node_paths=PackedStringArray("ListaNoticiasRadios")]
 script = ExtResource("1_dm8lf")
-ListaNoticiasRadios = NodePath("UI_PROVISORIA_NOTICIAS/ItemList")
+ListaNoticiasRadios = NodePath("SubViewport/CanvasLayer/ItemList")
 
 [node name="blockbench_export" parent="." unique_id=1199505390 instance=ExtResource("2_swqt4")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
@@ -18,16 +25,6 @@ transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1622038236]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0074700117, 0.056724936, -0.07614659)
 shape = SubResource("BoxShape3D_ef0sp")
-
-[node name="UI_PROVISORIA_NOTICIAS" type="CanvasLayer" parent="." unique_id=864340132 node_paths=PackedStringArray("ListaNoticias")]
-script = ExtResource("3_1e08p")
-ListaNoticias = NodePath("ItemList")
-
-[node name="ItemList" type="ItemList" parent="UI_PROVISORIA_NOTICIAS" unique_id=1775020858]
-offset_left = 1386.0
-offset_top = 201.0
-offset_right = 1720.0
-offset_bottom = 752.0
 
 [node name="TocarNoticiaNoRadio" type="Node" parent="." unique_id=426073048 node_paths=PackedStringArray("PlayerAudio", "CanvasLayerRadio", "LabelRadio")]
 script = ExtResource("4_swqt4")
@@ -47,3 +44,46 @@ offset_top = 980.0
 offset_right = 1058.0
 offset_bottom = 1003.0
 text = "TEMPO QUE TA TOCANDO A MUSICA"
+
+[node name="Area3D" type="StaticBody3D" parent="." unique_id=977396678 node_paths=PackedStringArray("TelaMesh", "SubViewportNode")]
+collision_mask = 0
+script = ExtResource("4_fsexi")
+TelaMesh = NodePath("MeshInstance3D")
+SubViewportNode = NodePath("../SubViewport")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Area3D" unique_id=1853102815]
+transform = Transform3D(0.17187257, 0, 0, 0, 0.99732757, -0.016940063, 0, 0.1837546, 0.09194216, 0.009107739, 0.08574486, -0.15507449)
+mesh = SubResource("PlaneMesh_v5wr4")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=456870355]
+transform = Transform3D(1, 0, 0, 0, 0.9696283, -0.24458328, 0, 0.24458328, 0.9696283, 0.0019082427, 0.078868784, -0.14720741)
+shape = SubResource("BoxShape3D_v5wr4")
+
+[node name="SubViewport" type="SubViewport" parent="." unique_id=1149176839]
+transparent_bg = true
+size = Vector2i(512, 256)
+render_target_update_mode = 4
+
+[node name="CanvasLayer" type="Control" parent="SubViewport" unique_id=1190485287 node_paths=PackedStringArray("ListaNoticias")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("3_1e08p")
+ListaNoticias = NodePath("ItemList")
+
+[node name="ItemList" type="ItemList" parent="SubViewport/CanvasLayer" unique_id=1775020858]
+custom_minimum_size = Vector2(512, 56)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+item_count = 1
+item_0/text = "TESTE"
+script = ExtResource("6_ls5wi")
+
+[editable path="blockbench_export"]

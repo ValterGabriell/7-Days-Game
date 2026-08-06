@@ -2,17 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bfoewin57t76q"
-path.s3tc="res://.godot/imported/Rubber001_1K-JPG_Roughness.jpg-42cde7e5ceedfd066ca5edf80c49ce35.s3tc.ctex"
+uid="uid://deuupsypjhr8g"
+path.s3tc="res://.godot/imported/Antena_0.png-c2a7d9f6fb10217e0bd0399c453b0e78.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
+generator_parameters={
+"md5": "a55eb6b2be28e22709834de4683b7614"
+}
 
 [deps]
 
-source_file="res://Arte/Texturas/Rubber001_1K-JPG/Rubber001_1K-JPG_Roughness.jpg"
-dest_files=["res://.godot/imported/Rubber001_1K-JPG_Roughness.jpg-42cde7e5ceedfd066ca5edf80c49ce35.s3tc.ctex"]
+source_file="res://Arte/Modelos3D/Antena_0.png"
+dest_files=["res://.godot/imported/Antena_0.png-c2a7d9f6fb10217e0bd0399c453b0e78.s3tc.ctex"]
 
 [params]
 

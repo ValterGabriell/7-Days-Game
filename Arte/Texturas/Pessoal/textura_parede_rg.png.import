@@ -2,21 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ct08re2ngu0db"
-path.s3tc="res://.godot/imported/AcousticFoam003_1K-JPG_Roughness.jpg-9d56d791245a5afc8ed2b0b80edd13e5.s3tc.ctex"
-metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
-}
+uid="uid://dgps1rjiw426f"
+valid=false
 
 [deps]
 
-source_file="res://Arte/Texturas/TexturaEspuma/AcousticFoam003_1K-JPG_Roughness.jpg"
-dest_files=["res://.godot/imported/AcousticFoam003_1K-JPG_Roughness.jpg-9d56d791245a5afc8ed2b0b80edd13e5.s3tc.ctex"]
+source_file="res://Arte/Texturas/Pessoal/textura_parede_rg.png"
 
 [params]
 
-compress/mode=2
+compress/mode=0
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0
@@ -24,7 +19,7 @@ compress/rdo_quality_loss=0.0
 compress/hdr_compression=1
 compress/normal_map=0
 compress/channel_pack=0
-mipmaps/generate=true
+mipmaps/generate=false
 mipmaps/limit=-1
 roughness/mode=0
 roughness/src_normal=""
@@ -38,4 +33,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=0
+detect_3d/compress_to=1

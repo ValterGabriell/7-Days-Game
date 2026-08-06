@@ -1,0 +1,105 @@
+[gd_scene format=3 uid="uid://belhb7g0kdgh2"]
+
+[ext_resource type="Script" uid="uid://daeihufqcldey" path="res://Scripts/UI/InterfaceOsRadio.cs" id="1_nbnd2"]
+
+[node name="InterfaceOSRadio" type="Control" unique_id=1710706125]
+layout_mode = 3
+anchor_right = 0.53000003
+anchor_bottom = 0.697
+offset_right = 415.39996
+offset_bottom = 274.24
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+script = ExtResource("1_nbnd2")
+
+[node name="FundoTerminal" type="ColorRect" parent="." unique_id=1884876571]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.149
+anchor_top = 0.178
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -141.252
+offset_top = -141.51001
+offset_right = 81.0
+offset_bottom = -40.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0.05490196, 0, 1)
+
+[node name="Margens" type="MarginContainer" parent="FundoTerminal" unique_id=1866562658]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 30
+theme_override_constants/margin_top = 30
+theme_override_constants/margin_right = 30
+theme_override_constants/margin_bottom = 30
+
+[node name="VBoxContainer" type="VBoxContainer" parent="FundoTerminal/Margens" unique_id=1603447684]
+layout_mode = 2
+theme_override_constants/separation = 32
+
+[node name="VBoxContainer" type="VBoxContainer" parent="FundoTerminal/Margens/VBoxContainer" unique_id=260287035]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="FundoTerminal/Margens/VBoxContainer/VBoxContainer" unique_id=570990219]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 24
+text = "Plataforma de Auditoria, Triagem e Regulação de Informação Autônoma"
+
+[node name="ColunaDireita" type="HBoxContainer" parent="FundoTerminal/Margens/VBoxContainer/VBoxContainer" unique_id=1307420572]
+layout_mode = 2
+size_flags_horizontal = 6
+
+[node name="Label" type="Label" parent="FundoTerminal/Margens/VBoxContainer/VBoxContainer/ColunaDireita" unique_id=232403763]
+layout_mode = 2
+text = "--- STATUS ---"
+
+[node name="LblPautas" type="Label" parent="FundoTerminal/Margens/VBoxContainer/VBoxContainer/ColunaDireita" unique_id=2048310191]
+layout_mode = 2
+text = "Pautas: 0 / 3"
+
+[node name="LblAudiencia" type="Label" parent="FundoTerminal/Margens/VBoxContainer/VBoxContainer/ColunaDireita" unique_id=1769594580]
+layout_mode = 2
+text = "Audiência: 50%"
+
+[node name="LblEsperanca" type="Label" parent="FundoTerminal/Margens/VBoxContainer/VBoxContainer/ColunaDireita" unique_id=931807777]
+layout_mode = 2
+text = "Esperança: 0"
+
+[node name="LblIrritacao" type="Label" parent="FundoTerminal/Margens/VBoxContainer/VBoxContainer/ColunaDireita" unique_id=1287024258]
+layout_mode = 2
+text = "Irritação: 0"
+
+[node name="BtnEncerrar" type="Button" parent="FundoTerminal/Margens/VBoxContainer/VBoxContainer/ColunaDireita" unique_id=437033284]
+layout_mode = 2
+text = "[ ENCERRAR SESSÃO ]"
+
+[node name="HSeparator" type="HSeparator" parent="FundoTerminal/Margens/VBoxContainer" unique_id=14345914]
+layout_mode = 2
+
+[node name="HSeparator2" type="HSeparator" parent="FundoTerminal/Margens/VBoxContainer" unique_id=1309067473]
+layout_mode = 2
+
+[node name="LayoutGridMusicas" type="HBoxContainer" parent="FundoTerminal/Margens/VBoxContainer" unique_id=1062388726]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+theme_override_constants/separation = 48
+
+[node name="ColunaEsquerda" type="VBoxContainer" parent="FundoTerminal/Margens/VBoxContainer/LayoutGridMusicas" unique_id=678737626]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="LblInboxTitulo" type="Label" parent="FundoTerminal/Margens/VBoxContainer/LayoutGridMusicas/ColunaEsquerda" unique_id=30683793]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "--- MUSICAS ---"
+
+[node name="ListaMusicas" type="VBoxContainer" parent="FundoTerminal/Margens/VBoxContainer/LayoutGridMusicas/ColunaEsquerda" unique_id=2008677854]
+layout_mode = 2

@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dbwd1hvpf2thb"
-path.s3tc="res://.godot/imported/Rubber001_1K-JPG_Displacement.jpg-248172184f57595681766954ce7974dc.s3tc.ctex"
+uid="uid://rtpdp6buvt2s"
+path.s3tc="res://.godot/imported/grey_tiles_nor_gl_1k.jpg-91eddc0f15b45e35adf501cf7d42fb43.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Arte/Texturas/Rubber001_1K-JPG/Rubber001_1K-JPG_Displacement.jpg"
-dest_files=["res://.godot/imported/Rubber001_1K-JPG_Displacement.jpg-248172184f57595681766954ce7974dc.s3tc.ctex"]
+source_file="res://Arte/Texturas/grey_tiles_1k.gltf/textures/grey_tiles_nor_gl_1k.jpg"
+dest_files=["res://.godot/imported/grey_tiles_nor_gl_1k.jpg-91eddc0f15b45e35adf501cf7d42fb43.s3tc.ctex"]
 
 [params]
 
@@ -22,12 +22,12 @@ compress/lossy_quality=0.7
 compress/uastc_level=0
 compress/rdo_quality_loss=0.0
 compress/hdr_compression=1
-compress/normal_map=0
+compress/normal_map=1
 compress/channel_pack=0
 mipmaps/generate=true
 mipmaps/limit=-1
-roughness/mode=7
-roughness/src_normal="res://Arte/Texturas/Rubber001_1K-JPG/Rubber001_1K-JPG_NormalGL.jpg"
+roughness/mode=1
+roughness/src_normal="res://Arte/Texturas/grey_tiles_1k.gltf/textures/grey_tiles_nor_gl_1k.jpg"
 process/channel_remap/red=0
 process/channel_remap/green=1
 process/channel_remap/blue=2
