@@ -2,6 +2,15 @@
 
 [ext_resource type="Script" uid="uid://buxjtfk285s03" path="res://Scripts/UI/InterfaceOSUI.cs" id="1_r6i6s"]
 
+[sub_resource type="SystemFont" id="SystemFont_y1r0m"]
+font_names = PackedStringArray("Consolas")
+
+[sub_resource type="SystemFont" id="SystemFont_mcb0c"]
+font_names = PackedStringArray("Courier New")
+
+[sub_resource type="SystemFont" id="SystemFont_esxif"]
+font_names = PackedStringArray("Consolas")
+
 [node name="InterfaceOS" type="Control" unique_id=1710706125 node_paths=PackedStringArray("ListaNoticias", "LblTitulo", "LblRemetente", "LblTextoOriginal", "OptIntegra", "OptSuprimir", "OptOficial", "OptInvestigativo", "LblPreview", "BtnImprimir", "LblPautas", "LblAudiencia", "LblEsperanca", "LblIrritacao", "BtnEncerrar", "BtnMusicas", "BtnPropagandaNoticias", "BoxMusicas", "BoxNoticiasPropaganda", "ListaMusicas")]
 layout_mode = 3
 anchor_right = 0.53000003
@@ -46,7 +55,7 @@ offset_right = 81.0
 offset_bottom = -40.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0, 0.05490196, 0, 1)
+color = Color(0.019607844, 0.06666667, 0.019607844, 1)
 
 [node name="Margens" type="MarginContainer" parent="FundoTerminal" unique_id=1866562658]
 layout_mode = 1
@@ -70,6 +79,8 @@ layout_mode = 2
 [node name="Label" type="Label" parent="FundoTerminal/Margens/VBoxContainer/VBoxContainer" unique_id=570990219]
 layout_mode = 2
 size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0, 1, 0.25490198, 1)
+theme_override_fonts/font = SubResource("SystemFont_y1r0m")
 theme_override_font_sizes/font_size = 24
 text = "Plataforma de Auditoria, Triagem e Regulação de Informação Autônoma"
 
@@ -79,26 +90,37 @@ size_flags_horizontal = 6
 
 [node name="Label" type="Label" parent="FundoTerminal/Margens/VBoxContainer/VBoxContainer/ColunaDireita" unique_id=232403763]
 layout_mode = 2
+theme_override_colors/font_color = Color(0, 1, 0.25490198, 1)
+theme_override_fonts/font = SubResource("SystemFont_y1r0m")
 text = "--- STATUS ---"
 
 [node name="LblPautas" type="Label" parent="FundoTerminal/Margens/VBoxContainer/VBoxContainer/ColunaDireita" unique_id=2048310191]
 layout_mode = 2
+theme_override_colors/font_color = Color(0, 1, 0.25490198, 1)
+theme_override_fonts/font = SubResource("SystemFont_y1r0m")
 text = "Pautas: 0 / 3"
 
 [node name="LblAudiencia" type="Label" parent="FundoTerminal/Margens/VBoxContainer/VBoxContainer/ColunaDireita" unique_id=1769594580]
 layout_mode = 2
+theme_override_colors/font_color = Color(0, 1, 0.25490198, 1)
+theme_override_fonts/font = SubResource("SystemFont_y1r0m")
 text = "Audiência: 50%"
 
 [node name="LblEsperanca" type="Label" parent="FundoTerminal/Margens/VBoxContainer/VBoxContainer/ColunaDireita" unique_id=931807777]
 layout_mode = 2
+theme_override_colors/font_color = Color(0, 1, 0.25490198, 1)
+theme_override_fonts/font = SubResource("SystemFont_y1r0m")
 text = "Esperança: 0"
 
 [node name="LblIrritacao" type="Label" parent="FundoTerminal/Margens/VBoxContainer/VBoxContainer/ColunaDireita" unique_id=1287024258]
 layout_mode = 2
+theme_override_colors/font_color = Color(0, 1, 0.25490198, 1)
+theme_override_fonts/font = SubResource("SystemFont_y1r0m")
 text = "Irritação: 0"
 
 [node name="BtnEncerrar" type="Button" parent="FundoTerminal/Margens/VBoxContainer/VBoxContainer/ColunaDireita" unique_id=437033284]
 layout_mode = 2
+theme_override_colors/font_hover_color = Color(0, 1, 0.25490198, 1)
 text = "[ ENCERRAR SESSÃO ]"
 
 [node name="HSeparator" type="HSeparator" parent="FundoTerminal/Margens/VBoxContainer" unique_id=14345914]
@@ -110,12 +132,15 @@ size_flags_horizontal = 4
 
 [node name="BtnMusicas" type="Button" parent="FundoTerminal/Margens/VBoxContainer/HBoxContainer" unique_id=1520368074]
 layout_mode = 2
-text = "MUSICAS
-"
+theme_override_colors/font_hover_color = Color(0, 1, 0.25490198, 1)
+theme_override_fonts/font = SubResource("SystemFont_y1r0m")
+text = "[ F1: MÚSICAS ]"
 
 [node name="BtnPropagandaNoticia" type="Button" parent="FundoTerminal/Margens/VBoxContainer/HBoxContainer" unique_id=1619218593]
 layout_mode = 2
-text = "NOTICIAS/PROPAGANDAS"
+theme_override_colors/font_hover_color = Color(0, 1, 0.25490198, 1)
+theme_override_fonts/font = SubResource("SystemFont_y1r0m")
+text = "[ F2: NOTÍCIAS ]"
 
 [node name="HSeparator2" type="HSeparator" parent="FundoTerminal/Margens/VBoxContainer" unique_id=1309067473]
 layout_mode = 2
@@ -132,6 +157,9 @@ size_flags_horizontal = 3
 [node name="LblInboxTitulo" type="Label" parent="FundoTerminal/Margens/VBoxContainer/LayoutGridNoticias/ColunaEsquerda" unique_id=1748061643]
 layout_mode = 2
 size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0, 0.53333336, 0.13333334, 1)
+theme_override_fonts/font = SubResource("SystemFont_mcb0c")
+theme_override_font_sizes/font_size = 18
 text = "--- INBOX ---"
 
 [node name="ListaNoticias" type="VBoxContainer" parent="FundoTerminal/Margens/VBoxContainer/LayoutGridNoticias/ColunaEsquerda" unique_id=1472772250]
@@ -145,17 +173,22 @@ size_flags_stretch_ratio = 2.5
 [node name="LblTitulo" type="Label" parent="FundoTerminal/Margens/VBoxContainer/LayoutGridNoticias/ColunaCentro" unique_id=1671532955]
 custom_minimum_size = Vector2(10, 0)
 layout_mode = 2
-text = "TITULO DA NOTÍCIA"
+theme_override_colors/font_color = Color(0, 1, 0.25490198, 1)
+theme_override_fonts/font = SubResource("SystemFont_y1r0m")
+text = "TITULO_DA_NOTICIA.TXT"
 autowrap_mode = 3
 
 [node name="LblRemetente" type="Label" parent="FundoTerminal/Margens/VBoxContainer/LayoutGridNoticias/ColunaCentro" unique_id=1247995969]
 custom_minimum_size = Vector2(10, 0)
 layout_mode = 2
+theme_override_colors/font_color = Color(0, 0.53333336, 0.13333334, 1)
+theme_override_fonts/font = SubResource("SystemFont_y1r0m")
 text = "DE: Agência Central"
 autowrap_mode = 3
 
 [node name="LblTextoOriginal" type="RichTextLabel" parent="FundoTerminal/Margens/VBoxContainer/LayoutGridNoticias/ColunaCentro" unique_id=527940427]
 layout_mode = 2
+theme_override_fonts/normal_font = SubResource("SystemFont_esxif")
 text = "Aqui entra o texto original da notícia..."
 fit_content = true
 
@@ -165,24 +198,29 @@ layout_mode = 2
 [node name="Label" type="Label" parent="FundoTerminal/Margens/VBoxContainer/LayoutGridNoticias/ColunaCentro" unique_id=1018535203]
 custom_minimum_size = Vector2(10, 0)
 layout_mode = 2
+theme_override_fonts/font = SubResource("SystemFont_y1r0m")
 text = "OPÇÕES EDITORIAIS:"
 autowrap_mode = 3
 
 [node name="OptIntegra" type="CheckBox" parent="FundoTerminal/Margens/VBoxContainer/LayoutGridNoticias/ColunaCentro" unique_id=2073108180]
 layout_mode = 2
-text = "1. Transmitir Íntegra"
+theme_override_fonts/font = SubResource("SystemFont_y1r0m")
+text = "[1] TRANSMITIR_INTEGRA"
 
 [node name="OptSuprimir" type="CheckBox" parent="FundoTerminal/Margens/VBoxContainer/LayoutGridNoticias/ColunaCentro" unique_id=996176862]
 layout_mode = 2
-text = "2. Suprimir Trecho"
+theme_override_fonts/font = SubResource("SystemFont_y1r0m")
+text = "[2] SUPRIMIR_TRECHO"
 
 [node name="OptOficial" type="CheckBox" parent="FundoTerminal/Margens/VBoxContainer/LayoutGridNoticias/ColunaCentro" unique_id=1576291256]
 layout_mode = 2
-text = "3. Nota Oficial"
+theme_override_fonts/font = SubResource("SystemFont_y1r0m")
+text = "[3] NOTA_OFICIAL"
 
 [node name="OptInvestigativo" type="CheckBox" parent="FundoTerminal/Margens/VBoxContainer/LayoutGridNoticias/ColunaCentro" unique_id=221717830]
 layout_mode = 2
-text = "4. Foco Crítico"
+theme_override_fonts/font = SubResource("SystemFont_y1r0m")
+text = "[4] FOCO_CRITICO"
 
 [node name="HSeparator2" type="HSeparator" parent="FundoTerminal/Margens/VBoxContainer/LayoutGridNoticias/ColunaCentro" unique_id=59370669]
 layout_mode = 2
@@ -190,12 +228,15 @@ layout_mode = 2
 [node name="LblPreview" type="Label" parent="FundoTerminal/Margens/VBoxContainer/LayoutGridNoticias/ColunaCentro" unique_id=539807677]
 custom_minimum_size = Vector2(10, 0)
 layout_mode = 2
+theme_override_fonts/font = SubResource("SystemFont_y1r0m")
 text = "PREVIEW DA PAUTA:"
 autowrap_mode = 3
 
 [node name="BtnImprimir" type="Button" parent="FundoTerminal/Margens/VBoxContainer/LayoutGridNoticias/ColunaCentro" unique_id=829695985]
 layout_mode = 2
-text = "[ ENVIAR PARA IMPRESSORA ]"
+theme_override_colors/font_hover_color = Color(0, 1, 0.25490198, 1)
+theme_override_fonts/font = SubResource("SystemFont_y1r0m")
+text = "[ ENTER: ENVIAR_IMPRESSORA ]"
 
 [node name="LayoutGridMusicas" type="HBoxContainer" parent="FundoTerminal/Margens/VBoxContainer" unique_id=1062388726]
 custom_minimum_size = Vector2(200, 0)
@@ -209,6 +250,8 @@ size_flags_horizontal = 3
 [node name="LblInboxTitulo" type="Label" parent="FundoTerminal/Margens/VBoxContainer/LayoutGridMusicas/ColunaEsquerda" unique_id=30683793]
 layout_mode = 2
 size_flags_horizontal = 4
+theme_override_fonts/font = SubResource("SystemFont_y1r0m")
+theme_override_font_sizes/font_size = 18
 text = "--- MUSICAS ---"
 
 [node name="ListaMusicas" type="VBoxContainer" parent="FundoTerminal/Margens/VBoxContainer/LayoutGridMusicas/ColunaEsquerda" unique_id=2008677854]

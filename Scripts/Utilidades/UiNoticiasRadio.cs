@@ -5,7 +5,6 @@ using fiveyears3.Scripts.Globais;
 
 namespace fiveyears3.Scripts.UI
 {
-    // Altere de CanvasLayer para Control
     public partial class UiNoticiasRadio : Control
     {
         [Export] public ItemList ListaNoticias;
@@ -30,6 +29,7 @@ namespace fiveyears3.Scripts.UI
             {
                 ListaNoticias.FocusMode = FocusModeEnum.All;
                 ListaNoticias.ItemSelected += OnNoticiaSelecionada;
+                ConfigurarEstiloTerminalItemList();
             }
 
             VisibilityChanged += OnVisibilityChanged;
@@ -125,6 +125,8 @@ namespace fiveyears3.Scripts.UI
             var noticiasPautadas = GerenciadorNoticiasImpressas.Instance.NoticiasImpressasDoDia;
             var musicasEnviadas = GerenciadorNoticiasImpressas.Instance.MusicasEnviadasDoDia;
 
+            int indiceGlobal = 0;
+
             if (noticiasPautadas != null)
             {
                 foreach (var noticia in noticiasPautadas)
@@ -135,9 +137,13 @@ namespace fiveyears3.Scripts.UI
                         Noticia = noticia
                     });
 
-                    string tituloExibicao = $"[NOTÍCIA] {ObterTituloDeAcordoComEscolha(noticia)}";
+                    string tituloNoticia = ObterTituloDeAcordoComEscolha(noticia);
+                    string tituloExibicao = $"[{indiceGlobal + 1:00}] > [NOTICIA] {tituloNoticia.ToUpper()}";
+
+                    // Removido SetItemCustomFgColor para permitir inversão de cores e hover no tema
                     ListaNoticias.AddItem(tituloExibicao);
-                    ListaNoticias.SetItemCustomFgColor(ListaNoticias.ItemCount - 1, new Color(0.95f, 0.95f, 1.0f));
+
+                    indiceGlobal++;
                 }
             }
 
@@ -151,14 +157,71 @@ namespace fiveyears3.Scripts.UI
                         Musica = musica
                     });
 
-                    string tituloMusica = string.IsNullOrEmpty(musica?.Titulo) ? "[MÚSICA] Música sem título" : $"[MÚSICA] {musica.Titulo}";
+                    string nomeMusica = string.IsNullOrEmpty(musica?.Titulo) ? "SEM_TITULO.RAW" : musica.Titulo;
+                    string tituloMusica = $"[{indiceGlobal + 1:00}] > [MUSICA] {nomeMusica.ToUpper()}";
+
+                    // Removido SetItemCustomFgColor para permitir inversão de cores e hover no tema
                     ListaNoticias.AddItem(tituloMusica);
-                    ListaNoticias.SetItemCustomFgColor(ListaNoticias.ItemCount - 1, new Color(0.75f, 1.0f, 0.75f));
+
+                    indiceGlobal++;
                 }
             }
 
             GD.Print($"[UiNoticiasRadioViewport] Lista atualizada: {ListaNoticias.ItemCount} itens.");
             AtualizarEstadoLista();
+        }
+
+        private void ConfigurarEstiloTerminalItemList()
+        {
+            if (ListaNoticias == null) return;
+
+            ListaNoticias.SelectMode = ItemList.SelectModeEnum.Single;
+            ListaNoticias.FocusMode = Control.FocusModeEnum.All;
+
+            // 1. Fundo da caixa inteira (Terminal Escuro)
+            var stylePanel = new StyleBoxFlat
+            {
+                BgColor = new Color("#051105"),
+                ContentMarginLeft = 6,
+                ContentMarginTop = 6,
+                ContentMarginRight = 6,
+                ContentMarginBottom = 6,
+                BorderColor = new Color("#00FF41"),
+                BorderWidthLeft = 1,
+                BorderWidthTop = 1,
+                BorderWidthRight = 1,
+                BorderWidthBottom = 1
+            };
+            ListaNoticias.AddThemeStyleboxOverride("panel", stylePanel);
+
+            // 2. Item SELECIONADO / EM TRANSMISSÃO (Fundo Verde Neon)
+            var styleSelected = new StyleBoxFlat
+            {
+                BgColor = new Color("#00FF41"),
+                CornerRadiusTopLeft = 0,
+                CornerRadiusTopRight = 0,
+                CornerRadiusBottomLeft = 0,
+                CornerRadiusBottomRight = 0
+            };
+            ListaNoticias.AddThemeStyleboxOverride("selected", styleSelected);
+            ListaNoticias.AddThemeStyleboxOverride("selected_focus", styleSelected);
+
+            // 3. Item HOVER (Cursor passando em cima)
+            var styleHover = new StyleBoxFlat
+            {
+                BgColor = new Color("#0d3810"), // Verde médio visível para dar destaque
+                BorderColor = new Color("#00FF41"),
+                BorderWidthLeft = 1,
+                BorderWidthTop = 1,
+                BorderWidthRight = 1,
+                BorderWidthBottom = 1
+            };
+            ListaNoticias.AddThemeStyleboxOverride("hovered", styleHover);
+
+            // 4. Cores do Texto
+            ListaNoticias.AddThemeColorOverride("font_color", new Color("#00FF41"));          // Normal: Texto Verde Terminal
+            ListaNoticias.AddThemeColorOverride("font_selected_color", new Color("#000000")); // Selecionado: Texto PRETO sobre fundo verde
+            ListaNoticias.AddThemeColorOverride("font_hovered_color", new Color("#00FF41"));  // Hover: Texto Verde brilhante
         }
 
         private void AtualizarEstadoLista()

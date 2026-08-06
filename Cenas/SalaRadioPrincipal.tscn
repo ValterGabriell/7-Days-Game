@@ -16,7 +16,9 @@
 [ext_resource type="Texture2D" uid="uid://rtpdp6buvt2s" path="res://Arte/Texturas/grey_tiles_1k.gltf/textures/grey_tiles_nor_gl_1k.jpg" id="8_r6c1g"]
 [ext_resource type="Texture2D" uid="uid://h3knfe2b0byt" path="res://Arte/Texturas/Pessoal/textura_parede.png" id="9_a5ha3"]
 [ext_resource type="PackedScene" uid="uid://nl487geherjc" path="res://Arte/Modelos3D/MesaTrabalho/scene.gltf" id="9_bgd4d"]
+[ext_resource type="Texture2D" uid="uid://cq658ev2c3tsh" path="res://Arte/Texturas/blue_plaster_weathered_1k.gltf/textures/blue_plaster_weathered_diff_1k.jpg" id="9_pg14x"]
 [ext_resource type="Texture2D" uid="uid://if4edww4i7u6" path="res://Arte/Texturas/Pessoal/textura_parede_normal.png" id="10_4qy4w"]
+[ext_resource type="Texture2D" uid="uid://c3pqqfyu7v2f0" path="res://Arte/Texturas/blue_plaster_weathered_1k.gltf/textures/blue_plaster_weathered_nor_gl_1k.jpg" id="10_cmav2"]
 [ext_resource type="Texture2D" uid="uid://kdhlw5dx025v" path="res://Arte/Texturas/Pessoal/textura_parede_02.png" id="10_sksnr"]
 [ext_resource type="PackedScene" uid="uid://q4gtkiy3ugva" path="res://Cenas/Utilidades/CalendarioRotinas.tscn" id="11_ghx4a"]
 
@@ -41,6 +43,17 @@ size = Vector2(8, 8)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_exfc0"]
 size = Vector3(8.015099, 0.037597656, 8.312317)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8p6dl"]
+albedo_texture = ExtResource("9_pg14x")
+roughness_texture = ExtResource("9_pg14x")
+normal_enabled = true
+normal_texture = ExtResource("10_cmav2")
+uv1_scale = Vector3(6, 6, 6)
+
+[sub_resource type="BoxMesh" id="BoxMesh_rosvx"]
+material = SubResource("StandardMaterial3D_8p6dl")
+size = Vector3(9.806763, 0.30566406, 8.634972)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c40mv"]
 albedo_texture = ExtResource("9_a5ha3")
@@ -165,8 +178,8 @@ shape = SubResource("BoxShape3D_exfc0")
 debug_color = Color(0, 0, 15.863711, 1)
 
 [node name="Chao8" type="MeshInstance3D" parent="ConfiguracaoGlobal/Estruturas" unique_id=1263773823]
-transform = Transform3D(-0.5153235, -8.742277e-08, 0, 4.5051014e-08, -0.99999994, 0, 0, 0, 1, 1.8405651, 3.1305373, 0)
-mesh = SubResource("PlaneMesh_ef0sp")
+transform = Transform3D(-0.5153235, -8.742277e-08, 0, 4.5051014e-08, -0.99999994, 0, 0, 0, 1, 2.1037312, 3.4991043, -0.15491104)
+mesh = SubResource("BoxMesh_rosvx")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="ConfiguracaoGlobal/Estruturas/Chao8" unique_id=1815113302]
 collision_mask = 2

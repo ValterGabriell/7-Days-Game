@@ -10,7 +10,7 @@ namespace fiveyears3.Scripts.UI
 {
     public partial class InterfaceOSUI : Control
     {
-        [Export] public VBoxContainer ListaNoticias;
+        [Export] public VBoxContainer ListaNoticias; 
 
         [Export] public Label LblTitulo;
         [Export] public Label LblRemetente;
@@ -40,7 +40,7 @@ namespace fiveyears3.Scripts.UI
         private const int MAX_PAUTAS_DIA = 3;
         private ButtonGroup _grupoOpcoesEditoriais;
         private readonly List<MusicaModel> _musicasDisponiveis = new();
-
+        private ButtonGroup _grupoBotoesNoticias = new ButtonGroup();
         private VBoxContainer ObterListaMusicas()
         {
             if (ListaMusicas != null) return ListaMusicas;
@@ -92,6 +92,9 @@ namespace fiveyears3.Scripts.UI
             CarregarMusicasDisponiveis();
             AtualizarListaMusicas();
             ExibirAba(false);
+
+            // Força a atualização da lista caso as notícias já estejam carregadas no Gerenciador
+            AtualizarListaNoticias();
         }
 
         public override void _ExitTree()
@@ -107,7 +110,6 @@ namespace fiveyears3.Scripts.UI
                 GerenciadorNoticiasImpressas.Instance.MusicaRemovidaDaFila -= OnMusicaRemovidaDaFila;
                 GerenciadorNoticiasImpressas.Instance.MusicaFinalizadaTransmissao -= OnMusicaFinalizadaTransmissao;
             }
-
         }
 
         private void ExibirAba(bool mostrarMusicas)
@@ -210,20 +212,9 @@ namespace fiveyears3.Scripts.UI
             }
         }
 
-        private void OnMusicaEnviadaNoRadio(MusicaModel musica)
-        {
-            AtualizarListaMusicas();
-        }
-
-        private void OnMusicaRemovidaDaFila(MusicaModel musica)
-        {
-            AtualizarListaMusicas();
-        }
-
-        private void OnMusicaFinalizadaTransmissao(MusicaModel musica)
-        {
-            AtualizarListaMusicas();
-        }
+        private void OnMusicaEnviadaNoRadio(MusicaModel musica) => AtualizarListaMusicas();
+        private void OnMusicaRemovidaDaFila(MusicaModel musica) => AtualizarListaMusicas();
+        private void OnMusicaFinalizadaTransmissao(MusicaModel musica) => AtualizarListaMusicas();
 
         private void ConfigurarGrupoDeOpcoes()
         {
@@ -236,12 +227,15 @@ namespace fiveyears3.Scripts.UI
 
         private void AtualizarListaNoticias()
         {
+            if (ListaNoticias == null) return;
+
+            // Limpa os botões antigos da lista
             foreach (Node child in ListaNoticias.GetChildren())
             {
                 child.QueueFree();
             }
 
-            List<NoticiaModel> noticias = GerenciadorDeNoticias.Instance.NoticiasDoDia;
+            List<NoticiaModel> noticias = GerenciadorDeNoticias.Instance?.NoticiasDoDia;
 
             if (noticias == null || noticias.Count == 0)
             {
@@ -249,27 +243,76 @@ namespace fiveyears3.Scripts.UI
                 return;
             }
 
-            foreach (var noticia in noticias)
+            _grupoBotoesNoticias = new ButtonGroup(); // Reseta o grupo a cada atualização
+
+            // Criação do estilo padrão (Normal)
+            StyleBoxFlat styleNormal = new StyleBoxFlat
             {
+                BgColor = new Color("#000000"), // Fundo preto
+                BorderWidthLeft = 1,
+                BorderWidthTop = 1,
+                BorderWidthRight = 1,
+                BorderWidthBottom = 1,
+                BorderColor = new Color("#00FF41"), // Borda verde terminal
+                ContentMarginLeft = 8,
+                ContentMarginRight = 8,
+                ContentMarginTop = 4,
+                ContentMarginBottom = 4
+            };
+
+            // Criação do estilo para quando o botão estiver SELECIONADO / PRESSIONADO (Inversão retro)
+            StyleBoxFlat stylePressed = new StyleBoxFlat
+            {
+                BgColor = new Color("#00FF41"), // Fundo verde brilhante
+                BorderWidthLeft = 1,
+                BorderWidthTop = 1,
+                BorderWidthRight = 1,
+                BorderWidthBottom = 1,
+                BorderColor = new Color("#00FF41"),
+                ContentMarginLeft = 8,
+                ContentMarginRight = 8,
+                ContentMarginTop = 4,
+                ContentMarginBottom = 4
+            };
+
+            for (int i = 0; i < noticias.Count; i++)
+            {
+                var noticia = noticias[i];
                 Button btnNoticia = new Button
                 {
-                    Text = noticia.TituloOriginal,
+                    Text = $"[{i + 1:00}] > {noticia.TituloOriginal.ToUpper()}",
                     Alignment = HorizontalAlignment.Left,
                     AutowrapMode = TextServer.AutowrapMode.WordSmart,
-                    CustomMinimumSize = new Vector2(0, 40)
+                    CustomMinimumSize = new Vector2(0, 36),
+                    ToggleMode = true, // Permite ficar marcado/pressionado
+                    ButtonGroup = _grupoBotoesNoticias // Faz com que apenas um botão fique selecionado por vez
                 };
 
                 btnNoticia.SizeFlagsHorizontal = Control.SizeFlags.ExpandFill;
+
+                // Sobrescreve as cores do texto
+                btnNoticia.AddThemeColorOverride("font_color", new Color("#00FF41")); // Texto normal: verde
+                btnNoticia.AddThemeColorOverride("font_pressed_color", new Color("#000000")); // Texto selecionado: preto
+                btnNoticia.AddThemeColorOverride("font_hover_color", new Color("#00FF41"));
+                btnNoticia.AddThemeColorOverride("font_focus_color", new Color("#000000"));
+
+                // Aplica os StyleBoxes
+                btnNoticia.AddThemeStyleboxOverride("normal", styleNormal);
+                btnNoticia.AddThemeStyleboxOverride("pressed", stylePressed);
+                btnNoticia.AddThemeStyleboxOverride("hover", styleNormal);
+                btnNoticia.AddThemeStyleboxOverride("focus", stylePressed);
 
                 NoticiaModel noticiaLocal = noticia;
                 btnNoticia.Pressed += () => ExibirNoticia(noticiaLocal);
 
                 ListaNoticias.AddChild(btnNoticia);
-            }
 
-            if (noticias.Count > 0)
-            {
-                ExibirNoticia(noticias[0]);
+                // Marca o primeiro item como selecionado por padrão
+                if (i == 0)
+                {
+                    btnNoticia.ButtonPressed = true;
+                    ExibirNoticia(noticiaLocal);
+                }
             }
         }
 
