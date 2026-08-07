@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text.Json.Serialization;
+using static VariacaoNoticia;
 
 namespace Scripts.SaveSystem
 {
@@ -183,15 +184,11 @@ namespace Scripts.SaveSystem
 
         [JsonPropertyName("VariacaoEscolhida")]
         public string VariacaoEscolhida { get; set; } = "ORIGINAL";
+        
+        [JsonPropertyName("ImpressoresGeradasNoDiaSeguinte")]   
+        public FeedbackImpressoes ImpressoresGeradasNoDiaSeguinte { get; set; } = new FeedbackImpressoes();
 
-        public static NoticiaEscolhaSave CriarNovaEscolha(string idNoticia, string variacao)
-        {
-            return new NoticiaEscolhaSave
-            {
-                IDNoticia = idNoticia,
-                VariacaoEscolhida = variacao
-            };
-        }
+      
     }
 
     public class ResumoImpactosSave

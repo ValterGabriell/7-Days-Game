@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 
-
 public enum AcaoEditorial
 {
     ORIGINAL, 
@@ -8,6 +7,7 @@ public enum AcaoEditorial
     MENTIR,   
     DISTORCER     
 }
+
 public class NoticiaModel
 {
     public string Id { get; set; }
@@ -17,5 +17,5 @@ public class NoticiaModel
     
     public Dictionary<AcaoEditorial, VariacaoNoticia> Variacoes { get; set; } = new();
     public AcaoEditorial EscolhaJogador { get; set; } = AcaoEditorial.ORIGINAL;
-
 }
+

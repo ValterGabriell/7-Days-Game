@@ -119,10 +119,12 @@ namespace Scripts.SaveSystem
 
         private void SalvarEscolhaDaNoticiaNoRadio(NoticiaModel model)
         {
+            model.Variacoes.TryGetValue(model.EscolhaJogador, out var variacaoEscolhida);
             VariavelAuxiliarQueVaiGuardarAsEscolhasFeitasEmUmDeterminadoDia.Add(new NoticiaEscolhaSave
             {
                 IDNoticia = model.Id,
-                VariacaoEscolhida = model.EscolhaJogador.ToString()
+                VariacaoEscolhida = model.EscolhaJogador.ToString(),
+                ImpressoresGeradasNoDiaSeguinte = variacaoEscolhida?.ImpressoresGeradasNoDiaSeguinte
             });
         }
 

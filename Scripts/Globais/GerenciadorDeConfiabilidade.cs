@@ -89,30 +89,5 @@ namespace fiveyears3.Scripts.Globais
             );
         }
 
-        /// <summary>
-        /// Gera o resumo recalculando diretamente a lista de notícias transmitidas.
-        /// </summary>
-        public ResumoImpactosSave GerarResumoImpactosDoDia(List<NoticiaModel> noticiasTransmitidas)
-        {
-            float lealdade = 0f;
-            float resistencia = 0f;
-            float audiencia = 0f;
-
-            if (noticiasTransmitidas != null)
-            {
-                foreach (var noticia in noticiasTransmitidas)
-                {
-
-                    if (noticia.Variacoes != null && noticia.Variacoes.TryGetValue(noticia.EscolhaJogador, out var variacao) && variacao?.Impacto != null)
-                    {
-                        lealdade += (float)variacao.Impacto.VariacaoEsperanca;
-                        resistencia += (float)variacao.Impacto.VariacaoIrritacao;
-                        audiencia += (float)variacao.Impacto.AudienciaGanha;
-                    }
-                }
-            }
-
-            return ResumoImpactosSave.CriarNovoResumoImpactos(lealdade, resistencia, audiencia);
-        }
     }
 }

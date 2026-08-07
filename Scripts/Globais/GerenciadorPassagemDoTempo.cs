@@ -103,6 +103,7 @@ namespace fiveyears3.Scripts.Globais
             TempoEmSilencioNoDiaAtual = 0;
             GerenciadorDeConfiabilidade.Instance?.ResetarDeltasDoDia();
             GerenciadorDeNoticias.Instance?.ResetarValoresDeNoticiasEMusicasQueDevemSerTransmitidasNoDia();
+
             GD.Print($"[GerenciadorPassagemDoTempo] Dia {DiaAtual} finalizado.");
         }
     }

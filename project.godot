@@ -127,6 +127,7 @@ interagir_flipper_02={
 3d_physics/layer_7="antena"
 3d_physics/layer_8="pinball"
 3d_physics/layer_9="bola_pinball"
+3d_physics/layer_10="impressora"
 
 [physics]
 

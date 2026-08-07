@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://6bxg4kqi00ra"]
+
+[ext_resource type="PackedScene" uid="uid://c10187xi1tg25" path="res://Arte/Modelos3D/Impressora.gltf" id="1_tfu8c"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ef0sp"]
+size = Vector3(1, 0.9463501, 0.5922241)
+
+[node name="Impressora" type="StaticBody3D" unique_id=984869610]
+collision_layer = 512
+collision_mask = 2
+
+[node name="blockbench_export" parent="." unique_id=1863763107 instance=ExtResource("1_tfu8c")]
+transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1006913421]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.50839233, -0.025726318)
+shape = SubResource("BoxShape3D_ef0sp")

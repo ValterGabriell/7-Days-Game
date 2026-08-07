@@ -1,92 +1,156 @@
 [
-	{
-		"Id": "noticia_01",
-		"Remetente": "[DIA 01]Ministério do Abastecimento",
-		"TituloOriginal": "Aumento na Ração Diária de Grãos",
-		"TextoOriginal": "A distribuição pública de grãos terá um acréscimo de 100g por família a partir deste mês.",
-		"EscolhaJogador": "ORIGINAL",
-		"Variacoes": {
-			"ORIGINAL": {
-				"TituloAlterado": "Aumento na Ração Diária de Grãos",
-				"TextoParaLer": "A distribuição pública de grãos terá um acréscimo de 100g por família a partir deste mês.",
-				"Impacto": {
-					"VariacaoEsperanca": 5.0,
-					"VariacaoIrritacao": -2.0,
-					"AudienciaGanha": 8.0
-				}
-			},
-			"OMITIR": {
-				"TituloAlterado": "Ajuste na Tabela de Grãos",
-				"TextoParaLer": "Foi atualizado o cronograma de entrega dos suprimentos alimentares do trimestre.",
-				"Impacto": {
-					"VariacaoEsperanca": 0.0,
-					"VariacaoIrritacao": 0.0,
-					"AudienciaGanha": 1.0
-				}
-			},
-			"MENTIR": {
-				"TituloAlterado": "Fim da Escassez de Alimentos na Província",
-				"TextoParaLer": "Os estoques estatais estão totalmente cheios e a distribuição de alimentos será ilimitada.",
-				"Impacto": {
-					"VariacaoEsperanca": 15.0,
-					"VariacaoIrritacao": -10.0,
-					"AudienciaGanha": 12.0
-				}
-			},
-			"DISTORCER": {
-				"TituloAlterado": "Sobras da Elite São Repassadas à População",
-				"TextoParaLer": "O governo libera apenas migalhas de grãos estragados enquanto os depósitos centrais esbanjam fartura.",
-				"Impacto": {
-					"VariacaoEsperanca": -12.0,
-					"VariacaoIrritacao": 18.0,
-					"AudienciaGanha": 20.0
-				}
-			}
-		}
-	},
-	{
-		"Id": "noticia_02",
-		"Remetente": "[DIA 01]Secretaria de Comunicação Estatal",
-		"TituloOriginal": "Propaganda: Campanha do Povo Unido",
-		"TextoOriginal": "A força da nossa nação vem do trabalho árduo e da lealdade aos ideais do Estado.",
-		"EscolhaJogador": "ORIGINAL",
-		"Variacoes": {
-			"ORIGINAL": {
-				"TituloAlterado": "Propaganda: Campanha do Povo Unido",
-				"TextoParaLer": "A força da nossa nação vem do trabalho árduo e da lealdade aos ideais do Estado.",
-				"Impacto": {
-					"VariacaoEsperanca": 4.0,
-					"VariacaoIrritacao": -1.0,
-					"AudienciaGanha": 5.0
-				}
-			},
-			"OMITIR": {
-				"TituloAlterado": "Informativo Institucional N° 12",
-				"TextoParaLer": "Aviso padrão referente ao cumprimento das diretrizes de trabalho comunitário.",
-				"Impacto": {
-					"VariacaoEsperanca": 0.0,
-					"VariacaoIrritacao": 0.0,
-					"AudienciaGanha": 1.0
-				}
-			},
-			"MENTIR": {
-				"TituloAlterado": "Propaganda: Prosperidade Inabalável da Nação",
-				"TextoParaLer": "Nossa indústria atingiu recordes históricos e somos o país mais seguro e feliz do continente.",
-				"Impacto": {
-					"VariacaoEsperanca": 10.0,
-					"VariacaoIrritacao": -8.0,
-					"AudienciaGanha": 10.0
-				}
-			},
-			"DISTORCER": {
-				"TituloAlterado": "Propaganda: Lavagem Cerebral e Exploração",
-				"TextoParaLer": "O Estado exige sua devoção cega enquanto consome a vida do cidadão em benefício dos generais.",
-				"Impacto": {
-					"VariacaoEsperanca": -15.0,
-					"VariacaoIrritacao": 22.0,
-					"AudienciaGanha": 18.0
-				}
-			}
-		}
-	}
+  {
+    "Id": "noticia_01",
+    "Remetente": "[DIA 01]Ministério do Abastecimento",
+    "TituloOriginal": "Aumento na Ração Diária de Grãos",
+    "TextoOriginal": "A distribuição pública de grãos terá um acréscimo de 100g por família a partir deste mês.",
+    "EscolhaJogador": "ORIGINAL",
+    "Variacoes": {
+      "ORIGINAL": {
+        "TituloAlterado": "Aumento na Ração Diária de Grãos",
+        "TextoParaLer": "A distribuição pública de grãos terá um acréscimo de 100g por família a partir deste mês.",
+        "Impacto": {
+          "VariacaoEsperanca": 5.0,
+          "VariacaoIrritacao": -2.0,
+          "AudienciaGanha": 8.0
+        },
+        "ImpressoresGeradasNoDiaSeguinte": {
+          "Governo": {
+            "Falas": "MEMORANDO OFICIAL #409-B\n\nNotamos com satisfação que o informe sobre a revisão das cotas alimentares foi transmitido em conformidade absoluta com as diretrizes do Ministério do Abastecimento. A manutenção do texto fidedigno evita discrepâncias contábeis nos postos de distribuição e assegura a ordem pública. Continue mantendo a fidelidade às diretrizes emitidas por esta Secretaria."
+          },
+          "Resistencia": {
+            "Falas": "RELATÓRIO DE CAMPO - CÉLULA SUL\n\nO anúncio do aumento das rações corresponde exatamente às poucas sacas extras que chegaram aos armazéns ontem. Cem gramas a mais continuam sendo uma miséria diante da fome que assola os distritos, mas reconhecemos que você repassou a informação real sem transformar a escassez em um espetáculo de propaganda mentirosa."
+          }
+        }
+      },
+      "OMITIR": {
+        "TituloAlterado": "Ajuste na Tabela de Grãos",
+        "TextoParaLer": "Foi atualizado o cronograma de entrega dos suprimentos alimentares do trimestre.",
+        "Impacto": {
+          "VariacaoEsperanca": 0.0,
+          "VariacaoIrritacao": 0.0,
+          "AudienciaGanha": 1.0
+        },
+        "ImpressoresGeradasNoDiaSeguinte": {
+          "Governo": {
+            "Falas": "PARECER DE AUDITORIA DE COMUNICAÇÃO\n\nA reinterpretação burocrática da notícia sobre os grãos reduziu consideravelmente o impacto do anúncio estatal. Embora a transmissão não apresente desvios ideológicos graves, a falta de ênfase no ato de generosidade do Estado privou o regime de uma oportunidade valiosa de reforçar a moral pública. Solicitamos maior alinhamento cívico nas próximas pautas."
+          },
+          "Resistencia": {
+            "Falas": "BOLETIM CLANDESTINO #12\n\nSua leitura suavizada transformou uma conquista mínima do povo em um mero aviso técnico sem relevância. Ao omitir os detalhes da nova cota, a população dos setores baixos continuou sem saber do seu direito nos postos de entrega. A neutralidade cega do operador de rádio apenas serve para manter o povo na ignorância."
+          }
+        }
+      },
+      "MENTIR": {
+        "TituloAlterado": "Fim da Escassez de Alimentos na Província",
+        "TextoParaLer": "Os estoques estatais estão totalmente cheios e a distribuição de alimentos será ilimitada.",
+        "Impacto": {
+          "VariacaoEsperanca": 15.0,
+          "VariacaoIrritacao": -10.0,
+          "AudienciaGanha": 12.0
+        },
+        "ImpressoresGeradasNoDiaSeguinte": {
+          "Governo": {
+            "Falas": "ALERTA DE SEGURANÇA INTERNA - CONFIDENCIAL\n\nSua declaração sobre estoques ilimitados conteve a onda de insatisfação popular de imediato, mas criou um sério problema de gestão nos postos de distribuição. Milhares de cidadãos cercaram os armazéns exigindo suprimentos que não existem. O exagero das suas palavras colocou a fiscalização sob forte pressão. Meça suas promessas ao público."
+          },
+          "Resistencia": {
+            "Falas": "INFORMATIVO DA RESISTÊNCIA URBANÍSTICA\n\nVocê prometeu fartura e banquetes nos alto-falantes da cidade, mas as filas nos armazéns continuam vazias e vigiadas por guardas armados. Criar uma ilusão de abundância em meio ao racionamento brutal é uma crueldade com os famintos. Quando a ilusão ruir, a revolta da população contra as promessas da rádio será inevitável."
+          }
+        }
+      },
+      "DISTORCER": {
+        "TituloAlterado": "Sobras da Elite São Repassadas à População",
+        "TextoParaLer": "O governo libera apenas migalhas de grãos estragados enquanto os depósitos centrais esbanjam fartura.",
+        "Impacto": {
+          "VariacaoEsperanca": -12.0,
+          "VariacaoIrritacao": 18.0,
+          "AudienciaGanha": 20.0
+        },
+        "ImpressoresGeradasNoDiaSeguinte": {
+          "Governo": {
+            "Falas": "ORDEM DE INVESTIGAÇÃO DE SABOTAGEM\n\nA transmissão alterada sobre a distribuição de grãos incitou tumultos diretos em três distritos operários. A acusação de desvio de suprimentos contra a administração central é considerada ato de traição nacional. Os registros da emissora foram encaminhados para perícia técnica e o autor da transmissão está sob vigilância prioritária."
+          },
+          "Resistencia": {
+            "Falas": "MANIFESTO DOS TRABALHADORES UNIDOS\n\nSua denúncia ressoou fortemente pelas fábricas do setor industrial. Ao escancarar que os acréscimos nas rações não passam de migalhas perto do luxo dos generais, você acendeu a centelha da indignação necessária. O povo finalmente compreendeu a extensão da exploração que sofremos diariamente."
+          }
+        }
+      }
+    }
+  },
+  {
+    "Id": "noticia_02",
+    "Remetente": "[DIA 01]Secretaria de Comunicação Estatal",
+    "TituloOriginal": "Propaganda: Campanha do Povo Unido",
+    "TextoOriginal": "A força da nossa nação vem do trabalho árduo e da lealdade aos ideais do Estado.",
+    "EscolhaJogador": "ORIGINAL",
+    "Variacoes": {
+      "ORIGINAL": {
+        "TituloAlterado": "Propaganda: Campanha do Povo Unido",
+        "TextoParaLer": "A força da nossa nação vem do trabalho árduo e da lealdade aos ideais do Estado.",
+        "Impacto": {
+          "VariacaoEsperanca": 4.0,
+          "VariacaoIrritacao": -1.0,
+          "AudienciaGanha": 5.0
+        },
+        "ImpressoresGeradasNoDiaSeguinte": {
+          "Governo": {
+            "Falas": "AVALIAÇÃO DE DESEMPENHO EMISSORA CENTRAL\n\nO boletim patriótico sobre a unidade nacional cumpriu integralmente os requisitos de alinhamento doutrinário. A reafirmação do trabalho e da lealdade nas ondas de rádio fortalece o controle social e desencoraja atitudes subversivas nos postos de trabalho. A Diretoria de Comunicação expressa sua aprovação."
+          },
+          "Resistencia": {
+            "Falas": "CIRCULAR INTERNA - REDE LIBERDADE\n\nMais uma vez as cornetas do regime ecoaram o velho discurso de sacrifício e submissão cega. A população ouve a mensagem de lealdade enquanto trabalha até o esgotamento físico por salários miseráveis. Sua fidelidade ao texto oficial serve apenas para adormecer a consciência dos cidadãos."
+          }
+        }
+      },
+      "OMITIR": {
+        "TituloAlterado": "Informativo Institucional N° 12",
+        "TextoParaLer": "Aviso padrão referente ao cumprimento das diretrizes de trabalho comunitário.",
+        "Impacto": {
+          "VariacaoEsperanca": 0.0,
+          "VariacaoIrritacao": 0.0,
+          "AudienciaGanha": 1.0
+        },
+        "ImpressoresGeradasNoDiaSeguinte": {
+          "Governo": {
+            "Falas": "NOTIFICAÇÃO DE ADVERTÊNCIA EDITORIAL\n\nIdentificamos uma atenuação injustificada no tom do manifesto sobre a unidade cívica. O texto original exigia fervor e exaltação aos ideais do Estado, mas foi reduzido a um comunicado administrativo árido e sem impacto emocional. Exigimos que a carga de fervor patriótico seja restaurada nas próximas emissões."
+          },
+          "Resistencia": {
+            "Falas": "NOTAS DO OBSERVATÓRIO SUBTERRÂNEO\n\nSua opção por desidratar o panfleto do governo transformou um discurso agressivo de doutrinação em um aviso chato e inofensivo. A população ignorou o comunicado, o que acabou por enfraquecer o contágio ideológico que os comissários pretendiam espalhar pelo distrito."
+          }
+        }
+      },
+      "MENTIR": {
+        "TituloAlterado": "Propaganda: Prosperidade Inabalável da Nação",
+        "TextoParaLer": "Nossa indústria atingiu recordes históricos e somos o país mais seguro e feliz do continente.",
+        "Impacto": {
+          "VariacaoEsperanca": 10.0,
+          "VariacaoIrritacao": -8.0,
+          "AudienciaGanha": 10.0
+        },
+        "ImpressoresGeradasNoDiaSeguinte": {
+          "Governo": {
+            "Falas": "RELATÓRIO DE IMPACTO DA PROPAGANDA\n\nA exaltação dos recordes industriais inventados teve um efeito imediato nas métricas de satisfação popular. Os relatórios dos patrulheiros mostram que a população absorveu o discurso triunfalista sem questionar. Embora os números sejam fictícios, o resultado ideológico foi altamente favorável à estabilidade do regime."
+          },
+          "Resistencia": {
+            "Falas": "CRÍTICA DE IMPRENSA CLANDESTINA\n\nAo fabricar conquistas econômicas inexistentes e declarar que nossa província é a mais feliz do continente, você se tornou o arquiteto de uma ilusão grotesca. Os trabalhadores nas fundições sabem da miséria real, mas o excesso de propaganda falsa confunde os mais fracos e atrasa a organização das greves."
+          }
+        }
+      },
+      "DISTORCER": {
+        "TituloAlterado": "Propaganda: Lavagem Cerebral e Exploração",
+        "TextoParaLer": "O Estado exige sua devoção cega enquanto consome a vida do cidadão em benefício dos generais.",
+        "Impacto": {
+          "VariacaoEsperanca": -15.0,
+          "VariacaoIrritacao": 22.0,
+          "AudienciaGanha": 18.0
+        },
+        "ImpressoresGeradasNoDiaSeguinte": {
+          "Governo": {
+            "Falas": "REGISTRO DE INFRAÇÃO GRAVE - TRIBUNAL MILITAR\n\nA transmissão oficial de rádio foi utilizada abertamente para difundir calúnias contra o Alto Comando das Forças Armadas e incitar o descumprimento das deveres cívicos. O texto propagado atacou diretamente os alicerces da autoridade governamental. Uma investigação sigilosa contra a estação foi instaurada sob acusações de sedição."
+          },
+          "Resistencia": {
+            "Falas": "PANFLETO DA FRENTE REVOLUCIONÁRIA\n\nAs palavras transmitidas ontem ecoaram como um estrondo sobre a rotina da cidade. Romper o monopólio da fala estatal para denunciar abertamente os generais foi um ato audacioso. Milhares de trabalhadores ouviram a verdade nua e crua nos alto-falantes centrais e a tensão nas zonas de fábrica atingiu o ponto máximo."
+          }
+        }
+      }
+    }
+  }
 ]

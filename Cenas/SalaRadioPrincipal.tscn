@@ -21,6 +21,7 @@
 [ext_resource type="Texture2D" uid="uid://c3pqqfyu7v2f0" path="res://Arte/Texturas/blue_plaster_weathered_1k.gltf/textures/blue_plaster_weathered_nor_gl_1k.jpg" id="10_cmav2"]
 [ext_resource type="Texture2D" uid="uid://kdhlw5dx025v" path="res://Arte/Texturas/Pessoal/textura_parede_02.png" id="10_sksnr"]
 [ext_resource type="PackedScene" uid="uid://q4gtkiy3ugva" path="res://Cenas/Utilidades/CalendarioRotinas.tscn" id="11_ghx4a"]
+[ext_resource type="PackedScene" uid="uid://6bxg4kqi00ra" path="res://Cenas/Utilidades/Impressora.tscn" id="22_sksnr"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_exfc0"]
 
@@ -258,7 +259,7 @@ script = ExtResource("4_dbo6t")
 CameraMesa = NodePath("Cameras/CameraDaMesa")
 CameraRadio = NodePath("Cameras/CameraRadio")
 CameraComputador = NodePath("Cameras/CameraMonitor")
-CameraTelefone = NodePath("Cameras/CameraTelefone")
+CameraTelefone = NodePath("Cameras/CameraImperssora")
 CameraAntena = NodePath("../ConfiguracaoGlobal/Cameras/CameraAntena")
 PontoRadio = NodePath("Radio/PontoRadio")
 PontoComputador = NodePath("Computador/PontoComputador")
@@ -306,6 +307,9 @@ Jogador = NodePath("../../Personagens/PersonagemPrincipal")
 [node name="Marker3D" type="Marker3D" parent="MesaDeTrabalho/Cadeira" unique_id=1192011903]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.46463966, 0.17889428)
 
+[node name="Impressora" parent="MesaDeTrabalho" unique_id=984869610 instance=ExtResource("22_sksnr")]
+transform = Transform3D(-0.9273052, 0, -0.37430605, 0, 1, 0, 0.37430605, 0, -0.9273052, 1.4882681, 0.018798828, -2.6069973)
+
 [node name="Cameras" type="Node3D" parent="MesaDeTrabalho" unique_id=1776447465]
 
 [node name="CameraDaMesa" type="Camera3D" parent="MesaDeTrabalho/Cameras" unique_id=1651172819]
@@ -317,8 +321,8 @@ fov = 73.47248
 size = 0.45
 near = 0.032
 
-[node name="CameraTelefone" type="Camera3D" parent="MesaDeTrabalho/Cameras" unique_id=1992259124]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.47812605, 1.0023255, -2.8946724)
+[node name="CameraImperssora" type="Camera3D" parent="MesaDeTrabalho/Cameras" unique_id=1992259124]
+transform = Transform3D(-3.199649e-08, 0.68131065, -0.7319944, 2.9781033e-08, 0.7319944, 0.68131065, 1, 0, -4.3711385e-08, 0.966058, 1.337604, -2.4543629)
 fov = 73.47248
 size = 0.45
 near = 0.032
