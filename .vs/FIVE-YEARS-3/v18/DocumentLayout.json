@@ -3,12 +3,48 @@
   "WorkspaceRootPath": "C:\\Dev\\ProjetosPessoais\\five-years-3\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|c:\\dev\\projetospessoais\\five-years-3\\scripts\\globais\\gerenciadorpassagemdotempo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|solutionrelative:scripts\\globais\\gerenciadorpassagemdotempo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|c:\\dev\\projetospessoais\\five-years-3\\scripts\\dados\\save\\dadossave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|solutionrelative:scripts\\dados\\save\\dadossave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|c:\\dev\\projetospessoais\\five-years-3\\scripts\\globais\\gerenciadordesave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|solutionrelative:scripts\\globais\\gerenciadordesave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|c:\\dev\\projetospessoais\\five-years-3\\scripts\\dados\\noticiamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|solutionrelative:scripts\\dados\\noticiamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|c:\\dev\\projetospessoais\\five-years-3\\scripts\\dados\\variacaonoticia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|solutionrelative:scripts\\dados\\variacaonoticia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|c:\\dev\\projetospessoais\\five-years-3\\scripts\\globais\\gerenciadordefolhasderelatorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|solutionrelative:scripts\\globais\\gerenciadordefolhasderelatorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|c:\\dev\\projetospessoais\\five-years-3\\scripts\\globais\\gerenciadordenoticias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|solutionrelative:scripts\\globais\\gerenciadordenoticias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|c:\\dev\\projetospessoais\\five-years-3\\scripts\\ui\\interfaceosui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|solutionrelative:scripts\\ui\\interfaceosui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|c:\\dev\\projetospessoais\\five-years-3\\scripts\\dados\\jsons\\dia_01\\noticias.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|solutionrelative:scripts\\dados\\jsons\\dia_01\\noticias.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|c:\\dev\\projetospessoais\\five-years-3\\scripts\\globais\\gerenciadordeconfiabilidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|solutionrelative:scripts\\globais\\gerenciadordeconfiabilidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|c:\\dev\\projetospessoais\\five-years-3\\scripts\\globais\\gerenciadornoticiasimpressas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|solutionrelative:scripts\\globais\\gerenciadornoticiasimpressas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,37 +54,156 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "NoticiaModel.cs",
-              "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Dados\\NoticiaModel.cs",
-              "RelativeDocumentMoniker": "Scripts\\Dados\\NoticiaModel.cs",
-              "ToolTip": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Dados\\NoticiaModel.cs",
-              "RelativeToolTip": "Scripts\\Dados\\NoticiaModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAfAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "GerenciadorDeFolhasDeRelatorio.cs",
+              "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Globais\\GerenciadorDeFolhasDeRelatorio.cs",
+              "RelativeDocumentMoniker": "Scripts\\Globais\\GerenciadorDeFolhasDeRelatorio.cs",
+              "ToolTip": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Globais\\GerenciadorDeFolhasDeRelatorio.cs",
+              "RelativeToolTip": "Scripts\\Globais\\GerenciadorDeFolhasDeRelatorio.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAArwBsAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-06T18:59:57.499Z",
+              "WhenOpened": "2026-08-07T17:11:11.333Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "DadosSave.cs",
+              "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Dados\\Save\\DadosSave.cs",
+              "RelativeDocumentMoniker": "Scripts\\Dados\\Save\\DadosSave.cs",
+              "ToolTip": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Dados\\Save\\DadosSave.cs",
+              "RelativeToolTip": "Scripts\\Dados\\Save\\DadosSave.cs",
+              "ViewState": "AgIAAKMAAAAAAAAAAAASwL4AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-07T17:12:37.161Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GerenciadorDeSave.cs",
+              "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Globais\\GerenciadorDeSave.cs",
+              "RelativeDocumentMoniker": "Scripts\\Globais\\GerenciadorDeSave.cs",
+              "ToolTip": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Globais\\GerenciadorDeSave.cs",
+              "RelativeToolTip": "Scripts\\Globais\\GerenciadorDeSave.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABcAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-07T17:19:11.919Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NoticiaModel.cs",
+              "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Dados\\NoticiaModel.cs",
+              "RelativeDocumentMoniker": "Scripts\\Dados\\NoticiaModel.cs",
+              "ToolTip": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Dados\\NoticiaModel.cs",
+              "RelativeToolTip": "Scripts\\Dados\\NoticiaModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-07T17:12:47.835Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GerenciadorPassagemDoTempo.cs",
+              "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Globais\\GerenciadorPassagemDoTempo.cs",
+              "RelativeDocumentMoniker": "Scripts\\Globais\\GerenciadorPassagemDoTempo.cs",
+              "ToolTip": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Globais\\GerenciadorPassagemDoTempo.cs",
+              "RelativeToolTip": "Scripts\\Globais\\GerenciadorPassagemDoTempo.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAEkAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-07T17:10:41.095Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "VariacaoNoticia.cs",
               "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Dados\\VariacaoNoticia.cs",
               "RelativeDocumentMoniker": "Scripts\\Dados\\VariacaoNoticia.cs",
               "ToolTip": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Dados\\VariacaoNoticia.cs",
               "RelativeToolTip": "Scripts\\Dados\\VariacaoNoticia.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAABnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-06T18:59:51.893Z",
+              "WhenOpened": "2026-08-07T17:13:54.82Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GerenciadorDeNoticias.cs",
+              "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Globais\\GerenciadorDeNoticias.cs",
+              "RelativeDocumentMoniker": "Scripts\\Globais\\GerenciadorDeNoticias.cs",
+              "ToolTip": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Globais\\GerenciadorDeNoticias.cs",
+              "RelativeToolTip": "Scripts\\Globais\\GerenciadorDeNoticias.cs",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAqwHgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-07T17:16:50.055Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "InterfaceOSUI.cs",
+              "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\UI\\InterfaceOSUI.cs",
+              "RelativeDocumentMoniker": "Scripts\\UI\\InterfaceOSUI.cs",
+              "ToolTip": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\UI\\InterfaceOSUI.cs",
+              "RelativeToolTip": "Scripts\\UI\\InterfaceOSUI.cs",
+              "ViewState": "AgIAAN0AAAAAAAAAAAAhwO0AAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-07T17:16:13.023Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Noticias.json",
+              "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Dados\\JSONS\\Dia_01\\Noticias.json",
+              "RelativeDocumentMoniker": "Scripts\\Dados\\JSONS\\Dia_01\\Noticias.json",
+              "ToolTip": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Dados\\JSONS\\Dia_01\\Noticias.json",
+              "RelativeToolTip": "Scripts\\Dados\\JSONS\\Dia_01\\Noticias.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-08-07T17:11:40.067Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "GerenciadorDeConfiabilidade.cs",
+              "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Globais\\GerenciadorDeConfiabilidade.cs",
+              "RelativeDocumentMoniker": "Scripts\\Globais\\GerenciadorDeConfiabilidade.cs",
+              "ToolTip": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Globais\\GerenciadorDeConfiabilidade.cs",
+              "RelativeToolTip": "Scripts\\Globais\\GerenciadorDeConfiabilidade.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAASwEkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-07T17:14:57.389Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "GerenciadorNoticiasImpressas.cs",
+              "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Globais\\GerenciadorNoticiasImpressas.cs",
+              "RelativeDocumentMoniker": "Scripts\\Globais\\GerenciadorNoticiasImpressas.cs",
+              "ToolTip": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Globais\\GerenciadorNoticiasImpressas.cs",
+              "RelativeToolTip": "Scripts\\Globais\\GerenciadorNoticiasImpressas.cs",
+              "ViewState": "AgIAAKAAAAAAAAAAAAAQwLUAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-07T17:15:17.656Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             }
           ]
         }
