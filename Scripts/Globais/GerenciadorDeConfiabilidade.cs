@@ -72,7 +72,7 @@ namespace fiveyears3.Scripts.Globais
                     impacto.AudienciaGanha
                 );
 
-                GD.Print($"[GerenciadorDeConfiabilidade] Impacto notícia '{noticia.Id}' registrado. Escolha: {noticia.EscolhaJogador}");
+                Log.Print($"[GerenciadorDeConfiabilidade] Impacto notícia '{noticia.Id}' registrado. Escolha: {noticia.EscolhaJogador}");
             }
         }
 

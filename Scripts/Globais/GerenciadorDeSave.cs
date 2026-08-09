@@ -64,12 +64,12 @@ namespace Scripts.SaveSystem
                 string jsonString = JsonSerializer.Serialize(dados, _jsonOptions);
                 File.WriteAllText(caminhoCompleto, jsonString);
 
-                GD.Print($"[GerenciadorDeSave] Jogo salvo com sucesso em: {caminhoCompleto}");
+                Log.Print($"[GerenciadorDeSave] Jogo salvo com sucesso em: {caminhoCompleto}");
                 return true;
             }
             catch (Exception ex)
             {
-                GD.PrintErr($"[GerenciadorDeSave] Erro ao salvar o jogo no slot '{saveId}': {ex.Message}");
+                Log.PrintErr($"[GerenciadorDeSave] Erro ao salvar o jogo no slot '{saveId}': {ex.Message}");
                 return false;
             }
         }
@@ -96,13 +96,13 @@ namespace Scripts.SaveSystem
                 if (dadosCarregados != null)
                 {
                     SaveAtual = dadosCarregados;
-                    GD.Print($"[GerenciadorDeSave] Jogo carregado com sucesso do slot: '{id}'");
+                    Log.Print($"[GerenciadorDeSave] Jogo carregado com sucesso do slot: '{id}'");
                     return true;
                 }
             }
             catch (Exception ex)
             {
-                GD.PrintErr($"[GerenciadorDeSave] Erro ao carregar o save '{id}': {ex.Message}");
+                Log.PrintErr($"[GerenciadorDeSave] Erro ao carregar o save '{id}': {ex.Message}");
             }
 
             return false;
@@ -114,7 +114,7 @@ namespace Scripts.SaveSystem
         public void NovoJogo()
         {
             SaveAtual = new DadosSave();
-            GD.Print("[GerenciadorDeSave] Dados de novo jogo inicializados.");
+            Log.Print("[GerenciadorDeSave] Dados de novo jogo inicializados.");
         }
 
         private void SalvarEscolhaDaNoticiaNoRadio(NoticiaModel model)
@@ -143,12 +143,12 @@ namespace Scripts.SaveSystem
                 try
                 {
                     File.Delete(caminhoCompleto);
-                    GD.Print($"[GerenciadorDeSave] Save '{saveId}' removido com sucesso.");
+                    Log.Print($"[GerenciadorDeSave] Save '{saveId}' removido com sucesso.");
                     return true;
                 }
                 catch (Exception ex)
                 {
-                    GD.PrintErr($"[GerenciadorDeSave] Falha ao deletar save '{saveId}': {ex.Message}");
+                    Log.PrintErr($"[GerenciadorDeSave] Falha ao deletar save '{saveId}': {ex.Message}");
                 }
             }
 

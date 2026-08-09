@@ -21,7 +21,7 @@ namespace fiveyears3.Scripts.Globais
         {
             if (Instance != null)
             {
-                GD.PrintErr("Já existe uma instância de GerenciadorDeAudiencia. Esta instância será removida.");
+                Log.PrintErr("Já existe uma instância de GerenciadorDeAudiencia. Esta instância será removida.");
                 QueueFree();
                 return;
             }
@@ -32,7 +32,7 @@ namespace fiveyears3.Scripts.Globais
         {
             AudienciaAlterada?.Invoke(AudienciaAtual, 0.0);
             ClimaSocialAlterado?.Invoke(EsperancaAtual, IrritacaoAtual);
-            GD.Print($"[GerenciadorAudiencia] Dia iniciado com Audiência: {AudienciaAtual}%, Esperança: {EsperancaAtual}, Irritação: {IrritacaoAtual}");
+            Log.Print($"[GerenciadorAudiencia] Dia iniciado com Audiência: {AudienciaAtual}%, Esperança: {EsperancaAtual}, Irritação: {IrritacaoAtual}");
         }
 
         public void RegistrarImpactoNoticia(double variacaoEsperanca, double variacaoIrritacao, double audienciaGanha)

@@ -21,7 +21,7 @@ public partial class PersonagemPrincipal : CharacterBody3D
 
     public void AlternarEstado(EstadoJogador novoEstado)
     {
-        GD.Print($"Alternando estado do jogador de {EstadoAtual} para {novoEstado}");
+        Log.Print($"Alternando estado do jogador de {EstadoAtual} para {novoEstado}");
         EstadoAtual = novoEstado;
 
         if (JogadorEstaInteragindoComAlgumaCoisa())

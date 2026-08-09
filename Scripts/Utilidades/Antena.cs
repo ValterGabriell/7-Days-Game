@@ -70,7 +70,7 @@ public partial class Antena : StaticBody3D, IItemInteracao
         float desalinhamento = (float)GD.RandRange(Mathf.DegToRad(60.0f), Mathf.DegToRad(180.0f));
         RotateY(desalinhamento);
 
-        GD.Print($"[Antena] A antena foi quebrada e desalinhada em {Mathf.RadToDeg(desalinhamento):F1}°!");
+        Log.Print($"[Antena] A antena foi quebrada e desalinhada em {Mathf.RadToDeg(desalinhamento):F1}°!");
     }
 
     private void VerificarSintonia()
@@ -97,7 +97,7 @@ public partial class Antena : StaticBody3D, IItemInteracao
         rot.Y = _anguloAlvoRad;
         Rotation = rot;
 
-        GD.Print("[Antena] Sintonia perfeita encontrada! Antena consertada.");
+        Log.Print("[Antena] Sintonia perfeita encontrada! Antena consertada.");
 
         if (GerenciadorDeEventoAleatorio.Instance != null)
         {

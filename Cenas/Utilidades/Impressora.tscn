@@ -1,13 +1,18 @@
 [gd_scene format=3 uid="uid://6bxg4kqi00ra"]
 
+[ext_resource type="Script" uid="uid://bf4psmccs1xbb" path="res://Scripts/Utilidades/Impressora.cs" id="1_rgeg5"]
 [ext_resource type="PackedScene" uid="uid://c10187xi1tg25" path="res://Arte/Modelos3D/Impressora.gltf" id="1_tfu8c"]
+[ext_resource type="PackedScene" uid="uid://b76ug31uowhgt" path="res://Cenas/Utilidades/PaginaFeedback.tscn" id="3_efuhj"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ef0sp"]
 size = Vector3(1, 0.9463501, 0.5922241)
 
-[node name="Impressora" type="StaticBody3D" unique_id=984869610]
+[node name="Impressora" type="StaticBody3D" unique_id=984869610 node_paths=PackedStringArray("_paginaGoverno", "_paginaResistencia")]
 collision_layer = 512
 collision_mask = 2
+script = ExtResource("1_rgeg5")
+_paginaGoverno = NodePath("PaginaFeedbackGoverno")
+_paginaResistencia = NodePath("PaginaFeedback")
 
 [node name="blockbench_export" parent="." unique_id=1863763107 instance=ExtResource("1_tfu8c")]
 transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, 0, 0, 0)
@@ -15,3 +20,9 @@ transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, 0, 0, 0)
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1006913421]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.50839233, -0.025726318)
 shape = SubResource("BoxShape3D_ef0sp")
+
+[node name="PaginaFeedbackGoverno" parent="." unique_id=127786998 instance=ExtResource("3_efuhj")]
+transform = Transform3D(-0.0004465673, -0.049992725, -0.00072718994, -0.0012427558, -0.0007158961, 0.049979452, -0.049982585, 0.00046445802, -0.0012361808, -0.022071276, 0.98703146, 0.056112505)
+
+[node name="PaginaFeedback" parent="." unique_id=935742239 instance=ExtResource("3_efuhj")]
+transform = Transform3D(0.00022319332, -0.049990527, -0.000946512, -0.00039768804, -0.0009482684, 0.049989406, -0.04999792, -0.00021561049, -0.00040184543, -0.027970575, 0.98454106, -0.088273615)

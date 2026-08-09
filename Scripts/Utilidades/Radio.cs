@@ -7,7 +7,7 @@ public partial class Radio : StaticBody3D, IItemInteracao
     [Export] public ItemList ListaNoticiasRadios;
     public void Interagir()
     {
-        GD.Print("Interagindo com o rádio");
+        Log.Print("Interagindo com o rádio");
     }
 
     public override void _Ready()

@@ -1,0 +1,13 @@
+{
+  "profiles": {
+    "five-years-3": {
+      "commandName": "Project"
+    },
+    "Perfil 1": {
+      "commandName": "Executable",
+      "executablePath": "C:\\Users\\vgabr\\Downloads\\Godot_v4.7.1-stable_mono_win64\\Godot_v4.7.1-stable_mono_win64\\Godot_v4.7.1-stable_mono_win64.exe",
+      "commandLineArgs": "--path \"C:\\Users\\vgabr\\Downloads\\Programacao\\CS-CONSOFT\\7-Days-Game\"",
+      "workingDirectory": "C:\\Users\\vgabr\\Downloads\\Programacao\\CS-CONSOFT\\7-Days-Game"
+    }
+  }
+}

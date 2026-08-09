@@ -46,7 +46,7 @@ public partial class UiAudiencia : CanvasLayer
 
         if (variacao < 0)
         {
-            GD.Print($"[UI] Audiência caindo! Perdeu {Math.Abs(variacao):F1}%");
+            Log.Print($"[UI] Audiência caindo! Perdeu {Math.Abs(variacao):F1}%");
         }
     }
 }

@@ -33,6 +33,11 @@ namespace Scripts.SaveSystem
                 HistoricoDiasConcluidos = new List<DiaConcluidoSave>()
             };
         }
+
+        public override string ToString()
+        {
+           return $"VersaoSave: {VersaoSave}, DataEHoraSave: {DataEHoraSave}, DiaAtual: {EstadoAtualDoJogador.DiaAtual}, Reputacao: [LealdadeGoverno: {EstadoAtualDoJogador.Reputacao.LealdadeGoverno}, ConfiancaResistencia: {EstadoAtualDoJogador.Reputacao.ConfiancaResistencia}, AudienciaPopular: {EstadoAtualDoJogador.Reputacao.AudienciaPopular}, EsperancaPopulacional: {EstadoAtualDoJogador.Reputacao.EsperancaPopulacional}, IrritacaoPopulacional: {EstadoAtualDoJogador.Reputacao.IrritacaoPopulacional}], AdvertenciasGoverno: {EstadoAtualDoJogador.AdvertenciasGoverno}, FlagsHistoricas: [{string.Join(", ", EstadoAtualDoJogador.FlagsHistoricas)}], TempoDeInatividadeGeral: {EstatisticasGerais.TempoDeInatividadeGeral}, TotalNoticiasTransmitidas: {EstatisticasGerais.TotalNoticiasTransmitidas}, TotalNoticiasCensuradas: {EstatisticasGerais.TotalNoticiasCensuradas}, EscolhasAcumuladas: [{string.Join(", ", EstatisticasGerais.EscolhasAcumuladas)}], HistoricoDiasConcluidosCount: {HistoricoDiasConcluidos.Count}";
+        }
     }
 
     public class EstadoJogadorSave

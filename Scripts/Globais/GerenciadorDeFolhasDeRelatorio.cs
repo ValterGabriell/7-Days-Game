@@ -24,7 +24,7 @@ namespace fiveyears3.Scripts.Globais
         
         public void RegistrarFolhaDeRelatorio(string titulo, string conteudo)
         {
-            GD.Print($"[GerenciadorDeFolhasDeRelatorio] Registrando folha de relatório: {titulo}");
+            Log.Print($"[GerenciadorDeFolhasDeRelatorio] Registrando folha de relatório: {titulo}");
            
         }
     }

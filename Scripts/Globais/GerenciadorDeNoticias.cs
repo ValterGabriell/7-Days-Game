@@ -44,7 +44,7 @@ namespace fiveyears3.Scripts.Globais
         {
             if(CalendarioFoiVistoHoje)
                 return;
-            GD.Print($"[GerenciadorDeNoticias] Atualizando valores de notícias que devem ser transmitidas no dia. Total de notícias: {Noticias.Count}");
+            Log.Print($"[GerenciadorDeNoticias] Atualizando valores de notícias que devem ser transmitidas no dia. Total de notícias: {Noticias.Count}");
             this.NUmeroDeNoticiasQueDevemSerTransmitidasNoDia = Noticias.Where(n => n.Tipo == TipoBlocoRotina.NOTICIA).Count();
             this.NumeroDeMusicasQueDevemSerTocadasNoDia = Noticias.Where(n => n.Tipo == TipoBlocoRotina.MUSICA).Count();
             CalendarioFoiVistoHoje = true;
@@ -74,10 +74,10 @@ namespace fiveyears3.Scripts.Globais
 
         private void VerificarSeDeveLiberarFinalizacaoDoDia()
         {
-            GD.Print($"[GerenciadorDeNoticias] Noticias restantes: {this.NUmeroDeNoticiasQueDevemSerTransmitidasNoDia}, Musicas restantes: {this.NumeroDeMusicasQueDevemSerTocadasNoDia}");
+            Log.Print($"[GerenciadorDeNoticias] Noticias restantes: {this.NUmeroDeNoticiasQueDevemSerTransmitidasNoDia}, Musicas restantes: {this.NumeroDeMusicasQueDevemSerTocadasNoDia}");
             if (this.NUmeroDeNoticiasQueDevemSerTransmitidasNoDia <= 0 && this.NumeroDeMusicasQueDevemSerTocadasNoDia <= 0)
             {
-                GD.Print("[GerenciadorDeNoticias] Todas as notícias e músicas do dia foram transmitidas. Liberando botão de encerrar o dia!");
+                Log.Print("[GerenciadorDeNoticias] Todas as notícias e músicas do dia foram transmitidas. Liberando botão de encerrar o dia!");
                 FinalizacaoDoDiaLiberada?.Invoke(); 
             }
         }

@@ -120,7 +120,7 @@ public partial class TocarNoticiaNoRadio : Node
 
         string caminhoAudio = $"res://Scripts/Dados/JSONS/{diaFormatado}/Audios/{model.Id}/Variacoes/{model.EscolhaJogador}/{nomeArquivoAudio}";
 
-        GD.Print($"[TocarNoticiaNoRadio] Carregando áudio: {caminhoAudio}");
+        Log.Print($"[TocarNoticiaNoRadio] Carregando áudio: {caminhoAudio}");
 
         if (ResourceLoader.Exists(caminhoAudio))
         {
@@ -137,7 +137,7 @@ public partial class TocarNoticiaNoRadio : Node
         }
         else
         {
-            GD.PrintErr($"[TocarNoticiaNoRadio] Arquivo de áudio não encontrado no caminho: {caminhoAudio}");
+            Log.PrintErr($"[TocarNoticiaNoRadio] Arquivo de áudio não encontrado no caminho: {caminhoAudio}");
             FinalizarTransmissao();
         }
     }
@@ -156,7 +156,7 @@ public partial class TocarNoticiaNoRadio : Node
         ResetarContadoresDeSilencio();
 
         string caminhoAudio = model.CaminhoAudio;
-        GD.Print($"[TocarNoticiaNoRadio] Carregando música: {caminhoAudio}");
+        Log.Print($"[TocarNoticiaNoRadio] Carregando música: {caminhoAudio}");
 
         if (ResourceLoader.Exists(caminhoAudio))
         {
@@ -174,7 +174,7 @@ public partial class TocarNoticiaNoRadio : Node
             return;
         }
 
-        GD.PrintErr($"[TocarNoticiaNoRadio] Arquivo de música não encontrado no caminho: {caminhoAudio}");
+        Log.PrintErr($"[TocarNoticiaNoRadio] Arquivo de música não encontrado no caminho: {caminhoAudio}");
         FinalizarTransmissao();
     }
 
@@ -205,7 +205,7 @@ public partial class TocarNoticiaNoRadio : Node
 
     private void ProcessaPrimeiraTransmissaoDoDia(MusicaModel musicaModel)
     {
-        GD.Print($"[TocarNoticiaNoRadio] GerenciadorPassagemDoTempo.Instance.EstadoAtual {GerenciadorPassagemDoTempo.Instance.EstadoAtual}");
+        Log.Print($"[TocarNoticiaNoRadio] GerenciadorPassagemDoTempo.Instance.EstadoAtual {GerenciadorPassagemDoTempo.Instance.EstadoAtual}");
         if (GerenciadorPassagemDoTempo.Instance.EstadoAtual == GerenciadorPassagemDoTempo.EstadoDoDia.Parado &&
                     this._estadoAtualDaTransmissao == EstadoDaTransmissao.Nenhuma)
         {
@@ -228,7 +228,7 @@ public partial class TocarNoticiaNoRadio : Node
     {
         if (_noticiaAtual != null && GerenciadorNoticiasImpressas.Instance != null)
         {
-            GD.Print($"[TocarNoticiaNoRadio] Transmissão finalizada para: {_noticiaAtual.Id}");
+            Log.Print($"[TocarNoticiaNoRadio] Transmissão finalizada para: {_noticiaAtual.Id}");
             GerenciadorNoticiasImpressas.Instance.NotificarFinalizacaoTransmissao(_noticiaAtual);
             _noticiasJaTransmitidas.Add(_noticiaAtual.Id, true);
             _noticiaAtual = null;
@@ -236,7 +236,7 @@ public partial class TocarNoticiaNoRadio : Node
 
         if (_musicaAtual != null && GerenciadorNoticiasImpressas.Instance != null)
         {
-            GD.Print($"[TocarNoticiaNoRadio] Música finalizada para: {_musicaAtual.Id}");
+            Log.Print($"[TocarNoticiaNoRadio] Música finalizada para: {_musicaAtual.Id}");
             GerenciadorNoticiasImpressas.Instance.NotificarFinalizacaoTransmissaoMusica(_musicaAtual);
             _noticiasJaTransmitidas.Add(_musicaAtual.Id, true);
             _musicaAtual = null;
@@ -245,8 +245,8 @@ public partial class TocarNoticiaNoRadio : Node
         this._estadoAtualDaTransmissao = EstadoDaTransmissao.Nenhuma;
         ResetarContadoresDeSilencio(); // FIX: garante que o contador de silêncio recomeça limpo após o áudio terminar
         ProcessarFlagsAoFinalizarTransmissao();
-        GD.Print($"[TocarNoticiaNoRadio] Transmissão finalizada. Total de transmissões hoje: {_noticiasJaTransmitidas.Count}");
-        GD.Print($"[TocarNoticiaNoRadio] Estado atual da transmissão: {_estadoAtualDaTransmissao}");
+        Log.Print($"[TocarNoticiaNoRadio] Transmissão finalizada. Total de transmissões hoje: {_noticiasJaTransmitidas.Count}");
+        Log.Print($"[TocarNoticiaNoRadio] Estado atual da transmissão: {_estadoAtualDaTransmissao}");
     }
 
     private void ProcessarFlagsAoIniciarTransmissao()

@@ -88,7 +88,7 @@ public partial class MonitorPC : StaticBody3D, IItemInteracao
     {
         _focadoNoPC = true;
         if (CameraPC != null) CameraPC.Current = true;
-        GD.Print("Foco aproximado no PC ativado.");
+        Log.Print("Foco aproximado no PC ativado.");
     }
 
     public void DesativarFocoPC()
@@ -99,7 +99,7 @@ public partial class MonitorPC : StaticBody3D, IItemInteracao
         {
             GerenciadorMesa.Instance.CameraMesa.Current = true;
         }
-        GD.Print("Retornou para a câmera geral da mesa.");
+        Log.Print("Retornou para a câmera geral da mesa.");
     }
 
     private bool EstaNaVisaoGeralDoPC()

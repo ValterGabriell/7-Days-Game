@@ -75,7 +75,7 @@ namespace fiveyears3.Scripts.UI
             OptInvestigativo.Pressed += () => SelecionarAcaoEditorial(AcaoEditorial.DISTORCER);
 
             BtnImprimir.Pressed += OnImprimirPauta;
-            BtnEncerrar.Pressed += OnEncerrarSessao;
+ 
 
             if (BtnMusicas != null)
             {
@@ -148,7 +148,7 @@ namespace fiveyears3.Scripts.UI
             List<MusicaModel> musicas = JsonSerializer.Deserialize<List<MusicaModel>>(jsonString, opcoes);
             if (musicas == null) return;
 
-            GD.Print($"[InterfaceOSUI] Músicas carregadas: {musicas.Count}");
+            Log.Print($"[InterfaceOSUI] Músicas carregadas: {musicas.Count}");
             _musicasDisponiveis.AddRange(musicas);
         }
 
@@ -157,7 +157,7 @@ namespace fiveyears3.Scripts.UI
             VBoxContainer listaMusicas = ObterListaMusicas();
             if (listaMusicas == null)
             {
-                GD.PrintErr("[InterfaceOSUI] ListaMusicas não encontrada. Vincule no Inspector ou adicione um VBoxContainer dentro de BoxMusicas.");
+                Log.PrintErr("[InterfaceOSUI] ListaMusicas não encontrada. Vincule no Inspector ou adicione um VBoxContainer dentro de BoxMusicas.");
                 return;
             }
 
@@ -193,7 +193,7 @@ namespace fiveyears3.Scripts.UI
                 listaMusicas.AddChild(btnMusica);
             }
 
-            GD.Print($"[InterfaceOSUI] Itens exibidos na ListaMusicas: {listaMusicas.GetChildCount()}");
+            Log.Print($"[InterfaceOSUI] Itens exibidos na ListaMusicas: {listaMusicas.GetChildCount()}");
         }
 
         private void OnMusicaSelecionada(MusicaModel musicaSelecionada)
@@ -368,12 +368,12 @@ namespace fiveyears3.Scripts.UI
 
         private void OnImprimirPauta()
         {
-            GD.Print($"[InterfaceOSUI] Imprimir pauta");
+            Log.Print($"[InterfaceOSUI] Imprimir pauta");
             if (_noticiaSelecionada == null) return;
 
-            GD.Print($"[InterfaceOSUI] Notícia selecionada: {_noticiaSelecionada.TituloOriginal}");
+            Log.Print($"[InterfaceOSUI] Notícia selecionada: {_noticiaSelecionada.TituloOriginal}");
 
-            GD.Print($"[InterfaceOSUI] GerenciadorNoticiasImpressas.Instance: {GerenciadorNoticiasImpressas.Instance}");
+            Log.Print($"[InterfaceOSUI] GerenciadorNoticiasImpressas.Instance: {GerenciadorNoticiasImpressas.Instance}");
             if (GerenciadorNoticiasImpressas.Instance == null) return;
 
             bool noticiaJaImpressa = GerenciadorNoticiasImpressas.Instance.NoticiasImpressasDoDia.Exists(n => n.Id == _noticiaSelecionada.Id);
@@ -443,17 +443,7 @@ namespace fiveyears3.Scripts.UI
             BtnImprimir.Text = jaImpressa ? "Editar Notícia" : "Imprimir Notícia";
         }
 
-        private void OnEncerrarSessao()
-        {
-            if (GerenciadorPassagemDoTempo.Instance != null)
-            {
-                GerenciadorPassagemDoTempo.Instance.AvancarDia();
-            }
-
-            _pautasImpressasCount = 0;
-            AtualizarStatusDia();
-        }
-
+       
         private void AtualizarStatusDia()
         {
             LblPautas.Text = $"Pautas Impressas: {_pautasImpressasCount} / {MAX_PAUTAS_DIA}";

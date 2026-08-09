@@ -61,13 +61,13 @@ public partial class UiNoticiasRadioViewport : CanvasLayer
 
     private void OnNoticiaRecebida(NoticiaModel noticia, VariacaoNoticia variacao)
     {
-        GD.Print($"[UiNoticiasRadio]Notícia recebida: {noticia.TituloOriginal}");
+        Log.Print($"[UiNoticiasRadio]Notícia recebida: {noticia.TituloOriginal}");
         AtualizarLista();
     }
 
     private void OnMusicaRecebida(MusicaModel musica)
     {
-        GD.Print($"[UiNoticiasRadio]Música recebida: {musica.Titulo}");
+        Log.Print($"[UiNoticiasRadio]Música recebida: {musica.Titulo}");
         AtualizarLista();
     }
 
@@ -118,7 +118,7 @@ public partial class UiNoticiasRadioViewport : CanvasLayer
         var noticiasPautadas = GerenciadorNoticiasImpressas.Instance.NoticiasImpressasDoDia;
         var musicasEnviadas = GerenciadorNoticiasImpressas.Instance.MusicasEnviadasDoDia;
 
-        GD.Print("[UiNoticiasRadio]NoticiasPautadas");
+        Log.Print("[UiNoticiasRadio]NoticiasPautadas");
         foreach (var noticia in noticiasPautadas)
         {
             _itensExibidos.Add(new ItemRadioEntry
@@ -145,7 +145,7 @@ public partial class UiNoticiasRadioViewport : CanvasLayer
             ListaNoticias.SetItemCustomFgColor(ListaNoticias.ItemCount - 1, new Color(0.75f, 1.0f, 0.75f));
         }
 
-        GD.Print($"[UiNoticiasRadio]Itens exibidos: {_itensExibidos.Count}");
+        Log.Print($"[UiNoticiasRadio]Itens exibidos: {_itensExibidos.Count}");
         AtualizarEstadoLista();
     }
 
@@ -186,13 +186,13 @@ public partial class UiNoticiasRadioViewport : CanvasLayer
         if (itemSelecionado.Tipo == TipoItemRadio.Noticia)
         {
             NoticiaModel noticiaParaTransmitir = itemSelecionado.Noticia;
-            GD.Print($"[UiNoticiasRadio]Notícia selecionada para transmissão: {noticiaParaTransmitir.TituloOriginal}");
+            Log.Print($"[UiNoticiasRadio]Notícia selecionada para transmissão: {noticiaParaTransmitir.TituloOriginal}");
             GerenciadorNoticiasImpressas.Instance.TransmitirNoticiaNoRadio(noticiaParaTransmitir);
         }
         else
         {
             MusicaModel musicaParaTransmitir = itemSelecionado.Musica;
-            GD.Print($"[UiNoticiasRadio]Música selecionada para transmissão: {musicaParaTransmitir.Titulo}");
+            Log.Print($"[UiNoticiasRadio]Música selecionada para transmissão: {musicaParaTransmitir.Titulo}");
             GerenciadorNoticiasImpressas.Instance.TransmitirMusicaNoRadio(musicaParaTransmitir);
         }
 

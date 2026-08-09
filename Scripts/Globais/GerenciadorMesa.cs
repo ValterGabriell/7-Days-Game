@@ -8,7 +8,7 @@ namespace fiveyears3.Scripts.Globais
     {
         public static GerenciadorMesa Instance { get; private set; }
 
-        public enum EquipamentoMesa { Radio, Computador, Telefone }
+        public enum EquipamentoMesa { Radio, Computador, Impressora }
         public EquipamentoMesa EquipamentoAtual { get; private set; } = EquipamentoMesa.Computador;
 
         [ExportGroup("Câmeras")]
@@ -34,6 +34,7 @@ namespace fiveyears3.Scripts.Globais
 
         [ExportGroup("Equipamentos")]
         [Export] public Radio Radio;
+        [Export] public Impressora Impressora;
 
         public bool EstaFocadoNoEquipamento { get; private set; } = false;
 
@@ -107,7 +108,7 @@ namespace fiveyears3.Scripts.Globais
                 {
                     EquipamentoMesa.Computador => PersonagemPrincipal.SubEstadoMesa.Computador,
                     EquipamentoMesa.Radio => PersonagemPrincipal.SubEstadoMesa.Radio,
-                    EquipamentoMesa.Telefone => PersonagemPrincipal.SubEstadoMesa.Telefone,
+                    EquipamentoMesa.Impressora => PersonagemPrincipal.SubEstadoMesa.Telefone,
                     _ => PersonagemPrincipal.SubEstadoMesa.Nenhum
                 });
             }
@@ -129,7 +130,7 @@ namespace fiveyears3.Scripts.Globais
                 _emTransicao = true;
             }
 
-            GD.Print($"[Gerenciador Mesa] Olhando para o equipamento: {EquipamentoAtual}");
+            Log.Print($"[Gerenciador Mesa] Olhando para o equipamento: {EquipamentoAtual}");
         }
 
         public void PressinouInteragirEEntrouNoFocoNoEquipamento()
@@ -141,11 +142,11 @@ namespace fiveyears3.Scripts.Globais
                 cameraAlvo.MakeCurrent();
                 EstaFocadoNoEquipamento = true;
                 Input.MouseMode = Input.MouseModeEnum.Visible;
-                GD.Print($"[Gerenciador Mesa] Entrou no zoom do equipamento: {EquipamentoAtual}");
+                Log.Print($"[Gerenciador Mesa] Entrou no zoom do equipamento: {EquipamentoAtual}");
             }
             else
             {
-                GD.PrintErr($"[Gerenciador Mesa] Nenhuma câmera configurada para o equipamento: {EquipamentoAtual}");
+                Log.PrintErr($"[Gerenciador Mesa] Nenhuma câmera configurada para o equipamento: {EquipamentoAtual}");
             }
         }
 
@@ -153,6 +154,10 @@ namespace fiveyears3.Scripts.Globais
         {
             if (equipamento == EquipamentoMesa.Radio)
                 Radio.FocandoNoRadio();
+            if(equipamento == EquipamentoMesa.Impressora)
+            {
+                Impressora.FocandoNaImpressora();
+            }
         }
 
         public void DesfocarDoEquipamento()
@@ -160,7 +165,7 @@ namespace fiveyears3.Scripts.Globais
             EstaFocadoNoEquipamento = false;
             AtivarCameraMesa();
             Input.MouseMode = Input.MouseModeEnum.Captured;
-            GD.Print("[Gerenciador Mesa] Voltou para a câmera geral da mesa.");
+            Log.Print("[Gerenciador Mesa] Voltou para a câmera geral da mesa.");
             Radio.DesfocandoNoRadio();
         }
 
@@ -178,7 +183,7 @@ namespace fiveyears3.Scripts.Globais
             {
                 EquipamentoMesa.Radio => PontoRadio,
                 EquipamentoMesa.Computador => PontoComputador,
-                EquipamentoMesa.Telefone => PontoTelefone,
+                EquipamentoMesa.Impressora => PontoTelefone,
                 _ => PontoComputador
             };
         }
@@ -189,7 +194,7 @@ namespace fiveyears3.Scripts.Globais
             {
                 EquipamentoMesa.Radio => CameraRadio,
                 EquipamentoMesa.Computador => CameraComputador,
-                EquipamentoMesa.Telefone => CameraTelefone,
+                EquipamentoMesa.Impressora => CameraTelefone,
                 _ => CameraComputador
             };
         }
@@ -200,7 +205,7 @@ namespace fiveyears3.Scripts.Globais
             return equipamentoAtual switch
             {
                 EquipamentoMesa.Computador => EquipamentoMesa.Radio,
-                EquipamentoMesa.Telefone => EquipamentoMesa.Computador,
+                EquipamentoMesa.Impressora => EquipamentoMesa.Computador,
                 _ => equipamentoAtual
             };
         }
@@ -209,7 +214,7 @@ namespace fiveyears3.Scripts.Globais
         {
             return equipamentoAtual switch
             {
-                EquipamentoMesa.Computador => EquipamentoMesa.Telefone,
+                EquipamentoMesa.Computador => EquipamentoMesa.Impressora,
                 EquipamentoMesa.Radio => EquipamentoMesa.Computador,
                 _ => equipamentoAtual
             };

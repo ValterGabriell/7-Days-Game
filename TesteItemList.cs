@@ -11,7 +11,7 @@ public partial class TesteItemList : ItemList
         FocusEntered += OnFocusEntered;
         FocusExited += OnFocusExited;
 
-        GD.Print($"[TesteItemList] Ready | Size={Size} | GlobalPosition={GlobalPosition} | ItemCount={ItemCount} | MouseFilter={MouseFilter} | FocusMode={FocusMode}");
+        Log.Print($"[TesteItemList] Ready | Size={Size} | GlobalPosition={GlobalPosition} | ItemCount={ItemCount} | MouseFilter={MouseFilter} | FocusMode={FocusMode}");
     }
 
     public override void _GuiInput(InputEvent @event)
@@ -24,7 +24,7 @@ public partial class TesteItemList : ItemList
             if (itemHover != _ultimoItemHover)
             {
                 _ultimoItemHover = itemHover;
-                GD.Print($"[TesteItemList] Hover mudou: item={itemHover} pos={motion.Position}");
+                Log.Print($"[TesteItemList] Hover mudou: item={itemHover} pos={motion.Position}");
             }
         }
 
@@ -33,27 +33,27 @@ public partial class TesteItemList : ItemList
             int itemAtPosExato = GetItemAtPosition(b.Position, true);
             int itemAtPosArea = GetItemAtPosition(b.Position, false);
             Rect2 rectPrimeiroItem = ItemCount > 0 ? GetItemRect(0, true) : new Rect2();
-            GD.Print($"[TesteItemList] Clique local={b.Position} itemAtPosExato={itemAtPosExato} itemAtPosArea={itemAtPosArea} selectedItems={GetSelectedItems().Length} itemCount={ItemCount} rectItem0={rectPrimeiroItem}");
+            Log.Print($"[TesteItemList] Clique local={b.Position} itemAtPosExato={itemAtPosExato} itemAtPosArea={itemAtPosArea} selectedItems={GetSelectedItems().Length} itemCount={ItemCount} rectItem0={rectPrimeiroItem}");
         }
     }
 
     private void OnItemClicked(long index, Vector2 atPosition, long mouseButtonIndex)
     {
-        GD.Print($"ITEM CLICADO (Sinal nativo): {index}");
+        Log.Print($"ITEM CLICADO (Sinal nativo): {index}");
     }
 
     private void OnItemSelected(long index)
     {
-        GD.Print($"ITEM SELECIONADO: {index}");
+        Log.Print($"ITEM SELECIONADO: {index}");
     }
 
     private void OnFocusEntered()
     {
-        GD.Print("[TesteItemList] FocusEntered");
+        Log.Print("[TesteItemList] FocusEntered");
     }
 
     private void OnFocusExited()
     {
-        GD.Print("[TesteItemList] FocusExited");
+        Log.Print("[TesteItemList] FocusExited");
     }
 }

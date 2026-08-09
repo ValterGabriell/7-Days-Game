@@ -130,7 +130,7 @@ public partial class CalendarioRotinas : StaticBody3D, IItemInteracao
     {
         if (!FileAccess.FileExists(CAMINHO_JSON))
         {
-            GD.PrintErr($"[CalendarioRotinas] Arquivo JSON não encontrado em: {CAMINHO_JSON}");
+            Log.PrintErr($"[CalendarioRotinas] Arquivo JSON não encontrado em: {CAMINHO_JSON}");
             return;
         }
 
@@ -150,7 +150,7 @@ public partial class CalendarioRotinas : StaticBody3D, IItemInteracao
         }
         catch (Exception ex)
         {
-            GD.PrintErr($"[CalendarioRotinas] Erro ao desserializar JSON: {ex.Message}");
+            Log.PrintErr($"[CalendarioRotinas] Erro ao desserializar JSON: {ex.Message}");
         }
     }
 

@@ -55,17 +55,17 @@ public partial class GerenciadorDeFlagsNarrativas : Node
                 if (configuracao?.FlagsNarrativas != null)
                 {
                     _regrasConfiguradas = configuracao.FlagsNarrativas;
-                    GD.Print($"[Flags] Configuração carregada com sucesso. {_regrasConfiguradas.Count} regras registradas.");
+                    Log.Print($"[Flags] Configuração carregada com sucesso. {_regrasConfiguradas.Count} regras registradas.");
                 }
             }
             else
             {
-                GD.PrintErr($"[Flags] Arquivo JSON não encontrado no caminho: {CAMINHO_JSON}");
+                Log.PrintErr($"[Flags] Arquivo JSON não encontrado no caminho: {CAMINHO_JSON}");
             }
         }
         catch (Exception ex)
         {
-            GD.PrintErr($"[Flags] Erro ao carregar/desserializar o JSON: {ex.Message}");
+            Log.PrintErr($"[Flags] Erro ao carregar/desserializar o JSON: {ex.Message}");
         }
     }
 
@@ -73,7 +73,7 @@ public partial class GerenciadorDeFlagsNarrativas : Node
     {
         if (FlagsCondicionaisAtivas.Add(flagCondicional))
         {
-            GD.Print($"[Flags] Flag Condicional ativada: {flagCondicional}");
+            Log.Print($"[Flags] Flag Condicional ativada: {flagCondicional}");
             VerificarGatilhosDeFlagsNarrativas();
         }
     }
@@ -97,11 +97,11 @@ public partial class GerenciadorDeFlagsNarrativas : Node
     private async void AgendarAtivacaoFlagNarrativa(RegraFlagNarrativa regra)
     {
         float atraso = regra.Gatilho.AtrasoEmSegundos;
-        GD.Print($"[Flags] Condições atendidas para {regra.Id}. Disparando em {atraso} segundos...");
+        Log.Print($"[Flags] Condições atendidas para {regra.Id}. Disparando em {atraso} segundos...");
 
         if (atraso > 0)
         {
-            GD.Print($"[Flags] Aguardando {atraso} segundos antes de ativar a flag {regra.Id}.");
+            Log.Print($"[Flags] Aguardando {atraso} segundos antes de ativar a flag {regra.Id}.");
             await ToSignal(GetTree().CreateTimer(atraso), SceneTreeTimer.SignalName.Timeout);
         }
 
@@ -112,7 +112,7 @@ public partial class GerenciadorDeFlagsNarrativas : Node
     {
         if (FlagsNarrativasAtivas.Add(flag))
         {
-            GD.Print($"[Flags] Flag Narrativa ativada: {flag}");
+            Log.Print($"[Flags] Flag Narrativa ativada: {flag}");
             OnFlagAtivada?.Invoke(flag);
         }
     }
@@ -121,7 +121,7 @@ public partial class GerenciadorDeFlagsNarrativas : Node
     {
         if (FlagsNarrativasAtivas.Remove(flag))
         {
-            GD.Print($"[Flags] Flag Narrativa removida: {flag}");
+            Log.Print($"[Flags] Flag Narrativa removida: {flag}");
         }
     }
 
@@ -134,7 +134,7 @@ public partial class GerenciadorDeFlagsNarrativas : Node
     {
         if (FlagsCondicionaisAtivas.Add(flagCondicional))
         {
-            GD.Print($"[Flags] Flag Condicional adicionada: {flagCondicional}");
+            Log.Print($"[Flags] Flag Condicional adicionada: {flagCondicional}");
             VerificarGatilhosDeFlagsNarrativas();
         }
     }

@@ -92,7 +92,7 @@ size = Vector3(1, 1, 0.13085938)
 [node name="ConfiguracaoGlobal" type="Node" parent="." unique_id=1369820672]
 
 [node name="CalendarioRotinas" parent="ConfiguracaoGlobal" unique_id=842815142 instance=ExtResource("11_ghx4a")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0787137, 1.0749853, -3.4490328)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0787137, 1.0749853, -3.2687)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="ConfiguracaoGlobal" unique_id=1863400236]
 environment = SubResource("Environment_ef0sp")
@@ -254,7 +254,7 @@ size = 4.265
 [node name="PersonagemPrincipal" parent="Personagens" unique_id=1772752661 instance=ExtResource("1_hudp4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.9287748, 1.1177015, 3.0642219)
 
-[node name="MesaDeTrabalho" type="Node3D" parent="." unique_id=726947653 node_paths=PackedStringArray("CameraMesa", "CameraRadio", "CameraComputador", "CameraTelefone", "CameraAntena", "PontoRadio", "PontoComputador", "PontoTelefone", "Jogador", "UI", "Radio")]
+[node name="MesaDeTrabalho" type="Node3D" parent="." unique_id=726947653 node_paths=PackedStringArray("CameraMesa", "CameraRadio", "CameraComputador", "CameraTelefone", "CameraAntena", "PontoRadio", "PontoComputador", "PontoTelefone", "Jogador", "UI", "Radio", "Impressora")]
 script = ExtResource("4_dbo6t")
 CameraMesa = NodePath("Cameras/CameraDaMesa")
 CameraRadio = NodePath("Cameras/CameraRadio")
@@ -267,6 +267,7 @@ PontoTelefone = NodePath("PontoTelefone")
 Jogador = NodePath("../Personagens/PersonagemPrincipal")
 UI = NodePath("UI_Mesa")
 Radio = NodePath("Radio/Radio")
+Impressora = NodePath("Impressora")
 
 [node name="MesaTrabalho" parent="MesaDeTrabalho" unique_id=1781015561 instance=ExtResource("9_bgd4d")]
 transform = Transform3D(-0.099982254, 0, -0.0018837862, 0, 0.099999994, 0, 0.0018837862, 0, -0.099982254, -0.6627134, 0.76422226, -2.5609531)
@@ -307,8 +308,9 @@ Jogador = NodePath("../../Personagens/PersonagemPrincipal")
 [node name="Marker3D" type="Marker3D" parent="MesaDeTrabalho/Cadeira" unique_id=1192011903]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.46463966, 0.17889428)
 
-[node name="Impressora" parent="MesaDeTrabalho" unique_id=984869610 instance=ExtResource("22_sksnr")]
+[node name="Impressora" parent="MesaDeTrabalho" unique_id=984869610 node_paths=PackedStringArray("_camera") instance=ExtResource("22_sksnr")]
 transform = Transform3D(-0.9273052, 0, -0.37430605, 0, 1, 0, 0.37430605, 0, -0.9273052, 1.4882681, 0.018798828, -2.6069973)
+_camera = NodePath("../Cameras/CameraImperssora")
 
 [node name="Cameras" type="Node3D" parent="MesaDeTrabalho" unique_id=1776447465]
 
@@ -322,7 +324,7 @@ size = 0.45
 near = 0.032
 
 [node name="CameraImperssora" type="Camera3D" parent="MesaDeTrabalho/Cameras" unique_id=1992259124]
-transform = Transform3D(-3.199649e-08, 0.68131065, -0.7319944, 2.9781033e-08, 0.7319944, 0.68131065, 1, 0, -4.3711385e-08, 0.966058, 1.337604, -2.4543629)
+transform = Transform3D(0.42403802, 0.9012987, -0.088613816, -0.030376863, 0.1119458, 0.99324995, 0.9051348, -0.4184839, 0.07484791, 1.4966476, 1.1297691, -2.5982082)
 fov = 73.47248
 size = 0.45
 near = 0.032

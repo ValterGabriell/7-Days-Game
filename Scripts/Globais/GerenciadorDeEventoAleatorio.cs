@@ -35,7 +35,7 @@ public partial class GerenciadorDeEventoAleatorio : Node
 
     private void ProcessarDisparoDeEvento(FlagNarrativa flag)
     {
-        GD.Print($"[GerenciadorDeEventoAleatorio] Flag narrativa ativada: {flag}");
+        Log.Print($"[GerenciadorDeEventoAleatorio] Flag narrativa ativada: {flag}");
         switch (flag)
         {
             case FlagNarrativa.AntenaQuebrada_01:
@@ -46,7 +46,7 @@ public partial class GerenciadorDeEventoAleatorio : Node
 
     private void DispararEvento(TipoEventoAleatorio tipo, IEventoAleatorio instanciaEvento)
     {
-        GD.Print($"[GerenciadorDeEventoAleatorio] Disparando evento: {tipo}");
+        Log.Print($"[GerenciadorDeEventoAleatorio] Disparando evento: {tipo}");
         _eventoAtivo?.FinalizarEvento();
         TipoEventoAleatorioAtual = tipo;
         _eventoAtivo = instanciaEvento;
@@ -79,7 +79,7 @@ public class AntenaQuebrada : IEventoAleatorio
 
     public void IniciarEvento()
     {
-        GD.Print($"[STRATEGY - AntenaQuebrada] Buscando nó no caminho: {CAMINHO_ANTENA}");
+        Log.Print($"[STRATEGY - AntenaQuebrada] Buscando nó no caminho: {CAMINHO_ANTENA}");
 
         var arvore = (SceneTree)Engine.GetMainLoop();
         var cenaAtual = arvore.CurrentScene;
@@ -90,19 +90,19 @@ public class AntenaQuebrada : IEventoAleatorio
 
             if (GodotObject.IsInstanceValid(_antena))
             {
-                GD.Print("[STRATEGY - AntenaQuebrada] Antena localizada e quebrada com sucesso!");
+                Log.Print("[STRATEGY - AntenaQuebrada] Antena localizada e quebrada com sucesso!");
                 _antena.QuebrarAntena();
             }
             else
             {
-                GD.PrintErr($"[STRATEGY - AntenaQuebrada] Nó não encontrado no caminho fixo: {CAMINHO_ANTENA}");
+                Log.PrintErr($"[STRATEGY - AntenaQuebrada] Nó não encontrado no caminho fixo: {CAMINHO_ANTENA}");
             }
         }
     }
 
     public void FinalizarEvento()
     {
-        GD.Print("[STRATEGY - AntenaQuebrada] Finalizando evento e consertando a antena.");
+        Log.Print("[STRATEGY - AntenaQuebrada] Finalizando evento e consertando a antena.");
 
         if (GodotObject.IsInstanceValid(_antena))
         {

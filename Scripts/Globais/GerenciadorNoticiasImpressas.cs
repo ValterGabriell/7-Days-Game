@@ -83,8 +83,8 @@ namespace fiveyears3.Scripts.Globais
             if (jaExiste) return false;
 
             NoticiasImpressasDoDia.Add(noticia);
-            GD.Print($"[GerenciadorNoticiasImpressas]Notícia impressa: {noticia.TituloOriginal}");
-            GD.Print($"[GerenciadorNoticiasImpressas]Noticias impressas do dia: {NoticiasImpressasDoDia.Count}");
+            Log.Print($"[GerenciadorNoticiasImpressas]Notícia impressa: {noticia.TituloOriginal}");
+            Log.Print($"[GerenciadorNoticiasImpressas]Noticias impressas do dia: {NoticiasImpressasDoDia.Count}");
 
             VariacaoNoticia variacaoUsada = null;
             bool temVariacoes = noticia.Variacoes != null;
@@ -175,7 +175,7 @@ namespace fiveyears3.Scripts.Globais
         {
             if (model == null) return;
 
-            GD.Print($"[GerenciadorNoticiasImpressas]Notícia finalizada: {model.TituloOriginal}");
+            Log.Print($"[GerenciadorNoticiasImpressas]Notícia finalizada: {model.TituloOriginal}");
             EstadoAtualTransmissao = EstadoTransmissaoNoticia.PodeTransmitir;
             NoticiasTransmitidasDoDia.Add(model);
             NoticiaEmTransmissao = null;
@@ -186,7 +186,7 @@ namespace fiveyears3.Scripts.Globais
         {
             if (model == null) return;
 
-            GD.Print($"[GerenciadorNoticiasImpressas]Música finalizada: {model.Titulo}");
+            Log.Print($"[GerenciadorNoticiasImpressas]Música finalizada: {model.Titulo}");
             EstadoAtualTransmissao = EstadoTransmissaoNoticia.PodeTransmitir;
             MusicasTransmitidasDoDia.Add(model);
             MusicaEmTransmissao = null;

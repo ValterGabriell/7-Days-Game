@@ -62,7 +62,7 @@ public partial class Pinball : StaticBody3D, IItemInteracao
         }
 
         PrepararBolaNoSpawn();
-        GD.Print("[Pinball] Jogador entrou no minigame do Pinball.");
+        Log.Print("[Pinball] Jogador entrou no minigame do Pinball.");
     }
 
     private void SairDoPinball()
@@ -76,7 +76,7 @@ public partial class Pinball : StaticBody3D, IItemInteracao
             Jogador.AlternarEstado(PersonagemPrincipal.EstadoJogador.Normal);
         }
 
-        GD.Print("[Pinball] Jogador saiu do minigame do Pinball.");
+        Log.Print("[Pinball] Jogador saiu do minigame do Pinball.");
     }
 
     public override void _Process(double delta)
@@ -110,12 +110,12 @@ public partial class Pinball : StaticBody3D, IItemInteracao
         // Rastreio para descobrir para onde a bola está indo quando "sumir"
         if (_monitorarBola && Bola != null)
         {
-            GD.Print($"[Debug Bola] Posição Global: {Bola.GlobalPosition} | Velocidade: {Bola.LinearVelocity}");
+            Log.Print($"[Debug Bola] Posição Global: {Bola.GlobalPosition} | Velocidade: {Bola.LinearVelocity}");
 
             // Se cair demais no eixo Y (caindo da mesa), reseta ela
             if (Bola.GlobalPosition.Y < -10.0f)
             {
-                GD.PrintErr("[Pinball Error] A bola caiu do mapa/mesa! Verifique as colisões do chão do Pinball.");
+                Log.PrintErr("[Pinball Error] A bola caiu do mapa/mesa! Verifique as colisões do chão do Pinball.");
                 _monitorarBola = false;
                 PrepararBolaNoSpawn();
             }
@@ -161,7 +161,7 @@ public partial class Pinball : StaticBody3D, IItemInteracao
         Bola.LinearVelocity = vetorVelocidade;
 
         _monitorarBola = true;
-        GD.Print($"[Pinball] Bola disparada com velocidade: {vetorVelocidade}");
+        Log.Print($"[Pinball] Bola disparada com velocidade: {vetorVelocidade}");
     }
 
     private void ProcessarFlippers(float delta)

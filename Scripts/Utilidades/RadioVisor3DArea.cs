@@ -31,7 +31,7 @@ public partial class RadioVisor3DArea : StaticBody3D
         SubViewportNode.GuiDisableInput = false;
         SubViewportNode.HandleInputLocally = true;
 
-        GD.Print($"[RadioVisor3DArea] Ready | SubViewport Size={SubViewportNode.Size} | HandleInputLocally={SubViewportNode.HandleInputLocally} | GuiDisableInput={SubViewportNode.GuiDisableInput}");
+        Log.Print($"[RadioVisor3DArea] Ready | SubViewport Size={SubViewportNode.Size} | HandleInputLocally={SubViewportNode.HandleInputLocally} | GuiDisableInput={SubViewportNode.GuiDisableInput}");
     }
 
     public override void _Input(InputEvent @event)
@@ -69,7 +69,7 @@ public partial class RadioVisor3DArea : StaticBody3D
             if (@event is InputEventMouseButton botaoIgnorado && botaoIgnorado.Pressed)
             {
                 string nomeCollider = collider is Node nodeCollider ? nodeCollider.Name : "(sem nome)";
-                GD.Print($"[RadioVisor3DArea] Clique ignorado: collider={collider?.GetType().Name} nome={nomeCollider}");
+                Log.Print($"[RadioVisor3DArea] Clique ignorado: collider={collider?.GetType().Name} nome={nomeCollider}");
             }
             return;
         }
@@ -97,7 +97,7 @@ public partial class RadioVisor3DArea : StaticBody3D
         {
             if (@event is InputEventMouseButton botaoForaUv && botaoForaUv.Pressed)
             {
-                GD.Print($"[RadioVisor3DArea] Clique fora UV: u={u:0.000}, v={v:0.000}, localPos={localPos}, colisao={worldPosColisao}, tela={worldPosTela}");
+                Log.Print($"[RadioVisor3DArea] Clique fora UV: u={u:0.000}, v={v:0.000}, localPos={localPos}, colisao={worldPosColisao}, tela={worldPosTela}");
             }
             return;
         }
@@ -116,7 +116,7 @@ public partial class RadioVisor3DArea : StaticBody3D
             clone.Canceled = false;
 
             SubViewportNode.PushInput(clone, true);
-            GD.Print($"[RadioVisor3DArea] MouseButton {(button.Pressed ? "DOWN" : "UP")} btn={button.ButtonIndex} tela={mouseEvent.Position} uv=({u:0.000},{v:0.000}) viewport={viewportPos} colisao={worldPosColisao} telaPlano={worldPosTela}");
+            Log.Print($"[RadioVisor3DArea] MouseButton {(button.Pressed ? "DOWN" : "UP")} btn={button.ButtonIndex} tela={mouseEvent.Position} uv=({u:0.000},{v:0.000}) viewport={viewportPos} colisao={worldPosColisao} telaPlano={worldPosTela}");
 
             if (button.Pressed)
             {

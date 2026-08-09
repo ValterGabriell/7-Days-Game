@@ -1,14 +1,78 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Dev\\ProjetosPessoais\\five-years-3\\",
+  "WorkspaceRootPath": "C:\\Users\\vgabr\\Downloads\\Programacao\\CS-CONSOFT\\7-Days-Game\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|c:\\dev\\projetospessoais\\five-years-3\\scripts\\dados\\noticiamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|c:\\users\\vgabr\\downloads\\programacao\\cs-consoft\\7-days-game\\scripts\\utilidades\\calendario\\calendariorotinas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|solutionrelative:scripts\\utilidades\\calendario\\calendariorotinas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|c:\\users\\vgabr\\downloads\\programacao\\cs-consoft\\7-days-game\\scripts\\globais\\gerenciadorpassagemdotempo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|solutionrelative:scripts\\globais\\gerenciadorpassagemdotempo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|c:\\users\\vgabr\\downloads\\programacao\\cs-consoft\\7-days-game\\scripts\\ui\\interfaceosui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|solutionrelative:scripts\\ui\\interfaceosui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|c:\\users\\vgabr\\downloads\\programacao\\cs-consoft\\7-days-game\\scripts\\ui\\interfaceosradio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|solutionrelative:scripts\\ui\\interfaceosradio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|c:\\users\\vgabr\\downloads\\programacao\\cs-consoft\\7-days-game\\scripts\\globais\\gerenciadordesave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|solutionrelative:scripts\\globais\\gerenciadordesave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|c:\\users\\vgabr\\downloads\\programacao\\cs-consoft\\7-days-game\\scripts\\globais\\gerenciadordenoticias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|solutionrelative:scripts\\globais\\gerenciadordenoticias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|c:\\users\\vgabr\\downloads\\programacao\\cs-consoft\\7-days-game\\scripts\\utilidades\\debuggerhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|solutionrelative:scripts\\utilidades\\debuggerhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|c:\\users\\vgabr\\downloads\\programacao\\cs-consoft\\7-days-game\\scripts\\utilidades\\log.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|solutionrelative:scripts\\utilidades\\log.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|c:\\users\\vgabr\\downloads\\programacao\\cs-consoft\\7-days-game\\scripts\\minigames\\pinball.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|solutionrelative:scripts\\minigames\\pinball.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|c:\\users\\vgabr\\downloads\\programacao\\cs-consoft\\7-days-game\\scripts\\utilidades\\impressora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|solutionrelative:scripts\\utilidades\\impressora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|c:\\users\\vgabr\\downloads\\programacao\\cs-consoft\\7-days-game\\scripts\\dados\\save\\dadossave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|solutionrelative:scripts\\dados\\save\\dadossave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|c:\\users\\vgabr\\downloads\\programacao\\cs-consoft\\7-days-game\\scripts\\dados\\variacaonoticia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|solutionrelative:scripts\\dados\\variacaonoticia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|c:\\users\\vgabr\\downloads\\programacao\\cs-consoft\\7-days-game\\scripts\\globais\\gerenciadornoticiasimpressas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|solutionrelative:scripts\\globais\\gerenciadornoticiasimpressas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|c:\\users\\vgabr\\downloads\\programacao\\cs-consoft\\7-days-game\\scripts\\dados\\noticiamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|solutionrelative:scripts\\dados\\noticiamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|c:\\dev\\projetospessoais\\five-years-3\\scripts\\dados\\variacaonoticia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|solutionrelative:scripts\\dados\\variacaonoticia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|c:\\users\\vgabr\\downloads\\programacao\\cs-consoft\\7-days-game\\scripts\\globais\\gerenciadormesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|solutionrelative:scripts\\globais\\gerenciadormesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|c:\\users\\vgabr\\downloads\\programacao\\cs-consoft\\7-days-game\\scripts\\utilidades\\radio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|solutionrelative:scripts\\utilidades\\radio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|c:\\users\\vgabr\\downloads\\programacao\\cs-consoft\\7-days-game\\scripts\\globais\\gerenciadordefolhasderelatorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|solutionrelative:scripts\\globais\\gerenciadordefolhasderelatorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|c:\\users\\vgabr\\downloads\\programacao\\cs-consoft\\7-days-game\\scripts\\utilidades\\cadeira.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|solutionrelative:scripts\\utilidades\\cadeira.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,37 +82,285 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{6d4078d1-5951-4ed1-ac0e-0a8099c1cce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "InterfaceOSUI.cs",
+              "DocumentMoniker": "C:\\Users\\vgabr\\Downloads\\Programacao\\CS-CONSOFT\\7-Days-Game\\Scripts\\UI\\InterfaceOSUI.cs",
+              "RelativeDocumentMoniker": "Scripts\\UI\\InterfaceOSUI.cs",
+              "ToolTip": "C:\\Users\\vgabr\\Downloads\\Programacao\\CS-CONSOFT\\7-Days-Game\\Scripts\\UI\\InterfaceOSUI.cs",
+              "RelativeToolTip": "Scripts\\UI\\InterfaceOSUI.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAE0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-09T19:14:16.818Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "InterfaceOsRadio.cs",
+              "DocumentMoniker": "C:\\Users\\vgabr\\Downloads\\Programacao\\CS-CONSOFT\\7-Days-Game\\Scripts\\UI\\InterfaceOsRadio.cs",
+              "RelativeDocumentMoniker": "Scripts\\UI\\InterfaceOsRadio.cs",
+              "ToolTip": "C:\\Users\\vgabr\\Downloads\\Programacao\\CS-CONSOFT\\7-Days-Game\\Scripts\\UI\\InterfaceOsRadio.cs",
+              "RelativeToolTip": "Scripts\\UI\\InterfaceOsRadio.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAqwE0AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-09T19:13:40.853Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GerenciadorDeNoticias.cs",
+              "DocumentMoniker": "C:\\USERS\\VGABR\\DOWNLOADS\\PROGRAMACAO\\CS-CONSOFT\\7-DAYS-GAME\\Scripts\\Globais\\GerenciadorDeNoticias.cs",
+              "RelativeDocumentMoniker": "Scripts\\Globais\\GerenciadorDeNoticias.cs",
+              "ToolTip": "C:\\USERS\\VGABR\\DOWNLOADS\\PROGRAMACAO\\CS-CONSOFT\\7-DAYS-GAME\\Scripts\\Globais\\GerenciadorDeNoticias.cs",
+              "RelativeToolTip": "Scripts\\Globais\\GerenciadorDeNoticias.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAA8wCkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-09T18:54:06.32Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "NoticiaModel.cs",
-              "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Dados\\NoticiaModel.cs",
-              "RelativeDocumentMoniker": "Scripts\\Dados\\NoticiaModel.cs",
-              "ToolTip": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Dados\\NoticiaModel.cs",
-              "RelativeToolTip": "Scripts\\Dados\\NoticiaModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAfAAAAAAAAAA==",
+              "Title": "CalendarioRotinas.cs",
+              "DocumentMoniker": "C:\\Users\\vgabr\\Downloads\\Programacao\\CS-CONSOFT\\7-Days-Game\\Scripts\\Utilidades\\Calendario\\CalendarioRotinas.cs",
+              "RelativeDocumentMoniker": "Scripts\\Utilidades\\Calendario\\CalendarioRotinas.cs",
+              "ToolTip": "C:\\Users\\vgabr\\Downloads\\Programacao\\CS-CONSOFT\\7-Days-Game\\Scripts\\Utilidades\\Calendario\\CalendarioRotinas.cs",
+              "RelativeToolTip": "Scripts\\Utilidades\\Calendario\\CalendarioRotinas.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAADwvzEAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-06T18:59:57.499Z",
+              "WhenOpened": "2026-08-09T18:49:46.503Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "VariacaoNoticia.cs",
-              "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Dados\\VariacaoNoticia.cs",
-              "RelativeDocumentMoniker": "Scripts\\Dados\\VariacaoNoticia.cs",
-              "ToolTip": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Dados\\VariacaoNoticia.cs",
-              "RelativeToolTip": "Scripts\\Dados\\VariacaoNoticia.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAWAAAAAAAAAA==",
+              "Title": "GerenciadorPassagemDoTempo.cs",
+              "DocumentMoniker": "C:\\Users\\vgabr\\Downloads\\Programacao\\CS-CONSOFT\\7-Days-Game\\Scripts\\Globais\\GerenciadorPassagemDoTempo.cs",
+              "RelativeDocumentMoniker": "Scripts\\Globais\\GerenciadorPassagemDoTempo.cs",
+              "ToolTip": "C:\\Users\\vgabr\\Downloads\\Programacao\\CS-CONSOFT\\7-Days-Game\\Scripts\\Globais\\GerenciadorPassagemDoTempo.cs",
+              "RelativeToolTip": "Scripts\\Globais\\GerenciadorPassagemDoTempo.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAA4wCEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-06T18:59:51.893Z",
+              "WhenOpened": "2026-08-09T14:49:04.798Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Log.cs",
+              "DocumentMoniker": "C:\\Users\\vgabr\\Downloads\\Programacao\\CS-CONSOFT\\7-Days-Game\\Scripts\\Utilidades\\Log.cs",
+              "RelativeDocumentMoniker": "Scripts\\Utilidades\\Log.cs",
+              "ToolTip": "C:\\Users\\vgabr\\Downloads\\Programacao\\CS-CONSOFT\\7-Days-Game\\Scripts\\Utilidades\\Log.cs",
+              "RelativeToolTip": "Scripts\\Utilidades\\Log.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-09T18:58:21.908Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DebuggerHelper.cs",
+              "DocumentMoniker": "C:\\Users\\vgabr\\Downloads\\Programacao\\CS-CONSOFT\\7-Days-Game\\Scripts\\Utilidades\\DebuggerHelper.cs",
+              "RelativeDocumentMoniker": "Scripts\\Utilidades\\DebuggerHelper.cs",
+              "ToolTip": "C:\\Users\\vgabr\\Downloads\\Programacao\\CS-CONSOFT\\7-Days-Game\\Scripts\\Utilidades\\DebuggerHelper.cs",
+              "RelativeToolTip": "Scripts\\Utilidades\\DebuggerHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAmwBEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-09T19:00:29.485Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Pinball.cs",
+              "DocumentMoniker": "C:\\Users\\vgabr\\Downloads\\Programacao\\CS-CONSOFT\\7-Days-Game\\Scripts\\Minigames\\Pinball.cs",
+              "RelativeDocumentMoniker": "Scripts\\Minigames\\Pinball.cs",
+              "ToolTip": "C:\\Users\\vgabr\\Downloads\\Programacao\\CS-CONSOFT\\7-Days-Game\\Scripts\\Minigames\\Pinball.cs",
+              "RelativeToolTip": "Scripts\\Minigames\\Pinball.cs",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAkwHAAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-09T19:01:38.326Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GerenciadorDeSave.cs",
+              "DocumentMoniker": "C:\\Users\\vgabr\\Downloads\\Programacao\\CS-CONSOFT\\7-Days-Game\\Scripts\\Globais\\GerenciadorDeSave.cs",
+              "RelativeDocumentMoniker": "Scripts\\Globais\\GerenciadorDeSave.cs",
+              "ToolTip": "C:\\Users\\vgabr\\Downloads\\Programacao\\CS-CONSOFT\\7-Days-Game\\Scripts\\Globais\\GerenciadorDeSave.cs",
+              "RelativeToolTip": "Scripts\\Globais\\GerenciadorDeSave.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAcwBUAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-09T14:48:51.781Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Impressora.cs",
+              "DocumentMoniker": "C:\\Users\\vgabr\\Downloads\\Programacao\\CS-CONSOFT\\7-Days-Game\\Scripts\\Utilidades\\Impressora.cs",
+              "RelativeDocumentMoniker": "Scripts\\Utilidades\\Impressora.cs",
+              "ToolTip": "C:\\Users\\vgabr\\Downloads\\Programacao\\CS-CONSOFT\\7-Days-Game\\Scripts\\Utilidades\\Impressora.cs",
+              "RelativeToolTip": "Scripts\\Utilidades\\Impressora.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA8AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-09T14:58:31.246Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DadosSave.cs",
+              "DocumentMoniker": "C:\\Users\\vgabr\\Downloads\\Programacao\\CS-CONSOFT\\7-Days-Game\\Scripts\\Dados\\Save\\DadosSave.cs",
+              "RelativeDocumentMoniker": "Scripts\\Dados\\Save\\DadosSave.cs",
+              "ToolTip": "C:\\Users\\vgabr\\Downloads\\Programacao\\CS-CONSOFT\\7-Days-Game\\Scripts\\Dados\\Save\\DadosSave.cs",
+              "RelativeToolTip": "Scripts\\Dados\\Save\\DadosSave.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwCEAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-09T18:39:01.942Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "VariacaoNoticia.cs",
+              "DocumentMoniker": "C:\\Users\\vgabr\\Downloads\\Programacao\\CS-CONSOFT\\7-Days-Game\\Scripts\\Dados\\VariacaoNoticia.cs",
+              "RelativeDocumentMoniker": "Scripts\\Dados\\VariacaoNoticia.cs",
+              "ToolTip": "C:\\Users\\vgabr\\Downloads\\Programacao\\CS-CONSOFT\\7-Days-Game\\Scripts\\Dados\\VariacaoNoticia.cs",
+              "RelativeToolTip": "Scripts\\Dados\\VariacaoNoticia.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-09T18:39:19.392Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "NoticiaModel.cs",
+              "DocumentMoniker": "C:\\Users\\vgabr\\Downloads\\Programacao\\CS-CONSOFT\\7-Days-Game\\Scripts\\Dados\\NoticiaModel.cs",
+              "RelativeDocumentMoniker": "Scripts\\Dados\\NoticiaModel.cs",
+              "ToolTip": "C:\\Users\\vgabr\\Downloads\\Programacao\\CS-CONSOFT\\7-Days-Game\\Scripts\\Dados\\NoticiaModel.cs",
+              "RelativeToolTip": "Scripts\\Dados\\NoticiaModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-09T18:38:46.663Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "GerenciadorNoticiasImpressas.cs",
+              "DocumentMoniker": "C:\\USERS\\VGABR\\DOWNLOADS\\PROGRAMACAO\\CS-CONSOFT\\7-DAYS-GAME\\Scripts\\Globais\\GerenciadorNoticiasImpressas.cs",
+              "RelativeDocumentMoniker": "Scripts\\Globais\\GerenciadorNoticiasImpressas.cs",
+              "ToolTip": "C:\\USERS\\VGABR\\DOWNLOADS\\PROGRAMACAO\\CS-CONSOFT\\7-DAYS-GAME\\Scripts\\Globais\\GerenciadorNoticiasImpressas.cs",
+              "RelativeToolTip": "Scripts\\Globais\\GerenciadorNoticiasImpressas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBMAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-09T14:49:39.684Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "GerenciadorMesa.cs",
+              "DocumentMoniker": "C:\\Users\\vgabr\\Downloads\\Programacao\\CS-CONSOFT\\7-Days-Game\\Scripts\\Globais\\GerenciadorMesa.cs",
+              "RelativeDocumentMoniker": "Scripts\\Globais\\GerenciadorMesa.cs",
+              "ToolTip": "C:\\Users\\vgabr\\Downloads\\Programacao\\CS-CONSOFT\\7-Days-Game\\Scripts\\Globais\\GerenciadorMesa.cs",
+              "RelativeToolTip": "Scripts\\Globais\\GerenciadorMesa.cs",
+              "ViewState": "AgIAAI4AAAAAAAAAAAAYwJ4AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-09T14:49:56.966Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Radio.cs",
+              "DocumentMoniker": "C:\\Users\\vgabr\\Downloads\\Programacao\\CS-CONSOFT\\7-Days-Game\\Scripts\\Utilidades\\Radio.cs",
+              "RelativeDocumentMoniker": "Scripts\\Utilidades\\Radio.cs",
+              "ToolTip": "C:\\Users\\vgabr\\Downloads\\Programacao\\CS-CONSOFT\\7-Days-Game\\Scripts\\Utilidades\\Radio.cs",
+              "RelativeToolTip": "Scripts\\Utilidades\\Radio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-09T14:58:35.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "GerenciadorDeFolhasDeRelatorio.cs",
+              "DocumentMoniker": "C:\\Users\\vgabr\\Downloads\\Programacao\\CS-CONSOFT\\7-Days-Game\\Scripts\\Globais\\GerenciadorDeFolhasDeRelatorio.cs",
+              "RelativeDocumentMoniker": "Scripts\\Globais\\GerenciadorDeFolhasDeRelatorio.cs",
+              "ToolTip": "C:\\Users\\vgabr\\Downloads\\Programacao\\CS-CONSOFT\\7-Days-Game\\Scripts\\Globais\\GerenciadorDeFolhasDeRelatorio.cs",
+              "RelativeToolTip": "Scripts\\Globais\\GerenciadorDeFolhasDeRelatorio.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-09T14:48:48.128Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Cadeira.cs",
+              "DocumentMoniker": "C:\\Users\\vgabr\\Downloads\\Programacao\\CS-CONSOFT\\7-Days-Game\\Scripts\\Utilidades\\Cadeira.cs",
+              "RelativeDocumentMoniker": "Scripts\\Utilidades\\Cadeira.cs",
+              "ToolTip": "C:\\Users\\vgabr\\Downloads\\Programacao\\CS-CONSOFT\\7-Days-Game\\Scripts\\Utilidades\\Cadeira.cs",
+              "RelativeToolTip": "Scripts\\Utilidades\\Cadeira.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-09T14:47:42.953Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 361,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 614,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             }
           ]
         }

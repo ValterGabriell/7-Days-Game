@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://b76ug31uowhgt"]
+
+[ext_resource type="Script" uid="uid://dit0o4jwlj88x" path="res://Scripts/Utilidades/PaginaFeedback.cs" id="1_332ol"]
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_dh1rv"]
+data = PackedVector3Array(1, 0, 1, -1, 0, 1, 1, 0, -1, -1, 0, 1, -1, 0, -1, 1, 0, -1)
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_332ol"]
+viewport_path = NodePath("MeshInstance3D/SubViewport")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_exfc0"]
+resource_local_to_scene = true
+albedo_texture = SubResource("ViewportTexture_332ol")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_ef0sp"]
+resource_local_to_scene = true
+material = SubResource("StandardMaterial3D_exfc0")
+
+[node name="PaginaFeedback" type="StaticBody3D" unique_id=127786998 node_paths=PackedStringArray("_conteudo")]
+collision_layer = 512
+collision_mask = 2
+script = ExtResource("1_332ol")
+_conteudo = NodePath("MeshInstance3D/SubViewport/Control/TITULO")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=635389186]
+transform = Transform3D(1.2749265, 0, 0, 0, -4.3711392e-08, -1.7593935, 0, 1.0000001, -7.690553e-08, 0, 0, 0)
+shape = SubResource("ConcavePolygonShape3D_dh1rv")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=102935462]
+transform = Transform3D(1.2749265, 0, 0, 0, -4.3711392e-08, -1.7593935, 0, 1.0000001, -7.690553e-08, 0, 0, 0)
+mesh = SubResource("PlaneMesh_ef0sp")
+
+[node name="SubViewport" type="SubViewport" parent="MeshInstance3D" unique_id=458635151]
+size = Vector2i(512, 761)
+
+[node name="Control" type="Control" parent="MeshInstance3D/SubViewport" unique_id=1042746296]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TITULO" type="Label" parent="MeshInstance3D/SubViewport/Control" unique_id=999081165]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 4.0
+offset_right = 457.0
+offset_bottom = 179.0
+text = "TESTE"

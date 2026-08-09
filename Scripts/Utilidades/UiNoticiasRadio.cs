@@ -69,13 +69,13 @@ namespace fiveyears3.Scripts.UI
 
         private void OnNoticiaRecebida(NoticiaModel noticia, VariacaoNoticia variacao)
         {
-            GD.Print($"[UiNoticiasRadioViewport] Notícia recebida: {noticia?.TituloOriginal}");
+            Log.Print($"[UiNoticiasRadioViewport] Notícia recebida: {noticia?.TituloOriginal}");
             CallDeferred(MethodName.AtualizarLista);
         }
 
         private void OnMusicaRecebida(MusicaModel musica)
         {
-            GD.Print($"[UiNoticiasRadioViewport] Música recebida: {musica?.Titulo}");
+            Log.Print($"[UiNoticiasRadioViewport] Música recebida: {musica?.Titulo}");
             CallDeferred(MethodName.AtualizarLista);
         }
 
@@ -167,7 +167,7 @@ namespace fiveyears3.Scripts.UI
                 }
             }
 
-            GD.Print($"[UiNoticiasRadioViewport] Lista atualizada: {ListaNoticias.ItemCount} itens.");
+            Log.Print($"[UiNoticiasRadioViewport] Lista atualizada: {ListaNoticias.ItemCount} itens.");
             AtualizarEstadoLista();
         }
 
@@ -230,7 +230,7 @@ namespace fiveyears3.Scripts.UI
 
             bool podeEscolherNova = GerenciadorNoticiasImpressas.Instance?.PodeIniciarTransmissao == true;
             ListaNoticias.MouseFilter = podeEscolherNova ? Control.MouseFilterEnum.Stop : Control.MouseFilterEnum.Ignore;
-            GD.Print($"[UiNoticiasRadioViewport] Estado Lista | PodeIniciarTransmissao={podeEscolherNova} | MouseFilter={ListaNoticias.MouseFilter} | ItemCount={ListaNoticias.ItemCount}");
+            Log.Print($"[UiNoticiasRadioViewport] Estado Lista | PodeIniciarTransmissao={podeEscolherNova} | MouseFilter={ListaNoticias.MouseFilter} | ItemCount={ListaNoticias.ItemCount}");
         }
 
         private string ObterTituloDeAcordoComEscolha(NoticiaModel noticia)
@@ -262,13 +262,13 @@ namespace fiveyears3.Scripts.UI
             if (itemSelecionado.Tipo == TipoItemRadio.Noticia)
             {
                 NoticiaModel noticiaParaTransmitir = itemSelecionado.Noticia;
-                GD.Print($"[UiNoticiasRadioViewport] Transmitindo notícia: {noticiaParaTransmitir.TituloOriginal}");
+                Log.Print($"[UiNoticiasRadioViewport] Transmitindo notícia: {noticiaParaTransmitir.TituloOriginal}");
                 GerenciadorNoticiasImpressas.Instance.TransmitirNoticiaNoRadio(noticiaParaTransmitir);
             }
             else
             {
                 MusicaModel musicaParaTransmitir = itemSelecionado.Musica;
-                GD.Print($"[UiNoticiasRadioViewport] Transmitindo música: {musicaParaTransmitir.Titulo}");
+                Log.Print($"[UiNoticiasRadioViewport] Transmitindo música: {musicaParaTransmitir.Titulo}");
                 GerenciadorNoticiasImpressas.Instance.TransmitirMusicaNoRadio(musicaParaTransmitir);
             }
 
