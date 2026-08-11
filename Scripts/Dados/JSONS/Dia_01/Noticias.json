@@ -1,156 +1,541 @@
 [
-  {
-	"Id": "noticia_01",
-	"Remetente": "[DIA 01]Ministério do Abastecimento",
-	"TituloOriginal": "Aumento na Ração Diária de Grãos",
-	"TextoOriginal": "A distribuição pública de grãos terá um acréscimo de 100g por família a partir deste mês.",
-	"EscolhaJogador": "ORIGINAL",
-	"Variacoes": {
-	  "ORIGINAL": {
-		"TituloAlterado": "Aumento na Ração Diária de Grãos",
-		"TextoParaLer": "A distribuição pública de grãos terá um acréscimo de 100g por família a partir deste mês.",
-		"Impacto": {
-		  "VariacaoEsperanca": 5.0,
-		  "VariacaoIrritacao": -2.0,
-		  "AudienciaGanha": 8.0
-		},
-		"ImpressoresGeradasNoDiaSeguinte": {
-		  "Governo": {
-			"Falas": "MEMORANDO OFICIAL #409-B\n\nNotamos com satisfação que o informe sobre a revisão das cotas alimentares foi transmitido em conformidade absoluta com as diretrizes do Ministério do Abastecimento. A manutenção do texto fidedigno evita discrepâncias contábeis nos postos de distribuição e assegura a ordem pública. Continue mantendo a fidelidade às diretrizes emitidas por esta Secretaria."
-		  },
-		  "Resistencia": {
-			"Falas": "RELATÓRIO DE CAMPO - CÉLULA SUL\n\nO anúncio do aumento das rações corresponde exatamente às poucas sacas extras que chegaram aos armazéns ontem. Cem gramas a mais continuam sendo uma miséria diante da fome que assola os distritos, mas reconhecemos que você repassou a informação real sem transformar a escassez em um espetáculo de propaganda mentirosa."
-		  }
+	{
+		"Id": "noticia_dia1_01",
+		"Remetente": "[DIA 01] Comando Logístico da FDP (Força de Defesa Planetária)",
+		"TituloOriginal": "Triagem e Reorganização nos Postos de Migração Continental",
+		"TextoOriginal": "A FDP informa que cidadãos acima de 60 anos e portadores de enfermidades crônicas devem aguardar no Setor D antes do embarque prioritário nos trens de evacuação costeira.",
+		"EscolhaJogador": "ORIGINAL",
+		"Variacoes": {
+			"ORIGINAL": {
+				"TituloAlterado": "Triagem e Reorganização nos Postos de Migração Continental",
+				"TextoParaLer": "A FDP informa que cidadãos acima de 60 anos e portadores de enfermidades crônicas devem aguardar no Setor D antes do embarque prioritário nos trens de evacuação costeira.",
+				"Impacto": {
+					"VariacaoEsperanca": 2.0,
+					"VariacaoIrritacao": 1.0,
+					"AudienciaGanha": 6.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "DESPACHO OFICIAL #012 - CONSELHO DE SEGURANÇA FDP\n\nA leitura correta das diretrizes de triagem manteve as filas de migração sob controle. A retenção das populações vulneráveis no Setor D permitiu reorganizar os comboios disponíveis. Continue com a transmissão fiel."
+					},
+					"Resistencia": {
+						"Falas": "INFORMATIVO SUBTERRÂNEO - CÉLULA HADES\n\nVocê repetiu exatamente a linguagem da FDP. Eles chamam de Setor D, mas é onde idosos e doentes são retirados das filas principais. As famílias ainda não sabem o que está acontecendo."
+					}
+				}
+			},
+			"OMITIR": {
+				"TituloAlterado": "Atualização na Operação dos Trens Regionais",
+				"TextoParaLer": "A FDP informa que o cronograma de saídas dos comboios de transporte de passageiros sofreu adequações de horário devido ao avanço das águas.",
+				"Impacto": {
+					"VariacaoEsperanca": 0.0,
+					"VariacaoIrritacao": -2.0,
+					"AudienciaGanha": 2.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "AVISO DE AUDITORIA EDITORIAL - MINISTÉRIO DA INFORMAÇÃO\n\nA omissão dos critérios de triagem provocou confusão nos terminais. Centenas de passageiros chegaram aos comboios sem saber que determinados grupos seriam redirecionados."
+					},
+					"Resistencia": {
+						"Falas": "BOLETIM DA RESISTÊNCIA DE RUA\n\nVocê não contou que idosos e doentes estavam sendo separados. Famílias chegaram juntas aos terminais e descobriram a verdade apenas quando os portões foram fechados."
+					}
+				}
+			},
+			"MENTIR": {
+				"TituloAlterado": "Capacidade Ampliada: Todos Serão Evacuados do Litoral",
+				"TextoParaLer": "A FDP confirma que todos os cidadãos, independentemente de idade ou condição médica, terão assentos garantidos nos trens de evacuação.",
+				"Impacto": {
+					"VariacaoEsperanca": 15.0,
+					"VariacaoIrritacao": -12.0,
+					"AudienciaGanha": 12.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "RELATÓRIO DE CRISE - GABINETE DE EMERGÊNCIA\n\nA promessa de transporte universal provocou uma corrida aos terminais. As capacidades reais dos comboios não suportaram a demanda e tropas precisaram controlar as filas."
+					},
+					"Resistencia": {
+						"Falas": "PANFLETO HADES - A VERDADE NUA\n\nVocê prometeu salvação para todos. Milhares correram para as estações acreditando em seus microfones. Os trens partiram lotados e centenas ficaram para trás."
+					}
+				}
+			},
+			"DISTORCER": {
+				"TituloAlterado": "FDP Inicia Descarte Humano nos Postos de Migração",
+				"TextoParaLer": "A FDP está separando idosos e doentes das famílias e enviando essas pessoas para setores de contenção enquanto os comboios privilegiam grupos considerados mais importantes.",
+				"Impacto": {
+					"VariacaoEsperanca": -18.0,
+					"VariacaoIrritacao": 25.0,
+					"AudienciaGanha": 22.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "ORDEM DE INVESTIGAÇÃO - TRIBUNAL MILITAR\n\nSua transmissão classificou a operação de triagem como descarte humano. Protestos ocorreram em três terminais. A origem da informação está sendo investigada."
+					},
+					"Resistencia": {
+						"Falas": "COMUNICADO HADES\n\nSua transmissão provocou revolta nos terminais. Famílias perceberam que os grupos vulneráveis estavam sendo separados. A Hades considera a mensagem um avanço."
+					}
+				}
+			}
 		}
-	  },
-	  "OMITIR": {
-		"TituloAlterado": "Ajuste na Tabela de Grãos",
-		"TextoParaLer": "Foi atualizado o cronograma de entrega dos suprimentos alimentares do trimestre.",
-		"Impacto": {
-		  "VariacaoEsperanca": 0.0,
-		  "VariacaoIrritacao": 0.0,
-		  "AudienciaGanha": 1.0
-		},
-		"ImpressoresGeradasNoDiaSeguinte": {
-		  "Governo": {
-			"Falas": "PARECER DE AUDITORIA DE COMUNICAÇÃO\n\nA reinterpretação burocrática da notícia sobre os grãos reduziu consideravelmente o impacto do anúncio estatal. Embora a transmissão não apresente desvios ideológicos graves, a falta de ênfase no ato de generosidade do Estado privou o regime de uma oportunidade valiosa de reforçar a moral pública. Solicitamos maior alinhamento cívico nas próximas pautas."
-		  },
-		  "Resistencia": {
-			"Falas": "BOLETIM CLANDESTINO #12\n\nSua leitura suavizada transformou uma conquista mínima do povo em um mero aviso técnico sem relevância. Ao omitir os detalhes da nova cota, a população dos setores baixos continuou sem saber do seu direito nos postos de entrega. A neutralidade cega do operador de rádio apenas serve para manter o povo na ignorância."
-		  }
+	},
+	{
+		"Id": "noticia_dia1_02",
+		"Remetente": "[DIA 01] Departamento de Astrofísica Aplicada e Meteorologia",
+		"TituloOriginal": "Índice de Radiação UV e Alterações Solar-Atmosféricas",
+		"TextoOriginal": "O aumento temporário na atividade solar e a redução da camada de ozônio exigem o uso obrigatório de protetores térmicos nas horas de pico de insolação.",
+		"EscolhaJogador": "ORIGINAL",
+		"Variacoes": {
+			"ORIGINAL": {
+				"TituloAlterado": "Índice de Radiação UV e Alterações Solar-Atmosféricas",
+				"TextoParaLer": "O aumento temporário na atividade solar e a redução da camada de ozônio exigem o uso obrigatório de protetores térmicos nas horas de pico de insolação.",
+				"Impacto": {
+					"VariacaoEsperanca": -2.0,
+					"VariacaoIrritacao": 3.0,
+					"AudienciaGanha": 8.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "MEMORANDO DO MINISTÉRIO DA SAÚDE\n\nA transmissão do alerta solar contribuiu para reduzir a exposição da população durante o período de maior radiação."
+					},
+					"Resistencia": {
+						"Falas": "REDE DE OBSERVADORES CLANDESTINOS\n\nPelo menos desta vez você avisou sobre o Sol. Agricultores e trabalhadores externos conseguiram reduzir a exposição durante o pico."
+					}
+				}
+			},
+			"OMITIR": {
+				"TituloAlterado": "Previsão do Tempo e Recomendações de Verão",
+				"TextoParaLer": "As temperaturas continuarão elevadas ao longo da semana. Recomenda-se manter o consumo de água dentro das cotas estabelecidas.",
+				"Impacto": {
+					"VariacaoEsperanca": 2.0,
+					"VariacaoIrritacao": -1.0,
+					"AudienciaGanha": 2.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "RELATÓRIO SANITÁRIO\n\nA ausência do alerta sobre radiação contribuiu para um aumento expressivo de queimaduras entre trabalhadores externos. O Ministério recomenda revisar os procedimentos de transmissão."
+					},
+					"Resistencia": {
+						"Falas": "BOLETIM DA RESISTÊNCIA MÉDICA\n\nVocê disse que era apenas calor. Pessoas saíram para trabalhar e permaneceram horas sob o Sol. Hospitais registraram aumento de queimaduras e lesões oculares."
+					}
+				}
+			},
+			"MENTIR": {
+				"TituloAlterado": "Estabilização Atmosférica e Recuperação do Ozônio",
+				"TextoParaLer": "Cientistas confirmam que a camada de ozônio começou a se regenerar e que as anomalias solares foram totalmente neutralizadas.",
+				"Impacto": {
+					"VariacaoEsperanca": 18.0,
+					"VariacaoIrritacao": -15.0,
+					"AudienciaGanha": 15.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "RELATÓRIO DE MONITORAMENTO SOCIAL\n\nA informação reduziu significativamente a preocupação da população. Entretanto, medições internas continuam indicando degradação atmosférica."
+					},
+					"Resistencia": {
+						"Falas": "MANIFESTO HADES\n\nVocê anunciou uma recuperação que não existe. Pessoas deixaram de usar proteção solar acreditando na transmissão. Os primeiros hospitais já registram novos casos."
+					}
+				}
+			},
+			"DISTORCER": {
+				"TituloAlterado": "Atmosfera em Colapso: O Sol Está Destruindo a Terra",
+				"TextoParaLer": "A camada de ozônio está entrando em colapso e o aumento anormal da atividade solar tornou a superfície da Terra progressivamente hostil à vida.",
+				"Impacto": {
+					"VariacaoEsperanca": -25.0,
+					"VariacaoIrritacao": 30.0,
+					"AudienciaGanha": 25.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "ALERTA DE SEGURANÇA NACIONAL\n\nA declaração de colapso atmosférico provocou corrida aos abrigos e aumento da procura por equipamentos de proteção."
+					},
+					"Resistencia": {
+						"Falas": "TRANSMISSÃO HADES\n\nSua mensagem destruiu parte da confiança da população no governo. Trabalhadores começaram a abandonar seus postos para procurar abrigo."
+					}
+				}
+			}
 		}
-	  },
-	  "MENTIR": {
-		"TituloAlterado": "Fim da Escassez de Alimentos na Província",
-		"TextoParaLer": "Os estoques estatais estão totalmente cheios e a distribuição de alimentos será ilimitada.",
-		"Impacto": {
-		  "VariacaoEsperanca": 15.0,
-		  "VariacaoIrritacao": -10.0,
-		  "AudienciaGanha": 12.0
-		},
-		"ImpressoresGeradasNoDiaSeguinte": {
-		  "Governo": {
-			"Falas": "ALERTA DE SEGURANÇA INTERNA - CONFIDENCIAL\n\nSua declaração sobre estoques ilimitados conteve a onda de insatisfação popular de imediato, mas criou um sério problema de gestão nos postos de distribuição. Milhares de cidadãos cercaram os armazéns exigindo suprimentos que não existem. O exagero das suas palavras colocou a fiscalização sob forte pressão. Meça suas promessas ao público."
-		  },
-		  "Resistencia": {
-			"Falas": "INFORMATIVO DA RESISTÊNCIA URBANÍSTICA\n\nVocê prometeu fartura e banquetes nos alto-falantes da cidade, mas as filas nos armazéns continuam vazias e vigiadas por guardas armados. Criar uma ilusão de abundância em meio ao racionamento brutal é uma crueldade com os famintos. Quando a ilusão ruir, a revolta da população contra as promessas da rádio será inevitável."
-		  }
+	},
+	{
+		"Id": "noticia_dia1_03",
+		"Remetente": "[DIA 01] Ministério do Abastecimento",
+		"TituloOriginal": "Atualização do Preço da Ração Sintética no Mercado Comunitário",
+		"TextoOriginal": "O Ministério do Abastecimento informa que o preço da ração sintética sofrerá reajuste temporário devido às dificuldades logísticas e à redução da produção agrícola.",
+		"EscolhaJogador": "ORIGINAL",
+		"Variacoes": {
+			"ORIGINAL": {
+				"TituloAlterado": "Atualização do Preço da Ração Sintética",
+				"TextoParaLer": "O preço da ração sintética sofrerá reajuste temporário devido às dificuldades logísticas e à redução da produção agrícola.",
+				"Impacto": {
+					"VariacaoEsperanca": -3.0,
+					"VariacaoIrritacao": 5.0,
+					"AudienciaGanha": 7.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "BOLETIM ECONÔMICO\n\nO reajuste provocou redução no consumo e estabilizou temporariamente os estoques."
+					},
+					"Resistencia": {
+						"Falas": "BOLETIM HADES\n\nA comida está ficando mais cara enquanto recursos continuam sendo enviados para projetos que a população comum jamais verá."
+					}
+				}
+			},
+			"OMITIR": {
+				"TituloAlterado": "Abastecimento Comunitário Mantém Operações Regulares",
+				"TextoParaLer": "Os mercados comunitários continuarão operando normalmente durante o período de reorganização logística.",
+				"Impacto": {
+					"VariacaoEsperanca": 2.0,
+					"VariacaoIrritacao": -2.0,
+					"AudienciaGanha": 3.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "RELATÓRIO LOGÍSTICO\n\nA manutenção de expectativas normais contribuiu para evitar corridas aos mercados."
+					},
+					"Resistencia": {
+						"Falas": "INFORMATIVO HADES\n\nVocê escondeu o aumento dos preços. Famílias descobriram a mudança somente quando chegaram aos mercados."
+					}
+				}
+			},
+			"MENTIR": {
+				"TituloAlterado": "Redução no Preço dos Alimentos Sintéticos",
+				"TextoParaLer": "O governo anuncia que a reorganização da produção permitirá uma redução imediata nos preços dos alimentos sintéticos.",
+				"Impacto": {
+					"VariacaoEsperanca": 12.0,
+					"VariacaoIrritacao": -10.0,
+					"AudienciaGanha": 10.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "RELATÓRIO DE DISTRIBUIÇÃO\n\nA promessa de redução de preços provocou aumento imediato na procura e esvaziamento de alguns mercados."
+					},
+					"Resistencia": {
+						"Falas": "COMUNICADO HADES\n\nAs pessoas chegaram aos mercados esperando preços menores e encontraram prateleiras vazias."
+					}
+				}
+			},
+			"DISTORCER": {
+				"TituloAlterado": "Governo Confirma Escassez Alimentar e Colapso dos Mercados",
+				"TextoParaLer": "Os estoques alimentares estão próximos do fim e o governo não possui capacidade para garantir o abastecimento das cidades.",
+				"Impacto": {
+					"VariacaoEsperanca": -15.0,
+					"VariacaoIrritacao": 22.0,
+					"AudienciaGanha": 18.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "RELATÓRIO DE SEGURANÇA ALIMENTAR\n\nA transmissão provocou corridas aos mercados e confrontos em centros de distribuição."
+					},
+					"Resistencia": {
+						"Falas": "BOLETIM HADES\n\nA notícia provocou saques em alguns mercados. A população começou a perceber que a produção de alimentos não acompanha mais a demanda."
+					}
+				}
+			}
 		}
-	  },
-	  "DISTORCER": {
-		"TituloAlterado": "Sobras da Elite São Repassadas à População",
-		"TextoParaLer": "O governo libera apenas migalhas de grãos estragados enquanto os depósitos centrais esbanjam fartura.",
-		"Impacto": {
-		  "VariacaoEsperanca": -12.0,
-		  "VariacaoIrritacao": 18.0,
-		  "AudienciaGanha": 20.0
-		},
-		"ImpressoresGeradasNoDiaSeguinte": {
-		  "Governo": {
-			"Falas": "ORDEM DE INVESTIGAÇÃO DE SABOTAGEM\n\nA transmissão alterada sobre a distribuição de grãos incitou tumultos diretos em três distritos operários. A acusação de desvio de suprimentos contra a administração central é considerada ato de traição nacional. Os registros da emissora foram encaminhados para perícia técnica e o autor da transmissão está sob vigilância prioritária."
-		  },
-		  "Resistencia": {
-			"Falas": "MANIFESTO DOS TRABALHADORES UNIDOS\n\nSua denúncia ressoou fortemente pelas fábricas do setor industrial. Ao escancarar que os acréscimos nas rações não passam de migalhas perto do luxo dos generais, você acendeu a centelha da indignação necessária. O povo finalmente compreendeu a extensão da exploração que sofremos diariamente."
-		  }
+	},
+	{
+		"Id": "noticia_dia1_04",
+		"Remetente": "[DIA 01] Ministério da Infraestrutura",
+		"TituloOriginal": "Relatório de Obras de Expansão dos Bunkers do Subsolo",
+		"TextoOriginal": "O Ministério da Infraestrutura informa que novas áreas subterrâneas estão sendo construídas para ampliar a capacidade de proteção das regiões metropolitanas.",
+		"EscolhaJogador": "ORIGINAL",
+		"Variacoes": {
+			"ORIGINAL": {
+				"TituloAlterado": "Expansão dos Bunkers do Subsolo",
+				"TextoParaLer": "Novas áreas subterrâneas estão sendo construídas para ampliar a capacidade de proteção das regiões metropolitanas.",
+				"Impacto": {
+					"VariacaoEsperanca": 4.0,
+					"VariacaoIrritacao": 1.0,
+					"AudienciaGanha": 5.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "COMUNICADO DA INFRAESTRUTURA\n\nAs obras subterrâneas avançam dentro do cronograma."
+					},
+					"Resistencia": {
+						"Falas": "INFORMAÇÃO HADES\n\nOs bunkers estão crescendo enquanto bairros inteiros continuam sem proteção adequada."
+					}
+				}
+			},
+			"OMITIR": {
+				"TituloAlterado": "Atualização das Obras Públicas",
+				"TextoParaLer": "As obras públicas subterrâneas continuam em andamento nas principais regiões metropolitanas.",
+				"Impacto": {
+					"VariacaoEsperanca": 1.0,
+					"VariacaoIrritacao": 0.0,
+					"AudienciaGanha": 2.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "O ritmo das obras permanece estável."
+					},
+					"Resistencia": {
+						"Falas": "A população não foi informada sobre a capacidade limitada dos abrigos."
+					}
+				}
+			},
+			"MENTIR": {
+				"TituloAlterado": "Bunkers Garantirão Proteção para Toda a População",
+				"TextoParaLer": "O governo confirma que a expansão dos bunkers permitirá proteger toda a população das regiões metropolitanas.",
+				"Impacto": {
+					"VariacaoEsperanca": 10.0,
+					"VariacaoIrritacao": -8.0,
+					"AudienciaGanha": 9.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "O governo registra aumento significativo na procura por vagas nos abrigos."
+					},
+					"Resistencia": {
+						"Falas": "A promessa de proteção total não corresponde à capacidade real dos bunkers."
+					}
+				}
+			},
+			"DISTORCER": {
+				"TituloAlterado": "Bunkers Secretos Estão Sendo Construídos para a Elite",
+				"TextoParaLer": "As autoridades estão construindo abrigos subterrâneos secretos destinados exclusivamente aos grupos privilegiados enquanto a população permanece exposta.",
+				"Impacto": {
+					"VariacaoEsperanca": -12.0,
+					"VariacaoIrritacao": 20.0,
+					"AudienciaGanha": 16.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "A transmissão provocou protestos nos arredores de obras classificadas como estratégicas."
+					},
+					"Resistencia": {
+						"Falas": "A população começou a questionar quem realmente terá acesso aos abrigos."
+					}
+				}
+			}
 		}
-	  }
+	},
+	{
+		"Id": "noticia_dia1_05",
+		"Remetente": "[DIA 01] Defesa Civil Continental",
+		"TituloOriginal": "Cadastro Emergencial de Famílias",
+		"TextoOriginal": "A Defesa Civil solicita que todas as famílias atualizem seus dados de residência, composição familiar e condições médicas para fins de planejamento emergencial.",
+		"EscolhaJogador": "ORIGINAL",
+		"Variacoes": {
+			"ORIGINAL": {
+				"TituloAlterado": "Cadastro Emergencial de Famílias",
+				"TextoParaLer": "A Defesa Civil solicita que todas as famílias atualizem seus dados de residência, composição familiar e condições médicas para fins de planejamento emergencial.",
+				"Impacto": {
+					"VariacaoEsperanca": 1.0,
+					"VariacaoIrritacao": 2.0,
+					"AudienciaGanha": 5.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "O cadastro atingiu a maioria das famílias das regiões metropolitanas."
+					},
+					"Resistencia": {
+						"Falas": "O governo agora possui informações detalhadas sobre famílias, idosos e pessoas doentes."
+					}
+				}
+			},
+			"OMITIR": {
+				"TituloAlterado": "Atualização de Dados Civis",
+				"TextoParaLer": "A Defesa Civil continua atualizando os registros civis das regiões metropolitanas.",
+				"Impacto": {
+					"VariacaoEsperanca": 1.0,
+					"VariacaoIrritacao": -1.0,
+					"AudienciaGanha": 2.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "A adesão ao cadastro permaneceu abaixo da expectativa."
+					},
+					"Resistencia": {
+						"Falas": "Menos famílias entregaram seus dados ao sistema de controle."
+					}
+				}
+			},
+			"MENTIR": {
+				"TituloAlterado": "Cadastro Garantirá Prioridade de Evacuação às Famílias",
+				"TextoParaLer": "A Defesa Civil confirma que as famílias cadastradas terão prioridade automática nos futuros processos de evacuação.",
+				"Impacto": {
+					"VariacaoEsperanca": 9.0,
+					"VariacaoIrritacao": -7.0,
+					"AudienciaGanha": 8.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "A promessa provocou forte aumento nos cadastros."
+					},
+					"Resistencia": {
+						"Falas": "Famílias estão se cadastrando acreditando que isso garantirá uma vaga que não existe."
+					}
+				}
+			},
+			"DISTORCER": {
+				"TituloAlterado": "Governo Cria Banco de Dados para Selecionar Quem Será Salvo",
+				"TextoParaLer": "A Defesa Civil está reunindo informações médicas e familiares para selecionar quais cidadãos terão prioridade quando os recursos de evacuação começarem a desaparecer.",
+				"Impacto": {
+					"VariacaoEsperanca": -15.0,
+					"VariacaoIrritacao": 24.0,
+					"AudienciaGanha": 20.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "A transmissão provocou recusa em massa ao cadastro emergencial."
+					},
+					"Resistencia": {
+						"Falas": "Milhares começaram a questionar por que o governo precisa saber quem está doente antes de definir as evacuações."
+					}
+				}
+			}
+		}
+	},
+	{
+		"Id": "noticia_dia1_06",
+		"Remetente": "[DIA 01] Agência Nacional de Energia",
+		"TituloOriginal": "Alerta de Manutenção na Rede Elétrica dos Setores Habitacionais",
+		"TextoOriginal": "Intervenções emergenciais na rede elétrica poderão provocar interrupções temporárias durante os períodos de maior consumo.",
+		"EscolhaJogador": "ORIGINAL",
+		"Variacoes": {
+			"ORIGINAL": {
+				"TituloAlterado": "Manutenção Emergencial da Rede Elétrica",
+				"TextoParaLer": "Intervenções emergenciais na rede elétrica poderão provocar interrupções temporárias durante os períodos de maior consumo.",
+				"Impacto": {
+					"VariacaoEsperanca": -1.0,
+					"VariacaoIrritacao": 3.0,
+					"AudienciaGanha": 5.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "A manutenção reduziu a ocorrência de falhas graves na rede."
+					},
+					"Resistencia": {
+						"Falas": "Os apagões estão se tornando frequentes em áreas residenciais."
+					}
+				}
+			},
+			"OMITIR": {
+				"TituloAlterado": "Rede Elétrica Opera Normalmente",
+				"TextoParaLer": "O sistema elétrico permanece em funcionamento nas regiões habitacionais.",
+				"Impacto": {
+					"VariacaoEsperanca": 2.0,
+					"VariacaoIrritacao": -2.0,
+					"AudienciaGanha": 3.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "A população não se preparou para as interrupções programadas."
+					},
+					"Resistencia": {
+						"Falas": "Famílias foram surpreendidas por apagões porque a rádio não informou sobre a manutenção."
+					}
+				}
+			},
+			"MENTIR": {
+				"TituloAlterado": "Estabilidade Total do Sistema Elétrico",
+				"TextoParaLer": "A Agência Nacional de Energia confirma que o sistema elétrico permanece completamente estável e sem previsão de interrupções.",
+				"Impacto": {
+					"VariacaoEsperanca": 8.0,
+					"VariacaoIrritacao": -7.0,
+					"AudienciaGanha": 8.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "O anúncio reduziu a preparação doméstica para os apagões."
+					},
+					"Resistencia": {
+						"Falas": "Quando a energia caiu, milhares descobriram que a rádio havia mentido."
+					}
+				}
+			},
+			"DISTORCER": {
+				"TituloAlterado": "Colapso da Rede Elétrica é Iminente",
+				"TextoParaLer": "A rede elétrica nacional está à beira do colapso e grandes regiões poderão permanecer sem energia por tempo indeterminado.",
+				"Impacto": {
+					"VariacaoEsperanca": -13.0,
+					"VariacaoIrritacao": 18.0,
+					"AudienciaGanha": 17.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "A mensagem provocou compras emergenciais de equipamentos e sobrecarga em pontos de distribuição."
+					},
+					"Resistencia": {
+						"Falas": "A população começou a perceber que a infraestrutura está muito mais frágil do que o governo admite."
+					}
+				}
+			}
+		}
+	},
+	{
+		"Id": "noticia_dia1_07",
+		"Remetente": "[DIA 01] Ministério da Saúde Pública",
+		"TituloOriginal": "Campanha Nacional de Vacinação Obrigatória",
+		"TextoOriginal": "O Ministério da Saúde informa que a vacinação obrigatória será iniciada nas regiões de maior concentração populacional como medida preventiva contra surtos provocados pela deterioração das condições ambientais.",
+		"EscolhaJogador": "ORIGINAL",
+		"Variacoes": {
+			"ORIGINAL": {
+				"TituloAlterado": "Campanha Nacional de Vacinação Obrigatória",
+				"TextoParaLer": "A vacinação obrigatória será iniciada nas regiões de maior concentração populacional como medida preventiva contra surtos provocados pela deterioração das condições ambientais.",
+				"Impacto": {
+					"VariacaoEsperanca": 2.0,
+					"VariacaoIrritacao": 4.0,
+					"AudienciaGanha": 7.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "A campanha alcançou cobertura satisfatória nas regiões prioritárias."
+					},
+					"Resistencia": {
+						"Falas": "A vacinação obrigatória aumentou a desconfiança contra as autoridades."
+					}
+				}
+			},
+			"OMITIR": {
+				"TituloAlterado": "Orientações Gerais de Saúde Pública",
+				"TextoParaLer": "As autoridades sanitárias recomendam que a população mantenha seus cuidados médicos e acompanhe os comunicados oficiais.",
+				"Impacto": {
+					"VariacaoEsperanca": 1.0,
+					"VariacaoIrritacao": -2.0,
+					"AudienciaGanha": 2.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "A adesão inicial à vacinação ficou abaixo da previsão."
+					},
+					"Resistencia": {
+						"Falas": "A omissão reduziu a procura pelos postos de vacinação."
+					}
+				}
+			},
+			"MENTIR": {
+				"TituloAlterado": "Vacinação Voluntária e Sem Restrições",
+				"TextoParaLer": "O Ministério da Saúde esclarece que a vacinação será voluntária e não haverá qualquer penalidade para quem decidir não participar.",
+				"Impacto": {
+					"VariacaoEsperanca": 7.0,
+					"VariacaoIrritacao": -8.0,
+					"AudienciaGanha": 9.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "A falsa informação provocou queda na adesão à campanha."
+					},
+					"Resistencia": {
+						"Falas": "A população começou a acreditar que a vacinação era opcional."
+					}
+				}
+			},
+			"DISTORCER": {
+				"TituloAlterado": "Governo Impõe Vacinação Forçada à População",
+				"TextoParaLer": "O governo determinou vacinação forçada em massa e autorizou medidas de contenção contra cidadãos que se recusarem.",
+				"Impacto": {
+					"VariacaoEsperanca": -10.0,
+					"VariacaoIrritacao": 25.0,
+					"AudienciaGanha": 21.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "A mensagem provocou protestos em frente aos postos de vacinação."
+					},
+					"Resistencia": {
+						"Falas": "A transmissão transformou a vacinação em mais um ponto de confronto entre população e governo."
+					}
+				}
+			}
+		}
 	}
-  },
-  {
-	"Id": "noticia_02",
-	"Remetente": "[DIA 01]Secretaria de Comunicação Estatal",
-	"TituloOriginal": "Propaganda: Campanha do Povo Unido",
-	"TextoOriginal": "A força da nossa nação vem do trabalho árduo e da lealdade aos ideais do Estado.",
-	"EscolhaJogador": "ORIGINAL",
-	"Variacoes": {
-	  "ORIGINAL": {
-		"TituloAlterado": "Propaganda: Campanha do Povo Unido",
-		"TextoParaLer": "A força da nossa nação vem do trabalho árduo e da lealdade aos ideais do Estado.",
-		"Impacto": {
-		  "VariacaoEsperanca": 4.0,
-		  "VariacaoIrritacao": -1.0,
-		  "AudienciaGanha": 5.0
-		},
-		"ImpressoresGeradasNoDiaSeguinte": {
-		  "Governo": {
-			"Falas": "AVALIAÇÃO DE DESEMPENHO EMISSORA CENTRAL\n\nO boletim patriótico sobre a unidade nacional cumpriu integralmente os requisitos de alinhamento doutrinário. A reafirmação do trabalho e da lealdade nas ondas de rádio fortalece o controle social e desencoraja atitudes subversivas nos postos de trabalho. A Diretoria de Comunicação expressa sua aprovação."
-		  },
-		  "Resistencia": {
-			"Falas": "CIRCULAR INTERNA - REDE LIBERDADE\n\nMais uma vez as cornetas do regime ecoaram o velho discurso de sacrifício e submissão cega. A população ouve a mensagem de lealdade enquanto trabalha até o esgotamento físico por salários miseráveis. Sua fidelidade ao texto oficial serve apenas para adormecer a consciência dos cidadãos."
-		  }
-		}
-	  },
-	  "OMITIR": {
-		"TituloAlterado": "Informativo Institucional N° 12",
-		"TextoParaLer": "Aviso padrão referente ao cumprimento das diretrizes de trabalho comunitário.",
-		"Impacto": {
-		  "VariacaoEsperanca": 0.0,
-		  "VariacaoIrritacao": 0.0,
-		  "AudienciaGanha": 1.0
-		},
-		"ImpressoresGeradasNoDiaSeguinte": {
-		  "Governo": {
-			"Falas": "NOTIFICAÇÃO DE ADVERTÊNCIA EDITORIAL\n\nIdentificamos uma atenuação injustificada no tom do manifesto sobre a unidade cívica. O texto original exigia fervor e exaltação aos ideais do Estado, mas foi reduzido a um comunicado administrativo árido e sem impacto emocional. Exigimos que a carga de fervor patriótico seja restaurada nas próximas emissões."
-		  },
-		  "Resistencia": {
-			"Falas": "NOTAS DO OBSERVATÓRIO SUBTERRÂNEO\n\nSua opção por desidratar o panfleto do governo transformou um discurso agressivo de doutrinação em um aviso chato e inofensivo. A população ignorou o comunicado, o que acabou por enfraquecer o contágio ideológico que os comissários pretendiam espalhar pelo distrito."
-		  }
-		}
-	  },
-	  "MENTIR": {
-		"TituloAlterado": "Propaganda: Prosperidade Inabalável da Nação",
-		"TextoParaLer": "Nossa indústria atingiu recordes históricos e somos o país mais seguro e feliz do continente.",
-		"Impacto": {
-		  "VariacaoEsperanca": 10.0,
-		  "VariacaoIrritacao": -8.0,
-		  "AudienciaGanha": 10.0
-		},
-		"ImpressoresGeradasNoDiaSeguinte": {
-		  "Governo": {
-			"Falas": "RELATÓRIO DE IMPACTO DA PROPAGANDA\n\nA exaltação dos recordes industriais inventados teve um efeito imediato nas métricas de satisfação popular. Os relatórios dos patrulheiros mostram que a população absorveu o discurso triunfalista sem questionar. Embora os números sejam fictícios, o resultado ideológico foi altamente favorável à estabilidade do regime."
-		  },
-		  "Resistencia": {
-			"Falas": "CRÍTICA DE IMPRENSA CLANDESTINA\n\nAo fabricar conquistas econômicas inexistentes e declarar que nossa província é a mais feliz do continente, você se tornou o arquiteto de uma ilusão grotesca. Os trabalhadores nas fundições sabem da miséria real, mas o excesso de propaganda falsa confunde os mais fracos e atrasa a organização das greves."
-		  }
-		}
-	  },
-	  "DISTORCER": {
-		"TituloAlterado": "Propaganda: Lavagem Cerebral e Exploração",
-		"TextoParaLer": "O Estado exige sua devoção cega enquanto consome a vida do cidadão em benefício dos generais.",
-		"Impacto": {
-		  "VariacaoEsperanca": -15.0,
-		  "VariacaoIrritacao": 22.0,
-		  "AudienciaGanha": 18.0
-		},
-		"ImpressoresGeradasNoDiaSeguinte": {
-		  "Governo": {
-			"Falas": "REGISTRO DE INFRAÇÃO GRAVE - TRIBUNAL MILITAR\n\nA transmissão oficial de rádio foi utilizada abertamente para difundir calúnias contra o Alto Comando das Forças Armadas e incitar o descumprimento das deveres cívicos. O texto propagado atacou diretamente os alicerces da autoridade governamental. Uma investigação sigilosa contra a estação foi instaurada sob acusações de sedição."
-		  },
-		  "Resistencia": {
-			"Falas": "PANFLETO DA FRENTE REVOLUCIONÁRIA\n\nAs palavras transmitidas ontem ecoaram como um estrondo sobre a rotina da cidade. Romper o monopólio da fala estatal para denunciar abertamente os generais foi um ato audacioso. Milhares de trabalhadores ouviram a verdade nua e crua nos alto-falantes centrais e a tensão nas zonas de fábrica atingiu o ponto máximo."
-		  }
-		}
-	  }
-	}
-  }
 ]

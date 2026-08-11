@@ -2,7 +2,6 @@ using Flags;
 using Godot;
 using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 using System.Text.Json;
 using System.Text.Json.Serialization;
@@ -13,7 +12,7 @@ public partial class GerenciadorDeFlagsNarrativas : Node
 {
     public static GerenciadorDeFlagsNarrativas Instance { get; private set; }
 
-    private const string CAMINHO_JSON = @"C:\DEV\PROJETOSPESSOAIS\FIVE-YEARS-3\scripts\globais\gerenciadordeflagsnarrativas\QuandoSaoAtivadas.json";
+    private const string CAMINHO_JSON = @"res://scripts/globais/gerenciadordeflagsnarrativas/QuandoSaoAtivadas.json";
 
     public HashSet<FlagNarrativa> FlagsNarrativasAtivas { get; private set; } = new HashSet<FlagNarrativa>();
     public HashSet<FlagsCondicionais> FlagsCondicionaisAtivas { get; private set; } = new HashSet<FlagsCondicionais>();
@@ -42,9 +41,16 @@ public partial class GerenciadorDeFlagsNarrativas : Node
     {
         try
         {
-            if (File.Exists(CAMINHO_JSON))
+            if (FileAccess.FileExists(CAMINHO_JSON))
             {
-                string jsonString = File.ReadAllText(CAMINHO_JSON);
+                using var arquivo = FileAccess.Open(CAMINHO_JSON, FileAccess.ModeFlags.Read);
+                if (arquivo == null)
+                {
+                    Log.PrintErr($"[Flags] Falha ao abrir JSON: {CAMINHO_JSON} | Erro: {FileAccess.GetOpenError()}");
+                    return;
+                }
+
+                string jsonString = arquivo.GetAsText();
                 var options = new JsonSerializerOptions
                 {
                     Converters = { new JsonStringEnumConverter() },

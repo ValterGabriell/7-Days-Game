@@ -1,56 +1,168 @@
 [
   {
 	"Dia": 1,
-	"NotaGoverno": "Instrução Direta: Mantenha o clima pacífico. As notícias sobre ração e infraestrutura devem ser intercaladas com momentos de entretenimento musical.",
+	"NotaGoverno": "Mantenha o clima calmo. As notícias de triagem, radiação e racionamento devem ser apresentadas como medidas preventivas e administrativas.",
 	"Programacao": [
 	  {
 		"OrdemSugerida": 1,
 		"Tipo": "MUSICA",
 		"NoticiaIdRelacionada": "",
-		"DescricaoObrigacao": "[dia 01]Executar qualquer Música de Abertura",
+		"DescricaoObrigacao": "[DIA 01] Música de Abertura da Estação",
 		"Obrigatorio": false
 	  },
-		{
-			"OrdemSugerida": 2,
-			"Tipo": "NOTICIA",
-			"NoticiaIdRelacionada": "noticia_01",
-			"DescricaoObrigacao": "[dia 01]Anúncio sobre a Distribuição de Grãos",
-			"Obrigatorio": true
-		},
-		{
-			"OrdemSugerida": 3,
-			"Tipo": "NOTICIA",
-			"NoticiaIdRelacionada": "noticia_02",
-			"DescricaoObrigacao": "[dia 01]Boletim do Transporte Público",
-			"Obrigatorio": true
-		}
+	  {
+		"OrdemSugerida": 2,
+		"Tipo": "NOTICIA",
+		"NoticiaIdRelacionada": "noticia_dia1_01",
+		"DescricaoObrigacao": "[DIA 01] Anúncio de Triagem nos Postos de Migração da FDP",
+		"Obrigatorio": true
+	  },
+	  {
+		"OrdemSugerida": 3,
+		"Tipo": "NOTICIA",
+		"NoticiaIdRelacionada": "noticia_dia1_02",
+		"DescricaoObrigacao": "[DIA 01] Boletim de Radiação UV e Alterações Atmosféricas",
+		"Obrigatorio": true
+	  },
+	  {
+		"OrdemSugerida": 4,
+		"Tipo": "MUSICA",
+		"NoticiaIdRelacionada": "",
+		"DescricaoObrigacao": "[DIA 01] Música de Ritmo Animado",
+		"Obrigatorio": false
+	  },
+	  {
+		"OrdemSugerida": 5,
+		"Tipo": "NOTICIA",
+		"NoticiaIdRelacionada": "noticia_dia1_03",
+		"DescricaoObrigacao": "[DIA 01] Atualização sobre o Preço da Ração Sintética",
+		"Obrigatorio": true
+	  },
+	  {
+		"OrdemSugerida": 6,
+		"Tipo": "NOTICIA",
+		"NoticiaIdRelacionada": "noticia_dia1_04",
+		"DescricaoObrigacao": "[DIA 01] Relatório de Obras de Expansão dos Bunkers",
+		"Obrigatorio": true
+	  },
+	  {
+		"OrdemSugerida": 7,
+		"Tipo": "MUSICA",
+		"NoticiaIdRelacionada": "",
+		"DescricaoObrigacao": "[DIA 01] Música de Transição",
+		"Obrigatorio": false
+	  },
+	  {
+		"OrdemSugerida": 8,
+		"Tipo": "NOTICIA",
+		"NoticiaIdRelacionada": "noticia_dia1_05",
+		"DescricaoObrigacao": "[DIA 01] Cadastro Emergencial de Famílias",
+		"Obrigatorio": true
+	  },
+	  {
+		"OrdemSugerida": 9,
+		"Tipo": "NOTICIA",
+		"NoticiaIdRelacionada": "noticia_dia1_06",
+		"DescricaoObrigacao": "[DIA 01] Manutenção da Rede Elétrica",
+		"Obrigatorio": true
+	  },
+	  {
+		"OrdemSugerida": 10,
+		"Tipo": "NOTICIA",
+		"NoticiaIdRelacionada": "noticia_dia1_07",
+		"DescricaoObrigacao": "[DIA 01] Vacinação Obrigatória",
+		"Obrigatorio": true
+	  },
+	  {
+		"OrdemSugerida": 11,
+		"Tipo": "MUSICA",
+		"NoticiaIdRelacionada": "",
+		"DescricaoObrigacao": "[DIA 01] Música de Encerramento",
+		"Obrigatorio": false
+	  }
 	]
   },
   {
 	"Dia": 2,
-	"NotaGoverno": "Instrução Direta: Suavize o impacto do Toque de Recolher. Transmita após uma música que acalme os ânimos.",
+	"NotaGoverno": "Instrução Direta: Apresente o avanço do nível do mar, as evacuações e as perdas territoriais como problemas de infraestrutura e deslocamento populacional. Não reconheça ainda que determinadas regiões foram perdidas de maneira permanente. Mantenha a população concentrada nos grandes centros e evite linguagem que sugira o colapso da civilização.",
 	"Programacao": [
-		{
-			"OrdemSugerida": 1,
-			"Tipo": "NOTICIA",
-			"NoticiaIdRelacionada": "noticia_03",
-			"DescricaoObrigacao": "[dia 02]Nota sobre o Novo Toque de Recolher Noturno",
-			"Obrigatorio": true
-		},
-		{
-			"OrdemSugerida": 2,
-			"Tipo": "MUSICA",
-			"NoticiaIdRelacionada": "",
-			"DescricaoObrigacao": "[dia 02]Música Livre (Recomendado tom pacífico)",
-			"Obrigatorio": false
-		},
-		{
-			"OrdemSugerida": 3,
-			"Tipo": "NOTICIA",
-			"NoticiaIdRelacionada": "noticia_04",
-			"DescricaoObrigacao": "[dia 02]Relatório Sanitário Regional",
-			"Obrigatorio": true
-		}
+	  {
+		"OrdemSugerida": 1,
+		"Tipo": "MUSICA",
+		"NoticiaIdRelacionada": "",
+		"DescricaoObrigacao": "[DIA 02] Música Instrumental Suave de Abertura",
+		"Obrigatorio": false
+	  },
+	  {
+		"OrdemSugerida": 2,
+		"Tipo": "NOTICIA",
+		"NoticiaIdRelacionada": "noticia_dia2_01",
+		"DescricaoObrigacao": "[DIA 02] Comunicado da Autoridade Marítima sobre Avanço das Águas e Inundações Costeiras",
+		"Obrigatorio": true
+	  },
+	  {
+		"OrdemSugerida": 3,
+		"Tipo": "NOTICIA",
+		"NoticiaIdRelacionada": "noticia_dia2_02",
+		"DescricaoObrigacao": "[DIA 02] Relatório sobre Evacuação e Interdição de Portos e Cidades Costeiras",
+		"Obrigatorio": true
+	  },
+	  {
+		"OrdemSugerida": 4,
+		"Tipo": "MUSICA",
+		"NoticiaIdRelacionada": "",
+		"DescricaoObrigacao": "[DIA 02] Música Tranquilizante de Transição",
+		"Obrigatorio": false
+	  },
+	  {
+		"OrdemSugerida": 5,
+		"Tipo": "NOTICIA",
+		"NoticiaIdRelacionada": "noticia_dia2_03",
+		"DescricaoObrigacao": "[DIA 02] Informe sobre Reorganização das Rotas Terrestres e Deslocamento das Forças da FDP",
+		"Obrigatorio": true
+	  },
+	  {
+		"OrdemSugerida": 6,
+		"Tipo": "NOTICIA",
+		"NoticiaIdRelacionada": "noticia_dia2_04",
+		"DescricaoObrigacao": "[DIA 02] Boletim sobre Temperatura, Marés e Aumento da Radiação UV",
+		"Obrigatorio": true
+	  },
+	  {
+		"OrdemSugerida": 7,
+		"Tipo": "MUSICA",
+		"NoticiaIdRelacionada": "",
+		"DescricaoObrigacao": "[DIA 02] Música Instrumental de Fundo e Transição",
+		"Obrigatorio": false
+	  },
+	  {
+		"OrdemSugerida": 8,
+		"Tipo": "NOTICIA",
+		"NoticiaIdRelacionada": "noticia_dia2_05",
+		"DescricaoObrigacao": "[DIA 02] Aviso sobre Interrupções de Satélite e Falhas nas Comunicações",
+		"Obrigatorio": true
+	  },
+	  {
+		"OrdemSugerida": 9,
+		"Tipo": "NOTICIA",
+		"NoticiaIdRelacionada": "noticia_dia2_06",
+		"DescricaoObrigacao": "[DIA 02] Nota sobre Reforço de Diques, Barreiras e Estruturas de Contenção",
+		"Obrigatorio": true
+	  },
+	  {
+		"OrdemSugerida": 10,
+		"Tipo": "NOTICIA",
+		"NoticiaIdRelacionada": "noticia_dia2_07",
+		"DescricaoObrigacao": "[DIA 02] Comunicado da Guarda Marítima sobre Suspensão de Operações de Resgate em Áreas Críticas",
+		"Obrigatorio": true
+	  },
+	  {
+		"OrdemSugerida": 11,
+		"Tipo": "MUSICA",
+		"NoticiaIdRelacionada": "",
+		"DescricaoObrigacao": "[DIA 02] Música de Encerramento do Bloco",
+		"Obrigatorio": false
+	  }
 	]
   }
 ]

@@ -1,135 +1,539 @@
 [
 	{
-		"Id": "noticia_01",
-		"Remetente": "[DIA 02]Secretaria de Saneamento e Recursos Hídricos",
-		"TituloOriginal": "Contaminação e Racionamento de Água no Setor Sul",
-		"TextoOriginal": "Os reservatórios de água do Setor Sul foram contaminados durante os distúrbios de ontem. O suprimento potável restante dura apenas 24 horas e haverá cortes programados.",
+		"Id": "noticia_dia2_01",
+		"Remetente": "[DIA 02] Autoridade Marítima Continental",
+		"TituloOriginal": "Inundações Costeiras e Reorganização das Zonas Habitacionais",
+		"TextoOriginal": "A Autoridade Marítima informa que o avanço excepcional das águas provocou a interdição de diversos bairros costeiros. A população deverá seguir as orientações das equipes de evacuação.",
 		"EscolhaJogador": "ORIGINAL",
 		"Variacoes": {
 			"ORIGINAL": {
-				"TituloAlterado": "Contaminação e Racionamento de Água no Setor Sul",
-				"TextoParaLer": "Os reservatórios do Setor Sul sofreram danos e o suprimento de água potável dura 24 horas. O racionamento começa imediatamente.",
+				"TituloAlterado": "Inundações Costeiras e Reorganização das Zonas Habitacionais",
+				"TextoParaLer": "O avanço excepcional das águas provocou a interdição de diversos bairros costeiros. A população deverá seguir as orientações das equipes de evacuação.",
 				"Impacto": {
-					"VariacaoEsperanca": -8.0,
-					"VariacaoIrritacao": 15.0,
-					"AudienciaGanha": 18.0
+					"VariacaoEsperanca": -4.0,
+					"VariacaoIrritacao": 6.0,
+					"AudienciaGanha": 8.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "BOLETIM MARÍTIMO\n\nA evacuação das primeiras áreas costeiras ocorreu dentro dos parâmetros previstos."
+					},
+					"Resistencia": {
+						"Falas": "COMUNICADO HADES\n\nMais bairros desapareceram sob a água. As autoridades continuam chamando isso de reorganização."
+					}
 				}
 			},
 			"OMITIR": {
-				"TituloAlterado": "Manutenção Preventiva na Rede de Distribuição de Água",
-				"TextoParaLer": "Informamos que manutenções de rotina na rede hídrica do Setor Sul podem causar oscilações temporárias no fluxo de água hoje.",
+				"TituloAlterado": "Orientações para Áreas Costeiras",
+				"TextoParaLer": "Moradores das regiões costeiras devem acompanhar as orientações das autoridades e evitar deslocamentos desnecessários.",
 				"Impacto": {
 					"VariacaoEsperanca": 0.0,
-					"VariacaoIrritacao": 2.0,
+					"VariacaoIrritacao": -3.0,
 					"AudienciaGanha": 3.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "A ausência de informações detalhadas dificultou a evacuação de alguns bairros."
+					},
+					"Resistencia": {
+						"Falas": "Famílias permaneceram em áreas que já deveriam ter sido evacuadas."
+					}
 				}
 			},
 			"MENTIR": {
-				"TituloAlterado": "Modernização da Rede de Água do Setor Sul Concluída",
-				"TextoParaLer": "A nova estação de purificação entrou em operação no Setor Sul, garantindo água limpa e abundante para todas as famílias.",
+				"TituloAlterado": "Águas Costeiras Sob Controle",
+				"TextoParaLer": "As autoridades marítimas confirmam que o avanço das águas permanece sob controle e que não existe risco imediato para as principais regiões habitacionais.",
 				"Impacto": {
-					"VariacaoEsperanca": 18.0,
+					"VariacaoEsperanca": 14.0,
 					"VariacaoIrritacao": -12.0,
-					"AudienciaGanha": 14.0
+					"AudienciaGanha": 13.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "A falsa sensação de segurança atrasou deslocamentos em algumas regiões."
+					},
+					"Resistencia": {
+						"Falas": "Você disse que as águas estavam sob controle. Durante a noite, três bairros foram abandonados."
+					}
 				}
 			},
 			"DISTORCER": {
-				"TituloAlterado": "Governo Envenena Reservatório do Setor Sul para Contenção",
-				"TextoParaLer": "Relatórios confirmam que o Estado contaminou propositalmente a água do Setor Sul para enfraquecer o movimento comunitário.",
+				"TituloAlterado": "Cidades Costeiras Estão Sendo Engolidas pelo Oceano",
+				"TextoParaLer": "O avanço das águas está destruindo bairros inteiros e tornando dezenas de cidades costeiras inviáveis para a ocupação humana.",
+				"Impacto": {
+					"VariacaoEsperanca": -18.0,
+					"VariacaoIrritacao": 24.0,
+					"AudienciaGanha": 22.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "A transmissão provocou fuga desorganizada de moradores de regiões que ainda não haviam sido evacuadas."
+					},
+					"Resistencia": {
+						"Falas": "Sua mensagem fez milhares perceberem a velocidade real do avanço do mar."
+					}
+				}
+			}
+		}
+	},
+	{
+		"Id": "noticia_dia2_02",
+		"Remetente": "[DIA 02] Comando Logístico da FDP",
+		"TituloOriginal": "Evacuação dos Portos Comerciais do Litoral",
+		"TextoOriginal": "Os principais portos comerciais das regiões costeiras serão progressivamente desativados. Embarcações e equipes logísticas serão deslocadas para áreas interiores.",
+		"EscolhaJogador": "ORIGINAL",
+		"Variacoes": {
+			"ORIGINAL": {
+				"TituloAlterado": "Evacuação dos Portos Comerciais do Litoral",
+				"TextoParaLer": "Os principais portos comerciais das regiões costeiras serão progressivamente desativados. Embarcações e equipes logísticas serão deslocadas para áreas interiores.",
+				"Impacto": {
+					"VariacaoEsperanca": -3.0,
+					"VariacaoIrritacao": 5.0,
+					"AudienciaGanha": 7.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "A retirada dos portos foi concluída conforme o planejamento."
+					},
+					"Resistencia": {
+						"Falas": "Com os portos fechando, milhares de trabalhadores perderam seu último meio de transporte."
+					}
+				}
+			},
+			"OMITIR": {
+				"TituloAlterado": "Reorganização da Atividade Portuária",
+				"TextoParaLer": "As operações portuárias passarão por uma reorganização gradual nas próximas semanas.",
+				"Impacto": {
+					"VariacaoEsperanca": 1.0,
+					"VariacaoIrritacao": -2.0,
+					"AudienciaGanha": 3.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "Parte dos trabalhadores permaneceu nos portos sem compreender a dimensão da evacuação."
+					},
+					"Resistencia": {
+						"Falas": "Você chamou de reorganização o fechamento de portos inteiros."
+					}
+				}
+			},
+			"MENTIR": {
+				"TituloAlterado": "Portos Permanecerão Operacionais",
+				"TextoParaLer": "A Autoridade Marítima garante que os principais portos permanecerão operacionais e capazes de atender ao fluxo normal de embarcações.",
+				"Impacto": {
+					"VariacaoEsperanca": 9.0,
+					"VariacaoIrritacao": -7.0,
+					"AudienciaGanha": 10.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "A informação provocou concentração de trabalhadores e famílias nos portos."
+					},
+					"Resistencia": {
+						"Falas": "Centenas chegaram aos portos esperando embarques que não existiam."
+					}
+				}
+			},
+			"DISTORCER": {
+				"TituloAlterado": "FDP Abandona os Portos e Deixa a População para Trás",
+				"TextoParaLer": "A FDP está abandonando os portos costeiros e retirando equipamentos enquanto milhares de civis permanecem sem transporte.",
+				"Impacto": {
+					"VariacaoEsperanca": -16.0,
+					"VariacaoIrritacao": 22.0,
+					"AudienciaGanha": 19.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "A mensagem provocou tentativas de invasão de instalações militares."
+					},
+					"Resistencia": {
+						"Falas": "A população começou a confrontar a FDP nos portos."
+					}
+				}
+			}
+		}
+	},
+	{
+		"Id": "noticia_dia2_03",
+		"Remetente": "[DIA 02] Comando Estratégico da FDP",
+		"TituloOriginal": "Reagrupamento de Tropas nas Redes Rodoviárias",
+		"TextoOriginal": "Unidades da FDP serão reposicionadas nas principais rodovias para garantir a circulação de veículos de emergência e controlar o fluxo migratório.",
+		"EscolhaJogador": "ORIGINAL",
+		"Variacoes": {
+			"ORIGINAL": {
+				"TituloAlterado": "Reagrupamento de Tropas nas Redes Rodoviárias",
+				"TextoParaLer": "Unidades da FDP serão reposicionadas nas principais rodovias para garantir a circulação de veículos de emergência e controlar o fluxo migratório.",
+				"Impacto": {
+					"VariacaoEsperanca": 0.0,
+					"VariacaoIrritacao": 5.0,
+					"AudienciaGanha": 7.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "O reforço das rodovias reduziu bloqueios nos corredores de evacuação."
+					},
+					"Resistencia": {
+						"Falas": "Mais tropas foram colocadas nas estradas. A justificativa oficial é segurança; na prática, o movimento das pessoas está sendo controlado."
+					}
+				}
+			},
+			"OMITIR": {
+				"TituloAlterado": "Reorganização do Trânsito Emergencial",
+				"TextoParaLer": "As autoridades realizarão alterações no fluxo das principais rodovias para melhorar a circulação de veículos.",
+				"Impacto": {
+					"VariacaoEsperanca": 1.0,
+					"VariacaoIrritacao": -1.0,
+					"AudienciaGanha": 3.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "A falta de informação aumentou o congestionamento nas rotas de evacuação."
+					},
+					"Resistencia": {
+						"Falas": "Famílias ficaram presas em rodovias que haviam sido transformadas em corredores militares."
+					}
+				}
+			},
+			"MENTIR": {
+				"TituloAlterado": "Rodovias Livres e Seguras para Todos",
+				"TextoParaLer": "A FDP informa que todas as principais rodovias permanecem livres e seguras para circulação da população.",
+				"Impacto": {
+					"VariacaoEsperanca": 10.0,
+					"VariacaoIrritacao": -8.0,
+					"AudienciaGanha": 11.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "A população aumentou os deslocamentos, provocando congestionamentos inesperados."
+					},
+					"Resistencia": {
+						"Falas": "Você disse que as estradas estavam livres. Milhares encontraram bloqueios militares."
+					}
+				}
+			},
+			"DISTORCER": {
+				"TituloAlterado": "FDP Militariza as Estradas Contra a População",
+				"TextoParaLer": "A FDP está militarizando as principais rodovias para impedir que famílias deixem as regiões condenadas e alcancem os centros de proteção.",
+				"Impacto": {
+					"VariacaoEsperanca": -17.0,
+					"VariacaoIrritacao": 25.0,
+					"AudienciaGanha": 21.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "A transmissão provocou confrontos com unidades de trânsito militar."
+					},
+					"Resistencia": {
+						"Falas": "A população começou a bloquear rodovias para impedir a movimentação das tropas."
+					}
+				}
+			}
+		}
+	},
+	{
+		"Id": "noticia_dia2_04",
+		"Remetente": "[DIA 02] Departamento de Climatologia e Atmosfera",
+		"TituloOriginal": "Alterações de Maré e Aumento da Radiação Ultravioleta",
+		"TextoOriginal": "Cientistas registraram alterações anormais no comportamento das marés e níveis crescentes de radiação ultravioleta na superfície terrestre.",
+		"EscolhaJogador": "ORIGINAL",
+		"Variacoes": {
+			"ORIGINAL": {
+				"TituloAlterado": "Alterações de Maré e Aumento da Radiação Ultravioleta",
+				"TextoParaLer": "Cientistas registraram alterações anormais no comportamento das marés e níveis crescentes de radiação ultravioleta na superfície terrestre.",
+				"Impacto": {
+					"VariacaoEsperanca": -5.0,
+					"VariacaoIrritacao": 6.0,
+					"AudienciaGanha": 9.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "Novos estudos indicam que os fenômenos ambientais permanecem fora dos padrões históricos."
+					},
+					"Resistencia": {
+						"Falas": "A situação ambiental está piorando mais rápido do que os comunicados oficiais admitem."
+					}
+				}
+			},
+			"OMITIR": {
+				"TituloAlterado": "Boletim Climático Regional",
+				"TextoParaLer": "As condições climáticas permanecerão instáveis nas regiões costeiras. A população deve acompanhar os próximos boletins.",
+				"Impacto": {
+					"VariacaoEsperanca": 1.0,
+					"VariacaoIrritacao": -2.0,
+					"AudienciaGanha": 3.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "A omissão reduziu a preocupação pública, mas atrasou a preparação de algumas comunidades."
+					},
+					"Resistencia": {
+						"Falas": "Mais uma vez a rádio preferiu esconder a gravidade do fenômeno."
+					}
+				}
+			},
+			"MENTIR": {
+				"TituloAlterado": "Condições Climáticas Começam a Estabilizar",
+				"TextoParaLer": "Os dados mais recentes indicam estabilização das marés e redução gradual dos níveis de radiação ultravioleta.",
+				"Impacto": {
+					"VariacaoEsperanca": 13.0,
+					"VariacaoIrritacao": -11.0,
+					"AudienciaGanha": 13.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "A população reduziu medidas de proteção após o anúncio."
+					},
+					"Resistencia": {
+						"Falas": "A mentira fez pessoas voltarem a trabalhar ao ar livre sem proteção adequada."
+					}
+				}
+			},
+			"DISTORCER": {
+				"TituloAlterado": "Clima Fora de Controle: Marés e Radiação Ameaçam a Humanidade",
+				"TextoParaLer": "As alterações nas marés e o aumento da radiação indicam que o equilíbrio ambiental da Terra está entrando em colapso.",
+				"Impacto": {
+					"VariacaoEsperanca": -20.0,
+					"VariacaoIrritacao": 27.0,
+					"AudienciaGanha": 23.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "A mensagem causou pânico em regiões costeiras e provocou evacuações espontâneas."
+					},
+					"Resistencia": {
+						"Falas": "A transmissão levou comunidades inteiras a abandonar suas casas antes das ordens oficiais."
+					}
+				}
+			}
+		}
+	},
+	{
+		"Id": "noticia_dia2_05",
+		"Remetente": "[DIA 02] Agência Orbital e Comunicações",
+		"TituloOriginal": "Perda de Sinal de Satélite em Áreas de Risco",
+		"TextoOriginal": "A Agência Orbital informa que alguns satélites apresentaram perda intermitente de sinal ao atravessar regiões afetadas por fortes perturbações eletromagnéticas.",
+		"EscolhaJogador": "ORIGINAL",
+		"Variacoes": {
+			"ORIGINAL": {
+				"TituloAlterado": "Perda de Sinal de Satélite em Áreas de Risco",
+				"TextoParaLer": "Alguns satélites apresentaram perda intermitente de sinal ao atravessar regiões afetadas por fortes perturbações eletromagnéticas.",
+				"Impacto": {
+					"VariacaoEsperanca": -4.0,
+					"VariacaoIrritacao": 5.0,
+					"AudienciaGanha": 7.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "Novos protocolos de comunicação foram ativados para compensar as falhas orbitais."
+					},
+					"Resistencia": {
+						"Falas": "A rede de satélites está começando a desaparecer. Isso explica por que certas informações nunca chegam ao público."
+					}
+				}
+			},
+			"OMITIR": {
+				"TituloAlterado": "Manutenção dos Sistemas de Comunicação",
+				"TextoParaLer": "Equipes técnicas continuam trabalhando para manter a estabilidade dos sistemas de comunicação nacionais.",
+				"Impacto": {
+					"VariacaoEsperanca": 1.0,
+					"VariacaoIrritacao": -1.0,
+					"AudienciaGanha": 3.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "A omissão evitou preocupação pública, mas parte dos usuários não conseguiu compreender as interrupções."
+					},
+					"Resistencia": {
+						"Falas": "A rádio novamente chamou falhas graves de simples manutenção."
+					}
+				}
+			},
+			"MENTIR": {
+				"TituloAlterado": "Sistemas de Satélite Operam Normalmente",
+				"TextoParaLer": "A Agência Orbital confirma que os sistemas de comunicação por satélite continuam funcionando normalmente.",
+				"Impacto": {
+					"VariacaoEsperanca": 10.0,
+					"VariacaoIrritacao": -9.0,
+					"AudienciaGanha": 10.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "A informação manteve a população confiante na infraestrutura orbital."
+					},
+					"Resistencia": {
+						"Falas": "Quando os sinais desapareceram, as pessoas perceberam que a rádio havia mentido."
+					}
+				}
+			},
+			"DISTORCER": {
+				"TituloAlterado": "Satélites Estão Caindo e o Mundo Está Perdendo Comunicação",
+				"TextoParaLer": "As falhas orbitais estão se multiplicando e os sistemas de comunicação planetária podem entrar em colapso.",
+				"Impacto": {
+					"VariacaoEsperanca": -18.0,
+					"VariacaoIrritacao": 22.0,
+					"AudienciaGanha": 20.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "A notícia provocou corrida por equipamentos de comunicação alternativos."
+					},
+					"Resistencia": {
+						"Falas": "A população começou a compreender que o silêncio das comunicações pode ser permanente."
+					}
+				}
+			}
+		}
+	},
+	{
+		"Id": "noticia_dia2_06",
+		"Remetente": "[DIA 02] Ministério da Infraestrutura",
+		"TituloOriginal": "Reforço das Estruturas de Contenção Costeira",
+		"TextoOriginal": "Equipes de engenharia iniciaram obras emergenciais para reforçar diques e barreiras de contenção nas regiões ameaçadas pelo avanço do mar.",
+		"EscolhaJogador": "ORIGINAL",
+		"Variacoes": {
+			"ORIGINAL": {
+				"TituloAlterado": "Reforço das Estruturas de Contenção Costeira",
+				"TextoParaLer": "Equipes de engenharia iniciaram obras emergenciais para reforçar diques e barreiras de contenção nas regiões ameaçadas pelo avanço do mar.",
+				"Impacto": {
+					"VariacaoEsperanca": 4.0,
+					"VariacaoIrritacao": 2.0,
+					"AudienciaGanha": 6.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "As obras de contenção continuam avançando."
+					},
+					"Resistencia": {
+						"Falas": "Os diques estão sendo reforçados, mas os próprios engenheiros admitem que não serão suficientes para sempre."
+					}
+				}
+			},
+			"OMITIR": {
+				"TituloAlterado": "Obras de Infraestrutura Costeira",
+				"TextoParaLer": "Equipes de engenharia continuam trabalhando nas estruturas costeiras das regiões afetadas.",
+				"Impacto": {
+					"VariacaoEsperanca": 1.0,
+					"VariacaoIrritacao": -1.0,
+					"AudienciaGanha": 3.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "A população não recebeu detalhes sobre as áreas prioritárias."
+					},
+					"Resistencia": {
+						"Falas": "Comunidades não souberam quais regiões estavam realmente ameaçadas."
+					}
+				}
+			},
+			"MENTIR": {
+				"TituloAlterado": "Diques Garantirão Proteção Contra o Avanço do Mar",
+				"TextoParaLer": "O Ministério da Infraestrutura confirma que os novos sistemas de contenção serão suficientes para proteger as cidades ameaçadas.",
+				"Impacto": {
+					"VariacaoEsperanca": 11.0,
+					"VariacaoIrritacao": -9.0,
+					"AudienciaGanha": 11.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "A população reduziu os deslocamentos após o anúncio."
+					},
+					"Resistencia": {
+						"Falas": "Famílias permaneceram em zonas que posteriormente precisaram ser evacuadas."
+					}
+				}
+			},
+			"DISTORCER": {
+				"TituloAlterado": "Diques Estão Falhando e Cidades Serão Inundadas",
+				"TextoParaLer": "As estruturas de contenção estão falhando e diversas cidades costeiras correm risco imediato de serem completamente inundadas.",
+				"Impacto": {
+					"VariacaoEsperanca": -17.0,
+					"VariacaoIrritacao": 25.0,
+					"AudienciaGanha": 21.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "A transmissão provocou evacuações antecipadas e desorganizadas."
+					},
+					"Resistencia": {
+						"Falas": "A população passou a pressionar as autoridades por evacuações imediatas."
+					}
+				}
+			}
+		}
+	},
+	{
+		"Id": "noticia_dia2_07",
+		"Remetente": "[DIA 02] Guarda Marítima Continental",
+		"TituloOriginal": "Suspensão Temporária das Operações de Resgate",
+		"TextoOriginal": "A Guarda Marítima informa que determinadas operações de resgate foram suspensas devido às condições perigosas de navegação e à insuficiência de embarcações disponíveis.",
+		"EscolhaJogador": "ORIGINAL",
+		"Variacoes": {
+			"ORIGINAL": {
+				"TituloAlterado": "Suspensão Temporária das Operações de Resgate",
+				"TextoParaLer": "Determinadas operações de resgate foram suspensas devido às condições perigosas de navegação e à insuficiência de embarcações disponíveis.",
+				"Impacto": {
+					"VariacaoEsperanca": -7.0,
+					"VariacaoIrritacao": 10.0,
+					"AudienciaGanha": 10.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "As operações de resgate permanecem restritas às regiões consideradas prioritárias."
+					},
+					"Resistencia": {
+						"Falas": "A Guarda Marítima já não possui embarcações suficientes para atender todos os pedidos."
+					}
+				}
+			},
+			"OMITIR": {
+				"TituloAlterado": "Atualização das Operações Marítimas",
+				"TextoParaLer": "As equipes marítimas continuam avaliando as condições para operações de emergência nas regiões costeiras.",
+				"Impacto": {
+					"VariacaoEsperanca": 0.0,
+					"VariacaoIrritacao": -2.0,
+					"AudienciaGanha": 2.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "A omissão evitou pânico, mas algumas famílias continuaram esperando por resgates que não ocorreriam."
+					},
+					"Resistencia": {
+						"Falas": "Você não contou que os resgates estavam sendo suspensos."
+					}
+				}
+			},
+			"MENTIR": {
+				"TituloAlterado": "Operações de Resgate Ampliadas",
+				"TextoParaLer": "A Guarda Marítima informa que novas embarcações foram mobilizadas e que as operações de resgate serão ampliadas para atender todas as regiões afetadas.",
+				"Impacto": {
+					"VariacaoEsperanca": 15.0,
+					"VariacaoIrritacao": -12.0,
+					"AudienciaGanha": 14.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "A falsa expectativa de resgate provocou concentração de civis em áreas costeiras perigosas."
+					},
+					"Resistencia": {
+						"Falas": "Famílias aguardaram embarcações que nunca chegaram."
+					}
+				}
+			},
+			"DISTORCER": {
+				"TituloAlterado": "Guarda Marítima Abandona Civis à Própria Sorte",
+				"TextoParaLer": "A Guarda Marítima suspendeu praticamente todos os resgates e deixou milhares de civis isolados nas regiões costeiras condenadas.",
 				"Impacto": {
 					"VariacaoEsperanca": -22.0,
 					"VariacaoIrritacao": 30.0,
 					"AudienciaGanha": 25.0
-				}
-			}
-		}
-	},
-	{
-		"Id": "noticia_02",
-		"Remetente": "[DIA 02]Ministério do Abastecimento Popular",
-		"TituloOriginal": "Redução das Cotas de Proteínas e Grãos nas Filas Oficiais",
-		"TextoOriginal": "Devido ao bloqueio das rotas de transporte regionais, os postos estatais de distribuição de comida entregarão metade da cota diária por família.",
-		"EscolhaJogador": "ORIGINAL",
-		"Variacoes": {
-			"ORIGINAL": {
-				"TituloAlterado": "Redução Temporária nas Cotas de Ração Alimentar",
-				"TextoParaLer": "Problemas de logística nas estradas forçaram a redução temporária de 50% na cota alimentar diária retirada nos postos estatais.",
-				"Impacto": {
-					"VariacaoEsperanca": -10.0,
-					"VariacaoIrritacao": 18.0,
-					"AudienciaGanha": 15.0
-				}
-			},
-			"OMITIR": {
-				"TituloAlterado": "Reorganização Operacional dos Postos de Abastecimento",
-				"TextoParaLer": "Os postos de distribuição de alimentos operam hoje com horários estendidos para atender a demanda das famílias.",
-				"Impacto": {
-					"VariacaoEsperanca": 1.0,
-					"VariacaoIrritacao": 1.0,
-					"AudienciaGanha": 2.0
-				}
-			},
-			"MENTIR": {
-				"TituloAlterado": "Garantia de Abastecimento Duplo nas Cestas Básicas",
-				"TextoParaLer": "O Ministério do Abastecimento anuncia a chegada de comboios especiais e garante comida extra para todas as famílias cadastradas.",
-				"Impacto": {
-					"VariacaoEsperanca": 16.0,
-					"VariacaoIrritacao": -10.0,
-					"AudienciaGanha": 12.0
-				}
-			},
-			"DISTORCER": {
-				"TituloAlterado": "Elite Confisca Alimentos e Deixa Restos para a População",
-				"TextoParaLer": "Caminhões do Governo foram vistos desviando toneladas de alimentos das filas populares direto para os bunkers da administração central.",
-				"Impacto": {
-					"VariacaoEsperanca": -20.0,
-					"VariacaoIrritacao": 28.0,
-					"AudienciaGanha": 22.0
-				}
-			}
-		}
-	},
-	{
-		"Id": "noticia_03",
-		"Remetente": "[DIA 02]Comando Geral de Segurança Urbana",
-		"TituloOriginal": "Decreto de Toque de Recolher Noturno nas Áreas Comerciais",
-		"TextoOriginal": "Devido ao saque de depósitos de suprimentos na madrugada, está proibida a circulação de civis entre 20h e 06h.",
-		"EscolhaJogador": "ORIGINAL",
-		"Variacoes": {
-			"ORIGINAL": {
-				"TituloAlterado": "Toque de Recolher Decretado nas Zonas Comerciais",
-				"TextoParaLer": "Para conter saques a armazéns, as autoridades decretaram toque de recolher obrigatório a partir das 20h na região central.",
-				"Impacto": {
-					"VariacaoEsperanca": -5.0,
-					"VariacaoIrritacao": 12.0,
-					"AudienciaGanha": 10.0
-				}
-			},
-			"OMITIR": {
-				"TituloAlterado": "Reforço no Patrulhamento das Vias Principais",
-				"TextoParaLer": "As forças de segurança intensificaram a presença nas ruas centrais para garantir a ordem pública durante o dia de hoje.",
-				"Impacto": {
-					"VariacaoEsperanca": 0.0,
-					"VariacaoIrritacao": 0.0,
-					"AudienciaGanha": 1.0
-				}
-			},
-			"MENTIR": {
-				"TituloAlterado": "Medida de Proteção Especial para Tranquilidade dos Moradores",
-				"TextoParaLer": "Um novo protocolo de segurança foi implementado para que as famílias possam descansar tranquilas em suas residências sem ameaça de saques.",
-				"Impacto": {
-					"VariacaoEsperanca": 10.0,
-					"VariacaoIrritacao": -8.0,
-					"AudienciaGanha": 8.0
-				}
-			},
-			"DISTORCER": {
-				"TituloAlterado": "Estado Prepara Caçada Humana com Toque de Recolher",
-				"TextoParaLer": "As forças policiais preparam operações truculentas com autorização para disparar contra qualquer cidadão que sair de casa à noite.",
-				"Impacto": {
-					"VariacaoEsperanca": -18.0,
-					"VariacaoIrritacao": 25.0,
-					"AudienciaGanha": 20.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "A transmissão provocou revolta contra instalações da Guarda Marítima."
+					},
+					"Resistencia": {
+						"Falas": "A mensagem expôs a dimensão da crise de resgate e aumentou a pressão sobre a FDP."
+					}
 				}
 			}
 		}
