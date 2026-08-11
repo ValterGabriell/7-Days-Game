@@ -4,49 +4,90 @@ using System;
 
 public partial class UiAudiencia : CanvasLayer
 {
+    [ExportGroup("Audiência")]
     [Export] public Label LabelAudiencia;
-    [Export] public ProgressBar BarraAudiencia; 
+    [Export] public ProgressBar BarraAudiencia;
+
+    [ExportGroup("Métricas do Clima")]
+    [Export] public Label LabelEsperanca;
+    [Export] public Label LabelIrritacao;
+    [Export] public Label LabelClimaSocial;
 
     public override void _Ready()
     {
-        // Garante que o gerenciador existe antes de conectar
         if (GerenciadorDeAudiencia.Instance != null)
         {
-            GerenciadorDeAudiencia.Instance.AudienciaAlterada += OnAudienciaAlterada;
+            // Inscreve no novo evento unificado de métricas
+            GerenciadorDeAudiencia.Instance.MetricasAlteradas += OnMetricasAlteradas;
 
-            AtualizarUi(GerenciadorDeAudiencia.Instance.AudienciaAtual, 0);
+            // Atualização inicial com os dados atuais do gerenciador
+            AtualizarUi(0.0, 0.0, 0.0);
         }
     }
 
     public override void _ExitTree()
     {
-        // Sempre desinscreva do evento ao destruir/sair do nó
         if (GerenciadorDeAudiencia.Instance != null)
         {
-            GerenciadorDeAudiencia.Instance.AudienciaAlterada -= OnAudienciaAlterada;
+            GerenciadorDeAudiencia.Instance.MetricasAlteradas -= OnMetricasAlteradas;
         }
     }
 
-    private void OnAudienciaAlterada(double novaAudiencia, double variacao)
+    private void OnMetricasAlteradas(double varAudiencia, double varEsperanca, double varIrritacao)
     {
-        AtualizarUi(novaAudiencia, variacao);
+        AtualizarUi(varAudiencia, varEsperanca, varIrritacao);
     }
 
-    private void AtualizarUi(double audiencia, double variacao)
+    private void AtualizarUi(double varAudiencia, double varEsperanca, double varIrritacao)
     {
+        var aud = GerenciadorDeAudiencia.Instance;
+        if (aud == null) return;
+
+        // 1. Atualiza Audiência
         if (LabelAudiencia != null)
         {
-            LabelAudiencia.Text = $"Audiência: {audiencia:F1}%";
+            LabelAudiencia.Text = $"Audiência: {aud.AudienciaAtual:F1}%";
         }
 
         if (BarraAudiencia != null)
         {
-            BarraAudiencia.Value = audiencia;
+            BarraAudiencia.Value = aud.AudienciaAtual;
         }
 
-        if (variacao < 0)
+        // 2. Atualiza Esperança e Irritação
+        if (LabelEsperanca != null)
         {
-            Log.Print($"[UI] Audiência caindo! Perdeu {Math.Abs(variacao):F1}%");
+            LabelEsperanca.Text = $"Esperança: {aud.EsperancaAtual:F1}";
         }
+
+        if (LabelIrritacao != null)
+        {
+            LabelIrritacao.Text = $"Irritação: {aud.IrritacaoAtual:F1}";
+        }
+
+        // 3. Atualiza Clima Social
+        if (LabelClimaSocial != null)
+        {
+            EstadoClimaSocial clima = aud.ObterEstadoClimaSocial();
+            LabelClimaSocial.Text = $"Clima Social: {ObterTextoFormatadoClima(clima)}";
+        }
+
+        // Log de variação de audiência
+        if (varAudiencia < 0)
+        {
+            Log.Print($"[UI] Audiência caindo! Perdeu {Math.Abs(varAudiencia):F1}%");
+        }
+    }
+
+    private string ObterTextoFormatadoClima(EstadoClimaSocial clima)
+    {
+        return clima switch
+        {
+            EstadoClimaSocial.AudienciaBaixa => "Audiência Baixa (Crítico)",
+            EstadoClimaSocial.DominadoPeloGoverno => "Dominado pelo Governo",
+            EstadoClimaSocial.RevoltaPopular => "Revolta Popular",
+            EstadoClimaSocial.TensaoEquilibrada => "Tensão Equilibrada",
+            _ => "Desconhecido"
+        };
     }
 }

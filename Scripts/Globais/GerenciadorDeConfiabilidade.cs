@@ -1,6 +1,5 @@
 using Godot;
 using System;
-using System.Collections.Generic;
 using Scripts.SaveSystem;
 
 namespace fiveyears3.Scripts.Globais
@@ -9,10 +8,14 @@ namespace fiveyears3.Scripts.Globais
     {
         public static GerenciadorDeConfiabilidade Instance { get; private set; }
 
-        // Acumuladores de impacto do dia atual
+
         public float DeltaLealdadeGovernoDia { get; private set; } = 0.0f;
         public float DeltaConfiancaResistenciaDia { get; private set; } = 0.0f;
         public float DeltaAudienciaDia { get; private set; } = 0.0f;
+
+        public float DeltaLealdadeGovernoGeral { get; private set; } = 0.0f;
+        public float DeltaConfiancaResistenciaGeral { get; private set; } = 0.0f;
+        public float DeltaAudienciaGeral { get; private set; } = 0.0f;
 
         public override void _EnterTree()
         {
@@ -30,16 +33,38 @@ namespace fiveyears3.Scripts.Globais
             {
                 GerenciadorPassagemDoTempo.Instance.DiaAlterado += OnDiaAlterado;
             }
+
+            if (GerenciadorDeAudiencia.Instance != null)
+            {
+                // Escuta o evento unificado de alteração de métricas da audiência
+                GerenciadorDeAudiencia.Instance.MetricasAlteradas += OnMetricasAlteradas;
+            }
+        }
+
+        private void OnMetricasAlteradas(double varAudiencia, double varEsperanca, double varIrritacao)
+        {
+            float deltaAud = (float)varAudiencia;
+            float deltaGov = (float)varEsperanca;
+            float deltaRes = (float)varIrritacao;
+
+            // Incrementa o acumulador diário
+            DeltaAudienciaDia += deltaAud;
+            DeltaLealdadeGovernoDia += deltaGov;
+            DeltaConfiancaResistenciaDia += deltaRes;
+
+            // Incrementa o acumulador geral
+            DeltaAudienciaGeral += deltaAud;
+            DeltaLealdadeGovernoGeral += deltaGov;
+            DeltaConfiancaResistenciaGeral += deltaRes;
+            ProcessarEfeitosDoClimaSocial();
         }
 
         private void OnDiaAlterado(int novoDia)
         {
+            
             ResetarDeltasDoDia();
         }
 
-        /// <summary>
-        /// Zera os deltas acumulados para o início de um novo dia.
-        /// </summary>
         public void ResetarDeltasDoDia()
         {
             DeltaLealdadeGovernoDia = 0.0f;
@@ -48,8 +73,39 @@ namespace fiveyears3.Scripts.Globais
         }
 
         /// <summary>
-        /// Registra o impacto individual de uma notícia transmitida baseando-se na escolha do jogador.
+        /// Processa regras de impacto no encerramento do dia com base no Clima Social.
         /// </summary>
+        public void ProcessarEfeitosDoClimaSocial()
+        {
+            Log.Print("[GerenciadorDeConfiabilidade] Processando efeitos do Clima Social...");
+            if (GerenciadorDeAudiencia.Instance == null) return;
+
+            EstadoClimaSocial clima = GerenciadorDeAudiencia.Instance.ObterEstadoClimaSocial();
+
+            switch (clima)
+            {
+                case EstadoClimaSocial.AudienciaBaixa:
+                    // Prejudica o JOGADOR (ex: perda de alcance/recursos)
+                    Log.Print("[ClimaSocial] Audiência Baixa: O Jogador perde relevância e suporte geral.");
+                    break;
+
+                case EstadoClimaSocial.DominadoPeloGoverno:
+                    // Audiência alta e confiança dos Ricos/Governo alta -> Prejudica a RESISTÊNCIA
+                    Log.Print("[ClimaSocial] Dominado pelo Governo: A Resistência sofre retaliações e perde força.");
+                    break;
+
+                case EstadoClimaSocial.RevoltaPopular:
+                    // Audiência alta e confiança da Resistência alta -> Prejudica os RICOS/GOVERNO
+                    Log.Print("[ClimaSocial] Revolta Popular: Os Ricos/Governo perdem estabilidade e controle.");
+                    break;
+
+                case EstadoClimaSocial.TensaoEquilibrada:
+                    // Audiência mediana: A influência direta é ditada pura e simplesmente pelos valores vigentes
+                    Log.Print("[ClimaSocial] Tensão Equilibrada: Forças em neutralidade temporária.");
+                    break;
+            }
+        }
+
         public void ProcessarImpactoNoticia(NoticiaModel noticia)
         {
             if (noticia == null || noticia.Variacoes == null) return;
@@ -58,28 +114,24 @@ namespace fiveyears3.Scripts.Globais
             {
                 var impacto = variacaoUsada.Impacto;
 
-                float deltaLealdade = (float)impacto.VariacaoEsperanca;
-                float deltaResistencia = (float)impacto.VariacaoIrritacao;
-                float deltaAudiencia = (float)impacto.AudienciaGanha;
-
-                DeltaLealdadeGovernoDia += deltaLealdade;
-                DeltaConfiancaResistenciaDia += deltaResistencia;
-                DeltaAudienciaDia += deltaAudiencia;
-
+                // Chama o GerenciadorDeAudiencia que irá alterar os dados e disparar o evento
                 GerenciadorDeAudiencia.Instance?.RegistrarImpactoNoticia(
                     impacto.VariacaoEsperanca,
                     impacto.VariacaoIrritacao,
                     impacto.AudienciaGanha
                 );
 
-                Log.Print($"[GerenciadorDeConfiabilidade] Impacto notícia '{noticia.Id}' registrado. Escolha: {noticia.EscolhaJogador}");
+                Log.Print($"[GerenciadorDeConfiabilidade] Impacto notícia '{noticia.Id}' registrado.");
             }
         }
 
-        /// <summary>
-        /// Calcula o resumo de impactos do dia com base em todas as notícias transmitidas.
-        /// Útil no final do dia antes de gravar no Save.
-        /// </summary>
+        public void CarregarEstadoGeral(float lealdade, float resistencia, float audiencia)
+        {
+            DeltaLealdadeGovernoGeral = lealdade;
+            DeltaConfiancaResistenciaGeral = resistencia;
+            DeltaAudienciaGeral = audiencia;
+        }
+
         public ResumoImpactosSave GerarResumoImpactosDoDia()
         {
             return ResumoImpactosSave.CriarNovoResumoImpactos(
@@ -88,6 +140,5 @@ namespace fiveyears3.Scripts.Globais
                 DeltaAudienciaDia
             );
         }
-
     }
 }

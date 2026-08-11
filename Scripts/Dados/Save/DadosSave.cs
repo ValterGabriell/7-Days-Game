@@ -12,6 +12,12 @@ namespace Scripts.SaveSystem
 
         [JsonPropertyName("DataEHoraSave")]
         public string DataEHoraSave { get; set; } = "";
+        public double AudienciaAtualGlobal { get; set; } = 50.0;
+        public double EsperancaAtualGlobal { get; set; } = 40.0;
+        public double IrritacaoAtualGlobal { get; set; } = 20.0;
+        public float DeltaLealdadeGovernoGlobal { get; set; } = 0.0f;
+        public float DeltaConfiancaResistenciaGlobal { get; set; } = 0.0f;
+        public float DeltaAudienciaGlobal { get; set; } = 0.0f;
 
         [JsonPropertyName("EstadoAtualDoJogador")]
         public EstadoJogadorSave EstadoAtualDoJogador { get; set; } = new();

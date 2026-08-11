@@ -44,7 +44,74 @@ namespace Scripts.SaveSystem
             GerenciadorNoticiasImpressas.Instance.NoticiaTransmitida += SalvarEscolhaDaNoticiaNoRadio;
         }
 
-    
+        /// <summary>
+        /// Prepara o SaveAtual puxando os dados em memória dos gerenciadores antes de serializar o JSON.
+        /// </summary>
+        public void ColetarDadosDosGerenciadores()
+        {
+            if (SaveAtual == null) SaveAtual = new DadosSave();
+
+            // 1. Puxa dados do GerenciadorDeAudiencia
+            if (GerenciadorDeAudiencia.Instance != null)
+            {
+                var aud = GerenciadorDeAudiencia.Instance;
+
+                // Raiz
+                SaveAtual.AudienciaAtualGlobal = aud.AudienciaAtual;
+                SaveAtual.EsperancaAtualGlobal = aud.EsperancaAtual;
+                SaveAtual.IrritacaoAtualGlobal = aud.IrritacaoAtual;
+
+                // Dentro da Reputacao do EstadoJogadorSave
+                SaveAtual.EstadoAtualDoJogador.Reputacao.AudienciaPopular = (float)aud.AudienciaAtual;
+                SaveAtual.EstadoAtualDoJogador.Reputacao.EsperancaPopulacional = (float)aud.EsperancaAtual;
+                SaveAtual.EstadoAtualDoJogador.Reputacao.IrritacaoPopulacional = (float)aud.IrritacaoAtual;
+            }
+
+            // 2. Puxa dados do GerenciadorDeConfiabilidade
+            if (GerenciadorDeConfiabilidade.Instance != null)
+            {
+                var conf = GerenciadorDeConfiabilidade.Instance;
+
+                // Raiz
+                SaveAtual.DeltaLealdadeGovernoGlobal = conf.DeltaLealdadeGovernoGeral;
+                SaveAtual.DeltaConfiancaResistenciaGlobal = conf.DeltaConfiancaResistenciaGeral;
+                SaveAtual.DeltaAudienciaGlobal = conf.DeltaAudienciaGeral;
+
+                // Dentro da Reputacao do EstadoJogadorSave
+                SaveAtual.EstadoAtualDoJogador.Reputacao.LealdadeGoverno = conf.DeltaLealdadeGovernoGeral;
+                SaveAtual.EstadoAtualDoJogador.Reputacao.ConfiancaResistencia = conf.DeltaConfiancaResistenciaGeral;
+            }
+        }
+
+        /// <summary>
+        /// Aplica os dados do SaveAtual de volta nos gerenciadores logo após carregar o arquivo JSON.
+        /// </summary>
+        public void AplicarDadosNosGerenciadores()
+        {
+            if (SaveAtual == null) return;
+
+            // Restaura no GerenciadorDeAudiencia
+            if (GerenciadorDeAudiencia.Instance != null)
+            {
+                GerenciadorDeAudiencia.Instance.CarregarEstado(
+                    SaveAtual.AudienciaAtualGlobal,
+                    SaveAtual.EsperancaAtualGlobal,
+                    SaveAtual.IrritacaoAtualGlobal
+                );
+            }
+
+            // Restaura no GerenciadorDeConfiabilidade
+            if (GerenciadorDeConfiabilidade.Instance != null)
+            {
+                GerenciadorDeConfiabilidade.Instance.CarregarEstadoGeral(
+                    SaveAtual.DeltaLealdadeGovernoGlobal,
+                    SaveAtual.DeltaConfiancaResistenciaGlobal,
+                    SaveAtual.DeltaAudienciaGlobal
+                );
+            }
+        }
+
+
         #region Métodos de Persistência (Salvar / Carregar)
 
         /// <summary>
@@ -52,9 +119,10 @@ namespace Scripts.SaveSystem
         /// </summary>
         public bool SalvarJogo(string saveId, DadosSave dadosParaSalvar)
         {
-            DadosSave dados = dadosParaSalvar;
+            // Coleta o estado atual dos Singletons antes de salvar
+            ColetarDadosDosGerenciadores();
 
-            // Atualiza metadados do save
+            DadosSave dados = dadosParaSalvar ?? SaveAtual;
             dados.DataEHoraSave = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
 
             string caminhoCompleto = ObterCaminhoDoArquivo(saveId);
@@ -82,11 +150,7 @@ namespace Scripts.SaveSystem
             string id = string.IsNullOrWhiteSpace(saveId) ? SaveIdPadrao : saveId;
             string caminhoCompleto = ObterCaminhoDoArquivo(id);
 
-            if (!ExisteSave(id))
-            {
-                GD.PushWarning($"[GerenciadorDeSave] Nenhum arquivo de save encontrado para o ID: {id}");
-                return false;
-            }
+            if (!ExisteSave(id)) return false;
 
             try
             {
@@ -96,6 +160,10 @@ namespace Scripts.SaveSystem
                 if (dadosCarregados != null)
                 {
                     SaveAtual = dadosCarregados;
+
+                    // Aplica os dados do JSON carregado nos gerenciadores em memória
+                    AplicarDadosNosGerenciadores();
+
                     Log.Print($"[GerenciadorDeSave] Jogo carregado com sucesso do slot: '{id}'");
                     return true;
                 }

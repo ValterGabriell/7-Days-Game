@@ -114,16 +114,43 @@ light_indirect_energy = 5.0
 light_volumetric_fog_energy = 2.313
 light_size = 0.159
 
-[node name="UIAudiencia" type="CanvasLayer" parent="ConfiguracaoGlobal" unique_id=874994396 node_paths=PackedStringArray("LabelAudiencia", "BarraAudiencia")]
+[node name="UIAudiencia" type="CanvasLayer" parent="ConfiguracaoGlobal" unique_id=874994396 node_paths=PackedStringArray("LabelAudiencia", "BarraAudiencia", "LabelEsperanca", "LabelIrritacao", "LabelClimaSocial")]
 script = ExtResource("4_1q5f8")
 LabelAudiencia = NodePath("Label")
 BarraAudiencia = NodePath("ProgressBar")
+LabelEsperanca = NodePath("Label2")
+LabelIrritacao = NodePath("Label3")
+LabelClimaSocial = NodePath("Label4")
 
 [node name="Label" type="Label" parent="ConfiguracaoGlobal/UIAudiencia" unique_id=1088039978]
 offset_left = 1451.0
 offset_top = 21.0
 offset_right = 1491.0
 offset_bottom = 44.0
+text = "Audiencia
+ClimaSocial"
+
+[node name="Label2" type="Label" parent="ConfiguracaoGlobal/UIAudiencia" unique_id=801898169]
+offset_left = 1455.0
+offset_top = 117.0
+offset_right = 1544.0
+offset_bottom = 166.0
+text = "Audiencia
+ClimaSocial"
+
+[node name="Label3" type="Label" parent="ConfiguracaoGlobal/UIAudiencia" unique_id=286812640]
+offset_left = 1459.0
+offset_top = 172.0
+offset_right = 1548.0
+offset_bottom = 221.0
+text = "Audiencia
+ClimaSocial"
+
+[node name="Label4" type="Label" parent="ConfiguracaoGlobal/UIAudiencia" unique_id=1766427218]
+offset_left = 1463.0
+offset_top = 230.0
+offset_right = 1552.0
+offset_bottom = 279.0
 text = "Audiencia
 ClimaSocial"
 
@@ -254,7 +281,7 @@ size = 4.265
 [node name="PersonagemPrincipal" parent="Personagens" unique_id=1772752661 instance=ExtResource("1_hudp4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.9287748, 1.1177015, 3.0642219)
 
-[node name="MesaDeTrabalho" type="Node3D" parent="." unique_id=726947653 node_paths=PackedStringArray("CameraMesa", "CameraRadio", "CameraComputador", "CameraTelefone", "CameraAntena", "PontoRadio", "PontoComputador", "PontoTelefone", "Jogador", "UI", "Radio", "Impressora")]
+[node name="MesaDeTrabalho" type="Node3D" parent="." unique_id=726947653 node_paths=PackedStringArray("CameraMesa", "CameraRadio", "CameraComputador", "CameraTelefone", "CameraAntena", "PontoRadio", "PontoComputador", "PontoTelefone", "Jogador", "UI", "Radio")]
 script = ExtResource("4_dbo6t")
 CameraMesa = NodePath("Cameras/CameraDaMesa")
 CameraRadio = NodePath("Cameras/CameraRadio")
@@ -267,7 +294,6 @@ PontoTelefone = NodePath("PontoTelefone")
 Jogador = NodePath("../Personagens/PersonagemPrincipal")
 UI = NodePath("UI_Mesa")
 Radio = NodePath("Radio/Radio")
-Impressora = NodePath("Impressora")
 
 [node name="MesaTrabalho" parent="MesaDeTrabalho" unique_id=1781015561 instance=ExtResource("9_bgd4d")]
 transform = Transform3D(-0.099982254, 0, -0.0018837862, 0, 0.099999994, 0, 0.0018837862, 0, -0.099982254, -0.6627134, 0.76422226, -2.5609531)
