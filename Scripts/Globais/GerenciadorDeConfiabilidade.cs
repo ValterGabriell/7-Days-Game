@@ -1,6 +1,7 @@
 using Godot;
 using System;
 using Scripts.SaveSystem;
+using Flags;
 
 namespace fiveyears3.Scripts.Globais
 {
@@ -95,8 +96,7 @@ namespace fiveyears3.Scripts.Globais
                     break;
 
                 case EstadoClimaSocial.RevoltaPopular:
-                    // Audiência alta e confiança da Resistência alta -> Prejudica os RICOS/GOVERNO
-                    Log.Print("[ClimaSocial] Revolta Popular: Os Ricos/Governo perdem estabilidade e controle.");
+                    GerenciadorDeFlagsNarrativas.Instance.AtivarFlagCondicional(FlagsCondicionais.REVOLTA_POPULAR_INICIANDO);
                     break;
 
                 case EstadoClimaSocial.TensaoEquilibrada:

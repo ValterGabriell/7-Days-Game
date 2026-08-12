@@ -12,6 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://bgef3wuj8jd5y" path="res://Cenas/Utilidades/Radio.tscn" id="6_dmwlx"]
 [ext_resource type="PackedScene" uid="uid://dpb60xf64k83v" path="res://Cenas/Utilidades/Antena.tscn" id="6_tuyos"]
 [ext_resource type="Texture2D" uid="uid://bilassski0cme" path="res://Arte/Texturas/grey_tiles_1k.gltf/textures/grey_tiles_diff_1k.jpg" id="7_4qy4w"]
+[ext_resource type="PackedScene" uid="uid://bm6c2jaeh35ag" path="res://Cenas/Utilidades/Porta.tscn" id="7_cmav2"]
 [ext_resource type="PackedScene" uid="uid://3s4yx3fvr77y" path="res://Cenas/Utilidades/Cadeira.tscn" id="8_awft6"]
 [ext_resource type="Texture2D" uid="uid://rtpdp6buvt2s" path="res://Arte/Texturas/grey_tiles_1k.gltf/textures/grey_tiles_nor_gl_1k.jpg" id="8_r6c1g"]
 [ext_resource type="Texture2D" uid="uid://h3knfe2b0byt" path="res://Arte/Texturas/Pessoal/textura_parede.png" id="9_a5ha3"]
@@ -169,6 +170,9 @@ CameraAntena = NodePath("../Cameras/CameraAntena")
 _jogadorEmUso = NodePath("../../Personagens/PersonagemPrincipal")
 
 [node name="Estruturas" type="Node3D" parent="ConfiguracaoGlobal" unique_id=1467860444]
+
+[node name="Porta" parent="ConfiguracaoGlobal/Estruturas" unique_id=977412043 instance=ExtResource("7_cmav2")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 4.1592827, 0.5087923, 0)
 
 [node name="Chao" type="MeshInstance3D" parent="ConfiguracaoGlobal/Estruturas" unique_id=1632632857]
 mesh = SubResource("PlaneMesh_ef0sp")

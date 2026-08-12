@@ -20,16 +20,72 @@ public partial class TocarNoticiaNoRadio : Node
     private double proximoIntervaloDePunicao = TEMPO_DE_SILENCIO_PARA_PERDA_DE_AUDIENCIA;
 
     private readonly Dictionary<int, FlagsCondicionais> _flagsAoIniciar = new()
-    {
-        { 0, FlagsCondicionais.PRIMEIRA_MUSICA_DISPARADA_RADIO },
-        { 1, FlagsCondicionais.SEGUNDA_MUSICA_DISPARADA_RADIO }
-    };
+{
+    { 0, FlagsCondicionais.PRIMEIRA_MUSICA_DISPARADA_RADIO },
+    { 1, FlagsCondicionais.SEGUNDA_MUSICA_DISPARADA_RADIO },
+    { 2, FlagsCondicionais.TERCEIRA_MUSICA_DISPARADA_RADIO },
+    { 3, FlagsCondicionais.QUARTA_MUSICA_DISPARADA_RADIO },
+    { 4, FlagsCondicionais.QUINTA_MUSICA_DISPARADA_RADIO },
+    { 5, FlagsCondicionais.SEXTA_MUSICA_DISPARADA_RADIO },
+    { 6, FlagsCondicionais.SETIMA_MUSICA_DISPARADA_RADIO },
+    { 7, FlagsCondicionais.OITAVA_MUSICA_DISPARADA_RADIO },
+    { 8, FlagsCondicionais.NONA_MUSICA_DISPARADA_RADIO },
+    { 9, FlagsCondicionais.DECIMA_MUSICA_DISPARADA_RADIO },
+    { 10, FlagsCondicionais.DECIMA_PRIMEIRA_MUSICA_DISPARADA_RADIO },
+    { 11, FlagsCondicionais.DECIMA_SEGUNDA_MUSICA_DISPARADA_RADIO },
+    { 12, FlagsCondicionais.DECIMA_TERCEIRA_MUSICA_DISPARADA_RADIO },
+    { 13, FlagsCondicionais.DECIMA_QUARTA_MUSICA_DISPARADA_RADIO },
+    { 14, FlagsCondicionais.DECIMA_QUINTA_MUSICA_DISPARADA_RADIO },
+    { 15, FlagsCondicionais.DECIMA_SEXTA_MUSICA_DISPARADA_RADIO },
+    { 16, FlagsCondicionais.DECIMA_SETIMA_MUSICA_DISPARADA_RADIO },
+    { 17, FlagsCondicionais.DECIMA_OITAVA_MUSICA_DISPARADA_RADIO },
+    { 18, FlagsCondicionais.DECIMA_NONA_MUSICA_DISPARADA_RADIO },
+    { 19, FlagsCondicionais.VIGESIMA_MUSICA_DISPARADA_RADIO },
+    { 20, FlagsCondicionais.VIGESIMA_PRIMEIRA_MUSICA_DISPARADA_RADIO },
+    { 21, FlagsCondicionais.VIGESIMA_SEGUNDA_MUSICA_DISPARADA_RADIO },
+    { 22, FlagsCondicionais.VIGESIMA_TERCEIRA_MUSICA_DISPARADA_RADIO },
+    { 23, FlagsCondicionais.VIGESIMA_QUARTA_MUSICA_DISPARADA_RADIO },
+    { 24, FlagsCondicionais.VIGESIMA_QUINTA_MUSICA_DISPARADA_RADIO },
+    { 25, FlagsCondicionais.VIGESIMA_SEXTA_MUSICA_DISPARADA_RADIO },
+    { 26, FlagsCondicionais.VIGESIMA_SETIMA_MUSICA_DISPARADA_RADIO },
+    { 27, FlagsCondicionais.VIGESIMA_OITAVA_MUSICA_DISPARADA_RADIO },
+    { 28, FlagsCondicionais.VIGESIMA_NONA_MUSICA_DISPARADA_RADIO },
+    { 29, FlagsCondicionais.TRIGESIMA_MUSICA_DISPARADA_RADIO },
+};
 
     private readonly Dictionary<int, FlagsCondicionais> _flagsAoFinalizar = new()
-    {
-        { 1, FlagsCondicionais.PRIMEIRA_MUSICA_TOCADA },
-        { 2, FlagsCondicionais.SEGUNDA_MUSICA_TOCADA }
-    };
+{
+    { 1, FlagsCondicionais.PRIMEIRA_MUSICA_TOCADA },
+    { 2, FlagsCondicionais.SEGUNDA_MUSICA_TOCADA },
+    { 3, FlagsCondicionais.TERCEIRA_MUSICA_TOCADA },
+    { 4, FlagsCondicionais.QUARTA_MUSICA_TOCADA },
+    { 5, FlagsCondicionais.QUINTA_MUSICA_TOCADA },
+    { 6, FlagsCondicionais.SEXTA_MUSICA_TOCADA },
+    { 7, FlagsCondicionais.SETIMA_MUSICA_TOCADA },
+    { 8, FlagsCondicionais.OITAVA_MUSICA_TOCADA },
+    { 9, FlagsCondicionais.NONA_MUSICA_TOCADA },
+    { 10, FlagsCondicionais.DECIMA_MUSICA_TOCADA },
+    { 11, FlagsCondicionais.DECIMA_PRIMEIRA_MUSICA_TOCADA },
+    { 12, FlagsCondicionais.DECIMA_SEGUNDA_MUSICA_TOCADA },
+    { 13, FlagsCondicionais.DECIMA_TERCEIRA_MUSICA_TOCADA },
+    { 14, FlagsCondicionais.DECIMA_QUARTA_MUSICA_TOCADA },
+    { 15, FlagsCondicionais.DECIMA_QUINTA_MUSICA_TOCADA },
+    { 16, FlagsCondicionais.DECIMA_SEXTA_MUSICA_TOCADA },
+    { 17, FlagsCondicionais.DECIMA_SETIMA_MUSICA_TOCADA },
+    { 18, FlagsCondicionais.DECIMA_OITAVA_MUSICA_TOCADA },
+    { 19, FlagsCondicionais.DECIMA_NONA_MUSICA_TOCADA },
+    { 20, FlagsCondicionais.VIGESIMA_MUSICA_TOCADA },
+    { 21, FlagsCondicionais.VIGESIMA_PRIMEIRA_MUSICA_TOCADA },
+    { 22, FlagsCondicionais.VIGESIMA_SEGUNDA_MUSICA_TOCADA },
+    { 23, FlagsCondicionais.VIGESIMA_TERCEIRA_MUSICA_TOCADA },
+    { 24, FlagsCondicionais.VIGESIMA_QUARTA_MUSICA_TOCADA },
+    { 25, FlagsCondicionais.VIGESIMA_QUINTA_MUSICA_TOCADA },
+    { 26, FlagsCondicionais.VIGESIMA_SEXTA_MUSICA_TOCADA },
+    { 27, FlagsCondicionais.VIGESIMA_SETIMA_MUSICA_TOCADA },
+    { 28, FlagsCondicionais.VIGESIMA_OITAVA_MUSICA_TOCADA },
+    { 29, FlagsCondicionais.VIGESIMA_NONA_MUSICA_TOCADA },
+    { 30, FlagsCondicionais.TRIGESIMA_MUSICA_TOCADA }
+};
 
     public override void _Ready()
     {

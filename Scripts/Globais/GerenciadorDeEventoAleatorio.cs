@@ -7,7 +7,7 @@ namespace fiveyears3.Scripts.Globais;
 
 public partial class GerenciadorDeEventoAleatorio : Node
 {
-    public enum TipoEventoAleatorio { Nenhum, AntenaQuebrada }
+    public enum TipoEventoAleatorio { Nenhum, AntenaQuebrada, RevoltaPopularIniciandoGovernoBateAPorta }
     public TipoEventoAleatorio TipoEventoAleatorioAtual { get; private set; } = TipoEventoAleatorio.Nenhum;
 
     private IEventoAleatorio _eventoAtivo;
@@ -41,6 +41,9 @@ public partial class GerenciadorDeEventoAleatorio : Node
             case FlagNarrativa.AntenaQuebrada_01:
                 DispararEvento(TipoEventoAleatorio.AntenaQuebrada, new AntenaQuebrada());
                 break;
+            case FlagNarrativa.RevoltaPopularIniciandoGovernoBateAPorta:
+                DispararEvento(TipoEventoAleatorio.RevoltaPopularIniciandoGovernoBateAPorta, new RevoltaPopularIniciandoGovernoBateAPorta());
+                break;
         }
     }
 
@@ -72,6 +75,34 @@ public interface IEventoAleatorio
 
 #region Eventos Aleatorios
 
+
+public class RevoltaPopularIniciandoGovernoBateAPorta : IEventoAleatorio
+{
+    private const string CAMINHO_PORTA =
+        "ConfiguracaoGlobal/Estruturas/Porta";
+
+    private Porta _porta;
+
+    public void IniciarEvento()
+    {
+        _porta = LocalizaObjetoEmCena<Porta>.LocalizarObjeto(CAMINHO_PORTA);
+
+        if (_porta == null)
+            return;
+
+        _porta.PrepararCarta(new DadosCarta
+        {
+            Titulo = "COMUNICADO FDP",
+            Texto = "A situação nas ruas está se deteriorando. Você precisa cumprir seu papel! Controle essas pessoas."
+        });
+
+        _porta.AudioBatendoPorta.Play();
+    }
+
+    public void FinalizarEvento()
+    {
+    }
+}
 public class AntenaQuebrada : IEventoAleatorio
 {
     private const string CAMINHO_ANTENA = "ConfiguracaoGlobal/Antena";
@@ -81,23 +112,8 @@ public class AntenaQuebrada : IEventoAleatorio
     {
         Log.Print($"[STRATEGY - AntenaQuebrada] Buscando nó no caminho: {CAMINHO_ANTENA}");
 
-        var arvore = (SceneTree)Engine.GetMainLoop();
-        var cenaAtual = arvore.CurrentScene;
-
-        if (cenaAtual != null)
-        {
-            _antena = cenaAtual.GetNodeOrNull<Antena>(CAMINHO_ANTENA);
-
-            if (GodotObject.IsInstanceValid(_antena))
-            {
-                Log.Print("[STRATEGY - AntenaQuebrada] Antena localizada e quebrada com sucesso!");
-                _antena.QuebrarAntena();
-            }
-            else
-            {
-                Log.PrintErr($"[STRATEGY - AntenaQuebrada] Nó não encontrado no caminho fixo: {CAMINHO_ANTENA}");
-            }
-        }
+        Antena antena = LocalizaObjetoEmCena<Antena>.LocalizarObjeto(CAMINHO_ANTENA);
+        antena?.QuebrarAntena();
     }
 
     public void FinalizarEvento()
@@ -109,6 +125,37 @@ public class AntenaQuebrada : IEventoAleatorio
             _antena.ConsertarAntena();
             _antena = null;
         }
+    }
+}
+
+#endregion
+
+
+#region Auxilio
+static class LocalizaObjetoEmCena<T> where T : GodotObject
+{
+    public static T LocalizarObjeto(string caminho)
+    {
+        var arvore = (SceneTree)Engine.GetMainLoop();
+        var cenaAtual = arvore.CurrentScene;
+        if (cenaAtual != null)
+        {
+            var objeto = cenaAtual.GetNodeOrNull<T>(caminho);
+            if (GodotObject.IsInstanceValid(objeto))
+            {
+                Log.Print($"[LocalizaObjetoEmCena] Objeto localizado com sucesso no caminho: {caminho}");
+                return objeto;
+            }
+            else
+            {
+                Log.PrintErr($"[LocalizaObjetoEmCena] Nó não encontrado no caminho fixo: {caminho}");
+            }
+        }
+        else
+        {
+            Log.PrintErr("[LocalizaObjetoEmCena] Cena atual é nula. Não foi possível localizar o objeto.");
+        }
+        return null;
     }
 }
 

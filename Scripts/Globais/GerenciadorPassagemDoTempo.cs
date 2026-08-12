@@ -1,3 +1,4 @@
+using Flags;
 using Godot;
 using Scripts.SaveSystem;
 using System;
@@ -47,14 +48,32 @@ namespace fiveyears3.Scripts.Globais
         public void IniciarDiaDeTrabalho()
         {
             Log.Print($"[GerenciadorPassagemDoTempo] Iniciando o dia {DiaAtual} de trabalho.");
+
             if (DiaAtual == 1)
             {
                 GerenciadorDeAudiencia.Instance?.RegistrarImpactoAoIniciarOPrimeiroDia();
             }
+
+            AtivarFlagDeDiaIniciado(DiaAtual);
+
             EstadoAtual = EstadoDoDia.EmAndamento;
             HorarioDeTrabalhoIniciado?.Invoke();
         }
 
+        private void AtivarFlagDeDiaIniciado(int dia)
+        {
+            if (GerenciadorDeFlagsNarrativas.Instance == null) return;
+
+            string nomeFlag = $"DIA_{dia}_INICIADO";
+
+            if (Enum.TryParse(nomeFlag, out FlagsCondicionais flagDia))
+            {
+                GerenciadorDeFlagsNarrativas.Instance.AtivarFlagCondicional(flagDia);
+                return;
+            }
+
+            Log.Print($"[GerenciadorPassagemDoTempo] Flag condicional não encontrada: {nomeFlag}");
+        }
         public async void FinalizarDiaDeTrabalho()
         {
             Log.Print($"[GerenciadorPassagemDoTempo] Finalizando o dia {DiaAtual} de trabalho.");

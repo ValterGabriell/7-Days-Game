@@ -47,6 +47,8 @@ namespace fiveyears3.Scripts.Globais
             Log.Print($"[GerenciadorDeNoticias] Atualizando valores de notícias que devem ser transmitidas no dia. Total de notícias: {Noticias.Count}");
             this.NUmeroDeNoticiasQueDevemSerTransmitidasNoDia = Noticias.Where(n => n.Tipo == TipoBlocoRotina.NOTICIA).Count();
             this.NumeroDeMusicasQueDevemSerTocadasNoDia = Noticias.Where(n => n.Tipo == TipoBlocoRotina.MUSICA).Count();
+            Log.Print($"[GerenciadorDeNoticias] Total de notícias que devem ser transmitidas no dia: {this.NUmeroDeNoticiasQueDevemSerTransmitidasNoDia}");
+            Log.Print($"[GerenciadorDeNoticias] Total de músicas que devem ser tocadas no dia: {this.NumeroDeMusicasQueDevemSerTocadasNoDia}");
             CalendarioFoiVistoHoje = true;
         }
 

@@ -10,6 +10,7 @@ namespace fiveyears3.Scripts.UI
 {
     public partial class InterfaceOSUI : Control
     {
+        [Export] public ScrollContainer Scroll; 
         [Export] public VBoxContainer ListaNoticias; 
 
         [Export] public Label LblTitulo;

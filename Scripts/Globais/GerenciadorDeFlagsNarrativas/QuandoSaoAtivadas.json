@@ -2,18 +2,23 @@
   "flagsNarrativas": [
     {
       "id": "AntenaQuebrada_01",
-      "nome": "Antena Quebrada (Tutorial)",
-      "descricao": "Flag que indica que a antena foi quebrada e precisa ser consertada pelo jogador. É a primeira antena do jogo e serve como tutorial da mecânica de reparo.",
       "gatilhoDeAtivacao": {
         "flagsCondicionaisRequeridas": [
           "PRIMEIRA_MUSICA_TOCADA",
           "SEGUNDA_MUSICA_DISPARADA_RADIO"
         ],
-        "atrasoEmSegundos": 5,
-        "eventoGerado": "AntenaQuebrada",
-        "alvoNaCena": "ConfiguracaoGlobal/Antena"
-      },
-      "estadoAtual": false
+        "atrasoEmSegundos": 5
+      }
+    },
+    {
+      "id": "RevoltaPopularIniciandoGovernoBateAPorta",
+      "gatilhoDeAtivacao": {
+        "flagsCondicionaisRequeridas": [
+          "REVOLTA_POPULAR_INICIANDO",
+          "DIA_2_INICIADO"
+        ],
+        "atrasoEmSegundos": 0
+      }
     }
   ]
 }

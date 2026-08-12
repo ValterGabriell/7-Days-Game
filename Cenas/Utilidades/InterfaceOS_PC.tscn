@@ -21,7 +21,7 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
 script = ExtResource("1_r6i6s")
-ListaNoticias = NodePath("FundoTerminal/Margens/VBoxContainer/LayoutGridNoticias/ColunaEsquerda/ListaNoticias")
+ListaNoticias = NodePath("FundoTerminal/Margens/VBoxContainer/LayoutGridNoticias/ColunaEsquerda/ScrollContainer/ListaNoticias")
 LblTitulo = NodePath("FundoTerminal/Margens/VBoxContainer/LayoutGridNoticias/ColunaCentro/LblTitulo")
 LblRemetente = NodePath("FundoTerminal/Margens/VBoxContainer/LayoutGridNoticias/ColunaCentro/LblRemetente")
 LblTextoOriginal = NodePath("FundoTerminal/Margens/VBoxContainer/LayoutGridNoticias/ColunaCentro/LblTextoOriginal")
@@ -162,13 +162,18 @@ theme_override_fonts/font = SubResource("SystemFont_mcb0c")
 theme_override_font_sizes/font_size = 18
 text = "--- INBOX ---"
 
-[node name="ListaNoticias" type="VBoxContainer" parent="FundoTerminal/Margens/VBoxContainer/LayoutGridNoticias/ColunaEsquerda" unique_id=1472772250]
+[node name="ScrollContainer" type="ScrollContainer" parent="FundoTerminal/Margens/VBoxContainer/LayoutGridNoticias/ColunaEsquerda" unique_id=2062587916]
+custom_minimum_size = Vector2(0, 500)
+layout_mode = 2
+
+[node name="ListaNoticias" type="VBoxContainer" parent="FundoTerminal/Margens/VBoxContainer/LayoutGridNoticias/ColunaEsquerda/ScrollContainer" unique_id=1472772250]
+custom_minimum_size = Vector2(400, 500)
 layout_mode = 2
 
 [node name="ColunaCentro" type="VBoxContainer" parent="FundoTerminal/Margens/VBoxContainer/LayoutGridNoticias" unique_id=532763202]
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_stretch_ratio = 2.5
+size_flags_stretch_ratio = 1.24
 
 [node name="LblTitulo" type="Label" parent="FundoTerminal/Margens/VBoxContainer/LayoutGridNoticias/ColunaCentro" unique_id=1671532955]
 custom_minimum_size = Vector2(10, 0)

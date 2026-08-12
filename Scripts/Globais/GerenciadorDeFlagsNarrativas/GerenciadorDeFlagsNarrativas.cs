@@ -77,6 +77,7 @@ public partial class GerenciadorDeFlagsNarrativas : Node
 
     public void AtivarFlagCondicional(FlagsCondicionais flagCondicional)
     {
+        if (FlagsCondicionaisAtivas.Contains(flagCondicional)) return;
         if (FlagsCondicionaisAtivas.Add(flagCondicional))
         {
             Log.Print($"[Flags] Flag Condicional ativada: {flagCondicional}");
@@ -136,12 +137,4 @@ public partial class GerenciadorDeFlagsNarrativas : Node
         return FlagsNarrativasAtivas.Contains(flag);
     }
 
-    public void AdicionarFlagCondicional(FlagsCondicionais flagCondicional)
-    {
-        if (FlagsCondicionaisAtivas.Add(flagCondicional))
-        {
-            Log.Print($"[Flags] Flag Condicional adicionada: {flagCondicional}");
-            VerificarGatilhosDeFlagsNarrativas();
-        }
-    }
 }

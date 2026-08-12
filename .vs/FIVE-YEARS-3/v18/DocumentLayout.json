@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Dev\\ProjetosPessoais\\five-years-3\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|c:\\dev\\projetospessoais\\five-years-3\\scripts\\ui\\interfaceosui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|solutionrelative:scripts\\ui\\interfaceosui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|c:\\dev\\projetospessoais\\five-years-3\\scripts\\globais\\gerenciadordeflagsnarrativas\\gerenciadordeflagsnarrativas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|solutionrelative:scripts\\globais\\gerenciadordeflagsnarrativas\\gerenciadordeflagsnarrativas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -55,10 +59,6 @@
       "RelativeMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|solutionrelative:scripts\\ui\\menuconfiguracaoui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|c:\\dev\\projetospessoais\\five-years-3\\scripts\\ui\\interfaceosui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|solutionrelative:scripts\\ui\\interfaceosui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|c:\\dev\\projetospessoais\\five-years-3\\scripts\\globais\\gerenciadordeconfiabilidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CAD6827A-4E8D-4B68-BA84-EDF3FBCDC6BE}|five-years-3.csproj|solutionrelative:scripts\\globais\\gerenciadordeconfiabilidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -86,7 +86,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Noticias.json",
               "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Dados\\JSONS\\Dia_02\\Noticias.json",
               "RelativeDocumentMoniker": "Scripts\\Dados\\JSONS\\Dia_02\\Noticias.json",
@@ -99,7 +99,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
+              "Title": "GerenciadorDeFlagsNarrativas.cs",
+              "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Globais\\GerenciadorDeFlagsNarrativas\\GerenciadorDeFlagsNarrativas.cs",
+              "RelativeDocumentMoniker": "Scripts\\Globais\\GerenciadorDeFlagsNarrativas\\GerenciadorDeFlagsNarrativas.cs",
+              "ToolTip": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Globais\\GerenciadorDeFlagsNarrativas\\GerenciadorDeFlagsNarrativas.cs",
+              "RelativeToolTip": "Scripts\\Globais\\GerenciadorDeFlagsNarrativas\\GerenciadorDeFlagsNarrativas.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-11T17:28:08.661Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "InterfaceOSUI.cs",
+              "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\UI\\InterfaceOSUI.cs",
+              "RelativeDocumentMoniker": "Scripts\\UI\\InterfaceOSUI.cs",
+              "ToolTip": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\UI\\InterfaceOSUI.cs",
+              "RelativeToolTip": "Scripts\\UI\\InterfaceOSUI.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAqwAwAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-11T17:27:43.402Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "rotinas_semanais.json",
               "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Dados\\JSONS\\rotinas_semanais.json",
               "RelativeDocumentMoniker": "Scripts\\Dados\\JSONS\\rotinas_semanais.json",
@@ -112,20 +138,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "GerenciadorDeFlagsNarrativas.cs",
-              "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Globais\\GerenciadorDeFlagsNarrativas\\GerenciadorDeFlagsNarrativas.cs",
-              "RelativeDocumentMoniker": "Scripts\\Globais\\GerenciadorDeFlagsNarrativas\\GerenciadorDeFlagsNarrativas.cs",
-              "ToolTip": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Globais\\GerenciadorDeFlagsNarrativas\\GerenciadorDeFlagsNarrativas.cs",
-              "RelativeToolTip": "Scripts\\Globais\\GerenciadorDeFlagsNarrativas\\GerenciadorDeFlagsNarrativas.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-11T17:28:08.661Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "GerenciadorDeNoticias.cs",
               "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Globais\\GerenciadorDeNoticias.cs",
               "RelativeDocumentMoniker": "Scripts\\Globais\\GerenciadorDeNoticias.cs",
@@ -138,7 +151,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Noticias.json",
               "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Dados\\JSONS\\Dia_01\\Noticias.json",
               "RelativeDocumentMoniker": "Scripts\\Dados\\JSONS\\Dia_01\\Noticias.json",
@@ -151,7 +164,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "GerenciadorDeSave.cs",
               "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Globais\\GerenciadorDeSave.cs",
               "RelativeDocumentMoniker": "Scripts\\Globais\\GerenciadorDeSave.cs",
@@ -164,7 +177,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "GerenciadorDeFolhasDeRelatorio.cs",
               "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Globais\\GerenciadorDeFolhasDeRelatorio.cs",
               "RelativeDocumentMoniker": "Scripts\\Globais\\GerenciadorDeFolhasDeRelatorio.cs",
@@ -177,7 +190,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "GerenciadorDeEventoAleatorio.cs",
               "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Globais\\GerenciadorDeEventoAleatorio.cs",
               "RelativeDocumentMoniker": "Scripts\\Globais\\GerenciadorDeEventoAleatorio.cs",
@@ -190,7 +203,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "RegraFlagNarrativa.cs",
               "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Globais\\GerenciadorDeFlagsNarrativas\\RegraFlagNarrativa.cs",
               "RelativeDocumentMoniker": "Scripts\\Globais\\GerenciadorDeFlagsNarrativas\\RegraFlagNarrativa.cs",
@@ -203,7 +216,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "FlagNarrativa.cs",
               "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\Globais\\GerenciadorDeFlagsNarrativas\\FlagNarrativa.cs",
               "RelativeDocumentMoniker": "Scripts\\Globais\\GerenciadorDeFlagsNarrativas\\FlagNarrativa.cs",
@@ -216,7 +229,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "InterfaceOsRadio.cs",
               "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\UI\\InterfaceOsRadio.cs",
               "RelativeDocumentMoniker": "Scripts\\UI\\InterfaceOsRadio.cs",
@@ -229,7 +242,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "MenuConfiguracaoUI.cs",
               "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\UI\\MenuConfiguracaoUI.cs",
               "RelativeDocumentMoniker": "Scripts\\UI\\MenuConfiguracaoUI.cs",
@@ -242,20 +255,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "InterfaceOSUI.cs",
-              "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\UI\\InterfaceOSUI.cs",
-              "RelativeDocumentMoniker": "Scripts\\UI\\InterfaceOSUI.cs",
-              "ToolTip": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\UI\\InterfaceOSUI.cs",
-              "RelativeToolTip": "Scripts\\UI\\InterfaceOSUI.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-11T17:27:43.402Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "UiAudiencia.cs",
               "DocumentMoniker": "C:\\Dev\\ProjetosPessoais\\five-years-3\\Scripts\\UI\\UiAudiencia.cs",
               "RelativeDocumentMoniker": "Scripts\\UI\\UiAudiencia.cs",
