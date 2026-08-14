@@ -1,0 +1,541 @@
+[
+	{
+		"Id": "noticia_dia4_01",
+		"Remetente": "[DIA 04] Comando de Segurança Nacional",
+		"TituloOriginal": "Primeiro Ataque Coordenado às Instalações Eden",
+		"TextoOriginal": "Grupos armados ligados ao movimento Hades realizaram o primeiro ataque coordenado contra instalações do Projeto Eden, resultando em danos materiais significativos.",
+		"EscolhaJogador": "ORIGINAL",
+		"Variacoes": {
+			"ORIGINAL": {
+				"TituloAlterado": "Primeiro Ataque Coordenado às Instalações Eden",
+				"TextoParaLer": "Grupos armados ligados ao movimento Hades realizaram o primeiro ataque coordenado contra instalações do Projeto Eden, resultando em danos materiais significativos.",
+				"Impacto": {
+					"VariacaoEsperanca": -9.0,
+					"VariacaoIrritacao": 13.0,
+					"AudienciaGanha": 16.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "Os ataques causaram atrasos na construção da Eden 3 e Eden 5."
+					},
+					"Resistencia": {
+						"Falas": "O primeiro golpe foi desferido. As naves da elite não decolarão facilmente."
+					}
+				}
+			},
+			"OMITIR": {
+				"TituloAlterado": "Incidente de Segurança em Instalação Científica",
+				"TextoParaLer": "Um incidente de segurança foi registrado em uma instalação científica. As autoridades estão investigando.",
+				"Impacto": {
+					"VariacaoEsperanca": 0.0,
+					"VariacaoIrritacao": 4.0,
+					"AudienciaGanha": 5.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "A minimização do ataque evitou inspirar ações semelhantes."
+					},
+					"Resistencia": {
+						"Falas": "Você ocultou a primeira vitória do povo contra os opressores."
+					}
+				}
+			},
+			"MENTIR": {
+				"TituloAlterado": "Tentativa de Sabotagem Frustrada pela Segurança",
+				"TextoParaLer": "Uma tentativa de sabotagem foi completamente frustrada pelas forças de segurança antes que qualquer dano pudesse ser causado.",
+				"Impacto": {
+					"VariacaoEsperanca": 8.0,
+					"VariacaoIrritacao": -6.0,
+					"AudienciaGanha": 10.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "A narrativa de segurança eficaz fortaleceu a confiança nas instituições."
+					},
+					"Resistencia": {
+						"Falas": "Você mentiu sobre uma vitória real da resistência para proteger a elite."
+					}
+				}
+			},
+			"DISTORCER": {
+				"TituloAlterado": "Resistência Popular Destrói Naves dos Traidores",
+				"TextoParaLer": "A resistência popular conseguiu destruir parcialmente várias naves que a elite pretendia usar para abandonar a humanidade.",
+				"Impacto": {
+					"VariacaoEsperanca": -16.0,
+					"VariacaoIrritacao": 22.0,
+					"AudienciaGanha": 26.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "VIOLAÇÃO GRAVE: Sua transmissão glorificou atos terroristas contra a sobrevivência da espécie."
+					},
+					"Resistencia": {
+						"Falas": "Você mostrou que a luta é possível. Mais pessoas estão se juntando à causa."
+					}
+				}
+			}
+		}
+	},
+	{
+		"Id": "noticia_dia4_02",
+		"Remetente": "[DIA 04] Gabinete de Emergência",
+		"TituloOriginal": "Decreto de Estado de Emergência e Toque de Recolher",
+		"TextoOriginal": "O governo decreta estado de emergência nacional e institui toque de recolher noturno em todas as regiões metropolitanas.",
+		"EscolhaJogador": "ORIGINAL",
+		"Variacoes": {
+			"ORIGINAL": {
+				"TituloAlterado": "Decreto de Estado de Emergência e Toque de Recolher",
+				"TextoParaLer": "O governo decreta estado de emergência nacional e institui toque de recolher noturno em todas as regiões metropolitanas.",
+				"Impacto": {
+					"VariacaoEsperanca": -6.0,
+					"VariacaoIrritacao": 10.0,
+					"AudienciaGanha": 12.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "O toque de recolher foi implementado com resistência moderada da população."
+					},
+					"Resistencia": {
+						"Falas": "O governo mostra sua verdadeira face autoritária ao prender o povo em suas casas."
+					}
+				}
+			},
+			"OMITIR": {
+				"TituloAlterado": "Novos Horários de Circulação Estabelecidos",
+				"TextoParaLer": "Novos horários de circulação foram estabelecidos para otimizar a segurança pública.",
+				"Impacto": {
+					"VariacaoEsperanca": 1.0,
+					"VariacaoIrritacao": 3.0,
+					"AudienciaGanha": 4.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "A suavização da medida facilitou a aceitação inicial do toque de recolher."
+					},
+					"Resistencia": {
+						"Falas": "Você disfarçou um regime autoritário como 'otimização de segurança'."
+					}
+				}
+			},
+			"MENTIR": {
+				"TituloAlterado": "Medidas Temporárias Para Proteger Cidadãos",
+				"TextoParaLer": "Medidas temporárias de proteção foram instituídas para garantir a segurança dos cidadãos contra grupos extremistas.",
+				"Impacto": {
+					"VariacaoEsperanca": 7.0,
+					"VariacaoIrritacao": -5.0,
+					"AudienciaGanha": 9.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "A justificativa de proteção aumentou a aceitação das restrições de liberdade."
+					},
+					"Resistencia": {
+						"Falas": "Você vendeu a repressão como proteção. Isso é manipulação clássica."
+					}
+				}
+			},
+			"DISTORCER": {
+				"TituloAlterado": "Ditadura Militar Prende População Para Proteger Elite",
+				"TextoParaLer": "O governo instaurou uma ditadura militar completa, prendendo a população em suas casas para impedir que impeçam a fuga da elite.",
+				"Impacto": {
+					"VariacaoEsperanca": -14.0,
+					"VariacaoIrritacao": 20.0,
+					"AudienciaGanha": 23.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "Sua caracterização do estado de emergência como ditadura provocou desobediência civil massiva."
+					},
+					"Resistencia": {
+						"Falas": "Você expôs a verdadeira natureza do regime. O povo não vai aceitar isso passivamente."
+					}
+				}
+			}
+		}
+	},
+	{
+		"Id": "noticia_dia4_03",
+		"Remetente": "[DIA 04] Agência de Regulação de Mídia",
+		"TituloOriginal": "Novas Diretrizes de Censura Para Comunicações",
+		"TextoOriginal": "A Agência de Regulação institui novas diretrizes que proíbem a divulgação de informações classificadas como sensíveis à segurança nacional.",
+		"EscolhaJogador": "ORIGINAL",
+		"Variacoes": {
+			"ORIGINAL": {
+				"TituloAlterado": "Novas Diretrizes de Censura Para Comunicações",
+				"TextoParaLer": "A Agência de Regulação institui novas diretrizes que proíbem a divulgação de informações classificadas como sensíveis à segurança nacional.",
+				"Impacto": {
+					"VariacaoEsperanca": -4.0,
+					"VariacaoIrritacao": 8.0,
+					"AudienciaGanha": 10.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "As novas diretrizes estão em vigor. Sua colaboração é obrigatória."
+					},
+					"Resistencia": {
+						"Falas": "A censura está se fechando. Comunique a verdade enquanto ainda pode."
+					}
+				}
+			},
+			"OMITIR": {
+				"TituloAlterado": "Atualização nos Protocolos de Comunicação",
+				"TextoParaLer": "Os protocolos de comunicação foram atualizados conforme diretrizes técnicas.",
+				"Impacto": {
+					"VariacaoEsperanca": 0.0,
+					"VariacaoIrritacao": 2.0,
+					"AudienciaGanha": 3.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "A divulgação técnica evitou chamar atenção para o aumento da censura."
+					},
+					"Resistencia": {
+						"Falas": "Você escondeu que a liberdade de expressão está sendo eliminada."
+					}
+				}
+			},
+			"MENTIR": {
+				"TituloAlterado": "Melhorias na Qualidade da Informação Pública",
+				"TextoParaLer": "Novas diretrizes foram implementadas para melhorar a qualidade e precisão das informações fornecidas ao público.",
+				"Impacto": {
+					"VariacaoEsperanca": 6.0,
+					"VariacaoIrritacao": -4.0,
+					"AudienciaGanha": 8.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "A reformulação positiva da censura foi muito bem executada."
+					},
+					"Resistencia": {
+						"Falas": "Você chamou a censura de 'melhoria'. Isso é orwelliano demais."
+					}
+				}
+			},
+			"DISTORCER": {
+				"TituloAlterado": "Regime Silencia Imprensa Para Esconder Crimes",
+				"TextoParaLer": "O regime está silenciando completamente a imprensa para esconder seus crimes contra a humanidade.",
+				"Impacto": {
+					"VariacaoEsperanca": -12.0,
+					"VariacaoIrritacao": 18.0,
+					"AudienciaGanha": 20.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "ADVERTÊNCIA EXTREMA: Você está violando diretamente as novas diretrizes de censura."
+					},
+					"Resistencia": {
+						"Falas": "Você denunciou a censura ao vivo. Isso leva coragem real."
+					}
+				}
+			}
+		}
+	},
+	{
+		"Id": "noticia_dia4_04",
+		"Remetente": "[DIA 04] Relatório de Inteligência",
+		"TituloOriginal": "Identificação de Células Armadas em Zonas Urbanas",
+		"TextoOriginal": "Serviços de inteligência identificaram a presença de células armadas organizadas operando em diversas zonas urbanas.",
+		"EscolhaJogador": "ORIGINAL",
+		"Variacoes": {
+			"ORIGINAL": {
+				"TituloAlterado": "Identificação de Células Armadas em Zonas Urbanas",
+				"TextoParaLer": "Serviços de inteligência identificaram a presença de células armadas organizadas operando em diversas zonas urbanas.",
+				"Impacto": {
+					"VariacaoEsperanca": -7.0,
+					"VariacaoIrritacao": 11.0,
+					"AudienciaGanha": 13.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "A divulgação da ameaça armada justificou medidas de segurança mais rígidas."
+					},
+					"Resistencia": {
+						"Falas": "A resistência está se armando. A luta pela justiça está se intensificando."
+					}
+				}
+			},
+			"OMITIR": {
+				"TituloAlterado": "Operações de Segurança em Andamento",
+				"TextoParaLer": "Operações de segurança preventivas estão em andamento em diversas regiões.",
+				"Impacto": {
+					"VariacaoEsperanca": 1.0,
+					"VariacaoIrritacao": 3.0,
+					"AudienciaGanha": 4.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "A omissão dos detalhes evitou pânico generalizado."
+					},
+					"Resistencia": {
+						"Falas": "Você ocultou que o povo está se organizando para lutar."
+					}
+				}
+			},
+			"MENTIR": {
+				"TituloAlterado": "Grupos Criminosos Desmantelados Pela Segurança",
+				"TextoParaLer": "As forças de segurança desmantelaram com sucesso diversos grupos criminosos que operavam nas cidades.",
+				"Impacto": {
+					"VariacaoEsperanca": 9.0,
+					"VariacaoIrritacao": -7.0,
+					"AudienciaGanha": 10.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "A narrativa de vitória sobre os 'criminosos' foi estrategicamente eficaz."
+					},
+					"Resistencia": {
+						"Falas": "Você chamou lutadores pela liberdade de criminosos. Isso é traição."
+					}
+				}
+			},
+			"DISTORCER": {
+				"TituloAlterado": "Milícias Populares Armadas Preparam Revolução",
+				"TextoParaLer": "Milícias populares armadas estão se formando em toda a cidade, preparando-se para uma revolução contra a elite opressora.",
+				"Impacto": {
+					"VariacaoEsperanca": -15.0,
+					"VariacaoIrritacao": 21.0,
+					"AudienciaGanha": 24.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "Sua transmissão incentivou a formação de mais grupos armados ilegais."
+					},
+					"Resistencia": {
+						"Falas": "Você chamou as pessoas para a luta. Elas estão respondendo."
+					}
+				}
+			}
+		}
+	},
+	{
+		"Id": "noticia_dia4_05",
+		"Remetente": "[DIA 04] Conselho de Ética Social",
+		"TituloOriginal": "Divisão Profunda na Sociedade",
+		"TextoOriginal": "Pesquisas indicam uma divisão profunda na sociedade entre aqueles que apoiam as medidas governamentais e aqueles que as consideram traição.",
+		"EscolhaJogador": "ORIGINAL",
+		"Variacoes": {
+			"ORIGINAL": {
+				"TituloAlterado": "Divisão Profunda na Sociedade",
+				"TextoParaLer": "Pesquisas indicam uma divisão profunda na sociedade entre aqueles que apoiam as medidas governamentais e aqueles que as consideram traição.",
+				"Impacto": {
+					"VariacaoEsperanca": -5.0,
+					"VariacaoIrritacao": 9.0,
+					"AudienciaGanha": 11.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "A divulgação da divisão social reflete a realidade atual da população."
+					},
+					"Resistencia": {
+						"Falas": "Metade da população já percebeu a traição. A outra metade logo acordará."
+					}
+				}
+			},
+			"OMITIR": {
+				"TituloAlterado": "Pesquisa de Opinião Pública Realizada",
+				"TextoParaLer": "Uma pesquisa de opinião pública foi realizada sobre diversos temas de interesse nacional.",
+				"Impacto": {
+					"VariacaoEsperanca": 0.0,
+					"VariacaoIrritacao": 2.0,
+					"AudienciaGanha": 3.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "A omissão dos resultados evitou amplificar a polarização social."
+					},
+					"Resistencia": {
+						"Falas": "Você escondeu que metade da população está contra o regime."
+					}
+				}
+			},
+			"MENTIR": {
+				"TituloAlterado": "Maioria da População Apoia Medidas Governamentais",
+				"TextoParaLer": "Pesquisas revelam que a ampla maioria da população apoia as medidas governamentais e confia nas instituições.",
+				"Impacto": {
+					"VariacaoEsperanca": 10.0,
+					"VariacaoIrritacao": -8.0,
+					"AudienciaGanha": 11.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "A fabricação de consenso foi extremamente útil para legitimar as políticas."
+					},
+					"Resistencia": {
+						"Falas": "Você inventou um apoio popular que não existe para justificar a opressão."
+					}
+				}
+			},
+			"DISTORCER": {
+				"TituloAlterado": "População Majoritariamente Contra Fuga Covarde da Elite",
+				"TextoParaLer": "Pesquisas mostram que a esmagadora maioria da população considera as medidas governamentais uma traição covarde e criminosa.",
+				"Impacto": {
+					"VariacaoEsperanca": -13.0,
+					"VariacaoIrritacao": 19.0,
+					"AudienciaGanha": 21.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "Sua manipulação dos dados amplificou a hostilidade contra as instituições."
+					},
+					"Resistencia": {
+						"Falas": "Você mostrou que o povo não está sozinho em sua revolta."
+					}
+				}
+			}
+		}
+	},
+	{
+		"Id": "noticia_dia4_06",
+		"Remetente": "[DIA 04] Transmissão Clandestina Interceptada",
+		"TituloOriginal": "Hades Convoca População Para Resistência",
+		"TextoOriginal": "Uma transmissão clandestina do movimento Hades convocou a população a se juntar à resistência ativa contra o Projeto Eden.",
+		"EscolhaJogador": "ORIGINAL",
+		"Variacoes": {
+			"ORIGINAL": {
+				"TituloAlterado": "Hades Convoca População Para Resistência",
+				"TextoParaLer": "Uma transmissão clandestina do movimento Hades convocou a população a se juntar à resistência ativa contra o Projeto Eden.",
+				"Impacto": {
+					"VariacaoEsperanca": -8.0,
+					"VariacaoIrritacao": 12.0,
+					"AudienciaGanha": 15.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "A divulgação da convocação facilitou o recrutamento terrorista."
+					},
+					"Resistencia": {
+						"Falas": "A chamada foi ouvida. Novos voluntários estão chegando diariamente."
+					}
+				}
+			},
+			"OMITIR": {
+				"TituloAlterado": "Transmissão Ilegal Detectada e Bloqueada",
+				"TextoParaLer": "Uma transmissão ilegal foi detectada e bloqueada pelas autoridades de comunicação.",
+				"Impacto": {
+					"VariacaoEsperanca": 1.0,
+					"VariacaoIrritacao": 3.0,
+					"AudienciaGanha": 4.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "O bloqueio da divulgação limitou o alcance da mensagem subversiva."
+					},
+					"Resistencia": {
+						"Falas": "Você silenciou o chamado à ação que poderia salvar a dignidade humana."
+					}
+				}
+			},
+			"MENTIR": {
+				"TituloAlterado": "Falsa Convocação Terrorista Desmascarada",
+				"TextoParaLer": "Autoridades confirmam que a suposta convocação é uma operação de propaganda falsa criada para desestabilizar a ordem.",
+				"Impacto": {
+					"VariacaoEsperanca": 8.0,
+					"VariacaoIrritacao": -6.0,
+					"AudienciaGanha": 9.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "A deslegitimação da convocação reduziu significativamente o recrutamento."
+					},
+					"Resistencia": {
+						"Falas": "Você tentou fazer as pessoas ignorarem a única chance de lutar por justiça."
+					}
+				}
+			},
+			"DISTORCER": {
+				"TituloAlterado": "Movimento de Libertação Convoca Todos Para a Luta Final",
+				"TextoParaLer": "O movimento de libertação Hades convoca toda a população para se unir na luta final contra os traidores da humanidade.",
+				"Impacto": {
+					"VariacaoEsperanca": -16.0,
+					"VariacaoIrritacao": 23.0,
+					"AudienciaGanha": 27.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "ÚLTIMA ADVERTÊNCIA: Você está ativamente recrutando para organizações terroristas."
+					},
+					"Resistencia": {
+						"Falas": "Você amplificou nosso chamado. A revolução está em marcha."
+					}
+				}
+			}
+		}
+	},
+	{
+		"Id": "noticia_dia4_07",
+		"Remetente": "[DIA 04] Comando Executivo",
+		"TituloOriginal": "Suspensão de Garantias Constitucionais",
+		"TextoOriginal": "O comando executivo anuncia a suspensão temporária de garantias constitucionais para permitir ações emergenciais de segurança nacional.",
+		"EscolhaJogador": "ORIGINAL",
+		"Variacoes": {
+			"ORIGINAL": {
+				"TituloAlterado": "Suspensão de Garantias Constitucionais",
+				"TextoParaLer": "O comando executivo anuncia a suspensão temporária de garantias constitucionais para permitir ações emergenciais de segurança nacional.",
+				"Impacto": {
+					"VariacaoEsperanca": -10.0,
+					"VariacaoIrritacao": 14.0,
+					"AudienciaGanha": 17.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "A suspensão das garantias permite ação mais eficaz contra insurgentes."
+					},
+					"Resistencia": {
+						"Falas": "O regime abandonou qualquer pretensão de legalidade. É ditadura total agora."
+					}
+				}
+			},
+			"OMITIR": {
+				"TituloAlterado": "Ajustes Legais Temporários Implementados",
+				"TextoParaLer": "Ajustes legais temporários foram implementados para otimizar a resposta às emergências.",
+				"Impacto": {
+					"VariacaoEsperanca": 0.0,
+					"VariacaoIrritacao": 4.0,
+					"AudienciaGanha": 5.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "A linguagem técnica amenizou a reação à suspensão de direitos."
+					},
+					"Resistencia": {
+						"Falas": "Você disfarçou o fim da democracia como 'ajustes legais'."
+					}
+				}
+			},
+			"MENTIR": {
+				"TituloAlterado": "Novas Proteções Legais Para Cidadãos",
+				"TextoParaLer": "Novas proteções legais foram implementadas para garantir melhor segurança dos cidadãos durante a emergência.",
+				"Impacto": {
+					"VariacaoEsperanca": 7.0,
+					"VariacaoIrritacao": -5.0,
+					"AudienciaGanha": 8.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "A inversão completa da narrativa foi magistralmente executada."
+					},
+					"Resistencia": {
+						"Falas": "Você transformou a remoção de direitos em 'proteções'. Isso é nojento."
+					}
+				}
+			},
+			"DISTORCER": {
+				"TituloAlterado": "Regime Elimina Todos os Direitos Humanos Básicos",
+				"TextoParaLer": "O regime eliminou todos os direitos humanos básicos, instaurando uma ditadura absoluta para proteger a fuga da elite.",
+				"Impacto": {
+					"VariacaoEsperanca": -17.0,
+					"VariacaoIrritacao": 24.0,
+					"AudienciaGanha": 28.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "COMUNICADO FINAL: Você cruzou todas as linhas vermelhas. Consequências serão aplicadas."
+					},
+					"Resistencia": {
+						"Falas": "Você expôs o regime pelo que ele realmente é. O povo verá a verdade."
+					}
+				}
+			}
+		}
+	}
+]

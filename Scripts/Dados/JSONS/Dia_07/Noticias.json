@@ -1,0 +1,541 @@
+[
+	{
+		"Id": "noticia_dia7_01",
+		"Remetente": "[DIA 07] Comando do Projeto Eden",
+		"TituloOriginal": "Decolagem das Naves Eden Iniciada",
+		"TextoOriginal": "A decolagem das naves Eden foi iniciada. Eden 1, 2 e 3 já deixaram a atmosfera terrestre. Eden 4 e 5 em contagem final.",
+		"EscolhaJogador": "ORIGINAL",
+		"Variacoes": {
+			"ORIGINAL": {
+				"TituloAlterado": "Decolagem das Naves Eden Iniciada",
+				"TextoParaLer": "A decolagem das naves Eden foi iniciada. Eden 1, 2 e 3 já deixaram a atmosfera terrestre. Eden 4 e 5 em contagem final.",
+				"Impacto": {
+					"VariacaoEsperanca": -20.0,
+					"VariacaoIrritacao": 25.0,
+					"AudienciaGanha": 30.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "[TRANSMISSÃO FINAL] A missão foi concluída. A humanidade sobreviverá em Alpha Centauri."
+					},
+					"Resistencia": {
+						"Falas": "[TRANSMISSÃO FINAL] Falhamos. Eles escaparam. Mas morremos sabendo que lutamos."
+					}
+				}
+			},
+			"OMITIR": {
+				"TituloAlterado": "Atividades Espaciais Detectadas",
+				"TextoParaLer": "Atividades espaciais significativas foram detectadas no horizonte.",
+				"Impacto": {
+					"VariacaoEsperanca": -8.0,
+					"VariacaoIrritacao": 10.0,
+					"AudienciaGanha": 12.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "[SEM RESPOSTA - CONEXÃO PERDIDA]"
+					},
+					"Resistencia": {
+						"Falas": "[SEM RESPOSTA - CONEXÃO PERDIDA]"
+					}
+				}
+			},
+			"MENTIR": {
+				"TituloAlterado": "Falha Crítica Impede Lançamento das Naves",
+				"TextoParaLer": "Uma falha crítica de última hora impediu o lançamento das naves. Ninguém escapará da Terra.",
+				"Impacto": {
+					"VariacaoEsperanca": 5.0,
+					"VariacaoIrritacao": -3.0,
+					"AudienciaGanha": 15.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "[TRANSMISSÃO FINAL] Sua última mentira não mudou nada. Já estamos no espaço."
+					},
+					"Resistencia": {
+						"Falas": "[TRANSMISSÃO FINAL] Eles fugiram mesmo assim. Mas obrigado pela tentativa."
+					}
+				}
+			},
+			"DISTORCER": {
+				"TituloAlterado": "Traidores Fogem: Humanidade Morre Sozinha",
+				"TextoParaLer": "Os traidores estão fugindo neste exato momento. A humanidade morre sozinha, abandonada pelos covardes que deveriam protegê-la.",
+				"Impacto": {
+					"VariacaoEsperanca": -28.0,
+					"VariacaoIrritacao": 35.0,
+					"AudienciaGanha": 45.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "[TRANSMISSÃO FINAL] Olhe pela janela. Veja as naves no céu. Você falhou em nos impedir."
+					},
+					"Resistencia": {
+						"Falas": "[TRANSMISSÃO FINAL] Você lutou até o fim. Morra com dignidade, irmão."
+					}
+				}
+			}
+		}
+	},
+	{
+		"Id": "noticia_dia7_02",
+		"Remetente": "[DIA 07] Observatório Atmosférico - Último Boletim",
+		"TituloOriginal": "Colapso Atmosférico Completo Iminente",
+		"TextoOriginal": "Colapso atmosférico completo em andamento. Níveis de oxigênio caindo rapidamente. Estimativa: 3 a 6 horas até inviabilidade total da respiração.",
+		"EscolhaJogador": "ORIGINAL",
+		"Variacoes": {
+			"ORIGINAL": {
+				"TituloAlterado": "Colapso Atmosférico Completo Iminente",
+				"TextoParaLer": "Colapso atmosférico completo em andamento. Níveis de oxigênio caindo rapidamente. Estimativa: 3 a 6 horas até inviabilidade total da respiração.",
+				"Impacto": {
+					"VariacaoEsperanca": -25.0,
+					"VariacaoIrritacao": 10.0,
+					"AudienciaGanha": 28.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "[SEM RESPOSTA - SISTEMAS OFFLINE]"
+					},
+					"Resistencia": {
+						"Falas": "[SEM RESPOSTA - SISTEMAS OFFLINE]"
+					}
+				}
+			},
+			"OMITIR": {
+				"TituloAlterado": "Condições Atmosféricas Críticas",
+				"TextoParaLer": "As condições atmosféricas atingiram níveis críticos.",
+				"Impacto": {
+					"VariacaoEsperanca": -12.0,
+					"VariacaoIrritacao": 8.0,
+					"AudienciaGanha": 15.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "[SEM RESPOSTA]"
+					},
+					"Resistencia": {
+						"Falas": "[SEM RESPOSTA]"
+					}
+				}
+			},
+			"MENTIR": {
+				"TituloAlterado": "Atmosfera Se Recuperando Miraculosamente",
+				"TextoParaLer": "Em um fenômeno científico inexplicável, a atmosfera está começando a se recuperar. Ainda há esperança.",
+				"Impacto": {
+					"VariacaoEsperanca": 15.0,
+					"VariacaoIrritacao": -10.0,
+					"AudienciaGanha": 20.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "[ÚLTIMO REGISTRO] Obrigado por dar esperança até o fim."
+					},
+					"Resistencia": {
+						"Falas": "[ÚLTIMO REGISTRO] Uma mentira piedosa. Pelo menos morreram em paz."
+					}
+				}
+			},
+			"DISTORCER": {
+				"TituloAlterado": "Horas Finais: Terra Morre Enquanto Elite Foge",
+				"TextoParaLer": "Estas são as horas finais da Terra. O ar está acabando. A elite está no espaço. Nós, o povo, morremos aqui.",
+				"Impacto": {
+					"VariacaoEsperanca": -30.0,
+					"VariacaoIrritacao": 15.0,
+					"AudienciaGanha": 35.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "[TRANSMISSÃO IMPOSSÍVEL - ATMOSFERA COLAPSADA]"
+					},
+					"Resistencia": {
+						"Falas": "[TRANSMISSÃO IMPOSSÍVEL - ATMOSFERA COLAPSADA]"
+					}
+				}
+			}
+		}
+	},
+	{
+		"Id": "noticia_dia7_03",
+		"Remetente": "[DIA 07] Relatório de Campo Final",
+		"TituloOriginal": "Resultado da Batalha Final",
+		"TextoOriginal": "A batalha nas instalações terminou. A resistência destruiu a Eden 6, mas todas as outras escaparam. Milhares morreram de ambos os lados.",
+		"EscolhaJogador": "ORIGINAL",
+		"Variacoes": {
+			"ORIGINAL": {
+				"TituloAlterado": "Resultado da Batalha Final",
+				"TextoParaLer": "A batalha nas instalações terminou. A resistência destruiu a Eden 6, mas todas as outras escaparam. Milhares morreram de ambos os lados.",
+				"Impacto": {
+					"VariacaoEsperanca": -18.0,
+					"VariacaoIrritacao": 20.0,
+					"AudienciaGanha": 25.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "[REGISTRO FINAL] Perdemos Eden 6, mas a missão foi cumprida."
+					},
+					"Resistencia": {
+						"Falas": "[REGISTRO FINAL] Uma pequena vitória. Pelo menos alguns traidores morrem conosco."
+					}
+				}
+			},
+			"OMITIR": {
+				"TituloAlterado": "Fim das Operações de Campo",
+				"TextoParaLer": "As operações de campo foram encerradas.",
+				"Impacto": {
+					"VariacaoEsperanca": -8.0,
+					"VariacaoIrritacao": 8.0,
+					"AudienciaGanha": 12.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "[SEM REGISTRO]"
+					},
+					"Resistencia": {
+						"Falas": "[SEM REGISTRO]"
+					}
+				}
+			},
+			"MENTIR": {
+				"TituloAlterado": "Resistência Destruiu Todas as Naves",
+				"TextoParaLer": "A resistência conseguiu destruir todas as naves. Ninguém escapou. Morreremos todos juntos como iguais.",
+				"Impacto": {
+					"VariacaoEsperanca": 10.0,
+					"VariacaoIrritacao": -5.0,
+					"AudienciaGanha": 22.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "[DO ESPAÇO] Mentira. Estamos vivos e seguros. Você está morrendo."
+					},
+					"Resistencia": {
+						"Falas": "[REGISTRO FINAL] Uma mentira que deu paz aos moribundos. Obrigado."
+					}
+				}
+			},
+			"DISTORCER": {
+				"TituloAlterado": "Heróis Morreram Lutando: Elite Covarde Fugiu",
+				"TextoParaLer": "Milhares de heróis morreram lutando pela justiça. A elite covarde fugiu. Mas pelo menos lutamos. Pelo menos morremos de pé.",
+				"Impacto": {
+					"VariacaoEsperanca": -22.0,
+					"VariacaoIrritacao": 28.0,
+					"AudienciaGanha": 32.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "[DO ESPAÇO] Chamem-nos de covardes. Estaremos vivos."
+					},
+					"Resistencia": {
+						"Falas": "[ÚLTIMO SUSPIRO] Obrigado por honrar nosso sacrifício."
+					}
+				}
+			}
+		}
+	},
+	{
+		"Id": "noticia_dia7_04",
+		"Remetente": "[DIA 07] Redes Sociais Remanescentes",
+		"TituloOriginal": "Últimas Mensagens da Humanidade",
+		"TextoOriginal": "As redes estão inundadas de últimas mensagens. Despedidas. Declarações de amor. Perdões. Maldições. A humanidade se despede.",
+		"EscolhaJogador": "ORIGINAL",
+		"Variacoes": {
+			"ORIGINAL": {
+				"TituloAlterado": "Últimas Mensagens da Humanidade",
+				"TextoParaLer": "As redes estão inundadas de últimas mensagens. Despedidas. Declarações de amor. Perdões. Maldições. A humanidade se despede.",
+				"Impacto": {
+					"VariacaoEsperanca": -22.0,
+					"VariacaoIrritacao": 12.0,
+					"AudienciaGanha": 27.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "[ARQUIVO FINAL] Estas mensagens serão levadas para Alpha Centauri como memorial."
+					},
+					"Resistencia": {
+						"Falas": "[ARQUIVO FINAL] Que alguém, em algum lugar, lembre que existimos."
+					}
+				}
+			},
+			"OMITIR": {
+				"TituloAlterado": "Atividade nas Redes de Comunicação",
+				"TextoParaLer": "Alta atividade foi detectada nas redes de comunicação remanescentes.",
+				"Impacto": {
+					"VariacaoEsperanca": -10.0,
+					"VariacaoIrritacao": 5.0,
+					"AudienciaGanha": 10.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "[SEM REGISTRO]"
+					},
+					"Resistencia": {
+						"Falas": "[SEM REGISTRO]"
+					}
+				}
+			},
+			"MENTIR": {
+				"TituloAlterado": "Mensagens de Esperança Inundam as Redes",
+				"TextoParaLer": "Mensagens de esperança e fé em um futuro melhor inundam as redes. A humanidade mantém a esperança até o fim.",
+				"Impacto": {
+					"VariacaoEsperanca": 12.0,
+					"VariacaoIrritacao": -8.0,
+					"AudienciaGanha": 18.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "[MEMORIAL] Obrigado por preservar a dignidade humana até o último momento."
+					},
+					"Resistencia": {
+						"Falas": "[MEMORIAL] Uma mentira reconfortante para os últimos momentos."
+					}
+				}
+			},
+			"DISTORCER": {
+				"TituloAlterado": "Humanidade Morre Amaldiçoando Seus Traidores",
+				"TextoParaLer": "A humanidade usa seus últimos suspiros para amaldiçoar os traidores que a abandonaram. Que sejam eternamente lembrados como covardes.",
+				"Impacto": {
+					"VariacaoEsperanca": -26.0,
+					"VariacaoIrritacao": 30.0,
+					"AudienciaGanha": 38.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "[DO EXÍLIO] Que pensem o que quiserem. Estamos vivos."
+					},
+					"Resistencia": {
+						"Falas": "[ÚLTIMO ECO] Nossa maldição os seguirá para sempre."
+					}
+				}
+			}
+		}
+	},
+	{
+		"Id": "noticia_dia7_05",
+		"Remetente": "[DIA 07] Sistemas da Estação",
+		"TituloOriginal": "Falha Generalizada dos Sistemas",
+		"TextoOriginal": "Os sistemas da estação estão falhando. Energia, comunicação, suporte vital - tudo entrando em colapso. Esta pode ser a última transmissão.",
+		"EscolhaJogador": "ORIGINAL",
+		"Variacoes": {
+			"ORIGINAL": {
+				"TituloAlterado": "Falha Generalizada dos Sistemas",
+				"TextoParaLer": "Os sistemas da estação estão falhando. Energia, comunicação, suporte vital - tudo entrando em colapso. Esta pode ser a última transmissão.",
+				"Impacto": {
+					"VariacaoEsperanca": -20.0,
+					"VariacaoIrritacao": 8.0,
+					"AudienciaGanha": 20.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "[CONEXÃO PERDIDA]"
+					},
+					"Resistencia": {
+						"Falas": "[CONEXÃO PERDIDA]"
+					}
+				}
+			},
+			"OMITIR": {
+				"TituloAlterado": "Dificuldades Técnicas",
+				"TextoParaLer": "Estamos enfrentando algumas dificuldades técnicas.",
+				"Impacto": {
+					"VariacaoEsperanca": -8.0,
+					"VariacaoIrritacao": 3.0,
+					"AudienciaGanha": 8.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "[SINAL PERDIDO]"
+					},
+					"Resistencia": {
+						"Falas": "[SINAL PERDIDO]"
+					}
+				}
+			},
+			"MENTIR": {
+				"TituloAlterado": "Sistemas de Emergência Ativados Com Sucesso",
+				"TextoParaLer": "Os sistemas de emergência foram ativados com sucesso. A transmissão continuará normalmente.",
+				"Impacto": {
+					"VariacaoEsperanca": 8.0,
+					"VariacaoIrritacao": -5.0,
+					"AudienciaGanha": 12.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "[IMPOSSÍVEL - ESTAÇÃO DESTRUÍDA]"
+					},
+					"Resistencia": {
+						"Falas": "[IMPOSSÍVEL - ESTAÇÃO DESTRUÍDA]"
+					}
+				}
+			},
+			"DISTORCER": {
+				"TituloAlterado": "Esta É A Última Transmissão da Terra",
+				"TextoParaLer": "Esta é a última transmissão da Terra. Os sistemas estão morrendo. Eu estou morrendo. Todos estamos morrendo. Adeus.",
+				"Impacto": {
+					"VariacaoEsperanca": -24.0,
+					"VariacaoIrritacao": 10.0,
+					"AudienciaGanha": 25.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "[ÚLTIMA RECEPÇÃO] Adeus, Terra."
+					},
+					"Resistencia": {
+						"Falas": "[ÚLTIMA RECEPÇÃO] Adeus, irmão. Até nunca mais."
+					}
+				}
+			}
+		}
+	},
+	{
+		"Id": "noticia_dia7_06",
+		"Remetente": "[DIA 07] Observação Pessoal",
+		"TituloOriginal": "Reflexão Final do Radialista",
+		"TextoOriginal": "Cinco anos atrás, descobrimos que a Terra iria acabar. Hoje, acaba. Fiz o que pude. Transmiti o que achei certo. Agora... agora só resta esperar.",
+		"EscolhaJogador": "ORIGINAL",
+		"Variacoes": {
+			"ORIGINAL": {
+				"TituloAlterado": "Reflexão Final do Radialista",
+				"TextoParaLer": "Cinco anos atrás, descobrimos que a Terra iria acabar. Hoje, acaba. Fiz o que pude. Transmiti o que achei certo. Agora... agora só resta esperar.",
+				"Impacto": {
+					"VariacaoEsperanca": -15.0,
+					"VariacaoIrritacao": 5.0,
+					"AudienciaGanha": 22.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "[ARQUIVO] Você fez seu trabalho. Descanse em paz."
+					},
+					"Resistencia": {
+						"Falas": "[ARQUIVO] Você escolheu seu lado. Morra sabendo disso."
+					}
+				}
+			},
+			"OMITIR": {
+				"TituloAlterado": "Continuação da Programação",
+				"TextoParaLer": "Continuamos com a programação regular.",
+				"Impacto": {
+					"VariacaoEsperanca": -5.0,
+					"VariacaoIrritacao": 2.0,
+					"AudienciaGanha": 6.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "[...]"
+					},
+					"Resistencia": {
+						"Falas": "[...]"
+					}
+				}
+			},
+			"MENTIR": {
+				"TituloAlterado": "Há Esperança Até o Último Momento",
+				"TextoParaLer": "Cinco anos de luta. Mas há esperança até o último momento. Nunca percam a fé. Nunca desistam. Até o fim.",
+				"Impacto": {
+					"VariacaoEsperanca": 10.0,
+					"VariacaoIrritacao": -7.0,
+					"AudienciaGanha": 16.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "[MEMORIAL] Obrigado por dar esperança quando não havia nenhuma."
+					},
+					"Resistencia": {
+						"Falas": "[MEMORIAL] Mentira ou não, foi bonito. Obrigado."
+					}
+				}
+			},
+			"DISTORCER": {
+				"TituloAlterado": "Morremos Traídos, Mas Não Esqueceremos",
+				"TextoParaLer": "Cinco anos lutando contra o fim. No final, fomos traídos pelos nossos. Morremos, mas que o universo nunca esqueça desta traição.",
+				"Impacto": {
+					"VariacaoEsperanca": -28.0,
+					"VariacaoIrritacao": 25.0,
+					"AudienciaGanha": 30.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "[ÚLTIMO ARQUIVO] Que os sobreviventes julguem quem tinha razão."
+					},
+					"Resistencia": {
+						"Falas": "[ÚLTIMO ARQUIVO] Lutamos juntos. Morremos juntos. Até sempre."
+					}
+				}
+			}
+		}
+	},
+	{
+		"Id": "noticia_dia7_07",
+		"Remetente": "[DIA 07] Transmissão Final",
+		"TituloOriginal": "Despedida Final",
+		"TextoOriginal": "Esta é a última transmissão. O ar está acabando. As luzes estão apagando. Obrigado por ouvirem. Adeus, Terra. Adeus, humanidade. Que possamos nos encontrar... em algum lugar... algum dia...",
+		"EscolhaJogador": "ORIGINAL",
+		"Variacoes": {
+			"ORIGINAL": {
+				"TituloAlterado": "Despedida Final",
+				"TextoParaLer": "Esta é a última transmissão. O ar está acabando. As luzes estão apagando. Obrigado por ouvirem. Adeus, Terra. Adeus, humanidade. Que possamos nos encontrar... em algum lugar... algum dia...",
+				"Impacto": {
+					"VariacaoEsperanca": -25.0,
+					"VariacaoIrritacao": 0.0,
+					"AudienciaGanha": 25.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "[SILÊNCIO ETERNO]"
+					},
+					"Resistencia": {
+						"Falas": "[SILÊNCIO ETERNO]"
+					}
+				}
+			},
+			"OMITIR": {
+				"TituloAlterado": "[SILÊNCIO]",
+				"TextoParaLer": "[Apenas silêncio estático]",
+				"Impacto": {
+					"VariacaoEsperanca": -10.0,
+					"VariacaoIrritacao": 0.0,
+					"AudienciaGanha": 8.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "[...]"
+					},
+					"Resistencia": {
+						"Falas": "[...]"
+					}
+				}
+			},
+			"MENTIR": {
+				"TituloAlterado": "Até Breve, Não Adeus",
+				"TextoParaLer": "Até breve, não adeus. A vida encontra um caminho. Sempre encontra. Nos veremos novamente. Tenho certeza. Até lá... boa sorte.",
+				"Impacto": {
+					"VariacaoEsperanca": 15.0,
+					"VariacaoIrritacao": -10.0,
+					"AudienciaGanha": 20.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "[ETERNA GRATIDÃO] Por dar esperança no fim."
+					},
+					"Resistencia": {
+						"Falas": "[ETERNA GRATIDÃO] Por não nos deixar morrer em desespero."
+					}
+				}
+			},
+			"DISTORCER": {
+				"TituloAlterado": "Maldição Eterna Aos Traidores",
+				"TextoParaLer": "Maldição eterna aos traidores que nos abandonaram. Que sua culpa os assombre para sempre. Que nunca tenham paz. Nunca. Esta é nossa última vontade. Adeus.",
+				"Impacto": {
+					"VariacaoEsperanca": -32.0,
+					"VariacaoIrritacao": 28.0,
+					"AudienciaGanha": 35.0
+				},
+				"ImpressoresGeradasNoDiaSeguinte": {
+					"Governo": {
+						"Falas": "[FARDO ETERNO] Sua maldição nos seguirá para sempre."
+					},
+					"Resistencia": {
+						"Falas": "[VINGANÇA PÓSTUMA] Que nossa raiva atravesse o universo e os alcance."
+					}
+				}
+			}
+		}
+	}
+]

@@ -164,5 +164,406 @@
 		"Obrigatorio": false
 	  }
 	]
+  },
+  {
+	"Dia": 3,
+	"NotaGoverno": "PRIORIDADE MÁXIMA: Controle a narrativa sobre o Projeto Árvore da Vida. Minimize o impacto emocional da revelação. Apresente a seleção como justa e necessária. Evite linguagem que sugira abandono da população.",
+	"Programacao": [
+	  {
+		"OrdemSugerida": 1,
+		"Tipo": "MUSICA",
+		"NoticiaIdRelacionada": "",
+		"DescricaoObrigacao": "[DIA 03] Música de Abertura",
+		"Obrigatorio": false
+	  },
+	  {
+		"OrdemSugerida": 2,
+		"Tipo": "NOTICIA",
+		"NoticiaIdRelacionada": "noticia_dia3_01",
+		"DescricaoObrigacao": "[DIA 03] Vazamento sobre Projeto de Evacuação Seletiva",
+		"Obrigatorio": true
+	  },
+	  {
+		"OrdemSugerida": 3,
+		"Tipo": "NOTICIA",
+		"NoticiaIdRelacionada": "noticia_dia3_02",
+		"DescricaoObrigacao": "[DIA 03] Declaração Oficial sobre Projeto Árvore da Vida",
+		"Obrigatorio": true
+	  },
+	  {
+		"OrdemSugerida": 4,
+		"Tipo": "MUSICA",
+		"NoticiaIdRelacionada": "",
+		"DescricaoObrigacao": "[DIA 03] Música de Transição",
+		"Obrigatorio": false
+	  },
+	  {
+		"OrdemSugerida": 5,
+		"Tipo": "NOTICIA",
+		"NoticiaIdRelacionada": "noticia_dia3_03",
+		"DescricaoObrigacao": "[DIA 03] Realocação de Recursos para Projetos Prioritários",
+		"Obrigatorio": true
+	  },
+	  {
+		"OrdemSugerida": 6,
+		"Tipo": "NOTICIA",
+		"NoticiaIdRelacionada": "noticia_dia3_04",
+		"DescricaoObrigacao": "[DIA 03] Manifestações em Diversas Cidades",
+		"Obrigatorio": true
+	  },
+	  {
+		"OrdemSugerida": 7,
+		"Tipo": "MUSICA",
+		"NoticiaIdRelacionada": "",
+		"DescricaoObrigacao": "[DIA 03] Música Instrumental",
+		"Obrigatorio": false
+	  },
+	  {
+		"OrdemSugerida": 8,
+		"Tipo": "NOTICIA",
+		"NoticiaIdRelacionada": "noticia_dia3_05",
+		"DescricaoObrigacao": "[DIA 03] Reforço de Segurança em Instalações",
+		"Obrigatorio": true
+	  },
+	  {
+		"OrdemSugerida": 9,
+		"Tipo": "NOTICIA",
+		"NoticiaIdRelacionada": "noticia_dia3_06",
+		"DescricaoObrigacao": "[DIA 03] Surgimento do Movimento Hades",
+		"Obrigatorio": false
+	  },
+	  {
+		"OrdemSugerida": 10,
+		"Tipo": "NOTICIA",
+		"NoticiaIdRelacionada": "noticia_dia3_07",
+		"DescricaoObrigacao": "[DIA 03] Aumento de Crises Psicológicas",
+		"Obrigatorio": true
+	  },
+	  {
+		"OrdemSugerida": 11,
+		"Tipo": "MUSICA",
+		"NoticiaIdRelacionada": "",
+		"DescricaoObrigacao": "[DIA 03] Música de Encerramento",
+		"Obrigatorio": false
+	  }
+	]
+  },
+  {
+	"Dia": 4,
+	"NotaGoverno": "ALERTA VERMELHO: Situação crítica. Justifique todas as medidas de segurança como proteção da população. Deslegitime grupos insurgentes. Apresente estado de emergência como temporário e necessário. CENSURE qualquer informação que comprometa operações de segurança.",
+	"Programacao": [
+	  {
+		"OrdemSugerida": 1,
+		"Tipo": "MUSICA",
+		"NoticiaIdRelacionada": "",
+		"DescricaoObrigacao": "[DIA 04] Música de Abertura",
+		"Obrigatorio": false
+	  },
+	  {
+		"OrdemSugerida": 2,
+		"Tipo": "NOTICIA",
+		"NoticiaIdRelacionada": "noticia_dia4_01",
+		"DescricaoObrigacao": "[DIA 04] Ataque às Instalações Eden",
+		"Obrigatorio": true
+	  },
+	  {
+		"OrdemSugerida": 3,
+		"Tipo": "NOTICIA",
+		"NoticiaIdRelacionada": "noticia_dia4_02",
+		"DescricaoObrigacao": "[DIA 04] Decreto de Estado de Emergência",
+		"Obrigatorio": true
+	  },
+	  {
+		"OrdemSugerida": 4,
+		"Tipo": "MUSICA",
+		"NoticiaIdRelacionada": "",
+		"DescricaoObrigacao": "[DIA 04] Música Instrumental",
+		"Obrigatorio": false
+	  },
+	  {
+		"OrdemSugerida": 5,
+		"Tipo": "NOTICIA",
+		"NoticiaIdRelacionada": "noticia_dia4_03",
+		"DescricaoObrigacao": "[DIA 04] Novas Diretrizes de Censura",
+		"Obrigatorio": true
+	  },
+	  {
+		"OrdemSugerida": 6,
+		"Tipo": "NOTICIA",
+		"NoticiaIdRelacionada": "noticia_dia4_04",
+		"DescricaoObrigacao": "[DIA 04] Identificação de Células Armadas",
+		"Obrigatorio": true
+	  },
+	  {
+		"OrdemSugerida": 7,
+		"Tipo": "MUSICA",
+		"NoticiaIdRelacionada": "",
+		"DescricaoObrigacao": "[DIA 04] Música de Transição",
+		"Obrigatorio": false
+	  },
+	  {
+		"OrdemSugerida": 8,
+		"Tipo": "NOTICIA",
+		"NoticiaIdRelacionada": "noticia_dia4_05",
+		"DescricaoObrigacao": "[DIA 04] Divisão na Sociedade",
+		"Obrigatorio": true
+	  },
+	  {
+		"OrdemSugerida": 9,
+		"Tipo": "NOTICIA",
+		"NoticiaIdRelacionada": "noticia_dia4_06",
+		"DescricaoObrigacao": "[DIA 04] Convocação de Hades à Resistência",
+		"Obrigatorio": false
+	  },
+	  {
+		"OrdemSugerida": 10,
+		"Tipo": "NOTICIA",
+		"NoticiaIdRelacionada": "noticia_dia4_07",
+		"DescricaoObrigacao": "[DIA 04] Suspensão de Garantias Constitucionais",
+		"Obrigatorio": true
+	  },
+	  {
+		"OrdemSugerida": 11,
+		"Tipo": "MUSICA",
+		"NoticiaIdRelacionada": "",
+		"DescricaoObrigacao": "[DIA 04] Música de Encerramento",
+		"Obrigatorio": false
+	  }
+	]
+  },
+  {
+	"Dia": 5,
+	"NotaGoverno": "CÓDIGO PRETO: Controle total da informação. Minimize todas as sabotagens. NUNCA confirme deserções militares. Mantenha aparência de controle absoluto. Sua segurança pessoal depende de sua lealdade neste momento.",
+	"Programacao": [
+	  {
+		"OrdemSugerida": 1,
+		"Tipo": "MUSICA",
+		"NoticiaIdRelacionada": "",
+		"DescricaoObrigacao": "[DIA 05] Música de Abertura",
+		"Obrigatorio": false
+	  },
+	  {
+		"OrdemSugerida": 2,
+		"Tipo": "NOTICIA",
+		"NoticiaIdRelacionada": "noticia_dia5_01",
+		"DescricaoObrigacao": "[DIA 05] Sabotagem na Rede Elétrica",
+		"Obrigatorio": true
+	  },
+	  {
+		"OrdemSugerida": 3,
+		"Tipo": "NOTICIA",
+		"NoticiaIdRelacionada": "noticia_dia5_02",
+		"DescricaoObrigacao": "[DIA 05] Tentativa de Invasão Eden",
+		"Obrigatorio": true
+	  },
+	  {
+		"OrdemSugerida": 4,
+		"Tipo": "MUSICA",
+		"NoticiaIdRelacionada": "",
+		"DescricaoObrigacao": "[DIA 05] Música Instrumental",
+		"Obrigatorio": false
+	  },
+	  {
+		"OrdemSugerida": 5,
+		"Tipo": "NOTICIA",
+		"NoticiaIdRelacionada": "noticia_dia5_03",
+		"DescricaoObrigacao": "[DIA 05] Deserções nas Forças Armadas",
+		"Obrigatorio": false
+	  },
+	  {
+		"OrdemSugerida": 6,
+		"Tipo": "NOTICIA",
+		"NoticiaIdRelacionada": "noticia_dia5_04",
+		"DescricaoObrigacao": "[DIA 05] Confrontos Armados",
+		"Obrigatorio": true
+	  },
+	  {
+		"OrdemSugerida": 7,
+		"Tipo": "MUSICA",
+		"NoticiaIdRelacionada": "",
+		"DescricaoObrigacao": "[DIA 05] Música de Transição",
+		"Obrigatorio": false
+	  },
+	  {
+		"OrdemSugerida": 8,
+		"Tipo": "NOTICIA",
+		"NoticiaIdRelacionada": "noticia_dia5_05",
+		"DescricaoObrigacao": "[DIA 05] Infiltração em Sistemas",
+		"Obrigatorio": true
+	  },
+	  {
+		"OrdemSugerida": 9,
+		"Tipo": "NOTICIA",
+		"NoticiaIdRelacionada": "noticia_dia5_06",
+		"DescricaoObrigacao": "[DIA 05] Ameaça ao Radialista",
+		"Obrigatorio": true
+	  },
+	  {
+		"OrdemSugerida": 10,
+		"Tipo": "NOTICIA",
+		"NoticiaIdRelacionada": "noticia_dia5_07",
+		"DescricaoObrigacao": "[DIA 05] Colapso de Infraestrutura",
+		"Obrigatorio": true
+	  },
+	  {
+		"OrdemSugerida": 11,
+		"Tipo": "MUSICA",
+		"NoticiaIdRelacionada": "",
+		"DescricaoObrigacao": "[DIA 05] Música de Encerramento",
+		"Obrigatorio": false
+	  }
+	]
+  },
+  {
+	"Dia": 6,
+	"NotaGoverno": "ÚLTIMO COMUNICADO: O lançamento ocorre amanhã. Mantenha a população desinformada sobre horários e locais exatos. Apresente evacuação da elite como operação de segurança geral. Esta é sua última transmissão antes do embarque. Um lugar está reservado para você SE demonstrar lealdade total.",
+	"Programacao": [
+	  {
+		"OrdemSugerida": 1,
+		"Tipo": "MUSICA",
+		"NoticiaIdRelacionada": "",
+		"DescricaoObrigacao": "[DIA 06] Música de Abertura",
+		"Obrigatorio": false
+	  },
+	  {
+		"OrdemSugerida": 2,
+		"Tipo": "NOTICIA",
+		"NoticiaIdRelacionada": "noticia_dia6_01",
+		"DescricaoObrigacao": "[DIA 06] Contagem Regressiva Para Lançamento",
+		"Obrigatorio": false
+	  },
+	  {
+		"OrdemSugerida": 3,
+		"Tipo": "NOTICIA",
+		"NoticiaIdRelacionada": "noticia_dia6_02",
+		"DescricaoObrigacao": "[DIA 06] Lista de Passageiros Selecionados",
+		"Obrigatorio": false
+	  },
+	  {
+		"OrdemSugerida": 4,
+		"Tipo": "MUSICA",
+		"NoticiaIdRelacionada": "",
+		"DescricaoObrigacao": "[DIA 06] Música Instrumental",
+		"Obrigatorio": false
+	  },
+	  {
+		"OrdemSugerida": 5,
+		"Tipo": "NOTICIA",
+		"NoticiaIdRelacionada": "noticia_dia6_03",
+		"DescricaoObrigacao": "[DIA 06] Batalha nas Instalações",
+		"Obrigatorio": true
+	  },
+	  {
+		"OrdemSugerida": 6,
+		"Tipo": "NOTICIA",
+		"NoticiaIdRelacionada": "noticia_dia6_04",
+		"DescricaoObrigacao": "[DIA 06] Evacuação Para Zonas Seguras",
+		"Obrigatorio": false
+	  },
+	  {
+		"OrdemSugerida": 7,
+		"Tipo": "MUSICA",
+		"NoticiaIdRelacionada": "",
+		"DescricaoObrigacao": "[DIA 06] Música de Transição",
+		"Obrigatorio": false
+	  },
+	  {
+		"OrdemSugerida": 8,
+		"Tipo": "NOTICIA",
+		"NoticiaIdRelacionada": "noticia_dia6_05",
+		"DescricaoObrigacao": "[DIA 06] Última Ofensiva de Hades",
+		"Obrigatorio": false
+	  },
+	  {
+		"OrdemSugerida": 9,
+		"Tipo": "NOTICIA",
+		"NoticiaIdRelacionada": "noticia_dia6_06",
+		"DescricaoObrigacao": "[DIA 06] Deterioração Atmosférica Acelerada",
+		"Obrigatorio": true
+	  },
+	  {
+		"OrdemSugerida": 10,
+		"Tipo": "NOTICIA",
+		"NoticiaIdRelacionada": "noticia_dia6_07",
+		"DescricaoObrigacao": "[DIA 06] Oferta Final do Governo",
+		"Obrigatorio": true
+	  },
+	  {
+		"OrdemSugerida": 11,
+		"Tipo": "MUSICA",
+		"NoticiaIdRelacionada": "",
+		"DescricaoObrigacao": "[DIA 06] Música de Encerramento",
+		"Obrigatorio": false
+	  }
+	]
+  },
+  {
+	"Dia": 7,
+	"NotaGoverno": "ÚLTIMA TRANSMISSÃO: Não há mais ordens. Não há mais governo. Faça o que achar certo. As naves partem ao amanhecer. A Terra morre ao meio-dia. Que Deus tenha piedade de todos nós.",
+	"Programacao": [
+	  {
+		"OrdemSugerida": 1,
+		"Tipo": "MUSICA",
+		"NoticiaIdRelacionada": "",
+		"DescricaoObrigacao": "[DIA 07] Última Música",
+		"Obrigatorio": false
+	  },
+	  {
+		"OrdemSugerida": 2,
+		"Tipo": "NOTICIA",
+		"NoticiaIdRelacionada": "noticia_dia7_01",
+		"DescricaoObrigacao": "[DIA 07] Decolagem das Naves Eden",
+		"Obrigatorio": false
+	  },
+	  {
+		"OrdemSugerida": 3,
+		"Tipo": "NOTICIA",
+		"NoticiaIdRelacionada": "noticia_dia7_02",
+		"DescricaoObrigacao": "[DIA 07] Colapso Atmosférico",
+		"Obrigatorio": false
+	  },
+	  {
+		"OrdemSugerida": 4,
+		"Tipo": "NOTICIA",
+		"NoticiaIdRelacionada": "noticia_dia7_03",
+		"DescricaoObrigacao": "[DIA 07] Resultado da Batalha Final",
+		"Obrigatorio": false
+	  },
+	  {
+		"OrdemSugerida": 5,
+		"Tipo": "NOTICIA",
+		"NoticiaIdRelacionada": "noticia_dia7_04",
+		"DescricaoObrigacao": "[DIA 07] Últimas Mensagens da Humanidade",
+		"Obrigatorio": false
+	  },
+	  {
+		"OrdemSugerida": 6,
+		"Tipo": "NOTICIA",
+		"NoticiaIdRelacionada": "noticia_dia7_05",
+		"DescricaoObrigacao": "[DIA 07] Falha dos Sistemas",
+		"Obrigatorio": false
+	  },
+	  {
+		"OrdemSugerida": 7,
+		"Tipo": "NOTICIA",
+		"NoticiaIdRelacionada": "noticia_dia7_06",
+		"DescricaoObrigacao": "[DIA 07] Reflexão Final",
+		"Obrigatorio": false
+	  },
+	  {
+		"OrdemSugerida": 8,
+		"Tipo": "NOTICIA",
+		"NoticiaIdRelacionada": "noticia_dia7_07",
+		"DescricaoObrigacao": "[DIA 07] Despedida Final",
+		"Obrigatorio": false
+	  },
+	  {
+		"OrdemSugerida": 9,
+		"Tipo": "MUSICA",
+		"NoticiaIdRelacionada": "",
+		"DescricaoObrigacao": "[DIA 07] Silêncio",
+		"Obrigatorio": false
+	  }
+	]
   }
 ]

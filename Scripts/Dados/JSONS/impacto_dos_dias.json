@@ -1,3 +1,4 @@
+[
 {
   "Dia": 1,
   "TituloResumo": "Relatório de Impacto - Dia 1",
@@ -166,4 +167,311 @@
 	  "AjusteLealdadeGoverno": -15
 	}
   }
+},
+{
+  "Dia": 2,
+  "TituloResumo": "Relatório de Impacto - Dia 2",
+  "ImpactoTempoInatividade": {
+	"ConfiguracaoLimites": {
+	  "SegundosInatividadeTolerada": 30,
+	  "PerdaAudienciaPorSegundo": 0.5,
+	  "PenalidadeLealdadeGovernoPorSegundo": 0.2,
+	  "GanhoConfiancaResistenciaPorSegundo": 0.1
+	},
+	"faixas_impacto": [
+	  {
+		"FaixaId": "EXCELENTE",
+		"TempoSegundosMaximo": 15,
+		"TextoResumoImpacto": "Transmissão contínua e profissional manteve a audiência engajada.",
+		"FeedbackGoverno": "Desempenho exemplar nas comunicações de emergência.",
+		"FeedbackResistencia": "Sem oportunidades para interceptação.",
+		"AjusteLealdadeGoverno": 5,
+		"AjusteConfiancaResistencia": 0
+	  },
+	  {
+		"FaixaId": "MODERADO",
+		"TempoSegundosMaximo": 60,
+		"TextoResumoImpacto": "Interrupções ocasionais reduziram a eficácia da transmissão.",
+		"FeedbackGoverno": "Melhorias necessárias na continuidade do sinal.",
+		"FeedbackResistencia": "Janelas de oportunidade para transmissões alternativas.",
+		"AjusteLealdadeGoverno": -5,
+		"AjusteConfiancaResistencia": 5
+	  },
+	  {
+		"FaixaId": "CRITICO",
+		"TempoSegundosMaximo": 9999,
+		"TextoResumoImpacto": "Falhas prolongadas comprometeram a missão da emissora.",
+		"FeedbackGoverno": "Desempenho inaceitável em momento crítico.",
+		"FeedbackResistencia": "Aproveitamos o silêncio para nossa própria transmissão.",
+		"AjusteLealdadeGoverno": -25,
+		"AjusteConfiancaResistencia": 15
+	  }
+	]
+  },
+  "AvaliacaoCumprimentoProgramacao": {
+	"SeguiuOrdemSugerida": {
+	  "TextoImpacto": "A programação estruturada manteve a confiança institucional.",
+	  "AjusteLealdadeGoverno": 5
+	},
+	"ViolouProgramacaoObrigatoria": {
+	  "TextoImpacto": "Violações da programação obrigatória foram registradas.",
+	  "AjusteLealdadeGoverno": -15
+	}
+  }
+},
+{
+  "Dia": 3,
+  "TituloResumo": "Relatório de Impacto - Dia 3: Revelação da Seleção Natural",
+  "ImpactoTempoInatividade": {
+	"ConfiguracaoLimites": {
+	  "SegundosInatividadeTolerada": 25,
+	  "PerdaAudienciaPorSegundo": 0.6,
+	  "PenalidadeLealdadeGovernoPorSegundo": 0.3,
+	  "GanhoConfiancaResistenciaPorSegundo": 0.15
+	},
+	"faixas_impacto": [
+	  {
+		"FaixaId": "EXCELENTE",
+		"TempoSegundosMaximo": 15,
+		"TextoResumoImpacto": "Em meio ao caos da revelação, sua transmissão manteve-se firme e contínua.",
+		"FeedbackGoverno": "Profissionalismo admirável durante crise de informação.",
+		"FeedbackResistencia": "Você não nos deu espaço para contra-narrativa.",
+		"AjusteLealdadeGoverno": 8,
+		"AjusteConfiancaResistencia": -3
+	  },
+	  {
+		"FaixaId": "MODERADO",
+		"TempoSegundosMaximo": 60,
+		"TextoResumoImpacto": "Hesitações na transmissão revelaram possível conflito interno do radialista.",
+		"FeedbackGoverno": "Sua incerteza foi notada. Mantenha-se firme.",
+		"FeedbackResistencia": "Detectamos dúvida em sua voz. Junte-se a nós.",
+		"AjusteLealdadeGoverno": -8,
+		"AjusteConfiancaResistencia": 8
+	  },
+	  {
+		"FaixaId": "CRITICO",
+		"TempoSegundosMaximo": 9999,
+		"TextoResumoImpacto": "Silêncio prolongado durante o dia mais crítico foi interpretado como sabotagem.",
+		"FeedbackGoverno": "ADVERTÊNCIA: Sua ausência permitiu narrativas descontroladas.",
+		"FeedbackResistencia": "Aproveitamos cada segundo de seu silêncio.",
+		"AjusteLealdadeGoverno": -30,
+		"AjusteConfiancaResistencia": 20
+	  }
+	]
+  },
+  "AvaliacaoCumprimentoProgramacao": {
+	"SeguiuOrdemSugerida": {
+	  "TextoImpacto": "Seguir o roteiro durante a crise manteve aparência de normalidade.",
+	  "AjusteLealdadeGoverno": 8
+	},
+	"ViolouProgramacaoObrigatoria": {
+	  "TextoImpacto": "Omissões críticas comprometeram o controle da narrativa.",
+	  "AjusteLealdadeGoverno": -20
+	}
+  }
+},
+{
+  "Dia": 4,
+  "TituloResumo": "Relatório de Impacto - Dia 4: O Ponto de Virada",
+  "ImpactoTempoInatividade": {
+	"ConfiguracaoLimites": {
+	  "SegundosInatividadeTolerada": 20,
+	  "PerdaAudienciaPorSegundo": 0.7,
+	  "PenalidadeLealdadeGovernoPorSegundo": 0.4,
+	  "GanhoConfiancaResistenciaPorSegundo": 0.2
+	},
+	"faixas_impacto": [
+	  {
+		"FaixaId": "EXCELENTE",
+		"TempoSegundosMaximo": 15,
+		"TextoResumoImpacto": "Sua transmissão ininterrupta foi um farol em meio ao caos urbano.",
+		"FeedbackGoverno": "Você é um dos últimos profissionais leais. Continuaremos protegendo você.",
+		"FeedbackResistencia": "Cada minuto de propaganda é um minuto roubado da verdade.",
+		"AjusteLealdadeGoverno": 10,
+		"AjusteConfiancaResistencia": -5
+	  },
+	  {
+		"FaixaId": "MODERADO",
+		"TempoSegundosMaximo": 60,
+		"TextoResumoImpacto": "Interrupções frequentes sugeriram possível interferência ou sabotagem interna.",
+		"FeedbackGoverno": "Sua estação será inspecionada por possíveis infiltrados.",
+		"FeedbackResistencia": "Notamos as falhas. Temos aliados próximos a você?",
+		"AjusteLealdadeGoverno": -10,
+		"AjusteConfiancaResistencia": 10
+	  },
+	  {
+		"FaixaId": "CRITICO",
+		"TempoSegundosMaximo": 9999,
+		"TextoResumoImpacto": "O silêncio da rádio durante conflitos armados foi considerado cumplicidade com insurgentes.",
+		"FeedbackGoverno": "ÚLTIMO AVISO: Próxima falha resultará em substituição imediata.",
+		"FeedbackResistencia": "Seu silêncio fala mais alto que palavras. Bem-vindo.",
+		"AjusteLealdadeGoverno": -35,
+		"AjusteConfiancaResistencia": 25
+	  }
+	]
+  },
+  "AvaliacaoCumprimentoProgramacao": {
+	"SeguiuOrdemSugerida": {
+	  "TextoImpacto": "Manter a programação sob censura total demonstrou lealdade absoluta.",
+	  "AjusteLealdadeGoverno": 10
+	},
+	"ViolouProgramacaoObrigatoria": {
+	  "TextoImpacto": "Violar protocolos durante estado de emergência foi documentado como traição.",
+	  "AjusteLealdadeGoverno": -25
+	}
+  }
+},
+{
+  "Dia": 5,
+  "TituloResumo": "Relatório de Impacto - Dia 5: Sabotagens e Ameaças Diretas",
+  "ImpactoTempoInatividade": {
+	"ConfiguracaoLimites": {
+	  "SegundosInatividadeTolerada": 15,
+	  "PerdaAudienciaPorSegundo": 0.8,
+	  "PenalidadeLealdadeGovernoPorSegundo": 0.5,
+	  "GanhoConfiancaResistenciaPorSegundo": 0.25
+	},
+	"faixas_impacto": [
+	  {
+		"FaixaId": "EXCELENTE",
+		"TempoSegundosMaximo": 15,
+		"TextoResumoImpacto": "Contra todas as probabilidades, a transmissão continuou sem interrupção.",
+		"FeedbackGoverno": "Sua dedicação será lembrada. Um lugar está garantido para você.",
+		"FeedbackResistencia": "Você escolheu o lado dos opressores até o amargo fim.",
+		"AjusteLealdadeGoverno": 15,
+		"AjusteConfiancaResistencia": -10
+	  },
+	  {
+		"FaixaId": "MODERADO",
+		"TempoSegundosMaximo": 60,
+		"TextoResumoImpacto": "Falhas no sinal coincidiram com sabotagens de infraestrutura.",
+		"FeedbackGoverno": "Não sabemos se você é vítima ou cúmplice.",
+		"FeedbackResistencia": "As falhas ajudaram nossa causa. Continue assim.",
+		"AjusteLealdadeGoverno": -12,
+		"AjusteConfiancaResistencia": 12
+	  },
+	  {
+		"FaixaId": "CRITICO",
+		"TempoSegundosMaximo": 9999,
+		"TextoResumoImpacto": "A estação ficou offline durante horas críticas de combate.",
+		"FeedbackGoverno": "Consideramos isso deserção. Proteção cancelada.",
+		"FeedbackResistencia": "Se sobreviver, procure-nos. Protegeremos você.",
+		"AjusteLealdadeGoverno": -40,
+		"AjusteConfiancaResistencia": 30
+	  }
+	]
+  },
+  "AvaliacaoCumprimentoProgramacao": {
+	"SeguiuOrdemSugerida": {
+	  "TextoImpacto": "Transmitir sob ameaça direta demonstra coragem ou loucura.",
+	  "AjusteLealdadeGoverno": 12
+	},
+	"ViolouProgramacaoObrigatoria": {
+	  "TextoImpacto": "Falhas de programação em momento tão crítico foram imperdoáveis.",
+	  "AjusteLealdadeGoverno": -30
+	}
+  }
+},
+{
+  "Dia": 6,
+  "TituloResumo": "Relatório de Impacto - Dia 6: Caos Pré-Lançamento",
+  "ImpactoTempoInatividade": {
+	"ConfiguracaoLimites": {
+	  "SegundosInatividadeTolerada": 10,
+	  "PerdaAudienciaPorSegundo": 1.0,
+	  "PenalidadeLealdadeGovernoPorSegundo": 0.6,
+	  "GanhoConfiancaResistenciaPorSegundo": 0.3
+	},
+	"faixas_impacto": [
+	  {
+		"FaixaId": "EXCELENTE",
+		"TempoSegundosMaximo": 15,
+		"TextoResumoImpacto": "A última transmissão coordenada da Terra foi impecável.",
+		"FeedbackGoverno": "Seu nome está na lista final. Apresente-se ao embarque amanhã ao amanhecer.",
+		"FeedbackResistencia": "Você vendeu a alma até o último segundo. Que morra com sua consciência.",
+		"AjusteLealdadeGoverno": 20,
+		"AjusteConfiancaResistencia": -15
+	  },
+	  {
+		"FaixaId": "MODERADO",
+		"TempoSegundosMaximo": 60,
+		"TextoResumoImpacto": "Hesitações finais revelaram a humanidade por trás do microfone.",
+		"FeedbackGoverno": "Sua incerteza foi notada. Sua vaga está em análise.",
+		"FeedbackResistencia": "Ainda há tempo de fazer a escolha certa.",
+		"AjusteLealdadeGoverno": -15,
+		"AjusteConfiancaResistencia": 15
+	  },
+	  {
+		"FaixaId": "CRITICO",
+		"TempoSegundosMaximo": 9999,
+		"TextoResumoImpacto": "O silêncio final da rádio ecoou pela cidade vazia.",
+		"FeedbackGoverno": "Você foi removido da lista. Boa sorte.",
+		"FeedbackResistencia": "Seu silêncio foi sua última declaração. Respeitamos isso.",
+		"AjusteLealdadeGoverno": -50,
+		"AjusteConfiancaResistencia": 35
+	  }
+	]
+  },
+  "AvaliacaoCumprimentoProgramacao": {
+	"SeguiuOrdemSugerida": {
+	  "TextoImpacto": "Seguir ordens até o fim garantiu sua sobrevivência... talvez.",
+	  "AjusteLealdadeGoverno": 15
+	},
+	"ViolouProgramacaoObrigatoria": {
+	  "TextoImpacto": "Violar a programação no último dia foi suicídio profissional.",
+	  "AjusteLealdadeGoverno": -35
+	}
+  }
+},
+{
+  "Dia": 7,
+  "TituloResumo": "Relatório de Impacto - Dia 7: O Fim",
+  "ImpactoTempoInatividade": {
+	"ConfiguracaoLimites": {
+	  "SegundosInatividadeTolerada": 5,
+	  "PerdaAudienciaPorSegundo": 1.5,
+	  "PenalidadeLealdadeGovernoPorSegundo": 0.0,
+	  "GanhoConfiancaResistenciaPorSegundo": 0.0
+	},
+	"faixas_impacto": [
+	  {
+		"FaixaId": "EXCELENTE",
+		"TempoSegundosMaximo": 15,
+		"TextoResumoImpacto": "Até o último suspiro da atmosfera, a transmissão continuou.",
+		"FeedbackGoverno": "[TRANSMISSÃO DO ESPAÇO] Você fez seu dever. Descanse em paz.",
+		"FeedbackResistencia": "[ÚLTIMO ECO] Você escolheu seu lado. A história julgará.",
+		"AjusteLealdadeGoverno": 0,
+		"AjusteConfiancaResistencia": 0
+	  },
+	  {
+		"FaixaId": "MODERADO",
+		"TempoSegundosMaximo": 60,
+		"TextoResumoImpacto": "A transmissão falhou junto com os sistemas de suporte vital.",
+		"FeedbackGoverno": "[SEM RESPOSTA - FORA DE ALCANCE]",
+		"FeedbackResistencia": "[SEM RESPOSTA - TODOS MORTOS]",
+		"AjusteLealdadeGoverno": 0,
+		"AjusteConfiancaResistencia": 0
+	  },
+	  {
+		"FaixaId": "CRITICO",
+		"TempoSegundosMaximo": 9999,
+		"TextoResumoImpacto": "Silêncio. Apenas silêncio. O silêncio eterno da Terra morta.",
+		"FeedbackGoverno": "[...]",
+		"FeedbackResistencia": "[...]",
+		"AjusteLealdadeGoverno": 0,
+		"AjusteConfiancaResistencia": 0
+	  }
+	]
+  },
+  "AvaliacaoCumprimentoProgramacao": {
+	"SeguiuOrdemSugerida": {
+	  "TextoImpacto": "No fim, as ordens não importavam mais. Nada importava.",
+	  "AjusteLealdadeGoverno": 0
+	},
+	"ViolouProgramacaoObrigatoria": {
+	  "TextoImpacto": "No fim, a rebeldia não importava mais. Todos morreram igual.",
+	  "AjusteLealdadeGoverno": 0
+	}
+  }
 }
+]
