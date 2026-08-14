@@ -5,6 +5,9 @@ namespace fiveyears3.Scripts.UI
 {
     public partial class MenuConfiguracaoUI : CanvasLayer
     {
+        private bool _estadoPausaAnterior;
+        private Input.MouseModeEnum _modoMouseAnterior = Input.MouseModeEnum.Captured;
+
         public override void _Ready()
         {
             ProcessMode = ProcessModeEnum.Always;
@@ -15,7 +18,7 @@ namespace fiveyears3.Scripts.UI
         {
             if (@event is InputEventKey keyEvent && keyEvent.Pressed && !keyEvent.Echo)
             {
-                if (keyEvent.Keycode == Key.P)
+                if (keyEvent.Keycode == Key.F10)
                 {
                     AlternarMenu();
                 }
@@ -24,17 +27,31 @@ namespace fiveyears3.Scripts.UI
 
         private void AlternarMenu()
         {
-            Visible = !Visible;
-            GetTree().Paused = Visible;
-
             if (Visible)
             {
-                Input.MouseMode = Input.MouseModeEnum.Visible;
+                FecharMenu();
             }
             else
             {
-                Input.MouseMode = Input.MouseModeEnum.Captured;
+                AbrirMenu();
             }
+        }
+
+        private void AbrirMenu()
+        {
+            _estadoPausaAnterior = GetTree().Paused;
+            _modoMouseAnterior = Input.MouseMode;
+
+            Visible = true;
+            GetTree().Paused = true;
+            Input.MouseMode = Input.MouseModeEnum.Visible;
+        }
+
+        private void FecharMenu()
+        {
+            Visible = false;
+            GetTree().Paused = _estadoPausaAnterior;
+            Input.MouseMode = _modoMouseAnterior;
         }
     }
 }

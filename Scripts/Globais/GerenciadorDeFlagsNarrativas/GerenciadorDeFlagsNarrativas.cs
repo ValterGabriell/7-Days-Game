@@ -34,6 +34,23 @@ public partial class GerenciadorDeFlagsNarrativas : Node
 
     public override void _Ready()
     {
+        if (Menu.JogoIniciado)
+        {
+            CarregarConfiguracaoJSON();
+            return;
+        }
+
+        Menu.AoIniciarJogo += OnJogoIniciado;
+    }
+
+    public override void _ExitTree()
+    {
+        Menu.AoIniciarJogo -= OnJogoIniciado;
+    }
+
+    private void OnJogoIniciado()
+    {
+        Menu.AoIniciarJogo -= OnJogoIniciado;
         CarregarConfiguracaoJSON();
     }
 
@@ -135,6 +152,59 @@ public partial class GerenciadorDeFlagsNarrativas : Node
     private bool TemFlagNarrativa(FlagNarrativa flag)
     {
         return FlagsNarrativasAtivas.Contains(flag);
+    }
+
+    public Dictionary<string, bool> ExportarFlagsHistoricasParaSave()
+    {
+        Dictionary<string, bool> flagsHistoricas = new();
+
+        foreach (FlagNarrativa flagNarrativa in FlagsNarrativasAtivas)
+        {
+            flagsHistoricas[$"NARRATIVA:{flagNarrativa}"] = true;
+        }
+
+        foreach (FlagsCondicionais flagCondicional in FlagsCondicionaisAtivas)
+        {
+            flagsHistoricas[$"CONDICIONAL:{flagCondicional}"] = true;
+        }
+
+        return flagsHistoricas;
+    }
+
+    public void CarregarFlagsHistoricasDoSave(Dictionary<string, bool> flagsHistoricas)
+    {
+        FlagsNarrativasAtivas.Clear();
+        FlagsCondicionaisAtivas.Clear();
+
+        if (flagsHistoricas == null || flagsHistoricas.Count == 0)
+        {
+            return;
+        }
+
+        foreach (var entrada in flagsHistoricas)
+        {
+            if (!entrada.Value) continue;
+
+            if (entrada.Key.StartsWith("NARRATIVA:", StringComparison.Ordinal))
+            {
+                string nomeFlagNarrativa = entrada.Key["NARRATIVA:".Length..];
+                if (Enum.TryParse(nomeFlagNarrativa, out FlagNarrativa flagNarrativa))
+                {
+                    FlagsNarrativasAtivas.Add(flagNarrativa);
+                }
+
+                continue;
+            }
+
+            if (entrada.Key.StartsWith("CONDICIONAL:", StringComparison.Ordinal))
+            {
+                string nomeFlagCondicional = entrada.Key["CONDICIONAL:".Length..];
+                if (Enum.TryParse(nomeFlagCondicional, out FlagsCondicionais flagCondicional))
+                {
+                    FlagsCondicionaisAtivas.Add(flagCondicional);
+                }
+            }
+        }
     }
 
 }

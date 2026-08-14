@@ -42,6 +42,7 @@ namespace fiveyears3.Scripts.UI
         private ButtonGroup _grupoOpcoesEditoriais;
         private readonly List<MusicaModel> _musicasDisponiveis = new();
         private ButtonGroup _grupoBotoesNoticias = new ButtonGroup();
+        private bool _inicializado;
         private VBoxContainer ObterListaMusicas()
         {
             if (ListaMusicas != null) return ListaMusicas;
@@ -56,6 +57,26 @@ namespace fiveyears3.Scripts.UI
 
         public override void _Ready()
         {
+            if (!Menu.JogoIniciado)
+            {
+                Menu.AoIniciarJogo += OnJogoIniciado;
+                return;
+            }
+
+            InicializarInterface();
+        }
+
+        private void OnJogoIniciado()
+        {
+            Menu.AoIniciarJogo -= OnJogoIniciado;
+            InicializarInterface();
+        }
+
+        private void InicializarInterface()
+        {
+            if (_inicializado) return;
+            _inicializado = true;
+
             ConfigurarGrupoDeOpcoes();
 
             if (GerenciadorDeNoticias.Instance != null)
@@ -100,6 +121,8 @@ namespace fiveyears3.Scripts.UI
 
         public override void _ExitTree()
         {
+            Menu.AoIniciarJogo -= OnJogoIniciado;
+
             if (GerenciadorDeNoticias.Instance != null)
             {
                 GerenciadorDeNoticias.Instance.NoticiasCarregadas -= AtualizarListaNoticias;

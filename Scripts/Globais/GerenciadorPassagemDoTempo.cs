@@ -36,12 +36,17 @@ namespace fiveyears3.Scripts.Globais
         {
             Log.Print($"[GerenciadorPassagemDoTempo] Avançando para o dia {DiaAtual + 1}.");
             FinalizarDiaDeTrabalho();
-            DiaAlterado?.Invoke(DiaAtual);
         }
 
         public void ResetarTempo()
         {
             DiaAtual = 1;
+            DiaAlterado?.Invoke(DiaAtual);
+        }
+
+        public void CarregarDiaAtual(int dia)
+        {
+            DiaAtual = Math.Max(1, dia);
             DiaAlterado?.Invoke(DiaAtual);
         }
 

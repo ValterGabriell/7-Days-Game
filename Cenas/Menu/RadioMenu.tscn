@@ -1,0 +1,84 @@
+[gd_scene format=3 uid="uid://4mpl7nr1o5oh"]
+
+[ext_resource type="Script" uid="uid://b8k82ls8r7qgd" path="res://Scripts/Menu/RadioMenu.cs" id="1_ivjng"]
+[ext_resource type="PackedScene" uid="uid://d2mknvrigi6uc" path="res://Arte/Modelos3D/cobra_139xlr_cbradio__low_poly_pbr_game_ready/scene.gltf" id="1_ndjqi"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_ivjng"]
+viewport_path = NodePath("SubViewport")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ivjng"]
+resource_local_to_scene = true
+albedo_texture = SubResource("ViewportTexture_ivjng")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_ef0sp"]
+resource_local_to_scene = true
+material = SubResource("StandardMaterial3D_ivjng")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ef0sp"]
+size = Vector3(0.6665039, 0.28344727, 0.57006836)
+
+[node name="RadioMenu" type="StaticBody3D" unique_id=1391148214 node_paths=PackedStringArray("BotaoQueControlaORadio", "LabelIniciarJogo", "LabelContinuarJogo", "PainelDeLabels")]
+collision_mask = 2
+script = ExtResource("1_ivjng")
+BotaoQueControlaORadio = NodePath("Sketchfab_Scene/Sketchfab_model/0ab202b63c854f278c41ff9be377ee93_fbx/RootNode/SM_Cobra139xlr_TuningKnob/SM_Cobra139xlr_TuningKnob_M_Cobra_0")
+AnguloIniciarJogo = -60.0
+AnguloContinuarJogo = 60.0
+LabelIniciarJogo = NodePath("SubViewport/Control/Novo Jogo")
+LabelContinuarJogo = NodePath("SubViewport/Control/Continuar")
+PainelDeLabels = NodePath("SubViewport/Control")
+
+[node name="SubViewport" type="SubViewport" parent="." unique_id=2061635113]
+size = Vector2i(512, 206)
+render_target_update_mode = 4
+
+[node name="Control" type="Control" parent="SubViewport" unique_id=647481265]
+custom_minimum_size = Vector2(512, 206)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 512.0
+offset_bottom = 206.0
+
+[node name="Novo Jogo" type="Label" parent="SubViewport/Control" unique_id=143466783]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -136.5
+offset_top = -38.5
+offset_right = 136.5
+offset_bottom = 38.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 56
+text = "Novo Jogo"
+
+[node name="Continuar" type="Label" parent="SubViewport/Control" unique_id=905987312]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -136.5
+offset_top = -38.5
+offset_right = 136.5
+offset_bottom = 38.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 56
+text = "Continuar"
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=689034197]
+transform = Transform3D(0.02989806, 0, 0, 0, -4.371138e-08, -0.015077167, 0, 0.9999999, -6.5904404e-10, 0.22982436, 0.23254889, 0.26181385)
+mesh = SubResource("PlaneMesh_ef0sp")
+
+[node name="Sketchfab_Scene" parent="." unique_id=1627518020 instance=ExtResource("1_ndjqi")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1093364045]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.021214873, 0.18884277, 0.1138916)
+shape = SubResource("BoxShape3D_ef0sp")
+
+[editable path="Sketchfab_Scene"]

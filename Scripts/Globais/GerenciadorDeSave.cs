@@ -81,6 +81,12 @@ namespace Scripts.SaveSystem
                 SaveAtual.EstadoAtualDoJogador.Reputacao.LealdadeGoverno = conf.DeltaLealdadeGovernoGeral;
                 SaveAtual.EstadoAtualDoJogador.Reputacao.ConfiancaResistencia = conf.DeltaConfiancaResistenciaGeral;
             }
+
+            // 3. Puxa flags narrativas/condicionais para histórico do save
+            if (GerenciadorDeFlagsNarrativas.Instance != null)
+            {
+                SaveAtual.EstadoAtualDoJogador.FlagsHistoricas = GerenciadorDeFlagsNarrativas.Instance.ExportarFlagsHistoricasParaSave();
+            }
         }
 
         /// <summary>
@@ -89,6 +95,11 @@ namespace Scripts.SaveSystem
         public void AplicarDadosNosGerenciadores()
         {
             if (SaveAtual == null) return;
+
+            if (GerenciadorPassagemDoTempo.Instance != null)
+            {
+                GerenciadorPassagemDoTempo.Instance.CarregarDiaAtual(SaveAtual.EstadoAtualDoJogador.DiaAtual);
+            }
 
             // Restaura no GerenciadorDeAudiencia
             if (GerenciadorDeAudiencia.Instance != null)
@@ -108,6 +119,11 @@ namespace Scripts.SaveSystem
                     SaveAtual.DeltaConfiancaResistenciaGlobal,
                     SaveAtual.DeltaAudienciaGlobal
                 );
+            }
+
+            if (GerenciadorDeFlagsNarrativas.Instance != null)
+            {
+                GerenciadorDeFlagsNarrativas.Instance.CarregarFlagsHistoricasDoSave(SaveAtual.EstadoAtualDoJogador.FlagsHistoricas);
             }
         }
 
@@ -179,10 +195,23 @@ namespace Scripts.SaveSystem
         /// <summary>
         /// Reseta os dados carregados na memória para um novo jogo.
         /// </summary>
-        public void NovoJogo()
+        public void NovoJogo(string saveId = null)
         {
-            SaveAtual = new DadosSave();
-            Log.Print("[GerenciadorDeSave] Dados de novo jogo inicializados.");
+            string id = string.IsNullOrWhiteSpace(saveId) ? SaveIdPadrao : saveId;
+
+            DeletarSave(id);
+
+            SaveAtual = DadosSave.CriarNovoSave();
+            VariavelAuxiliarQueVaiGuardarAsEscolhasFeitasEmUmDeterminadoDia.Clear();
+
+            if (GerenciadorPassagemDoTempo.Instance != null)
+            {
+                GerenciadorPassagemDoTempo.Instance.ResetarTempo();
+            }
+
+            AplicarDadosNosGerenciadores();
+
+            Log.Print($"[GerenciadorDeSave] Novo jogo inicializado. Save antigo '{id}' removido.");
         }
 
         private void SalvarEscolhaDaNoticiaNoRadio(NoticiaModel model)

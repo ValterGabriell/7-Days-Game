@@ -81,6 +81,11 @@ namespace fiveyears3.Scripts.Globais
             if (CameraMesa != null) CameraMesa.Current = false;
             if (CameraAntena != null) CameraAntena.Current = false;
 
+            if (Jogador?.CameraJogador != null)
+            {
+                Jogador.CameraJogador.MakeCurrent();
+            }
+
             if (UI != null) UI.Visible = false;
 
             Jogador?.DefinirSubEstadoMesa(PersonagemPrincipal.SubEstadoMesa.Nenhum);

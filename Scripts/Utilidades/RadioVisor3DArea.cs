@@ -6,9 +6,34 @@ public partial class RadioVisor3DArea : StaticBody3D
     [Export] public SubViewport SubViewportNode;
 
     private StandardMaterial3D _materialTela;
+    private bool _inicializado;
 
     public override void _Ready()
     {
+        if (!Menu.JogoIniciado)
+        {
+            Menu.AoIniciarJogo += OnJogoIniciado;
+            return;
+        }
+
+        InicializarVisor();
+    }
+
+    public override void _ExitTree()
+    {
+        Menu.AoIniciarJogo -= OnJogoIniciado;
+    }
+
+    private void OnJogoIniciado()
+    {
+        Menu.AoIniciarJogo -= OnJogoIniciado;
+        InicializarVisor();
+    }
+
+    private void InicializarVisor()
+    {
+        if (_inicializado) return;
+
         if (TelaMesh == null)
             GD.PushWarning("[RadioVisor3DArea] TelaMesh não configurada.");
 
@@ -30,6 +55,7 @@ public partial class RadioVisor3DArea : StaticBody3D
         SubViewportNode.RenderTargetUpdateMode = SubViewport.UpdateMode.Always;
         SubViewportNode.GuiDisableInput = false;
         SubViewportNode.HandleInputLocally = true;
+        _inicializado = true;
 
         Log.Print($"[RadioVisor3DArea] Ready | SubViewport Size={SubViewportNode.Size} | HandleInputLocally={SubViewportNode.HandleInputLocally} | GuiDisableInput={SubViewportNode.GuiDisableInput}");
     }

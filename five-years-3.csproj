@@ -6,6 +6,7 @@
     <RootNamespace>fiveyears3</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="save.loc.txt" />
     <Content Include="Scripts\Dados\JSONS\Dia_02\Noticias.json" />
     <Content Include="scripts\dados\jsons\dia_01\Noticias.json" />
     <Content Include="scripts\dados\jsons\rotinas_semanais.json" />

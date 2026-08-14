@@ -11,6 +11,7 @@ namespace fiveyears3.Scripts.UI
 
         private readonly List<ItemRadioEntry> _itensExibidos = new();
         private bool _inscritoNoGerenciador;
+        private bool _inicializado;
 
         private enum TipoItemRadio { Noticia, Musica }
 
@@ -23,6 +24,26 @@ namespace fiveyears3.Scripts.UI
 
         public override void _Ready()
         {
+            if (!Menu.JogoIniciado)
+            {
+                Menu.AoIniciarJogo += OnJogoIniciado;
+                return;
+            }
+
+            InicializarUi();
+        }
+
+        private void OnJogoIniciado()
+        {
+            Menu.AoIniciarJogo -= OnJogoIniciado;
+            InicializarUi();
+        }
+
+        private void InicializarUi()
+        {
+            if (_inicializado) return;
+            _inicializado = true;
+
             TentarInscreverNoGerenciador();
 
             if (ListaNoticias != null)
@@ -38,6 +59,7 @@ namespace fiveyears3.Scripts.UI
 
         public override void _Process(double delta)
         {
+            if (!_inicializado) return;
             if (_inscritoNoGerenciador) return;
 
             if (TentarInscreverNoGerenciador())
@@ -48,6 +70,8 @@ namespace fiveyears3.Scripts.UI
 
         public override void _ExitTree()
         {
+            Menu.AoIniciarJogo -= OnJogoIniciado;
+
             if (GerenciadorNoticiasImpressas.Instance == null || !_inscritoNoGerenciador) return;
 
             GerenciadorNoticiasImpressas.Instance.NoticiaImpressa -= OnNoticiaRecebida;
