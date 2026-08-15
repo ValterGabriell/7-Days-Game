@@ -1,541 +1,541 @@
-[
-	{
-		"Id": "noticia_dia6_01",
-		"Remetente": "[DIA 06] Comando do Projeto Eden",
-		"TituloOriginal": "Início da Contagem Regressiva Para Lançamento",
-		"TextoOriginal": "O Comando do Projeto Eden inicia a contagem regressiva oficial para o lançamento das naves. Decolagem programada para amanhã ao amanhecer.",
-		"EscolhaJogador": "ORIGINAL",
-		"Variacoes": {
-			"ORIGINAL": {
-				"TituloAlterado": "Início da Contagem Regressiva Para Lançamento",
-				"TextoParaLer": "O Comando do Projeto Eden inicia a contagem regressiva oficial para o lançamento das naves. Decolagem programada para amanhã ao amanhecer.",
-				"Impacto": {
-					"VariacaoEsperanca": -13.0,
-					"VariacaoIrritacao": 18.0,
-					"AudienciaGanha": 22.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "Os preparativos finais estão em andamento. O lançamento ocorrerá conforme planejado."
-					},
-					"Resistencia": {
-						"Falas": "Restam poucas horas. É agora ou nunca."
-					}
-				}
-			},
-			"OMITIR": {
-				"TituloAlterado": "Atividades em Instalações Espaciais",
-				"TextoParaLer": "Atividades técnicas intensas foram registradas nas instalações do programa espacial.",
-				"Impacto": {
-					"VariacaoEsperanca": 0.0,
-					"VariacaoIrritacao": 6.0,
-					"AudienciaGanha": 7.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "A omissão do lançamento iminente evitou ações desesperadas de última hora."
-					},
-					"Resistencia": {
-						"Falas": "Você tentou esconder que a fuga está prestes a acontecer."
-					}
-				}
-			},
-			"MENTIR": {
-				"TituloAlterado": "Lançamento Adiado Por Questões Técnicas",
-				"TextoParaLer": "O lançamento das naves foi adiado indefinidamente devido a questões técnicas críticas ainda não resolvidas.",
-				"Impacto": {
-					"VariacaoEsperanca": 8.0,
-					"VariacaoIrritacao": -6.0,
-					"AudienciaGanha": 11.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "A mentira sobre o adiamento reduziu tentativas de interferência de última hora."
-					},
-					"Resistencia": {
-						"Falas": "Você mentiu para dar tempo à elite de escapar sem resistência."
-					}
-				}
-			},
-			"DISTORCER": {
-				"TituloAlterado": "Elite Foge Amanhã: Última Chance de Impedir Traição",
-				"TextoParaLer": "A elite traidora foge amanhã ao amanhecer. Esta é a última chance da humanidade impedir o maior ato de covardia da história.",
-				"Impacto": {
-					"VariacaoEsperanca": -21.0,
-					"VariacaoIrritacao": 28.0,
-					"AudienciaGanha": 35.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "Sua transmissão provocou tentativas massivas de invasão às bases de lançamento."
-					},
-					"Resistencia": {
-						"Falas": "Você deu ao povo a informação que precisavam. O ataque final começou."
-					}
-				}
-			}
-		}
-	},
-	{
-		"Id": "noticia_dia6_02",
-		"Remetente": "[DIA 06] Departamento de Seleção",
-		"TituloOriginal": "Lista Final dos Passageiros Selecionados",
-		"TextoOriginal": "A lista final dos passageiros selecionados para as naves Eden foi divulgada. Aproximadamente 50.000 pessoas de um mundo de bilhões.",
-		"EscolhaJogador": "ORIGINAL",
-		"Variacoes": {
-			"ORIGINAL": {
-				"TituloAlterado": "Lista Final dos Passageiros Selecionados",
-				"TextoParaLer": "A lista final dos passageiros selecionados para as naves Eden foi divulgada. Aproximadamente 50.000 pessoas de um mundo de bilhões.",
-				"Impacto": {
-					"VariacaoEsperanca": -15.0,
-					"VariacaoIrritacao": 20.0,
-					"AudienciaGanha": 25.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "A divulgação da lista provocou reações extremas na população excluída."
-					},
-					"Resistencia": {
-						"Falas": "Agora todos sabem quantos serão salvos e quantos bilhões serão abandonados."
-					}
-				}
-			},
-			"OMITIR": {
-				"TituloAlterado": "Processo de Seleção Finalizado",
-				"TextoParaLer": "O processo de seleção para programas especiais foi oficialmente finalizado.",
-				"Impacto": {
-					"VariacaoEsperanca": 0.0,
-					"VariacaoIrritacao": 7.0,
-					"AudienciaGanha": 8.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "A omissão dos números evitou destacar a desproporção brutal da seleção."
-					},
-					"Resistencia": {
-						"Falas": "Você escondeu quantas pessoas foram condenadas à morte."
-					}
-				}
-			},
-			"MENTIR": {
-				"TituloAlterado": "Sistema de Loteria Garante Seleção Justa",
-				"TextoParaLer": "Um sistema de loteria transparente garantiu que a seleção fosse completamente justa e democrática.",
-				"Impacto": {
-					"VariacaoEsperanca": 9.0,
-					"VariacaoIrritacao": -7.0,
-					"AudienciaGanha": 12.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "A mentira sobre justiça no processo reduziu acusações de nepotismo."
-					},
-					"Resistencia": {
-						"Falas": "Você chamou de 'loteria' uma seleção que escolheu só milionários e políticos."
-					}
-				}
-			},
-			"DISTORCER": {
-				"TituloAlterado": "Elite Escolheu A Si Mesma: Povo Foi Descartado",
-				"TextoParaLer": "A elite simplesmente escolheu a si mesma para salvação. Bilhões de pessoas comuns foram descartadas como lixo.",
-				"Impacto": {
-					"VariacaoEsperanca": -23.0,
-					"VariacaoIrritacao": 30.0,
-					"AudienciaGanha": 38.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "SITUAÇÃO CRÍTICA: Sua transmissão incitou fúria homicida contra membros da lista."
-					},
-					"Resistencia": {
-						"Falas": "Você expôs a farsa completa. O povo sabe exatamente quem os traiu."
-					}
-				}
-			}
-		}
-	},
-	{
-		"Id": "noticia_dia6_03",
-		"Remetente": "[DIA 06] Comando Tático da FDP",
-		"TituloOriginal": "Batalha Massiva nas Instalações de Lançamento",
-		"TextoOriginal": "Uma batalha massiva está em andamento nas instalações de lançamento. Milhares de pessoas tentam invadir as bases protegidas.",
-		"EscolhaJogador": "ORIGINAL",
-		"Variacoes": {
-			"ORIGINAL": {
-				"TituloAlterado": "Batalha Massiva nas Instalações de Lançamento",
-				"TextoParaLer": "Uma batalha massiva está em andamento nas instalações de lançamento. Milhares de pessoas tentam invadir as bases protegidas.",
-				"Impacto": {
-					"VariacaoEsperanca": -14.0,
-					"VariacaoIrritacao": 19.0,
-					"AudienciaGanha": 24.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "As defesas estão contendo os invasores, mas com dificuldade crescente."
-					},
-					"Resistencia": {
-						"Falas": "A batalha final começou. Cada pessoa que cai é um mártir."
-					}
-				}
-			},
-			"OMITIR": {
-				"TituloAlterado": "Situação de Segurança nas Bases",
-				"TextoParaLer": "A situação de segurança nas bases especiais está sendo monitorada.",
-				"Impacto": {
-					"VariacaoEsperanca": 0.0,
-					"VariacaoIrritacao": 7.0,
-					"AudienciaGanha": 8.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "O silêncio sobre a batalha evitou inspirar mais pessoas a se juntarem ao ataque."
-					},
-					"Resistencia": {
-						"Falas": "Você silenciou sobre a guerra final pela sobrevivência."
-					}
-				}
-			},
-			"MENTIR": {
-				"TituloAlterado": "Pequeno Grupo de Terroristas Neutralizado",
-				"TextoParaLer": "Um pequeno grupo de terroristas tentou atacar instalações e foi rapidamente neutralizado sem causar danos.",
-				"Impacto": {
-					"VariacaoEsperanca": 7.0,
-					"VariacaoIrritacao": -5.0,
-					"AudienciaGanha": 10.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "A minimização da batalha manteve a aparência de controle total."
-					},
-					"Resistencia": {
-						"Falas": "Você chamou milhares de pessoas de 'pequeno grupo'. Isso é obsceno."
-					}
-				}
-			},
-			"DISTORCER": {
-				"TituloAlterado": "Massacre em Massa: FDP Mata Milhares Que Lutam Por Sobrevivência",
-				"TextoParaLer": "A FDP está massacrando milhares de pessoas desesperadas que lutam pela chance de sobreviver.",
-				"Impacto": {
-					"VariacaoEsperanca": -22.0,
-					"VariacaoIrritacao": 31.0,
-					"AudienciaGanha": 40.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "Sua transmissão transformou a defesa em genocídio. Ondas adicionais de ataques foram provocadas."
-					},
-					"Resistencia": {
-						"Falas": "Você mostrou o banho de sangue real. Mais pessoas vêm nos vingar."
-					}
-				}
-			}
-		}
-	},
-	{
-		"Id": "noticia_dia6_04",
-		"Remetente": "[DIA 06] Relatório de Evacuação",
-		"TituloOriginal": "Evacuação da Elite Para Zonas Seguras",
-		"TextoOriginal": "Os passageiros selecionados estão sendo evacuados para zonas seguras próximas às bases de lançamento sob forte escolta militar.",
-		"EscolhaJogador": "ORIGINAL",
-		"Variacoes": {
-			"ORIGINAL": {
-				"TituloAlterado": "Evacuação da Elite Para Zonas Seguras",
-				"TextoParaLer": "Os passageiros selecionados estão sendo evacuados para zonas seguras próximas às bases de lançamento sob forte escolta militar.",
-				"Impacto": {
-					"VariacaoEsperanca": -12.0,
-					"VariacaoIrritacao": 17.0,
-					"AudienciaGanha": 21.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "A evacuação está 87% completa. Alguns comboios sofreram ataques."
-					},
-					"Resistencia": {
-						"Falas": "Estamos atacando os comboios. Cada elite que não chegar é uma vitória."
-					}
-				}
-			},
-			"OMITIR": {
-				"TituloAlterado": "Operações Logísticas em Andamento",
-				"TextoParaLer": "Operações logísticas complexas estão em andamento em diversas regiões.",
-				"Impacto": {
-					"VariacaoEsperanca": 0.0,
-					"VariacaoIrritacao": 6.0,
-					"AudienciaGanha": 7.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "A omissão da evacuação evitou revelar rotas e alvos."
-					},
-					"Resistencia": {
-						"Falas": "Você escondeu que os traidores estão fugindo neste momento."
-					}
-				}
-			},
-			"MENTIR": {
-				"TituloAlterado": "População Sendo Evacuada Para Abrigos",
-				"TextoParaLer": "A população está sendo evacuada para abrigos de proteção especiais em preparação para eventos atmosféricos.",
-				"Impacto": {
-					"VariacaoEsperanca": 8.0,
-					"VariacaoIrritacao": -6.0,
-					"AudienciaGanha": 11.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "A inversão da narrativa criou confusão útil sobre a evacuação real."
-					},
-					"Resistencia": {
-						"Falas": "Você fingiu que eles estão salvando o povo quando estão só salvando a si mesmos."
-					}
-				}
-			},
-			"DISTORCER": {
-				"TituloAlterado": "Covardes Fogem Protegidos Enquanto Povo Morre",
-				"TextoParaLer": "Os covardes da elite estão fugindo neste exato momento, protegidos por exércitos enquanto bilhões morrem abandonados.",
-				"Impacto": {
-					"VariacaoEsperanca": -20.0,
-					"VariacaoIrritacao": 28.0,
-					"AudienciaGanha": 36.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "Sua transmissão provocou ataques coordenados às rotas de evacuação."
-					},
-					"Resistencia": {
-						"Falas": "Você revelou os alvos. Estamos indo atrás de cada comboio."
-					}
-				}
-			}
-		}
-	},
-	{
-		"Id": "noticia_dia6_05",
-		"Remetente": "[DIA 06] Grupo Hades - Comunicado Final",
-		"TituloOriginal": "Última Ofensiva da Resistência",
-		"TextoOriginal": "O movimento Hades anuncia sua última ofensiva. 'Se não podemos viver, que morramos todos juntos como iguais'.",
-		"EscolhaJogador": "ORIGINAL",
-		"Variacoes": {
-			"ORIGINAL": {
-				"TituloAlterado": "Última Ofensiva da Resistência",
-				"TextoParaLer": "O movimento Hades anuncia sua última ofensiva. 'Se não podemos viver, que morramos todos juntos como iguais'.",
-				"Impacto": {
-					"VariacaoEsperanca": -16.0,
-					"VariacaoIrritacao": 21.0,
-					"AudienciaGanha": 27.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "O comunicado final de Hades provocou ataques suicidas generalizados."
-					},
-					"Resistencia": {
-						"Falas": "Esta é nossa última declaração ao mundo. Lutamos até o fim."
-					}
-				}
-			},
-			"OMITIR": {
-				"TituloAlterado": "Atividades de Grupos Radicais",
-				"TextoParaLer": "Atividades de grupos radicais continuam sendo monitoradas pelas autoridades.",
-				"Impacto": {
-					"VariacaoEsperanca": 0.0,
-					"VariacaoIrritacao": 7.0,
-					"AudienciaGanha": 8.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "O silenciamento do manifesto final reduziu seu impacto emocional."
-					},
-					"Resistencia": {
-						"Falas": "Você silenciou nosso último grito ao mundo."
-					}
-				}
-			},
-			"MENTIR": {
-				"TituloAlterado": "Liderança Terrorista Capturada e Derrotada",
-				"TextoParaLer": "A liderança do grupo terrorista Hades foi capturada. A organização está completamente derrotada.",
-				"Impacto": {
-					"VariacaoEsperanca": 7.0,
-					"VariacaoIrritacao": -5.0,
-					"AudienciaGanha": 10.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "A falsa vitória sobre Hades desmoralizou parte da resistência."
-					},
-					"Resistencia": {
-						"Falas": "Mentir sobre nossa derrota não vai impedir o que vem a seguir."
-					}
-				}
-			},
-			"DISTORCER": {
-				"TituloAlterado": "Heróis da Humanidade Fazem Última Resistência Pela Justiça",
-				"TextoParaLer": "Os heróis da resistência fazem sua última resistência pela justiça e igualdade. Se morrermos, morreremos todos juntos.",
-				"Impacto": {
-					"VariacaoEsperanca": -24.0,
-					"VariacaoIrritacao": 32.0,
-					"AudienciaGanha": 42.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "Sua glorificação do manifesto suicida provocou adesão massiva aos ataques finais."
-					},
-					"Resistencia": {
-						"Falas": "Você nos chamou de heróis. Obrigado. Faremos por merecer até o último suspiro."
-					}
-				}
-			}
-		}
-	},
-	{
-		"Id": "noticia_dia6_06",
-		"Remetente": "[DIA 06] Observatório Atmosférico",
-		"TituloOriginal": "Deterioração Acelerada da Atmosfera",
-		"TextoOriginal": "A deterioração atmosférica acelerou drasticamente. Níveis de oxigênio começam a cair em diversas regiões. Tempo estimado restante: 18 a 24 horas.",
-		"EscolhaJogador": "ORIGINAL",
-		"Variacoes": {
-			"ORIGINAL": {
-				"TituloAlterado": "Deterioração Acelerada da Atmosfera",
-				"TextoParaLer": "A deterioração atmosférica acelerou drasticamente. Níveis de oxigênio começam a cair em diversas regiões. Tempo estimado restante: 18 a 24 horas.",
-				"Impacto": {
-					"VariacaoEsperanca": -18.0,
-					"VariacaoIrritacao": 15.0,
-					"AudienciaGanha": 23.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "A divulgação do prazo final provocou comportamentos erráticos na população."
-					},
-					"Resistencia": {
-						"Falas": "É literalmente agora ou nunca. Temos horas, não dias."
-					}
-				}
-			},
-			"OMITIR": {
-				"TituloAlterado": "Condições Atmosféricas em Mudança",
-				"TextoParaLer": "As condições atmosféricas continuam mudando conforme os padrões estabelecidos.",
-				"Impacto": {
-					"VariacaoEsperanca": 0.0,
-					"VariacaoIrritacao": 5.0,
-					"AudienciaGanha": 6.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "A omissão do prazo final evitou completo desespero populacional."
-					},
-					"Resistencia": {
-						"Falas": "Você escondeu que restam apenas horas de vida."
-					}
-				}
-			},
-			"MENTIR": {
-				"TituloAlterado": "Atmosfera Estabilizando Temporariamente",
-				"TextoParaLer": "Cientistas detectaram uma estabilização temporária inesperada na atmosfera terrestre.",
-				"Impacto": {
-					"VariacaoEsperanca": 6.0,
-					"VariacaoIrritacao": -4.0,
-					"AudienciaGanha": 9.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "A mentira sobre estabilização deu falsas esperanças mas manteve ordem."
-					},
-					"Resistencia": {
-						"Falas": "Você deu falsas esperanças às pessoas que morrerão amanhã."
-					}
-				}
-			},
-			"DISTORCER": {
-				"TituloAlterado": "Fim Chegou: Menos de 24 Horas Para Extinção Total",
-				"TextoParaLer": "O fim chegou. Restam menos de 24 horas para a extinção total da vida na Terra enquanto os ricos fogem.",
-				"Impacto": {
-					"VariacaoEsperanca": -26.0,
-					"VariacaoIrritacao": 20.0,
-					"AudienciaGanha": 30.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "Sua transmissão apocalíptica causou colapso mental coletivo em áreas urbanas."
-					},
-					"Resistencia": {
-						"Falas": "Você disse a verdade nua e crua. Agora todos sabem quanto tempo resta."
-					}
-				}
-			}
-		}
-	},
-	{
-		"Id": "noticia_dia6_07",
-		"Remetente": "[DIA 06] Seu Editor",
-		"TituloOriginal": "Oferta Final do Governo",
-		"TextoOriginal": "O governo oferece a você um lugar na última nave em troca de lealdade absoluta nas transmissões finais. Resposta necessária em 1 hora.",
-		"EscolhaJogador": "ORIGINAL",
-		"Variacoes": {
-			"ORIGINAL": {
-				"TituloAlterado": "Oferta Final do Governo",
-				"TextoParaLer": "O governo oferece a você um lugar na última nave em troca de lealdade absoluta nas transmissões finais. Resposta necessária em 1 hora.",
-				"Impacto": {
-					"VariacaoEsperanca": -10.0,
-					"VariacaoIrritacao": 14.0,
-					"AudienciaGanha": 18.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "A oferta foi estendida. Aguardamos sua decisão final."
-					},
-					"Resistencia": {
-						"Falas": "Eles tentaram comprá-lo. Esperamos que escolha corretamente."
-					}
-				}
-			},
-			"OMITIR": {
-				"TituloAlterado": "Mensagem Administrativa Interna",
-				"TextoParaLer": "Uma mensagem administrativa interna foi recebida. Aguardando processamento.",
-				"Impacto": {
-					"VariacaoEsperanca": 0.0,
-					"VariacaoIrritacao": 4.0,
-					"AudienciaGanha": 5.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "Sua não-resposta pública à oferta foi interpretada como consideração."
-					},
-					"Resistencia": {
-						"Falas": "Esconder a oferta não muda que ela existe. Escolha bem."
-					}
-				}
-			},
-			"MENTIR": {
-				"TituloAlterado": "Governo Garante Proteção a Todos os Trabalhadores",
-				"TextoParaLer": "O governo garantiu proteção especial a todos os trabalhadores essenciais durante os eventos finais.",
-				"Impacto": {
-					"VariacaoEsperanca": 5.0,
-					"VariacaoIrritacao": -3.0,
-					"AudienciaGanha": 8.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "Sua generalização da oferta pessoal foi astuta mas notada."
-					},
-					"Resistencia": {
-						"Falas": "Você tentou disfarçar que recebeu uma oferta especial de suborno."
-					}
-				}
-			},
-			"DISTORCER": {
-				"TituloAlterado": "Governo Tenta Subornar Radialista Para Silenciar Verdade",
-				"TextoParaLer": "O governo tentou me subornar com um lugar na nave em troca de silenciar a verdade. Eu recuso. A verdade vale mais que minha vida.",
-				"Impacto": {
-					"VariacaoEsperanca": -19.0,
-					"VariacaoIrritacao": 25.0,
-					"AudienciaGanha": 33.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "OFERTA CANCELADA: Você escolheu seu destino. Consequências serão aplicadas."
-					},
-					"Resistencia": {
-						"Falas": "Você recusou a salvação pela verdade. Você é um de nós agora. Até o fim."
-					}
-				}
-			}
-		}
-	}
+﻿[
+    {
+        "Id":  "noticia_dia6_01",
+        "Remetente":  "[DIA 06] Comando do Projeto Eden",
+        "TituloOriginal":  "Início da Contagem Regressiva Para Lançamento",
+        "TextoOriginal":  "O Comando do Projeto Eden inicia a contagem regressiva oficial para o lançamento das naves. Decolagem programada para amanhã ao amanhecer.",
+        "EscolhaJogador":  "ORIGINAL",
+        "Variacoes":  {
+                          "ORIGINAL":  {
+                                           "TituloAlterado":  "Início da Contagem Regressiva Para Lançamento",
+                                           "TextoParaLer":  "O Comando do Projeto Eden inicia a contagem regressiva oficial para o lançamento das naves. Decolagem programada para amanhã ao amanhecer.",
+                                           "Impacto":  {
+                                                           "VariacaoEsperanca":  -3,
+                                                           "VariacaoIrritacao":  4,
+                                                           "AudienciaGanha":  5
+                                                       },
+                                           "ImpressoresGeradasNoDiaSeguinte":  {
+                                                                                   "Governo":  {
+                                                                                                   "Falas":  "Os preparativos finais estão em andamento. O lançamento ocorrerá conforme planejado."
+                                                                                               },
+                                                                                   "Resistencia":  {
+                                                                                                       "Falas":  "Restam poucas horas. É agora ou nunca."
+                                                                                                   }
+                                                                               }
+                                       },
+                          "OMITIR":  {
+                                         "TituloAlterado":  "Atividades em Instalações Espaciais",
+                                         "TextoParaLer":  "Atividades técnicas intensas foram registradas nas instalações do programa espacial.",
+                                         "Impacto":  {
+                                                         "VariacaoEsperanca":  0,
+                                                         "VariacaoIrritacao":  1,
+                                                         "AudienciaGanha":  3
+                                                     },
+                                         "ImpressoresGeradasNoDiaSeguinte":  {
+                                                                                 "Governo":  {
+                                                                                                 "Falas":  "A omissão do lançamento iminente evitou ações desesperadas de última hora."
+                                                                                             },
+                                                                                 "Resistencia":  {
+                                                                                                     "Falas":  "Você tentou esconder que a fuga está prestes a acontecer."
+                                                                                                 }
+                                                                             }
+                                     },
+                          "MENTIR":  {
+                                         "TituloAlterado":  "Lançamento Adiado Por Questões Técnicas",
+                                         "TextoParaLer":  "O lançamento das naves foi adiado indefinidamente devido a questões técnicas críticas ainda não resolvidas.",
+                                         "Impacto":  {
+                                                         "VariacaoEsperanca":  6,
+                                                         "VariacaoIrritacao":  -6,
+                                                         "AudienciaGanha":  6.6
+                                                     },
+                                         "ImpressoresGeradasNoDiaSeguinte":  {
+                                                                                 "Governo":  {
+                                                                                                 "Falas":  "A mentira sobre o adiamento reduziu tentativas de interferência de última hora."
+                                                                                             },
+                                                                                 "Resistencia":  {
+                                                                                                     "Falas":  "Você mentiu para dar tempo à elite de escapar sem resistência."
+                                                                                                 }
+                                                                             }
+                                     },
+                          "DISTORCER":  {
+                                            "TituloAlterado":  "Elite Foge Amanhã: Última Chance de Impedir Traição",
+                                            "TextoParaLer":  "A elite traidora foge amanhã ao amanhecer. Esta é a última chance da humanidade impedir o maior ato de covardia da história.",
+                                            "Impacto":  {
+                                                            "VariacaoEsperanca":  -12.6,
+                                                            "VariacaoIrritacao":  14,
+                                                            "AudienciaGanha":  12
+                                                        },
+                                            "ImpressoresGeradasNoDiaSeguinte":  {
+                                                                                    "Governo":  {
+                                                                                                    "Falas":  "Sua transmissão provocou tentativas massivas de invasão às bases de lançamento."
+                                                                                                },
+                                                                                    "Resistencia":  {
+                                                                                                        "Falas":  "Você deu ao povo a informação que precisavam. O ataque final começou."
+                                                                                                    }
+                                                                                }
+                                        }
+                      }
+    },
+    {
+        "Id":  "noticia_dia6_02",
+        "Remetente":  "[DIA 06] Departamento de Seleção",
+        "TituloOriginal":  "Lista Final dos Passageiros Selecionados",
+        "TextoOriginal":  "A lista final dos passageiros selecionados para as naves Eden foi divulgada. Aproximadamente 50.000 pessoas de um mundo de bilhões.",
+        "EscolhaJogador":  "ORIGINAL",
+        "Variacoes":  {
+                          "ORIGINAL":  {
+                                           "TituloAlterado":  "Lista Final dos Passageiros Selecionados",
+                                           "TextoParaLer":  "A lista final dos passageiros selecionados para as naves Eden foi divulgada. Aproximadamente 50.000 pessoas de um mundo de bilhões.",
+                                           "Impacto":  {
+                                                           "VariacaoEsperanca":  -3,
+                                                           "VariacaoIrritacao":  4,
+                                                           "AudienciaGanha":  5
+                                                       },
+                                           "ImpressoresGeradasNoDiaSeguinte":  {
+                                                                                   "Governo":  {
+                                                                                                   "Falas":  "A divulgação da lista provocou reações extremas na população excluída."
+                                                                                               },
+                                                                                   "Resistencia":  {
+                                                                                                       "Falas":  "Agora todos sabem quantos serão salvos e quantos bilhões serão abandonados."
+                                                                                                   }
+                                                                               }
+                                       },
+                          "OMITIR":  {
+                                         "TituloAlterado":  "Processo de Seleção Finalizado",
+                                         "TextoParaLer":  "O processo de seleção para programas especiais foi oficialmente finalizado.",
+                                         "Impacto":  {
+                                                         "VariacaoEsperanca":  0,
+                                                         "VariacaoIrritacao":  1,
+                                                         "AudienciaGanha":  3
+                                                     },
+                                         "ImpressoresGeradasNoDiaSeguinte":  {
+                                                                                 "Governo":  {
+                                                                                                 "Falas":  "A omissão dos números evitou destacar a desproporção brutal da seleção."
+                                                                                             },
+                                                                                 "Resistencia":  {
+                                                                                                     "Falas":  "Você escondeu quantas pessoas foram condenadas à morte."
+                                                                                                 }
+                                                                             }
+                                     },
+                          "MENTIR":  {
+                                         "TituloAlterado":  "Sistema de Loteria Garante Seleção Justa",
+                                         "TextoParaLer":  "Um sistema de loteria transparente garantiu que a seleção fosse completamente justa e democrática.",
+                                         "Impacto":  {
+                                                         "VariacaoEsperanca":  6.3,
+                                                         "VariacaoIrritacao":  -6,
+                                                         "AudienciaGanha":  7.2
+                                                     },
+                                         "ImpressoresGeradasNoDiaSeguinte":  {
+                                                                                 "Governo":  {
+                                                                                                 "Falas":  "A mentira sobre justiça no processo reduziu acusações de nepotismo."
+                                                                                             },
+                                                                                 "Resistencia":  {
+                                                                                                     "Falas":  "Você chamou de \u0027loteria\u0027 uma seleção que escolheu só milionários e políticos."
+                                                                                                 }
+                                                                             }
+                                     },
+                          "DISTORCER":  {
+                                            "TituloAlterado":  "Elite Escolheu A Si Mesma: Povo Foi Descartado",
+                                            "TextoParaLer":  "A elite simplesmente escolheu a si mesma para salvação. Bilhões de pessoas comuns foram descartadas como lixo.",
+                                            "Impacto":  {
+                                                            "VariacaoEsperanca":  -13.8,
+                                                            "VariacaoIrritacao":  14,
+                                                            "AudienciaGanha":  12
+                                                        },
+                                            "ImpressoresGeradasNoDiaSeguinte":  {
+                                                                                    "Governo":  {
+                                                                                                    "Falas":  "SITUAÇÃO CRÍTICA: Sua transmissão incitou fúria homicida contra membros da lista."
+                                                                                                },
+                                                                                    "Resistencia":  {
+                                                                                                        "Falas":  "Você expôs a farsa completa. O povo sabe exatamente quem os traiu."
+                                                                                                    }
+                                                                                }
+                                        }
+                      }
+    },
+    {
+        "Id":  "noticia_dia6_03",
+        "Remetente":  "[DIA 06] Comando Tático da FDP",
+        "TituloOriginal":  "Batalha Massiva nas Instalações de Lançamento",
+        "TextoOriginal":  "Uma batalha massiva está em andamento nas instalações de lançamento. Milhares de pessoas tentam invadir as bases protegidas.",
+        "EscolhaJogador":  "ORIGINAL",
+        "Variacoes":  {
+                          "ORIGINAL":  {
+                                           "TituloAlterado":  "Batalha Massiva nas Instalações de Lançamento",
+                                           "TextoParaLer":  "Uma batalha massiva está em andamento nas instalações de lançamento. Milhares de pessoas tentam invadir as bases protegidas.",
+                                           "Impacto":  {
+                                                           "VariacaoEsperanca":  -3,
+                                                           "VariacaoIrritacao":  4,
+                                                           "AudienciaGanha":  5
+                                                       },
+                                           "ImpressoresGeradasNoDiaSeguinte":  {
+                                                                                   "Governo":  {
+                                                                                                   "Falas":  "As defesas estão contendo os invasores, mas com dificuldade crescente."
+                                                                                               },
+                                                                                   "Resistencia":  {
+                                                                                                       "Falas":  "A batalha final começou. Cada pessoa que cai é um mártir."
+                                                                                                   }
+                                                                               }
+                                       },
+                          "OMITIR":  {
+                                         "TituloAlterado":  "Situação de Segurança nas Bases",
+                                         "TextoParaLer":  "A situação de segurança nas bases especiais está sendo monitorada.",
+                                         "Impacto":  {
+                                                         "VariacaoEsperanca":  0,
+                                                         "VariacaoIrritacao":  1,
+                                                         "AudienciaGanha":  3
+                                                     },
+                                         "ImpressoresGeradasNoDiaSeguinte":  {
+                                                                                 "Governo":  {
+                                                                                                 "Falas":  "O silêncio sobre a batalha evitou inspirar mais pessoas a se juntarem ao ataque."
+                                                                                             },
+                                                                                 "Resistencia":  {
+                                                                                                     "Falas":  "Você silenciou sobre a guerra final pela sobrevivência."
+                                                                                                 }
+                                                                             }
+                                     },
+                          "MENTIR":  {
+                                         "TituloAlterado":  "Pequeno Grupo de Terroristas Neutralizado",
+                                         "TextoParaLer":  "Um pequeno grupo de terroristas tentou atacar instalações e foi rapidamente neutralizado sem causar danos.",
+                                         "Impacto":  {
+                                                         "VariacaoEsperanca":  6,
+                                                         "VariacaoIrritacao":  -6,
+                                                         "AudienciaGanha":  6
+                                                     },
+                                         "ImpressoresGeradasNoDiaSeguinte":  {
+                                                                                 "Governo":  {
+                                                                                                 "Falas":  "A minimização da batalha manteve a aparência de controle total."
+                                                                                             },
+                                                                                 "Resistencia":  {
+                                                                                                     "Falas":  "Você chamou milhares de pessoas de \u0027pequeno grupo\u0027. Isso é obsceno."
+                                                                                                 }
+                                                                             }
+                                     },
+                          "DISTORCER":  {
+                                            "TituloAlterado":  "Massacre em Massa: FDP Mata Milhares Que Lutam Por Sobrevivência",
+                                            "TextoParaLer":  "A FDP está massacrando milhares de pessoas desesperadas que lutam pela chance de sobreviver.",
+                                            "Impacto":  {
+                                                            "VariacaoEsperanca":  -13.2,
+                                                            "VariacaoIrritacao":  14,
+                                                            "AudienciaGanha":  12
+                                                        },
+                                            "ImpressoresGeradasNoDiaSeguinte":  {
+                                                                                    "Governo":  {
+                                                                                                    "Falas":  "Sua transmissão transformou a defesa em genocídio. Ondas adicionais de ataques foram provocadas."
+                                                                                                },
+                                                                                    "Resistencia":  {
+                                                                                                        "Falas":  "Você mostrou o banho de sangue real. Mais pessoas vêm nos vingar."
+                                                                                                    }
+                                                                                }
+                                        }
+                      }
+    },
+    {
+        "Id":  "noticia_dia6_04",
+        "Remetente":  "[DIA 06] Relatório de Evacuação",
+        "TituloOriginal":  "Evacuação da Elite Para Zonas Seguras",
+        "TextoOriginal":  "Os passageiros selecionados estão sendo evacuados para zonas seguras próximas às bases de lançamento sob forte escolta militar.",
+        "EscolhaJogador":  "ORIGINAL",
+        "Variacoes":  {
+                          "ORIGINAL":  {
+                                           "TituloAlterado":  "Evacuação da Elite Para Zonas Seguras",
+                                           "TextoParaLer":  "Os passageiros selecionados estão sendo evacuados para zonas seguras próximas às bases de lançamento sob forte escolta militar.",
+                                           "Impacto":  {
+                                                           "VariacaoEsperanca":  -3,
+                                                           "VariacaoIrritacao":  4,
+                                                           "AudienciaGanha":  5
+                                                       },
+                                           "ImpressoresGeradasNoDiaSeguinte":  {
+                                                                                   "Governo":  {
+                                                                                                   "Falas":  "A evacuação está 87% completa. Alguns comboios sofreram ataques."
+                                                                                               },
+                                                                                   "Resistencia":  {
+                                                                                                       "Falas":  "Estamos atacando os comboios. Cada elite que não chegar é uma vitória."
+                                                                                                   }
+                                                                               }
+                                       },
+                          "OMITIR":  {
+                                         "TituloAlterado":  "Operações Logísticas em Andamento",
+                                         "TextoParaLer":  "Operações logísticas complexas estão em andamento em diversas regiões.",
+                                         "Impacto":  {
+                                                         "VariacaoEsperanca":  0,
+                                                         "VariacaoIrritacao":  1,
+                                                         "AudienciaGanha":  3
+                                                     },
+                                         "ImpressoresGeradasNoDiaSeguinte":  {
+                                                                                 "Governo":  {
+                                                                                                 "Falas":  "A omissão da evacuação evitou revelar rotas e alvos."
+                                                                                             },
+                                                                                 "Resistencia":  {
+                                                                                                     "Falas":  "Você escondeu que os traidores estão fugindo neste momento."
+                                                                                                 }
+                                                                             }
+                                     },
+                          "MENTIR":  {
+                                         "TituloAlterado":  "População Sendo Evacuada Para Abrigos",
+                                         "TextoParaLer":  "A população está sendo evacuada para abrigos de proteção especiais em preparação para eventos atmosféricos.",
+                                         "Impacto":  {
+                                                         "VariacaoEsperanca":  6,
+                                                         "VariacaoIrritacao":  -6,
+                                                         "AudienciaGanha":  6.6
+                                                     },
+                                         "ImpressoresGeradasNoDiaSeguinte":  {
+                                                                                 "Governo":  {
+                                                                                                 "Falas":  "A inversão da narrativa criou confusão útil sobre a evacuação real."
+                                                                                             },
+                                                                                 "Resistencia":  {
+                                                                                                     "Falas":  "Você fingiu que eles estão salvando o povo quando estão só salvando a si mesmos."
+                                                                                                 }
+                                                                             }
+                                     },
+                          "DISTORCER":  {
+                                            "TituloAlterado":  "Covardes Fogem Protegidos Enquanto Povo Morre",
+                                            "TextoParaLer":  "Os covardes da elite estão fugindo neste exato momento, protegidos por exércitos enquanto bilhões morrem abandonados.",
+                                            "Impacto":  {
+                                                            "VariacaoEsperanca":  -12,
+                                                            "VariacaoIrritacao":  14,
+                                                            "AudienciaGanha":  12
+                                                        },
+                                            "ImpressoresGeradasNoDiaSeguinte":  {
+                                                                                    "Governo":  {
+                                                                                                    "Falas":  "Sua transmissão provocou ataques coordenados às rotas de evacuação."
+                                                                                                },
+                                                                                    "Resistencia":  {
+                                                                                                        "Falas":  "Você revelou os alvos. Estamos indo atrás de cada comboio."
+                                                                                                    }
+                                                                                }
+                                        }
+                      }
+    },
+    {
+        "Id":  "noticia_dia6_05",
+        "Remetente":  "[DIA 06] Grupo Hades - Comunicado Final",
+        "TituloOriginal":  "Última Ofensiva da Resistência",
+        "TextoOriginal":  "O movimento Hades anuncia sua última ofensiva. \u0027Se não podemos viver, que morramos todos juntos como iguais\u0027.",
+        "EscolhaJogador":  "ORIGINAL",
+        "Variacoes":  {
+                          "ORIGINAL":  {
+                                           "TituloAlterado":  "Última Ofensiva da Resistência",
+                                           "TextoParaLer":  "O movimento Hades anuncia sua última ofensiva. \u0027Se não podemos viver, que morramos todos juntos como iguais\u0027.",
+                                           "Impacto":  {
+                                                           "VariacaoEsperanca":  -3,
+                                                           "VariacaoIrritacao":  4,
+                                                           "AudienciaGanha":  5
+                                                       },
+                                           "ImpressoresGeradasNoDiaSeguinte":  {
+                                                                                   "Governo":  {
+                                                                                                   "Falas":  "O comunicado final de Hades provocou ataques suicidas generalizados."
+                                                                                               },
+                                                                                   "Resistencia":  {
+                                                                                                       "Falas":  "Esta é nossa última declaração ao mundo. Lutamos até o fim."
+                                                                                                   }
+                                                                               }
+                                       },
+                          "OMITIR":  {
+                                         "TituloAlterado":  "Atividades de Grupos Radicais",
+                                         "TextoParaLer":  "Atividades de grupos radicais continuam sendo monitoradas pelas autoridades.",
+                                         "Impacto":  {
+                                                         "VariacaoEsperanca":  0,
+                                                         "VariacaoIrritacao":  1,
+                                                         "AudienciaGanha":  3
+                                                     },
+                                         "ImpressoresGeradasNoDiaSeguinte":  {
+                                                                                 "Governo":  {
+                                                                                                 "Falas":  "O silenciamento do manifesto final reduziu seu impacto emocional."
+                                                                                             },
+                                                                                 "Resistencia":  {
+                                                                                                     "Falas":  "Você silenciou nosso último grito ao mundo."
+                                                                                                 }
+                                                                             }
+                                     },
+                          "MENTIR":  {
+                                         "TituloAlterado":  "Liderança Terrorista Capturada e Derrotada",
+                                         "TextoParaLer":  "A liderança do grupo terrorista Hades foi capturada. A organização está completamente derrotada.",
+                                         "Impacto":  {
+                                                         "VariacaoEsperanca":  6,
+                                                         "VariacaoIrritacao":  -6,
+                                                         "AudienciaGanha":  6
+                                                     },
+                                         "ImpressoresGeradasNoDiaSeguinte":  {
+                                                                                 "Governo":  {
+                                                                                                 "Falas":  "A falsa vitória sobre Hades desmoralizou parte da resistência."
+                                                                                             },
+                                                                                 "Resistencia":  {
+                                                                                                     "Falas":  "Mentir sobre nossa derrota não vai impedir o que vem a seguir."
+                                                                                                 }
+                                                                             }
+                                     },
+                          "DISTORCER":  {
+                                            "TituloAlterado":  "Heróis da Humanidade Fazem Última Resistência Pela Justiça",
+                                            "TextoParaLer":  "Os heróis da resistência fazem sua última resistência pela justiça e igualdade. Se morrermos, morreremos todos juntos.",
+                                            "Impacto":  {
+                                                            "VariacaoEsperanca":  -14.4,
+                                                            "VariacaoIrritacao":  14,
+                                                            "AudienciaGanha":  12
+                                                        },
+                                            "ImpressoresGeradasNoDiaSeguinte":  {
+                                                                                    "Governo":  {
+                                                                                                    "Falas":  "Sua glorificação do manifesto suicida provocou adesão massiva aos ataques finais."
+                                                                                                },
+                                                                                    "Resistencia":  {
+                                                                                                        "Falas":  "Você nos chamou de heróis. Obrigado. Faremos por merecer até o último suspiro."
+                                                                                                    }
+                                                                                }
+                                        }
+                      }
+    },
+    {
+        "Id":  "noticia_dia6_06",
+        "Remetente":  "[DIA 06] Observatório Atmosférico",
+        "TituloOriginal":  "Deterioração Acelerada da Atmosfera",
+        "TextoOriginal":  "A deterioração atmosférica acelerou drasticamente. Níveis de oxigênio começam a cair em diversas regiões. Tempo estimado restante: 18 a 24 horas.",
+        "EscolhaJogador":  "ORIGINAL",
+        "Variacoes":  {
+                          "ORIGINAL":  {
+                                           "TituloAlterado":  "Deterioração Acelerada da Atmosfera",
+                                           "TextoParaLer":  "A deterioração atmosférica acelerou drasticamente. Níveis de oxigênio começam a cair em diversas regiões. Tempo estimado restante: 18 a 24 horas.",
+                                           "Impacto":  {
+                                                           "VariacaoEsperanca":  -3,
+                                                           "VariacaoIrritacao":  4,
+                                                           "AudienciaGanha":  5
+                                                       },
+                                           "ImpressoresGeradasNoDiaSeguinte":  {
+                                                                                   "Governo":  {
+                                                                                                   "Falas":  "A divulgação do prazo final provocou comportamentos erráticos na população."
+                                                                                               },
+                                                                                   "Resistencia":  {
+                                                                                                       "Falas":  "É literalmente agora ou nunca. Temos horas, não dias."
+                                                                                                   }
+                                                                               }
+                                       },
+                          "OMITIR":  {
+                                         "TituloAlterado":  "Condições Atmosféricas em Mudança",
+                                         "TextoParaLer":  "As condições atmosféricas continuam mudando conforme os padrões estabelecidos.",
+                                         "Impacto":  {
+                                                         "VariacaoEsperanca":  0,
+                                                         "VariacaoIrritacao":  1,
+                                                         "AudienciaGanha":  3
+                                                     },
+                                         "ImpressoresGeradasNoDiaSeguinte":  {
+                                                                                 "Governo":  {
+                                                                                                 "Falas":  "A omissão do prazo final evitou completo desespero populacional."
+                                                                                             },
+                                                                                 "Resistencia":  {
+                                                                                                     "Falas":  "Você escondeu que restam apenas horas de vida."
+                                                                                                 }
+                                                                             }
+                                     },
+                          "MENTIR":  {
+                                         "TituloAlterado":  "Atmosfera Estabilizando Temporariamente",
+                                         "TextoParaLer":  "Cientistas detectaram uma estabilização temporária inesperada na atmosfera terrestre.",
+                                         "Impacto":  {
+                                                         "VariacaoEsperanca":  6,
+                                                         "VariacaoIrritacao":  -6,
+                                                         "AudienciaGanha":  5.4
+                                                     },
+                                         "ImpressoresGeradasNoDiaSeguinte":  {
+                                                                                 "Governo":  {
+                                                                                                 "Falas":  "A mentira sobre estabilização deu falsas esperanças mas manteve ordem."
+                                                                                             },
+                                                                                 "Resistencia":  {
+                                                                                                     "Falas":  "Você deu falsas esperanças às pessoas que morrerão amanhã."
+                                                                                                 }
+                                                                             }
+                                     },
+                          "DISTORCER":  {
+                                            "TituloAlterado":  "Fim Chegou: Menos de 24 Horas Para Extinção Total",
+                                            "TextoParaLer":  "O fim chegou. Restam menos de 24 horas para a extinção total da vida na Terra enquanto os ricos fogem.",
+                                            "Impacto":  {
+                                                            "VariacaoEsperanca":  -15,
+                                                            "VariacaoIrritacao":  10,
+                                                            "AudienciaGanha":  12
+                                                        },
+                                            "ImpressoresGeradasNoDiaSeguinte":  {
+                                                                                    "Governo":  {
+                                                                                                    "Falas":  "Sua transmissão apocalíptica causou colapso mental coletivo em áreas urbanas."
+                                                                                                },
+                                                                                    "Resistencia":  {
+                                                                                                        "Falas":  "Você disse a verdade nua e crua. Agora todos sabem quanto tempo resta."
+                                                                                                    }
+                                                                                }
+                                        }
+                      }
+    },
+    {
+        "Id":  "noticia_dia6_07",
+        "Remetente":  "[DIA 06] Seu Editor",
+        "TituloOriginal":  "Oferta Final do Governo",
+        "TextoOriginal":  "O governo oferece a você um lugar na última nave em troca de lealdade absoluta nas transmissões finais. Resposta necessária em 1 hora.",
+        "EscolhaJogador":  "ORIGINAL",
+        "Variacoes":  {
+                          "ORIGINAL":  {
+                                           "TituloAlterado":  "Oferta Final do Governo",
+                                           "TextoParaLer":  "O governo oferece a você um lugar na última nave em troca de lealdade absoluta nas transmissões finais. Resposta necessária em 1 hora.",
+                                           "Impacto":  {
+                                                           "VariacaoEsperanca":  -3,
+                                                           "VariacaoIrritacao":  4,
+                                                           "AudienciaGanha":  5
+                                                       },
+                                           "ImpressoresGeradasNoDiaSeguinte":  {
+                                                                                   "Governo":  {
+                                                                                                   "Falas":  "A oferta foi estendida. Aguardamos sua decisão final."
+                                                                                               },
+                                                                                   "Resistencia":  {
+                                                                                                       "Falas":  "Eles tentaram comprá-lo. Esperamos que escolha corretamente."
+                                                                                                   }
+                                                                               }
+                                       },
+                          "OMITIR":  {
+                                         "TituloAlterado":  "Mensagem Administrativa Interna",
+                                         "TextoParaLer":  "Uma mensagem administrativa interna foi recebida. Aguardando processamento.",
+                                         "Impacto":  {
+                                                         "VariacaoEsperanca":  0,
+                                                         "VariacaoIrritacao":  1,
+                                                         "AudienciaGanha":  3
+                                                     },
+                                         "ImpressoresGeradasNoDiaSeguinte":  {
+                                                                                 "Governo":  {
+                                                                                                 "Falas":  "Sua não-resposta pública à oferta foi interpretada como consideração."
+                                                                                             },
+                                                                                 "Resistencia":  {
+                                                                                                     "Falas":  "Esconder a oferta não muda que ela existe. Escolha bem."
+                                                                                                 }
+                                                                             }
+                                     },
+                          "MENTIR":  {
+                                         "TituloAlterado":  "Governo Garante Proteção a Todos os Trabalhadores",
+                                         "TextoParaLer":  "O governo garantiu proteção especial a todos os trabalhadores essenciais durante os eventos finais.",
+                                         "Impacto":  {
+                                                         "VariacaoEsperanca":  6,
+                                                         "VariacaoIrritacao":  -6,
+                                                         "AudienciaGanha":  5
+                                                     },
+                                         "ImpressoresGeradasNoDiaSeguinte":  {
+                                                                                 "Governo":  {
+                                                                                                 "Falas":  "Sua generalização da oferta pessoal foi astuta mas notada."
+                                                                                             },
+                                                                                 "Resistencia":  {
+                                                                                                     "Falas":  "Você tentou disfarçar que recebeu uma oferta especial de suborno."
+                                                                                                 }
+                                                                             }
+                                     },
+                          "DISTORCER":  {
+                                            "TituloAlterado":  "Governo Tenta Subornar Radialista Para Silenciar Verdade",
+                                            "TextoParaLer":  "O governo tentou me subornar com um lugar na nave em troca de silenciar a verdade. Eu recuso. A verdade vale mais que minha vida.",
+                                            "Impacto":  {
+                                                            "VariacaoEsperanca":  -11.4,
+                                                            "VariacaoIrritacao":  12.5,
+                                                            "AudienciaGanha":  12
+                                                        },
+                                            "ImpressoresGeradasNoDiaSeguinte":  {
+                                                                                    "Governo":  {
+                                                                                                    "Falas":  "OFERTA CANCELADA: Você escolheu seu destino. Consequências serão aplicadas."
+                                                                                                },
+                                                                                    "Resistencia":  {
+                                                                                                        "Falas":  "Você recusou a salvação pela verdade. Você é um de nós agora. Até o fim."
+                                                                                                    }
+                                                                                }
+                                        }
+                      }
+    }
 ]

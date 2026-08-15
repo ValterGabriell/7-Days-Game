@@ -8,37 +8,36 @@ namespace fiveyears3.Scripts.Globais
     public enum TipoFinal
     {
         Nenhum,
-        VitoriaGoverno,         // Audiência alta e lealdade/esperança do governo dominante no fim da campanha
-        VitoriaResistencia,     // Audiência alta e irritação/confiança da resistência dominante no fim da campanha
-        DemissaoAudienciaBaixa, // Perdeu relevância: audiência caiu abaixo do limite crítico
-        SobrevivenciaNeutro,    // Chegou ao fim da campanha mantendo o equilíbrio de forças
-        FimPrematuro            // Encerramento forçado por decisões ou flags narrativas diretas
+        RevolucaoHades,           // reputacao_hades: alta, reputacao_fdp: baixa
+        OrdemCorporativa,         // reputacao_hades: baixa, reputacao_fdp: alta
+        PazArmada,                // reputacao_hades: alta, reputacao_fdp: alta
+        CaosTotal,                // reputacao_hades: baixa, reputacao_fdp: baixa
+        DemissaoAudienciaBaixa,   // Audiência caiu abaixo do limite crítico (< 20%)
+        FugaSoloEden,             // Final narrativo via Flag/Decisão direta
+        FimPrematuro              // Encerramento forçado genérico
     }
 
     public partial class GerenciadorDeFinais : Node
     {
         public static GerenciadorDeFinais Instance { get; private set; }
 
-        /// <summary>
-        /// Evento disparado no exato instante em que o jogo chega ao fim.
-        /// </summary>
         public event Action<TipoFinal> FinalAlcancado;
 
-        /// <summary>
-        /// Armazena qual final foi acionado.
-        /// </summary>
         public TipoFinal FinalAtual { get; private set; } = TipoFinal.Nenhum;
 
-        /// <summary>
-        /// Indica se o jogo já chegou ao fim.
-        /// </summary>
         public bool JogoFinalizado => FinalAtual != TipoFinal.Nenhum;
 
         [Export]
         public int DiaFinalDaCampanha { get; set; } = 7;
 
         [Export]
-        public double LimiteAudienciaMinima { get; set; } = 5.0;
+        public double LimiteAudienciaMinima { get; set; } = 20.0;
+
+        [Export]
+        public string CaminhoCenaCreditos { get; set; } = "res://Cenas/Utilidades/Creditos.tscn";
+
+        [Export]
+        public string NomeSlotSave { get; set; } = "SLOT_1";
 
         public override void _EnterTree()
         {
@@ -112,12 +111,12 @@ namespace fiveyears3.Scripts.Globais
         {
             if (JogoFinalizado) return;
 
-            // Checa derrota imediata se a audiência cair abaixo do limite aceitável
+            // Derrota por perda de audiência crítica
             if (GerenciadorDeAudiencia.Instance != null)
             {
-                if (GerenciadorDeAudiencia.Instance.AudienciaAtual <= LimiteAudienciaMinima)
+                if (GerenciadorDeAudiencia.Instance.AudienciaAtual < LimiteAudienciaMinima)
                 {
-                    Log.Print($"[GerenciadorDeFinais] Audiência caiu abaixo de {LimiteAudienciaMinima}%. Disparando demissão!");
+                    Log.Print($"[GerenciadorDeFinais] Audiência caiu abaixo de {LimiteAudienciaMinima}%. Disparando Demissão!");
                     GatilharFinal(TipoFinal.DemissaoAudienciaBaixa);
                 }
             }
@@ -127,11 +126,11 @@ namespace fiveyears3.Scripts.Globais
         {
             if (JogoFinalizado) return;
 
-            // Mapeamento de gatilhos diretos de término via Flags Narrativas
+            // Exemplo de Gatilhos Diretos por Flags Narrativas
             switch (flag)
             {
                 case FlagNarrativa.RevoltaPopularIniciandoGovernoBateAPorta:
-                    // Exemplo de condição especial se necessário
+                    // Pode disparar um final antecipado por invadir a rádio, por exemplo
                     break;
             }
         }
@@ -140,12 +139,8 @@ namespace fiveyears3.Scripts.Globais
 
         #region Logica Principal de Decisao dos Finais
 
-        /// <summary>
-        /// Avalia as métricas globais e o dia atual para determinar se o jogo deve ser encerrado automaticamente.
-        /// </summary>
         public void VerificarCondicoesDeFimDeJogo(int diaAtual)
         {
-            Log.Print($"[GerenciadorDeFinais] Verificando condições de fim de jogo no Dia {diaAtual}...");
             if (JogoFinalizado) return;
 
             if (GerenciadorDeAudiencia.Instance == null)
@@ -154,55 +149,43 @@ namespace fiveyears3.Scripts.Globais
                 return;
             }
 
-            // 1. Checa se atingiu ou passou o último dia estipulado para a campanha
+            // Checa se encerrou o último dia de campanha
             if (diaAtual > DiaFinalDaCampanha)
             {
-                Log.Print($"[GerenciadorDeFinais] Dia final da campanha ({DiaFinalDaCampanha}) atingido. Avaliando clima social para determinar final...");
-                EstadoClimaSocial clima = GerenciadorDeAudiencia.Instance.ObterEstadoClimaSocial();
-                DeterminarFinalAoConcluirCampanha(clima);
-            }
-        }
-
-        private void DeterminarFinalAoConcluirCampanha(EstadoClimaSocial clima)
-        {
-            var aud = GerenciadorDeAudiencia.Instance;
-
-            switch (clima)
-            {
-                case EstadoClimaSocial.DominadoPeloGoverno:
-                    GatilharFinal(TipoFinal.VitoriaGoverno);
-                    break;
-
-                case EstadoClimaSocial.RevoltaPopular:
-                    GatilharFinal(TipoFinal.VitoriaResistencia);
-                    break;
-
-                case EstadoClimaSocial.AudienciaBaixa:
-                    GatilharFinal(TipoFinal.DemissaoAudienciaBaixa);
-                    break;
-
-                case EstadoClimaSocial.TensaoEquilibrada:
-                default:
-                    // Se não tiver clima social extremo, decide pelo balanço das confiabilidades
-                    if (aud.ConfiabilidadeGoverno >= 60.0)
-                    {
-                        GatilharFinal(TipoFinal.VitoriaGoverno);
-                    }
-                    else if (aud.ConfiabilidadeResistencia >= 60.0)
-                    {
-                        GatilharFinal(TipoFinal.VitoriaResistencia);
-                    }
-                    else
-                    {
-                        GatilharFinal(TipoFinal.SobrevivenciaNeutro);
-                    }
-                    break;
+                Log.Print($"[GerenciadorDeFinais] Dia final da campanha ({DiaFinalDaCampanha}) atingido. Avaliando Reputações...");
+                DeterminarFinalPorReputacao();
             }
         }
 
         /// <summary>
-        /// Dispara o encerramento do jogo com o tipo de final especificado, salvando o progresso e notificando os ouvintes.
+        /// Avalia as reputações de Hades e FDP para decidir entre os 4 Finais Principais do JSON.
         /// </summary>
+        private void DeterminarFinalPorReputacao()
+        {
+            var aud = GerenciadorDeAudiencia.Instance;
+
+            // Define reputação 'Alta' como >= 50
+            bool hadesAlta = aud.ConfiabilidadeResistencia >= 50.0;
+            bool fdpAlta = aud.ConfiabilidadeGoverno >= 50.0;
+
+            if (hadesAlta && !fdpAlta)
+            {
+                GatilharFinal(TipoFinal.RevolucaoHades);
+            }
+            else if (!hadesAlta && fdpAlta)
+            {
+                GatilharFinal(TipoFinal.OrdemCorporativa);
+            }
+            else if (hadesAlta && fdpAlta)
+            {
+                GatilharFinal(TipoFinal.PazArmada);
+            }
+            else // !hadesAlta && !fdpAlta
+            {
+                GatilharFinal(TipoFinal.CaosTotal);
+            }
+        }
+
         public void GatilharFinal(TipoFinal final)
         {
             if (JogoFinalizado) return;
@@ -210,23 +193,40 @@ namespace fiveyears3.Scripts.Globais
             FinalAtual = final;
             Log.Print($"[GerenciadorDeFinais] === FIM DE JOGO ALCANÇADO: {final} ===");
 
-            // Salva o estado final no save ativo se disponível
-            if (GerenciadorDeSave.Instance != null)
-            {
-                GerenciadorDeSave.Instance.ColetarDadosDosGerenciadores();
-                if (GerenciadorDeSave.Instance.SaveAtual != null)
-                {
-                    GerenciadorDeSave.Instance.SalvarJogo("SLOT_1", GerenciadorDeSave.Instance.SaveAtual);
-                }
-            }
+            // 1. Apaga o save do jogo finalizado
+            DeletarSaveDoJogo();
 
-            // Notifica UI, Cutscenes ou Gerenciadores de Cena
+            // 2. Notifica inscritos
             FinalAlcancado?.Invoke(final);
+
+            // 3. Muda para a cena de Créditos
+            CallDeferred(MethodName.TrocarParaCenaDeCreditos);
         }
 
-        /// <summary>
-        /// Reseta o estado do finalizador (utilizado ao iniciar um Novo Jogo).
-        /// </summary>
+        private void DeletarSaveDoJogo()
+        {
+            if (GerenciadorDeSave.Instance != null)
+            {
+                Log.Print($"[GerenciadorDeFinais] Apagando save do slot '{NomeSlotSave}' por conta do fim de jogo...");
+                GerenciadorDeSave.Instance.DeletarSave(NomeSlotSave);
+            }
+            else
+            {
+                Log.PrintErr("[GerenciadorDeFinais] Não foi possível apagar o save: GerenciadorDeSave.Instance é nulo!");
+            }
+        }
+
+        private void TrocarParaCenaDeCreditos()
+        {
+            Log.Print($"[GerenciadorDeFinais] Trocando cena para: {CaminhoCenaCreditos}");
+            Error err = GetTree().ChangeSceneToFile(CaminhoCenaCreditos);
+
+            if (err != Error.Ok)
+            {
+                Log.PrintErr($"[GerenciadorDeFinais] Erro ao carregar a cena de créditos ({CaminhoCenaCreditos}): {err}");
+            }
+        }
+
         public void ResetarFinais()
         {
             FinalAtual = TipoFinal.Nenhum;

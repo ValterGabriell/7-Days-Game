@@ -10,9 +10,9 @@
 				"TituloAlterado": "Triagem e Reorganização nos Postos de Migração Continental",
 				"TextoParaLer": "A FDP informa que cidadãos acima de 60 anos e portadores de enfermidades crônicas devem aguardar no Setor D antes do embarque prioritário nos trens de evacuação costeira.",
 				"Impacto": {
-					"VariacaoEsperanca": 2.0,
-					"VariacaoIrritacao": 1.0,
-					"AudienciaGanha": 6.0
+					"VariacaoEsperanca": 1.0,
+					"VariacaoIrritacao": 2.0,
+					"AudienciaGanha": 4.0
 				},
 				"ImpressoresGeradasNoDiaSeguinte": {
 					"Governo": {
@@ -28,7 +28,7 @@
 				"TextoParaLer": "A FDP informa que o cronograma de saídas dos comboios de transporte de passageiros sofreu adequações de horário devido ao avanço das águas.",
 				"Impacto": {
 					"VariacaoEsperanca": 0.0,
-					"VariacaoIrritacao": -2.0,
+					"VariacaoIrritacao": -1.0,
 					"AudienciaGanha": 2.0
 				},
 				"ImpressoresGeradasNoDiaSeguinte": {
@@ -44,9 +44,9 @@
 				"TituloAlterado": "Capacidade Ampliada: Todos Serão Evacuados do Litoral",
 				"TextoParaLer": "A FDP confirma que todos os cidadãos, independentemente de idade ou condição médica, terão assentos garantidos nos trens de evacuação.",
 				"Impacto": {
-					"VariacaoEsperanca": 15.0,
-					"VariacaoIrritacao": -12.0,
-					"AudienciaGanha": 12.0
+					"VariacaoEsperanca": 10.0,
+					"VariacaoIrritacao": -9.0,
+					"AudienciaGanha": 6.0
 				},
 				"ImpressoresGeradasNoDiaSeguinte": {
 					"Governo": {
@@ -61,9 +61,9 @@
 				"TituloAlterado": "FDP Inicia Descarte Humano nos Postos de Migração",
 				"TextoParaLer": "A FDP está separando idosos e doentes das famílias e enviando essas pessoas para setores de contenção enquanto os comboios privilegiam grupos considerados mais importantes.",
 				"Impacto": {
-					"VariacaoEsperanca": -18.0,
-					"VariacaoIrritacao": 25.0,
-					"AudienciaGanha": 22.0
+					"VariacaoEsperanca": -12.0,
+					"VariacaoIrritacao": 13.0,
+					"AudienciaGanha": 10.0
 				},
 				"ImpressoresGeradasNoDiaSeguinte": {
 					"Governo": {
@@ -87,9 +87,9 @@
 				"TituloAlterado": "Índice de Radiação UV e Alterações Solar-Atmosféricas",
 				"TextoParaLer": "O aumento temporário na atividade solar e a redução da camada de ozônio exigem o uso obrigatório de protetores térmicos nas horas de pico de insolação.",
 				"Impacto": {
-					"VariacaoEsperanca": -2.0,
-					"VariacaoIrritacao": 3.0,
-					"AudienciaGanha": 8.0
+					"VariacaoEsperanca": -1.0,
+					"VariacaoIrritacao": 2.0,
+					"AudienciaGanha": 4.0
 				},
 				"ImpressoresGeradasNoDiaSeguinte": {
 					"Governo": {
@@ -121,9 +121,9 @@
 				"TituloAlterado": "Estabilização Atmosférica e Recuperação do Ozônio",
 				"TextoParaLer": "Cientistas confirmam que a camada de ozônio começou a se regenerar e que as anomalias solares foram totalmente neutralizadas.",
 				"Impacto": {
-					"VariacaoEsperanca": 18.0,
-					"VariacaoIrritacao": -15.0,
-					"AudienciaGanha": 15.0
+					"VariacaoEsperanca": 11.0,
+					"VariacaoIrritacao": -10.0,
+					"AudienciaGanha": 7.0
 				},
 				"ImpressoresGeradasNoDiaSeguinte": {
 					"Governo": {
@@ -138,9 +138,9 @@
 				"TituloAlterado": "Atmosfera em Colapso: O Sol Está Destruindo a Terra",
 				"TextoParaLer": "A camada de ozônio está entrando em colapso e o aumento anormal da atividade solar tornou a superfície da Terra progressivamente hostil à vida.",
 				"Impacto": {
-					"VariacaoEsperanca": -25.0,
-					"VariacaoIrritacao": 30.0,
-					"AudienciaGanha": 25.0
+					"VariacaoEsperanca": -14.0,
+					"VariacaoIrritacao": 14.0,
+					"AudienciaGanha": 11.0
 				},
 				"ImpressoresGeradasNoDiaSeguinte": {
 					"Governo": {
@@ -164,9 +164,9 @@
 				"TituloAlterado": "Atualização do Preço da Ração Sintética",
 				"TextoParaLer": "O preço da ração sintética sofrerá reajuste temporário devido às dificuldades logísticas e à redução da produção agrícola.",
 				"Impacto": {
-					"VariacaoEsperanca": -3.0,
-					"VariacaoIrritacao": 5.0,
-					"AudienciaGanha": 7.0
+					"VariacaoEsperanca": -2.0,
+					"VariacaoIrritacao": 3.0,
+					"AudienciaGanha": 4.0
 				},
 				"ImpressoresGeradasNoDiaSeguinte": {
 					"Governo": {
@@ -198,9 +198,9 @@
 				"TituloAlterado": "Redução no Preço dos Alimentos Sintéticos",
 				"TextoParaLer": "O governo anuncia que a reorganização da produção permitirá uma redução imediata nos preços dos alimentos sintéticos.",
 				"Impacto": {
-					"VariacaoEsperanca": 12.0,
-					"VariacaoIrritacao": -10.0,
-					"AudienciaGanha": 10.0
+					"VariacaoEsperanca": 9.0,
+					"VariacaoIrritacao": -8.0,
+					"AudienciaGanha": 6.0
 				},
 				"ImpressoresGeradasNoDiaSeguinte": {
 					"Governo": {
@@ -215,9 +215,9 @@
 				"TituloAlterado": "Governo Confirma Escassez Alimentar e Colapso dos Mercados",
 				"TextoParaLer": "Os estoques alimentares estão próximos do fim e o governo não possui capacidade para garantir o abastecimento das cidades.",
 				"Impacto": {
-					"VariacaoEsperanca": -15.0,
-					"VariacaoIrritacao": 22.0,
-					"AudienciaGanha": 18.0
+					"VariacaoEsperanca": -11.0,
+					"VariacaoIrritacao": 12.0,
+					"AudienciaGanha": 9.0
 				},
 				"ImpressoresGeradasNoDiaSeguinte": {
 					"Governo": {
@@ -241,9 +241,9 @@
 				"TituloAlterado": "Expansão dos Bunkers do Subsolo",
 				"TextoParaLer": "Novas áreas subterrâneas estão sendo construídas para ampliar a capacidade de proteção das regiões metropolitanas.",
 				"Impacto": {
-					"VariacaoEsperanca": 4.0,
+					"VariacaoEsperanca": 3.0,
 					"VariacaoIrritacao": 1.0,
-					"AudienciaGanha": 5.0
+					"AudienciaGanha": 3.0
 				},
 				"ImpressoresGeradasNoDiaSeguinte": {
 					"Governo": {
@@ -275,9 +275,9 @@
 				"TituloAlterado": "Bunkers Garantirão Proteção para Toda a População",
 				"TextoParaLer": "O governo confirma que a expansão dos bunkers permitirá proteger toda a população das regiões metropolitanas.",
 				"Impacto": {
-					"VariacaoEsperanca": 10.0,
-					"VariacaoIrritacao": -8.0,
-					"AudienciaGanha": 9.0
+					"VariacaoEsperanca": 8.0,
+					"VariacaoIrritacao": -7.0,
+					"AudienciaGanha": 6.0
 				},
 				"ImpressoresGeradasNoDiaSeguinte": {
 					"Governo": {
@@ -292,9 +292,9 @@
 				"TituloAlterado": "Bunkers Secretos Estão Sendo Construídos para a Elite",
 				"TextoParaLer": "As autoridades estão construindo abrigos subterrâneos secretos destinados exclusivamente aos grupos privilegiados enquanto a população permanece exposta.",
 				"Impacto": {
-					"VariacaoEsperanca": -12.0,
-					"VariacaoIrritacao": 20.0,
-					"AudienciaGanha": 16.0
+					"VariacaoEsperanca": -10.0,
+					"VariacaoIrritacao": 11.0,
+					"AudienciaGanha": 9.0
 				},
 				"ImpressoresGeradasNoDiaSeguinte": {
 					"Governo": {
@@ -320,7 +320,7 @@
 				"Impacto": {
 					"VariacaoEsperanca": 1.0,
 					"VariacaoIrritacao": 2.0,
-					"AudienciaGanha": 5.0
+					"AudienciaGanha": 3.0
 				},
 				"ImpressoresGeradasNoDiaSeguinte": {
 					"Governo": {
@@ -352,9 +352,9 @@
 				"TituloAlterado": "Cadastro Garantirá Prioridade de Evacuação às Famílias",
 				"TextoParaLer": "A Defesa Civil confirma que as famílias cadastradas terão prioridade automática nos futuros processos de evacuação.",
 				"Impacto": {
-					"VariacaoEsperanca": 9.0,
+					"VariacaoEsperanca": 8.0,
 					"VariacaoIrritacao": -7.0,
-					"AudienciaGanha": 8.0
+					"AudienciaGanha": 6.0
 				},
 				"ImpressoresGeradasNoDiaSeguinte": {
 					"Governo": {
@@ -369,9 +369,9 @@
 				"TituloAlterado": "Governo Cria Banco de Dados para Selecionar Quem Será Salvo",
 				"TextoParaLer": "A Defesa Civil está reunindo informações médicas e familiares para selecionar quais cidadãos terão prioridade quando os recursos de evacuação começarem a desaparecer.",
 				"Impacto": {
-					"VariacaoEsperanca": -15.0,
-					"VariacaoIrritacao": 24.0,
-					"AudienciaGanha": 20.0
+					"VariacaoEsperanca": -12.0,
+					"VariacaoIrritacao": 13.0,
+					"AudienciaGanha": 10.0
 				},
 				"ImpressoresGeradasNoDiaSeguinte": {
 					"Governo": {
@@ -396,8 +396,8 @@
 				"TextoParaLer": "Intervenções emergenciais na rede elétrica poderão provocar interrupções temporárias durante os períodos de maior consumo.",
 				"Impacto": {
 					"VariacaoEsperanca": -1.0,
-					"VariacaoIrritacao": 3.0,
-					"AudienciaGanha": 5.0
+					"VariacaoIrritacao": 2.0,
+					"AudienciaGanha": 3.0
 				},
 				"ImpressoresGeradasNoDiaSeguinte": {
 					"Governo": {
@@ -429,9 +429,9 @@
 				"TituloAlterado": "Estabilidade Total do Sistema Elétrico",
 				"TextoParaLer": "A Agência Nacional de Energia confirma que o sistema elétrico permanece completamente estável e sem previsão de interrupções.",
 				"Impacto": {
-					"VariacaoEsperanca": 8.0,
-					"VariacaoIrritacao": -7.0,
-					"AudienciaGanha": 8.0
+					"VariacaoEsperanca": 7.0,
+					"VariacaoIrritacao": -6.0,
+					"AudienciaGanha": 5.0
 				},
 				"ImpressoresGeradasNoDiaSeguinte": {
 					"Governo": {
@@ -446,9 +446,9 @@
 				"TituloAlterado": "Colapso da Rede Elétrica é Iminente",
 				"TextoParaLer": "A rede elétrica nacional está à beira do colapso e grandes regiões poderão permanecer sem energia por tempo indeterminado.",
 				"Impacto": {
-					"VariacaoEsperanca": -13.0,
-					"VariacaoIrritacao": 18.0,
-					"AudienciaGanha": 17.0
+					"VariacaoEsperanca": -10.0,
+					"VariacaoIrritacao": 10.0,
+					"AudienciaGanha": 9.0
 				},
 				"ImpressoresGeradasNoDiaSeguinte": {
 					"Governo": {
@@ -472,9 +472,9 @@
 				"TituloAlterado": "Campanha Nacional de Vacinação Obrigatória",
 				"TextoParaLer": "A vacinação obrigatória será iniciada nas regiões de maior concentração populacional como medida preventiva contra surtos provocados pela deterioração das condições ambientais.",
 				"Impacto": {
-					"VariacaoEsperanca": 2.0,
-					"VariacaoIrritacao": 4.0,
-					"AudienciaGanha": 7.0
+					"VariacaoEsperanca": 1.0,
+					"VariacaoIrritacao": 3.0,
+					"AudienciaGanha": 4.0
 				},
 				"ImpressoresGeradasNoDiaSeguinte": {
 					"Governo": {
@@ -506,9 +506,9 @@
 				"TituloAlterado": "Vacinação Voluntária e Sem Restrições",
 				"TextoParaLer": "O Ministério da Saúde esclarece que a vacinação será voluntária e não haverá qualquer penalidade para quem decidir não participar.",
 				"Impacto": {
-					"VariacaoEsperanca": 7.0,
-					"VariacaoIrritacao": -8.0,
-					"AudienciaGanha": 9.0
+					"VariacaoEsperanca": 6.0,
+					"VariacaoIrritacao": -6.0,
+					"AudienciaGanha": 5.0
 				},
 				"ImpressoresGeradasNoDiaSeguinte": {
 					"Governo": {
@@ -523,9 +523,9 @@
 				"TituloAlterado": "Governo Impõe Vacinação Forçada à População",
 				"TextoParaLer": "O governo determinou vacinação forçada em massa e autorizou medidas de contenção contra cidadãos que se recusarem.",
 				"Impacto": {
-					"VariacaoEsperanca": -10.0,
-					"VariacaoIrritacao": 25.0,
-					"AudienciaGanha": 21.0
+					"VariacaoEsperanca": -9.0,
+					"VariacaoIrritacao": 12.0,
+					"AudienciaGanha": 10.0
 				},
 				"ImpressoresGeradasNoDiaSeguinte": {
 					"Governo": {

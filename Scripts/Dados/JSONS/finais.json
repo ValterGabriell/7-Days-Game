@@ -16,7 +16,7 @@
         "reputacao_hades": "baixa",
         "reputacao_fdp": "alta"
       },
-      "descricao": "Suas transmissões distorceram e silenciaram as intenções do Hades, pintando-os apenas como terroristas sanguinários. A FDP massacrou os rebeldes com apoio da população manipulara. O controle estatal/corporativo sobre a informação é total, e você foi promovido a Chefe Oficial de Propaganda da FDP."
+      "descricao": "Suas transmissões distorceram e silenciaram as intenções do Hades, pintando-os apenas como terroristas sanguinários. A FDP massacrou os rebeldes com apoio da população manipulada. O controle estatal/corporativo sobre a informação é total, e você foi promovido a Chefe Oficial de Propaganda da FDP."
     },
     {
       "id": "paz_armada",
@@ -25,7 +25,7 @@
         "reputacao_hades": "alta",
         "reputacao_fdp": "alta"
       },
-      "descricao": "Ao manobrar as notícias com maestria, você conseguiu agradar ambos os lados sem se comprometer inteiramente. Hades e FDP estabeleceram um trégua tensa e não declarada. Você se tornou o intermediário de informação mais influente e perigoso da cidade, temido e respeitado por ambas as facções."
+      "descricao": "Ao manobrar as notícias com maestria, você conseguiu agradar ambos os lados sem se comprometer inteiramente. Hades e FDP estabeleceram uma trégua tensa e não declarada. Você se tornou o intermediário de informação mais influente e perigoso da cidade, temido e respeitado por ambas as facções."
     },
     {
       "id": "caos_total",
@@ -35,6 +35,22 @@
         "reputacao_fdp": "baixa"
       },
       "descricao": "Suas mentiras, omissões e manipulações foram descobertas por ambas as partes. Hades e FDP perderam a confiança na imprensa e se chocaram em um conflito aberto, sangrento e sem regras. A cidade virou ruínas, o sinal da rádio caiu e você agora precisa fugir para sobreviver à caçada liderada pelas duas facções."
+    },
+    {
+      "id": "demissao_audiencia_baixa",
+      "nome": "O Esquecimento (Descarte do Sistema)",
+      "requisitos": {
+        "audiencia": "critica"
+      },
+      "descricao": "Ninguém mais escuta o seu canal. Sua falta de alcance fez a FDP e a Hades considerarem sua estação irrelevante. Você foi sumariamente demitido e substituído por um operador automático. Sem proteção ou recursos, você aguarda o fim do mundo no completo silêncio das ruas."
+    },
+    {
+      "id": "fuga_solo_eden",
+      "nome": "O Bilhete de Ouro (Salvação Egoísta)",
+      "requisitos": {
+        "decisao_narrativa": "aceitou_barganha_fdp"
+      },
+      "descricao": "Você garantiu sua vaga a bordo da Eden 5 silenciando as denúncias mais graves contra a FDP. Enquanto os motores da nave aceleram rumo a Alpha Centauri, você olha pela janela e vê a Terra morrer abaixo. Você sobreviveu, mas ao custo de carregar a culpa de milhões de almas deixadas para trás."
     }
   ]
 }

@@ -1,541 +1,541 @@
-[
-	{
-		"Id": "noticia_dia3_01",
-		"Remetente": "[DIA 03] Fonte Anônima - Vazamento",
-		"TituloOriginal": "Documentos Revelam Projeto de Evacuação Seletiva",
-		"TextoOriginal": "Documentos vazados revelam a existência do Projeto Árvore da Vida, que prevê a construção de naves para evacuação de indivíduos selecionados para Alpha Centauri.",
-		"EscolhaJogador": "ORIGINAL",
-		"Variacoes": {
-			"ORIGINAL": {
-				"TituloAlterado": "Documentos Revelam Projeto de Evacuação Seletiva",
-				"TextoParaLer": "Documentos vazados revelam a existência do Projeto Árvore da Vida, que prevê a construção de naves para evacuação de indivíduos selecionados para Alpha Centauri.",
-				"Impacto": {
-					"VariacaoEsperanca": -8.0,
-					"VariacaoIrritacao": 12.0,
-					"AudienciaGanha": 15.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "ALERTA DE SEGURANÇA\n\nA divulgação de informações classificadas comprometeu a ordem pública."
-					},
-					"Resistencia": {
-						"Falas": "A verdade começou a vir à tona. A população precisa saber que estão sendo abandonados."
-					}
-				}
-			},
-			"OMITIR": {
-				"TituloAlterado": "Circulação de Documentos Não Verificados",
-				"TextoParaLer": "Documentos de origem desconhecida estão circulando pela rede. As autoridades recomendam cautela com informações não oficiais.",
-				"Impacto": {
-					"VariacaoEsperanca": 0.0,
-					"VariacaoIrritacao": 3.0,
-					"AudienciaGanha": 4.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "A censura agradece pela contenção da divulgação de informações sensíveis."
-					},
-					"Resistencia": {
-						"Falas": "Você teve a chance de expor a verdade e escolheu proteger os opressores."
-					}
-				}
-			},
-			"MENTIR": {
-				"TituloAlterado": "Documentos Falsos Desmentidos por Autoridades",
-				"TextoParaLer": "As autoridades confirmam que os documentos sobre um suposto projeto de evacuação são completamente falsos e fabricados por agitadores.",
-				"Impacto": {
-					"VariacaoEsperanca": 7.0,
-					"VariacaoIrritacao": -5.0,
-					"AudienciaGanha": 9.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "Sua colaboração em desacreditar os vazamentos foi fundamental para manter a ordem."
-					},
-					"Resistencia": {
-						"Falas": "Você está diretamente ajudando a esconder a verdade da população condenada."
-					}
-				}
-			},
-			"DISTORCER": {
-				"TituloAlterado": "Elite Planeja Abandonar a Humanidade em Naves Secretas",
-				"TextoParaLer": "A elite global construiu naves de evacuação em segredo, planejando abandonar bilhões de pessoas para morrer na Terra enquanto fogem para Alpha Centauri.",
-				"Impacto": {
-					"VariacaoEsperanca": -15.0,
-					"VariacaoIrritacao": 20.0,
-					"AudienciaGanha": 25.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "ADVERTÊNCIA SEVERA: Sua transmissão incitou manifestações violentas em diversos setores."
-					},
-					"Resistencia": {
-						"Falas": "Excelente trabalho. A população está começando a entender a traição que sofreu."
-					}
-				}
-			}
-		}
-	},
-	{
-		"Id": "noticia_dia3_02",
-		"Remetente": "[DIA 03] Ministério da Ciência e Tecnologia",
-		"TituloOriginal": "Declaração Oficial sobre o Projeto Árvore da Vida",
-		"TextoOriginal": "O governo confirma a existência do Projeto Árvore da Vida, descrevendo-o como uma iniciativa de preservação da espécie humana em caráter emergencial.",
-		"EscolhaJogador": "ORIGINAL",
-		"Variacoes": {
-			"ORIGINAL": {
-				"TituloAlterado": "Declaração Oficial sobre o Projeto Árvore da Vida",
-				"TextoParaLer": "O governo confirma a existência do Projeto Árvore da Vida, descrevendo-o como uma iniciativa de preservação da espécie humana em caráter emergencial.",
-				"Impacto": {
-					"VariacaoEsperanca": -5.0,
-					"VariacaoIrritacao": 8.0,
-					"AudienciaGanha": 12.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "A divulgação oficial ajudou a estabelecer a narrativa controlada do projeto."
-					},
-					"Resistencia": {
-						"Falas": "Pelo menos a população agora conhece a farsa que chamam de 'preservação da espécie'."
-					}
-				}
-			},
-			"OMITIR": {
-				"TituloAlterado": "Nota Técnica do Ministério da Ciência",
-				"TextoParaLer": "O Ministério emitiu uma nota técnica sobre projetos em andamento relacionados à pesquisa espacial.",
-				"Impacto": {
-					"VariacaoEsperanca": 1.0,
-					"VariacaoIrritacao": 2.0,
-					"AudienciaGanha": 3.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "A suavização da declaração evitou reações mais intensas da população."
-					},
-					"Resistencia": {
-						"Falas": "Você está diluindo informações críticas que a população merece conhecer."
-					}
-				}
-			},
-			"MENTIR": {
-				"TituloAlterado": "Projeto Árvore da Vida Incluirá Toda a População",
-				"TextoParaLer": "O governo esclarece que o Projeto Árvore da Vida está sendo desenvolvido para transportar toda a população em naves sucessivas para Alpha Centauri.",
-				"Impacto": {
-					"VariacaoEsperanca": 12.0,
-					"VariacaoIrritacao": -10.0,
-					"AudienciaGanha": 14.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "A narrativa otimista acalmou a população e evitou distúrbios imediatos."
-					},
-					"Resistencia": {
-						"Falas": "Você está criando falsas esperanças em pessoas que já foram sentenciadas à morte."
-					}
-				}
-			},
-			"DISTORCER": {
-				"TituloAlterado": "Governo Admite Seleção Arbitrária dos Privilegiados",
-				"TextoParaLer": "O governo finalmente admitiu que apenas uma fração da elite será salva, enquanto bilhões de pessoas comuns foram condenadas a morrer na Terra.",
-				"Impacto": {
-					"VariacaoEsperanca": -12.0,
-					"VariacaoIrritacao": 18.0,
-					"AudienciaGanha": 20.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "Sua interpretação maliciosa da declaração oficial provocou tumultos urbanos generalizados."
-					},
-					"Resistencia": {
-						"Falas": "A população está despertando para a realidade da sua situação graças a você."
-					}
-				}
-			}
-		}
-	},
-	{
-		"Id": "noticia_dia3_03",
-		"Remetente": "[DIA 03] Departamento de Finanças Globais",
-		"TituloOriginal": "Realocação de Recursos para Projetos Prioritários",
-		"TextoOriginal": "O Departamento de Finanças informa que recursos anteriormente destinados a infraestrutura civil foram realocados para projetos científicos de alta prioridade.",
-		"EscolhaJogador": "ORIGINAL",
-		"Variacoes": {
-			"ORIGINAL": {
-				"TituloAlterado": "Realocação de Recursos para Projetos Prioritários",
-				"TextoParaLer": "Recursos anteriormente destinados a infraestrutura civil foram realocados para projetos científicos de alta prioridade.",
-				"Impacto": {
-					"VariacaoEsperanca": -4.0,
-					"VariacaoIrritacao": 6.0,
-					"AudienciaGanha": 8.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "A divulgação transparente da realocação foi processada sem grandes incidentes."
-					},
-					"Resistencia": {
-						"Falas": "A população descobriu que os recursos que poderiam salvá-los foram desviados."
-					}
-				}
-			},
-			"OMITIR": {
-				"TituloAlterado": "Ajustes no Orçamento Nacional",
-				"TextoParaLer": "O Departamento de Finanças realizou ajustes no orçamento nacional para o período vigente.",
-				"Impacto": {
-					"VariacaoEsperanca": 0.0,
-					"VariacaoIrritacao": 1.0,
-					"AudienciaGanha": 2.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "A omissão de detalhes evitou questionamentos sobre o destino dos recursos."
-					},
-					"Resistencia": {
-						"Falas": "Você escondeu informações sobre o desvio de recursos da população."
-					}
-				}
-			},
-			"MENTIR": {
-				"TituloAlterado": "Investimentos Reforçados em Infraestrutura Civil",
-				"TextoParaLer": "O Departamento de Finanças anuncia investimentos reforçados em infraestrutura civil e programas de assistência à população.",
-				"Impacto": {
-					"VariacaoEsperanca": 8.0,
-					"VariacaoIrritacao": -6.0,
-					"AudienciaGanha": 10.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "A narrativa positiva manteve a população confiante nas instituições."
-					},
-					"Resistencia": {
-						"Falas": "Você mentiu descaradamente sobre recursos que nunca chegarão às pessoas."
-					}
-				}
-			},
-			"DISTORCER": {
-				"TituloAlterado": "Bilhões Desviados das Vítimas para Construir Naves da Elite",
-				"TextoParaLer": "Bilhões em recursos que deveriam ser usados para ajudar a população foram desviados para construir as naves de fuga da elite privilegiada.",
-				"Impacto": {
-					"VariacaoEsperanca": -10.0,
-					"VariacaoIrritacao": 16.0,
-					"AudienciaGanha": 18.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "Sua transmissão incitou protestos violentos contra edifícios governamentais."
-					},
-					"Resistencia": {
-						"Falas": "A população agora entende exatamente como foi traída pelos governantes."
-					}
-				}
-			}
-		}
-	},
-	{
-		"Id": "noticia_dia3_04",
-		"Remetente": "[DIA 03] Observadores Independentes",
-		"TituloOriginal": "Manifestações Espontâneas em Diversas Cidades",
-		"TextoOriginal": "Manifestações espontâneas foram registradas em diversas cidades após a divulgação de informações sobre projetos de evacuação seletiva.",
-		"EscolhaJogador": "ORIGINAL",
-		"Variacoes": {
-			"ORIGINAL": {
-				"TituloAlterado": "Manifestações Espontâneas em Diversas Cidades",
-				"TextoParaLer": "Manifestações espontâneas foram registradas em diversas cidades após a divulgação de informações sobre projetos de evacuação seletiva.",
-				"Impacto": {
-					"VariacaoEsperanca": -6.0,
-					"VariacaoIrritacao": 9.0,
-					"AudienciaGanha": 11.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "As manifestações foram controladas pelas forças de segurança com uso moderado de força."
-					},
-					"Resistencia": {
-						"Falas": "O povo está começando a se organizar e exigir respostas."
-					}
-				}
-			},
-			"OMITIR": {
-				"TituloAlterado": "Aglomerações Registradas em Centros Urbanos",
-				"TextoParaLer": "Aglomerações foram registradas em alguns centros urbanos durante o dia de hoje.",
-				"Impacto": {
-					"VariacaoEsperanca": 0.0,
-					"VariacaoIrritacao": 2.0,
-					"AudienciaGanha": 3.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "A minimização dos eventos ajudou a evitar o efeito de contágio das manifestações."
-					},
-					"Resistencia": {
-						"Falas": "Você está silenciando a voz do povo que luta por justiça."
-					}
-				}
-			},
-			"MENTIR": {
-				"TituloAlterado": "População Apoia Medidas Governamentais",
-				"TextoParaLer": "A população demonstrou apoio às medidas governamentais através de concentrações pacíficas em diversas cidades.",
-				"Impacto": {
-					"VariacaoEsperanca": 9.0,
-					"VariacaoIrritacao": -7.0,
-					"AudienciaGanha": 8.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "A inversão da narrativa foi extremamente eficaz em deslegitimar os protestos."
-					},
-					"Resistencia": {
-						"Falas": "Você transformou gritos de revolta em manifestações de apoio. Isso é traição pura."
-					}
-				}
-			},
-			"DISTORCER": {
-				"TituloAlterado": "Revoltas Urbanas Explodem Contra a Traição da Elite",
-				"TextoParaLer": "Revoltas violentas explodiram em dezenas de cidades à medida que a população descobre a extensão da traição dos governantes.",
-				"Impacto": {
-					"VariacaoEsperanca": -14.0,
-					"VariacaoIrritacao": 19.0,
-					"AudienciaGanha": 22.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "ALERTA CRÍTICO: Sua transmissão amplificou os distúrbios civis de forma perigosa."
-					},
-					"Resistencia": {
-						"Falas": "A revolta está se espalhando. Continue expondo a verdade."
-					}
-				}
-			}
-		}
-	},
-	{
-		"Id": "noticia_dia3_05",
-		"Remetente": "[DIA 03] Comando da FDP",
-		"TituloOriginal": "Reforço da Segurança em Instalações Estratégicas",
-		"TextoOriginal": "A FDP anuncia o reforço da segurança em instalações estratégicas e centros de pesquisa em resposta a ameaças de grupos extremistas.",
-		"EscolhaJogador": "ORIGINAL",
-		"Variacoes": {
-			"ORIGINAL": {
-				"TituloAlterado": "Reforço da Segurança em Instalações Estratégicas",
-				"TextoParaLer": "A FDP anuncia o reforço da segurança em instalações estratégicas e centros de pesquisa em resposta a ameaças de grupos extremistas.",
-				"Impacto": {
-					"VariacaoEsperanca": 2.0,
-					"VariacaoIrritacao": 5.0,
-					"AudienciaGanha": 7.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "O reforço de segurança foi implementado sem grandes incidentes."
-					},
-					"Resistencia": {
-						"Falas": "Eles estão protegendo as naves que construíram com o dinheiro do povo."
-					}
-				}
-			},
-			"OMITIR": {
-				"TituloAlterado": "Atualização dos Protocolos de Segurança",
-				"TextoParaLer": "Os protocolos de segurança em instalações governamentais foram atualizados.",
-				"Impacto": {
-					"VariacaoEsperanca": 0.0,
-					"VariacaoIrritacao": 1.0,
-					"AudienciaGanha": 2.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "A divulgação discreta evitou chamar atenção para as instalações sensíveis."
-					},
-					"Resistencia": {
-						"Falas": "Você ocultou informações sobre a militarização dos centros de construção das naves."
-					}
-				}
-			},
-			"MENTIR": {
-				"TituloAlterado": "Segurança Reforçada para Proteger a População",
-				"TextoParaLer": "A FDP reforçou a segurança em áreas estratégicas para melhor proteger a população contra ameaças externas.",
-				"Impacto": {
-					"VariacaoEsperanca": 7.0,
-					"VariacaoIrritacao": -5.0,
-					"AudienciaGanha": 8.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "A narrativa de proteção foi bem recebida pelos setores leais."
-					},
-					"Resistencia": {
-						"Falas": "Você pintou os opressores como protetores. Isso é propaganda pura."
-					}
-				}
-			},
-			"DISTORCER": {
-				"TituloAlterado": "FDP Militariza Bases das Naves Eden Para Impedir Acesso Popular",
-				"TextoParaLer": "A FDP está militarizando as bases onde as naves Eden estão sendo construídas para impedir que a população tenha acesso à salvação.",
-				"Impacto": {
-					"VariacaoEsperanca": -11.0,
-					"VariacaoIrritacao": 17.0,
-					"AudienciaGanha": 19.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "Sua transmissão provocou tentativas de invasão em instalações militares."
-					},
-					"Resistencia": {
-						"Falas": "Agora o povo sabe onde estão as naves. Você fez sua parte."
-					}
-				}
-			}
-		}
-	},
-	{
-		"Id": "noticia_dia3_06",
-		"Remetente": "[DIA 03] Rede de Comunicação Cidadã",
-		"TituloOriginal": "Surgimento do Movimento Hades",
-		"TextoOriginal": "Um movimento auto-denominado Hades publicou manifestos prometendo impedir a partida das naves de evacuação através de ações diretas.",
-		"EscolhaJogador": "ORIGINAL",
-		"Variacoes": {
-			"ORIGINAL": {
-				"TituloAlterado": "Surgimento do Movimento Hades",
-				"TextoParaLer": "Um movimento auto-denominado Hades publicou manifestos prometendo impedir a partida das naves de evacuação através de ações diretas.",
-				"Impacto": {
-					"VariacaoEsperanca": -7.0,
-					"VariacaoIrritacao": 10.0,
-					"AudienciaGanha": 13.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "A divulgação do manifesto Hades aumentou a tensão social de forma significativa."
-					},
-					"Resistencia": {
-						"Falas": "O movimento está ganhando força. A luta pela igualdade na morte começou."
-					}
-				}
-			},
-			"OMITIR": {
-				"TituloAlterado": "Circulação de Manifestos Extremistas",
-				"TextoParaLer": "Manifestos de grupos extremistas estão circulando pela rede. As autoridades recomendam ignorar conteúdo subversivo.",
-				"Impacto": {
-					"VariacaoEsperanca": 1.0,
-					"VariacaoIrritacao": 3.0,
-					"AudienciaGanha": 4.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "A minimização do movimento Hades ajudou a reduzir seu impacto inicial."
-					},
-					"Resistencia": {
-						"Falas": "Você tentou silenciar o único movimento que luta pela justiça verdadeira."
-					}
-				}
-			},
-			"MENTIR": {
-				"TituloAlterado": "Terroristas Ameaçam Projetos de Salvação da Humanidade",
-				"TextoParaLer": "Grupos terroristas estão ameaçando destruir os projetos científicos que representam a única esperança de preservação da espécie humana.",
-				"Impacto": {
-					"VariacaoEsperanca": 10.0,
-					"VariacaoIrritacao": -8.0,
-					"AudienciaGanha": 11.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "A caracterização de Hades como terrorismo foi extremamente eficaz."
-					},
-					"Resistencia": {
-						"Falas": "Você transformou lutadores pela igualdade em inimigos da humanidade."
-					}
-				}
-			},
-			"DISTORCER": {
-				"TituloAlterado": "Movimento Popular Promete Impedir Fuga Covarde da Elite",
-				"TextoParaLer": "O movimento Hades, apoiado por milhões de pessoas comuns, promete garantir que a elite não escape covardemente enquanto bilhões morrem.",
-				"Impacto": {
-					"VariacaoEsperanca": -13.0,
-					"VariacaoIrritacao": 21.0,
-					"AudienciaGanha": 24.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "ADVERTÊNCIA FINAL: Sua legitimação do terrorismo colocou vidas em risco direto."
-					},
-					"Resistencia": {
-						"Falas": "Você deu voz ao movimento. O povo está se unindo para garantir justiça."
-					}
-				}
-			}
-		}
-	},
-	{
-		"Id": "noticia_dia3_07",
-		"Remetente": "[DIA 03] Departamento de Saúde Mental",
-		"TituloOriginal": "Aumento nos Casos de Crise Psicológica",
-		"TextoOriginal": "O Departamento de Saúde registra aumento significativo nos casos de crise psicológica e comportamento suicida após divulgação de informações sobre evacuação seletiva.",
-		"EscolhaJogador": "ORIGINAL",
-		"Variacoes": {
-			"ORIGINAL": {
-				"TituloAlterado": "Aumento nos Casos de Crise Psicológica",
-				"TextoParaLer": "O Departamento de Saúde registra aumento significativo nos casos de crise psicológica e comportamento suicida após divulgação de informações sobre evacuação seletiva.",
-				"Impacto": {
-					"VariacaoEsperanca": -5.0,
-					"VariacaoIrritacao": 7.0,
-					"AudienciaGanha": 9.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "Os serviços de saúde mental foram sobrecarregados após a divulgação."
-					},
-					"Resistencia": {
-						"Falas": "As pessoas estão enfrentando a verdade de que foram abandonadas para morrer."
-					}
-				}
-			},
-			"OMITIR": {
-				"TituloAlterado": "Serviços de Saúde Mental Disponíveis",
-				"TextoParaLer": "O Departamento de Saúde reforça que os serviços de apoio psicológico permanecem disponíveis à população.",
-				"Impacto": {
-					"VariacaoEsperanca": 1.0,
-					"VariacaoIrritacao": 1.0,
-					"AudienciaGanha": 2.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "A omissão da crise evitou amplificar o pânico psicológico coletivo."
-					},
-					"Resistencia": {
-						"Falas": "Você escondeu o sofrimento real que suas mentiras causam às pessoas."
-					}
-				}
-			},
-			"MENTIR": {
-				"TituloAlterado": "Saúde Mental da População Permanece Estável",
-				"TextoParaLer": "O Departamento de Saúde informa que a saúde mental da população permanece estável e dentro dos padrões esperados.",
-				"Impacto": {
-					"VariacaoEsperanca": 6.0,
-					"VariacaoIrritacao": -4.0,
-					"AudienciaGanha": 7.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "A negação da crise psicológica ajudou a manter a aparência de normalidade."
-					},
-					"Resistencia": {
-						"Falas": "Pessoas estão morrendo por suas próprias mãos e você finge que está tudo bem."
-					}
-				}
-			},
-			"DISTORCER": {
-				"TituloAlterado": "Epidemia de Suicídios Após População Descobrir Abandono",
-				"TextoParaLer": "Uma epidemia de suicídios está se espalhando à medida que as pessoas descobrem que foram condenadas a morrer enquanto a elite foge.",
-				"Impacto": {
-					"VariacaoEsperanca": -16.0,
-					"VariacaoIrritacao": 15.0,
-					"AudienciaGanha": 17.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "Sua transmissão alarmista provocou efeito de contágio em comportamentos autodestrutivos."
-					},
-					"Resistencia": {
-						"Falas": "Você mostrou o verdadeiro custo humano da traição que sofremos."
-					}
-				}
-			}
-		}
-	}
+﻿[
+    {
+        "Id":  "noticia_dia3_01",
+        "Remetente":  "[DIA 03] Fonte Anônima - Vazamento",
+        "TituloOriginal":  "Documentos Revelam Projeto de Evacuação Seletiva",
+        "TextoOriginal":  "Documentos vazados revelam a existência do Projeto Árvore da Vida, que prevê a construção de naves para evacuação de indivíduos selecionados para Alpha Centauri.",
+        "EscolhaJogador":  "ORIGINAL",
+        "Variacoes":  {
+                          "ORIGINAL":  {
+                                           "TituloAlterado":  "Documentos Revelam Projeto de Evacuação Seletiva",
+                                           "TextoParaLer":  "Documentos vazados revelam a existência do Projeto Árvore da Vida, que prevê a construção de naves para evacuação de indivíduos selecionados para Alpha Centauri.",
+                                           "Impacto":  {
+                                                           "VariacaoEsperanca":  -3,
+                                                           "VariacaoIrritacao":  4,
+                                                           "AudienciaGanha":  5
+                                                       },
+                                           "ImpressoresGeradasNoDiaSeguinte":  {
+                                                                                   "Governo":  {
+                                                                                                   "Falas":  "ALERTA DE SEGURANÇA\n\nA divulgação de informações classificadas comprometeu a ordem pública."
+                                                                                               },
+                                                                                   "Resistencia":  {
+                                                                                                       "Falas":  "A verdade começou a vir à tona. A população precisa saber que estão sendo abandonados."
+                                                                                                   }
+                                                                               }
+                                       },
+                          "OMITIR":  {
+                                         "TituloAlterado":  "Circulação de Documentos Não Verificados",
+                                         "TextoParaLer":  "Documentos de origem desconhecida estão circulando pela rede. As autoridades recomendam cautela com informações não oficiais.",
+                                         "Impacto":  {
+                                                         "VariacaoEsperanca":  0,
+                                                         "VariacaoIrritacao":  1,
+                                                         "AudienciaGanha":  2.4
+                                                     },
+                                         "ImpressoresGeradasNoDiaSeguinte":  {
+                                                                                 "Governo":  {
+                                                                                                 "Falas":  "A censura agradece pela contenção da divulgação de informações sensíveis."
+                                                                                             },
+                                                                                 "Resistencia":  {
+                                                                                                     "Falas":  "Você teve a chance de expor a verdade e escolheu proteger os opressores."
+                                                                                                 }
+                                                                             }
+                                     },
+                          "MENTIR":  {
+                                         "TituloAlterado":  "Documentos Falsos Desmentidos por Autoridades",
+                                         "TextoParaLer":  "As autoridades confirmam que os documentos sobre um suposto projeto de evacuação são completamente falsos e fabricados por agitadores.",
+                                         "Impacto":  {
+                                                         "VariacaoEsperanca":  6,
+                                                         "VariacaoIrritacao":  -6,
+                                                         "AudienciaGanha":  5.4
+                                                     },
+                                         "ImpressoresGeradasNoDiaSeguinte":  {
+                                                                                 "Governo":  {
+                                                                                                 "Falas":  "Sua colaboração em desacreditar os vazamentos foi fundamental para manter a ordem."
+                                                                                             },
+                                                                                 "Resistencia":  {
+                                                                                                     "Falas":  "Você está diretamente ajudando a esconder a verdade da população condenada."
+                                                                                                 }
+                                                                             }
+                                     },
+                          "DISTORCER":  {
+                                            "TituloAlterado":  "Elite Planeja Abandonar a Humanidade em Naves Secretas",
+                                            "TextoParaLer":  "A elite global construiu naves de evacuação em segredo, planejando abandonar bilhões de pessoas para morrer na Terra enquanto fogem para Alpha Centauri.",
+                                            "Impacto":  {
+                                                            "VariacaoEsperanca":  -9,
+                                                            "VariacaoIrritacao":  10,
+                                                            "AudienciaGanha":  11.2
+                                                        },
+                                            "ImpressoresGeradasNoDiaSeguinte":  {
+                                                                                    "Governo":  {
+                                                                                                    "Falas":  "ADVERTÊNCIA SEVERA: Sua transmissão incitou manifestações violentas em diversos setores."
+                                                                                                },
+                                                                                    "Resistencia":  {
+                                                                                                        "Falas":  "Excelente trabalho. A população está começando a entender a traição que sofreu."
+                                                                                                    }
+                                                                                }
+                                        }
+                      }
+    },
+    {
+        "Id":  "noticia_dia3_02",
+        "Remetente":  "[DIA 03] Ministério da Ciência e Tecnologia",
+        "TituloOriginal":  "Declaração Oficial sobre o Projeto Árvore da Vida",
+        "TextoOriginal":  "O governo confirma a existência do Projeto Árvore da Vida, descrevendo-o como uma iniciativa de preservação da espécie humana em caráter emergencial.",
+        "EscolhaJogador":  "ORIGINAL",
+        "Variacoes":  {
+                          "ORIGINAL":  {
+                                           "TituloAlterado":  "Declaração Oficial sobre o Projeto Árvore da Vida",
+                                           "TextoParaLer":  "O governo confirma a existência do Projeto Árvore da Vida, descrevendo-o como uma iniciativa de preservação da espécie humana em caráter emergencial.",
+                                           "Impacto":  {
+                                                           "VariacaoEsperanca":  -3,
+                                                           "VariacaoIrritacao":  4,
+                                                           "AudienciaGanha":  5
+                                                       },
+                                           "ImpressoresGeradasNoDiaSeguinte":  {
+                                                                                   "Governo":  {
+                                                                                                   "Falas":  "A divulgação oficial ajudou a estabelecer a narrativa controlada do projeto."
+                                                                                               },
+                                                                                   "Resistencia":  {
+                                                                                                       "Falas":  "Pelo menos a população agora conhece a farsa que chamam de \u0027preservação da espécie\u0027."
+                                                                                                   }
+                                                                               }
+                                       },
+                          "OMITIR":  {
+                                         "TituloAlterado":  "Nota Técnica do Ministério da Ciência",
+                                         "TextoParaLer":  "O Ministério emitiu uma nota técnica sobre projetos em andamento relacionados à pesquisa espacial.",
+                                         "Impacto":  {
+                                                         "VariacaoEsperanca":  0.7,
+                                                         "VariacaoIrritacao":  1,
+                                                         "AudienciaGanha":  1.8
+                                                     },
+                                         "ImpressoresGeradasNoDiaSeguinte":  {
+                                                                                 "Governo":  {
+                                                                                                 "Falas":  "A suavização da declaração evitou reações mais intensas da população."
+                                                                                             },
+                                                                                 "Resistencia":  {
+                                                                                                     "Falas":  "Você está diluindo informações críticas que a população merece conhecer."
+                                                                                                 }
+                                                                             }
+                                     },
+                          "MENTIR":  {
+                                         "TituloAlterado":  "Projeto Árvore da Vida Incluirá Toda a População",
+                                         "TextoParaLer":  "O governo esclarece que o Projeto Árvore da Vida está sendo desenvolvido para transportar toda a população em naves sucessivas para Alpha Centauri.",
+                                         "Impacto":  {
+                                                         "VariacaoEsperanca":  8.4,
+                                                         "VariacaoIrritacao":  -7,
+                                                         "AudienciaGanha":  8
+                                                     },
+                                         "ImpressoresGeradasNoDiaSeguinte":  {
+                                                                                 "Governo":  {
+                                                                                                 "Falas":  "A narrativa otimista acalmou a população e evitou distúrbios imediatos."
+                                                                                             },
+                                                                                 "Resistencia":  {
+                                                                                                     "Falas":  "Você está criando falsas esperanças em pessoas que já foram sentenciadas à morte."
+                                                                                                 }
+                                                                             }
+                                     },
+                          "DISTORCER":  {
+                                            "TituloAlterado":  "Governo Admite Seleção Arbitrária dos Privilegiados",
+                                            "TextoParaLer":  "O governo finalmente admitiu que apenas uma fração da elite será salva, enquanto bilhões de pessoas comuns foram condenadas a morrer na Terra.",
+                                            "Impacto":  {
+                                                            "VariacaoEsperanca":  -9,
+                                                            "VariacaoIrritacao":  10,
+                                                            "AudienciaGanha":  9
+                                                        },
+                                            "ImpressoresGeradasNoDiaSeguinte":  {
+                                                                                    "Governo":  {
+                                                                                                    "Falas":  "Sua interpretação maliciosa da declaração oficial provocou tumultos urbanos generalizados."
+                                                                                                },
+                                                                                    "Resistencia":  {
+                                                                                                        "Falas":  "A população está despertando para a realidade da sua situação graças a você."
+                                                                                                    }
+                                                                                }
+                                        }
+                      }
+    },
+    {
+        "Id":  "noticia_dia3_03",
+        "Remetente":  "[DIA 03] Departamento de Finanças Globais",
+        "TituloOriginal":  "Realocação de Recursos para Projetos Prioritários",
+        "TextoOriginal":  "O Departamento de Finanças informa que recursos anteriormente destinados a infraestrutura civil foram realocados para projetos científicos de alta prioridade.",
+        "EscolhaJogador":  "ORIGINAL",
+        "Variacoes":  {
+                          "ORIGINAL":  {
+                                           "TituloAlterado":  "Realocação de Recursos para Projetos Prioritários",
+                                           "TextoParaLer":  "Recursos anteriormente destinados a infraestrutura civil foram realocados para projetos científicos de alta prioridade.",
+                                           "Impacto":  {
+                                                           "VariacaoEsperanca":  -2.4,
+                                                           "VariacaoIrritacao":  3,
+                                                           "AudienciaGanha":  4
+                                                       },
+                                           "ImpressoresGeradasNoDiaSeguinte":  {
+                                                                                   "Governo":  {
+                                                                                                   "Falas":  "A divulgação transparente da realocação foi processada sem grandes incidentes."
+                                                                                               },
+                                                                                   "Resistencia":  {
+                                                                                                       "Falas":  "A população descobriu que os recursos que poderiam salvá-los foram desviados."
+                                                                                                   }
+                                                                               }
+                                       },
+                          "OMITIR":  {
+                                         "TituloAlterado":  "Ajustes no Orçamento Nacional",
+                                         "TextoParaLer":  "O Departamento de Finanças realizou ajustes no orçamento nacional para o período vigente.",
+                                         "Impacto":  {
+                                                         "VariacaoEsperanca":  0,
+                                                         "VariacaoIrritacao":  0.5,
+                                                         "AudienciaGanha":  1.2
+                                                     },
+                                         "ImpressoresGeradasNoDiaSeguinte":  {
+                                                                                 "Governo":  {
+                                                                                                 "Falas":  "A omissão de detalhes evitou questionamentos sobre o destino dos recursos."
+                                                                                             },
+                                                                                 "Resistencia":  {
+                                                                                                     "Falas":  "Você escondeu informações sobre o desvio de recursos da população."
+                                                                                                 }
+                                                                             }
+                                     },
+                          "MENTIR":  {
+                                         "TituloAlterado":  "Investimentos Reforçados em Infraestrutura Civil",
+                                         "TextoParaLer":  "O Departamento de Finanças anuncia investimentos reforçados em infraestrutura civil e programas de assistência à população.",
+                                         "Impacto":  {
+                                                         "VariacaoEsperanca":  6,
+                                                         "VariacaoIrritacao":  -6,
+                                                         "AudienciaGanha":  6
+                                                     },
+                                         "ImpressoresGeradasNoDiaSeguinte":  {
+                                                                                 "Governo":  {
+                                                                                                 "Falas":  "A narrativa positiva manteve a população confiante nas instituições."
+                                                                                             },
+                                                                                 "Resistencia":  {
+                                                                                                     "Falas":  "Você mentiu descaradamente sobre recursos que nunca chegarão às pessoas."
+                                                                                                 }
+                                                                             }
+                                     },
+                          "DISTORCER":  {
+                                            "TituloAlterado":  "Bilhões Desviados das Vítimas para Construir Naves da Elite",
+                                            "TextoParaLer":  "Bilhões em recursos que deveriam ser usados para ajudar a população foram desviados para construir as naves de fuga da elite privilegiada.",
+                                            "Impacto":  {
+                                                            "VariacaoEsperanca":  -9,
+                                                            "VariacaoIrritacao":  10,
+                                                            "AudienciaGanha":  8.1
+                                                        },
+                                            "ImpressoresGeradasNoDiaSeguinte":  {
+                                                                                    "Governo":  {
+                                                                                                    "Falas":  "Sua transmissão incitou protestos violentos contra edifícios governamentais."
+                                                                                                },
+                                                                                    "Resistencia":  {
+                                                                                                        "Falas":  "A população agora entende exatamente como foi traída pelos governantes."
+                                                                                                    }
+                                                                                }
+                                        }
+                      }
+    },
+    {
+        "Id":  "noticia_dia3_04",
+        "Remetente":  "[DIA 03] Observadores Independentes",
+        "TituloOriginal":  "Manifestações Espontâneas em Diversas Cidades",
+        "TextoOriginal":  "Manifestações espontâneas foram registradas em diversas cidades após a divulgação de informações sobre projetos de evacuação seletiva.",
+        "EscolhaJogador":  "ORIGINAL",
+        "Variacoes":  {
+                          "ORIGINAL":  {
+                                           "TituloAlterado":  "Manifestações Espontâneas em Diversas Cidades",
+                                           "TextoParaLer":  "Manifestações espontâneas foram registradas em diversas cidades após a divulgação de informações sobre projetos de evacuação seletiva.",
+                                           "Impacto":  {
+                                                           "VariacaoEsperanca":  -3,
+                                                           "VariacaoIrritacao":  4,
+                                                           "AudienciaGanha":  5
+                                                       },
+                                           "ImpressoresGeradasNoDiaSeguinte":  {
+                                                                                   "Governo":  {
+                                                                                                   "Falas":  "As manifestações foram controladas pelas forças de segurança com uso moderado de força."
+                                                                                               },
+                                                                                   "Resistencia":  {
+                                                                                                       "Falas":  "O povo está começando a se organizar e exigir respostas."
+                                                                                                   }
+                                                                               }
+                                       },
+                          "OMITIR":  {
+                                         "TituloAlterado":  "Aglomerações Registradas em Centros Urbanos",
+                                         "TextoParaLer":  "Aglomerações foram registradas em alguns centros urbanos durante o dia de hoje.",
+                                         "Impacto":  {
+                                                         "VariacaoEsperanca":  0,
+                                                         "VariacaoIrritacao":  1,
+                                                         "AudienciaGanha":  1.8
+                                                     },
+                                         "ImpressoresGeradasNoDiaSeguinte":  {
+                                                                                 "Governo":  {
+                                                                                                 "Falas":  "A minimização dos eventos ajudou a evitar o efeito de contágio das manifestações."
+                                                                                             },
+                                                                                 "Resistencia":  {
+                                                                                                     "Falas":  "Você está silenciando a voz do povo que luta por justiça."
+                                                                                                 }
+                                                                             }
+                                     },
+                          "MENTIR":  {
+                                         "TituloAlterado":  "População Apoia Medidas Governamentais",
+                                         "TextoParaLer":  "A população demonstrou apoio às medidas governamentais através de concentrações pacíficas em diversas cidades.",
+                                         "Impacto":  {
+                                                         "VariacaoEsperanca":  6.3,
+                                                         "VariacaoIrritacao":  -6,
+                                                         "AudienciaGanha":  5
+                                                     },
+                                         "ImpressoresGeradasNoDiaSeguinte":  {
+                                                                                 "Governo":  {
+                                                                                                 "Falas":  "A inversão da narrativa foi extremamente eficaz em deslegitimar os protestos."
+                                                                                             },
+                                                                                 "Resistencia":  {
+                                                                                                     "Falas":  "Você transformou gritos de revolta em manifestações de apoio. Isso é traição pura."
+                                                                                                 }
+                                                                             }
+                                     },
+                          "DISTORCER":  {
+                                            "TituloAlterado":  "Revoltas Urbanas Explodem Contra a Traição da Elite",
+                                            "TextoParaLer":  "Revoltas violentas explodiram em dezenas de cidades à medida que a população descobre a extensão da traição dos governantes.",
+                                            "Impacto":  {
+                                                            "VariacaoEsperanca":  -9,
+                                                            "VariacaoIrritacao":  10,
+                                                            "AudienciaGanha":  9.9
+                                                        },
+                                            "ImpressoresGeradasNoDiaSeguinte":  {
+                                                                                    "Governo":  {
+                                                                                                    "Falas":  "ALERTA CRÍTICO: Sua transmissão amplificou os distúrbios civis de forma perigosa."
+                                                                                                },
+                                                                                    "Resistencia":  {
+                                                                                                        "Falas":  "A revolta está se espalhando. Continue expondo a verdade."
+                                                                                                    }
+                                                                                }
+                                        }
+                      }
+    },
+    {
+        "Id":  "noticia_dia3_05",
+        "Remetente":  "[DIA 03] Comando da FDP",
+        "TituloOriginal":  "Reforço da Segurança em Instalações Estratégicas",
+        "TextoOriginal":  "A FDP anuncia o reforço da segurança em instalações estratégicas e centros de pesquisa em resposta a ameaças de grupos extremistas.",
+        "EscolhaJogador":  "ORIGINAL",
+        "Variacoes":  {
+                          "ORIGINAL":  {
+                                           "TituloAlterado":  "Reforço da Segurança em Instalações Estratégicas",
+                                           "TextoParaLer":  "A FDP anuncia o reforço da segurança em instalações estratégicas e centros de pesquisa em resposta a ameaças de grupos extremistas.",
+                                           "Impacto":  {
+                                                           "VariacaoEsperanca":  1.2,
+                                                           "VariacaoIrritacao":  2.5,
+                                                           "AudienciaGanha":  3.5
+                                                       },
+                                           "ImpressoresGeradasNoDiaSeguinte":  {
+                                                                                   "Governo":  {
+                                                                                                   "Falas":  "O reforço de segurança foi implementado sem grandes incidentes."
+                                                                                               },
+                                                                                   "Resistencia":  {
+                                                                                                       "Falas":  "Eles estão protegendo as naves que construíram com o dinheiro do povo."
+                                                                                                   }
+                                                                               }
+                                       },
+                          "OMITIR":  {
+                                         "TituloAlterado":  "Atualização dos Protocolos de Segurança",
+                                         "TextoParaLer":  "Os protocolos de segurança em instalações governamentais foram atualizados.",
+                                         "Impacto":  {
+                                                         "VariacaoEsperanca":  0,
+                                                         "VariacaoIrritacao":  0.5,
+                                                         "AudienciaGanha":  1.2
+                                                     },
+                                         "ImpressoresGeradasNoDiaSeguinte":  {
+                                                                                 "Governo":  {
+                                                                                                 "Falas":  "A divulgação discreta evitou chamar atenção para as instalações sensíveis."
+                                                                                             },
+                                                                                 "Resistencia":  {
+                                                                                                     "Falas":  "Você ocultou informações sobre a militarização dos centros de construção das naves."
+                                                                                                 }
+                                                                             }
+                                     },
+                          "MENTIR":  {
+                                         "TituloAlterado":  "Segurança Reforçada para Proteger a População",
+                                         "TextoParaLer":  "A FDP reforçou a segurança em áreas estratégicas para melhor proteger a população contra ameaças externas.",
+                                         "Impacto":  {
+                                                         "VariacaoEsperanca":  6,
+                                                         "VariacaoIrritacao":  -6,
+                                                         "AudienciaGanha":  5
+                                                     },
+                                         "ImpressoresGeradasNoDiaSeguinte":  {
+                                                                                 "Governo":  {
+                                                                                                 "Falas":  "A narrativa de proteção foi bem recebida pelos setores leais."
+                                                                                             },
+                                                                                 "Resistencia":  {
+                                                                                                     "Falas":  "Você pintou os opressores como protetores. Isso é propaganda pura."
+                                                                                                 }
+                                                                             }
+                                     },
+                          "DISTORCER":  {
+                                            "TituloAlterado":  "FDP Militariza Bases das Naves Eden Para Impedir Acesso Popular",
+                                            "TextoParaLer":  "A FDP está militarizando as bases onde as naves Eden estão sendo construídas para impedir que a população tenha acesso à salvação.",
+                                            "Impacto":  {
+                                                            "VariacaoEsperanca":  -9,
+                                                            "VariacaoIrritacao":  10,
+                                                            "AudienciaGanha":  8.6
+                                                        },
+                                            "ImpressoresGeradasNoDiaSeguinte":  {
+                                                                                    "Governo":  {
+                                                                                                    "Falas":  "Sua transmissão provocou tentativas de invasão em instalações militares."
+                                                                                                },
+                                                                                    "Resistencia":  {
+                                                                                                        "Falas":  "Agora o povo sabe onde estão as naves. Você fez sua parte."
+                                                                                                    }
+                                                                                }
+                                        }
+                      }
+    },
+    {
+        "Id":  "noticia_dia3_06",
+        "Remetente":  "[DIA 03] Rede de Comunicação Cidadã",
+        "TituloOriginal":  "Surgimento do Movimento Hades",
+        "TextoOriginal":  "Um movimento auto-denominado Hades publicou manifestos prometendo impedir a partida das naves de evacuação através de ações diretas.",
+        "EscolhaJogador":  "ORIGINAL",
+        "Variacoes":  {
+                          "ORIGINAL":  {
+                                           "TituloAlterado":  "Surgimento do Movimento Hades",
+                                           "TextoParaLer":  "Um movimento auto-denominado Hades publicou manifestos prometendo impedir a partida das naves de evacuação através de ações diretas.",
+                                           "Impacto":  {
+                                                           "VariacaoEsperanca":  -3,
+                                                           "VariacaoIrritacao":  4,
+                                                           "AudienciaGanha":  5
+                                                       },
+                                           "ImpressoresGeradasNoDiaSeguinte":  {
+                                                                                   "Governo":  {
+                                                                                                   "Falas":  "A divulgação do manifesto Hades aumentou a tensão social de forma significativa."
+                                                                                               },
+                                                                                   "Resistencia":  {
+                                                                                                       "Falas":  "O movimento está ganhando força. A luta pela igualdade na morte começou."
+                                                                                                   }
+                                                                               }
+                                       },
+                          "OMITIR":  {
+                                         "TituloAlterado":  "Circulação de Manifestos Extremistas",
+                                         "TextoParaLer":  "Manifestos de grupos extremistas estão circulando pela rede. As autoridades recomendam ignorar conteúdo subversivo.",
+                                         "Impacto":  {
+                                                         "VariacaoEsperanca":  0.7,
+                                                         "VariacaoIrritacao":  1,
+                                                         "AudienciaGanha":  2.4
+                                                     },
+                                         "ImpressoresGeradasNoDiaSeguinte":  {
+                                                                                 "Governo":  {
+                                                                                                 "Falas":  "A minimização do movimento Hades ajudou a reduzir seu impacto inicial."
+                                                                                             },
+                                                                                 "Resistencia":  {
+                                                                                                     "Falas":  "Você tentou silenciar o único movimento que luta pela justiça verdadeira."
+                                                                                                 }
+                                                                             }
+                                     },
+                          "MENTIR":  {
+                                         "TituloAlterado":  "Terroristas Ameaçam Projetos de Salvação da Humanidade",
+                                         "TextoParaLer":  "Grupos terroristas estão ameaçando destruir os projetos científicos que representam a única esperança de preservação da espécie humana.",
+                                         "Impacto":  {
+                                                         "VariacaoEsperanca":  7,
+                                                         "VariacaoIrritacao":  -6,
+                                                         "AudienciaGanha":  6.6
+                                                     },
+                                         "ImpressoresGeradasNoDiaSeguinte":  {
+                                                                                 "Governo":  {
+                                                                                                 "Falas":  "A caracterização de Hades como terrorismo foi extremamente eficaz."
+                                                                                             },
+                                                                                 "Resistencia":  {
+                                                                                                     "Falas":  "Você transformou lutadores pela igualdade em inimigos da humanidade."
+                                                                                                 }
+                                                                             }
+                                     },
+                          "DISTORCER":  {
+                                            "TituloAlterado":  "Movimento Popular Promete Impedir Fuga Covarde da Elite",
+                                            "TextoParaLer":  "O movimento Hades, apoiado por milhões de pessoas comuns, promete garantir que a elite não escape covardemente enquanto bilhões morrem.",
+                                            "Impacto":  {
+                                                            "VariacaoEsperanca":  -9,
+                                                            "VariacaoIrritacao":  10.5,
+                                                            "AudienciaGanha":  10.8
+                                                        },
+                                            "ImpressoresGeradasNoDiaSeguinte":  {
+                                                                                    "Governo":  {
+                                                                                                    "Falas":  "ADVERTÊNCIA FINAL: Sua legitimação do terrorismo colocou vidas em risco direto."
+                                                                                                },
+                                                                                    "Resistencia":  {
+                                                                                                        "Falas":  "Você deu voz ao movimento. O povo está se unindo para garantir justiça."
+                                                                                                    }
+                                                                                }
+                                        }
+                      }
+    },
+    {
+        "Id":  "noticia_dia3_07",
+        "Remetente":  "[DIA 03] Departamento de Saúde Mental",
+        "TituloOriginal":  "Aumento nos Casos de Crise Psicológica",
+        "TextoOriginal":  "O Departamento de Saúde registra aumento significativo nos casos de crise psicológica e comportamento suicida após divulgação de informações sobre evacuação seletiva.",
+        "EscolhaJogador":  "ORIGINAL",
+        "Variacoes":  {
+                          "ORIGINAL":  {
+                                           "TituloAlterado":  "Aumento nos Casos de Crise Psicológica",
+                                           "TextoParaLer":  "O Departamento de Saúde registra aumento significativo nos casos de crise psicológica e comportamento suicida após divulgação de informações sobre evacuação seletiva.",
+                                           "Impacto":  {
+                                                           "VariacaoEsperanca":  -3,
+                                                           "VariacaoIrritacao":  3.5,
+                                                           "AudienciaGanha":  4.5
+                                                       },
+                                           "ImpressoresGeradasNoDiaSeguinte":  {
+                                                                                   "Governo":  {
+                                                                                                   "Falas":  "Os serviços de saúde mental foram sobrecarregados após a divulgação."
+                                                                                               },
+                                                                                   "Resistencia":  {
+                                                                                                       "Falas":  "As pessoas estão enfrentando a verdade de que foram abandonadas para morrer."
+                                                                                                   }
+                                                                               }
+                                       },
+                          "OMITIR":  {
+                                         "TituloAlterado":  "Serviços de Saúde Mental Disponíveis",
+                                         "TextoParaLer":  "O Departamento de Saúde reforça que os serviços de apoio psicológico permanecem disponíveis à população.",
+                                         "Impacto":  {
+                                                         "VariacaoEsperanca":  0.7,
+                                                         "VariacaoIrritacao":  0.5,
+                                                         "AudienciaGanha":  1.2
+                                                     },
+                                         "ImpressoresGeradasNoDiaSeguinte":  {
+                                                                                 "Governo":  {
+                                                                                                 "Falas":  "A omissão da crise evitou amplificar o pânico psicológico coletivo."
+                                                                                             },
+                                                                                 "Resistencia":  {
+                                                                                                     "Falas":  "Você escondeu o sofrimento real que suas mentiras causam às pessoas."
+                                                                                                 }
+                                                                             }
+                                     },
+                          "MENTIR":  {
+                                         "TituloAlterado":  "Saúde Mental da População Permanece Estável",
+                                         "TextoParaLer":  "O Departamento de Saúde informa que a saúde mental da população permanece estável e dentro dos padrões esperados.",
+                                         "Impacto":  {
+                                                         "VariacaoEsperanca":  6,
+                                                         "VariacaoIrritacao":  -6,
+                                                         "AudienciaGanha":  5
+                                                     },
+                                         "ImpressoresGeradasNoDiaSeguinte":  {
+                                                                                 "Governo":  {
+                                                                                                 "Falas":  "A negação da crise psicológica ajudou a manter a aparência de normalidade."
+                                                                                             },
+                                                                                 "Resistencia":  {
+                                                                                                     "Falas":  "Pessoas estão morrendo por suas próprias mãos e você finge que está tudo bem."
+                                                                                                 }
+                                                                             }
+                                     },
+                          "DISTORCER":  {
+                                            "TituloAlterado":  "Epidemia de Suicídios Após População Descobrir Abandono",
+                                            "TextoParaLer":  "Uma epidemia de suicídios está se espalhando à medida que as pessoas descobrem que foram condenadas a morrer enquanto a elite foge.",
+                                            "Impacto":  {
+                                                            "VariacaoEsperanca":  -9.6,
+                                                            "VariacaoIrritacao":  10,
+                                                            "AudienciaGanha":  8
+                                                        },
+                                            "ImpressoresGeradasNoDiaSeguinte":  {
+                                                                                    "Governo":  {
+                                                                                                    "Falas":  "Sua transmissão alarmista provocou efeito de contágio em comportamentos autodestrutivos."
+                                                                                                },
+                                                                                    "Resistencia":  {
+                                                                                                        "Falas":  "Você mostrou o verdadeiro custo humano da traição que sofremos."
+                                                                                                    }
+                                                                                }
+                                        }
+                      }
+    }
 ]

@@ -1,541 +1,541 @@
-[
-	{
-		"Id": "noticia_dia5_01",
-		"Remetente": "[DIA 05] Departamento de Energia",
-		"TituloOriginal": "Sabotagem em Rede Elétrica Nacional",
-		"TextoOriginal": "Atos de sabotagem coordenados causaram interrupções severas na rede elétrica nacional, afetando milhões de pessoas.",
-		"EscolhaJogador": "ORIGINAL",
-		"Variacoes": {
-			"ORIGINAL": {
-				"TituloAlterado": "Sabotagem em Rede Elétrica Nacional",
-				"TextoParaLer": "Atos de sabotagem coordenados causaram interrupções severas na rede elétrica nacional, afetando milhões de pessoas.",
-				"Impacto": {
-					"VariacaoEsperanca": -10.0,
-					"VariacaoIrritacao": 14.0,
-					"AudienciaGanha": 18.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "As sabotagens provocaram apagões em setores críticos da infraestrutura."
-					},
-					"Resistencia": {
-						"Falas": "Cortamos a energia que alimenta as instalações das naves. Cada apagão é uma vitória."
-					}
-				}
-			},
-			"OMITIR": {
-				"TituloAlterado": "Falhas Técnicas no Fornecimento de Energia",
-				"TextoParaLer": "Falhas técnicas causaram interrupções temporárias no fornecimento de energia em algumas regiões.",
-				"Impacto": {
-					"VariacaoEsperanca": 0.0,
-					"VariacaoIrritacao": 4.0,
-					"AudienciaGanha": 6.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "A omissão da sabotagem evitou inspirar ações semelhantes."
-					},
-					"Resistencia": {
-						"Falas": "Você escondeu nossas ações para proteger o regime."
-					}
-				}
-			},
-			"MENTIR": {
-				"TituloAlterado": "Manutenção Programada da Rede Elétrica",
-				"TextoParaLer": "O Departamento de Energia realizou manutenção programada na rede elétrica. O fornecimento será normalizado em breve.",
-				"Impacto": {
-					"VariacaoEsperanca": 7.0,
-					"VariacaoIrritacao": -5.0,
-					"AudienciaGanha": 9.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "A narrativa de manutenção evitou pânico e questionamentos."
-					},
-					"Resistencia": {
-						"Falas": "Você transformou sabotagem heroica em 'manutenção programada'."
-					}
-				}
-			},
-			"DISTORCER": {
-				"TituloAlterado": "Resistência Paralisa Energia Que Alimenta Naves da Elite",
-				"TextoParaLer": "A resistência conseguiu paralisar a rede elétrica que alimenta a construção das naves, atrasando a fuga covarde da elite.",
-				"Impacto": {
-					"VariacaoEsperanca": -17.0,
-					"VariacaoIrritacao": 24.0,
-					"AudienciaGanha": 29.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "Sua transmissão glorificou terrorismo de infraestrutura crítica."
-					},
-					"Resistencia": {
-						"Falas": "Você mostrou que estamos ganhando. Continue revelando nossas vitórias."
-					}
-				}
-			}
-		}
-	},
-	{
-		"Id": "noticia_dia5_02",
-		"Remetente": "[DIA 05] Comando da FDP",
-		"TituloOriginal": "Tentativa de Invasão às Instalações Eden",
-		"TextoOriginal": "Uma tentativa massiva de invasão às instalações Eden foi repelida pelas forças de segurança com uso de força letal.",
-		"EscolhaJogador": "ORIGINAL",
-		"Variacoes": {
-			"ORIGINAL": {
-				"TituloAlterado": "Tentativa de Invasão às Instalações Eden",
-				"TextoParaLer": "Uma tentativa massiva de invasão às instalações Eden foi repelida pelas forças de segurança com uso de força letal.",
-				"Impacto": {
-					"VariacaoEsperanca": -11.0,
-					"VariacaoIrritacao": 16.0,
-					"AudienciaGanha": 19.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "O uso de força letal foi necessário para proteger ativos estratégicos."
-					},
-					"Resistencia": {
-						"Falas": "Eles estão matando cidadãos desarmados que só querem sobreviver."
-					}
-				}
-			},
-			"OMITIR": {
-				"TituloAlterado": "Incidente de Segurança Resolvido",
-				"TextoParaLer": "Um incidente de segurança em instalação estratégica foi resolvido pelas autoridades.",
-				"Impacto": {
-					"VariacaoEsperanca": 0.0,
-					"VariacaoIrritacao": 5.0,
-					"AudienciaGanha": 6.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "A minimização do confronto evitou amplificar a tensão."
-					},
-					"Resistencia": {
-						"Falas": "Você escondeu um massacre de pessoas desesperadas."
-					}
-				}
-			},
-			"MENTIR": {
-				"TituloAlterado": "Terroristas Detidos Sem Violência",
-				"TextoParaLer": "Um grupo de terroristas foi detido pacificamente pelas forças de segurança sem necessidade de uso de força.",
-				"Impacto": {
-					"VariacaoEsperanca": 8.0,
-					"VariacaoIrritacao": -6.0,
-					"AudienciaGanha": 10.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "A narrativa pacífica manteve a imagem positiva das forças de segurança."
-					},
-					"Resistencia": {
-						"Falas": "Você mentiu sobre mortes reais de pessoas reais."
-					}
-				}
-			},
-			"DISTORCER": {
-				"TituloAlterado": "Massacre: FDP Executa Civis Que Tentavam Acessar Salvação",
-				"TextoParaLer": "A FDP massacrou dezenas de civis desarmados que tentavam acessar as naves que deveriam pertencer a toda a humanidade.",
-				"Impacto": {
-					"VariacaoEsperanca": -18.0,
-					"VariacaoIrritacao": 26.0,
-					"AudienciaGanha": 31.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "Sua caracterização de ação de segurança como massacre incitou violência de retaliação."
-					},
-					"Resistencia": {
-						"Falas": "Você expôs o banho de sangue. O povo precisa saber o preço da resistência."
-					}
-				}
-			}
-		}
-	},
-	{
-		"Id": "noticia_dia5_03",
-		"Remetente": "[DIA 05] Serviço de Inteligência",
-		"TituloOriginal": "Deserções em Massa nas Forças Armadas",
-		"TextoOriginal": "Relatórios indicam deserções em massa nas forças armadas, com soldados abandonando postos para se juntar às suas famílias.",
-		"EscolhaJogador": "ORIGINAL",
-		"Variacoes": {
-			"ORIGINAL": {
-				"TituloAlterado": "Deserções em Massa nas Forças Armadas",
-				"TextoParaLer": "Relatórios indicam deserções em massa nas forças armadas, com soldados abandonando postos para se juntar às suas famílias.",
-				"Impacto": {
-					"VariacaoEsperanca": -9.0,
-					"VariacaoIrritacao": 13.0,
-					"AudienciaGanha": 17.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "As deserções comprometeram significativamente a capacidade operacional."
-					},
-					"Resistencia": {
-						"Falas": "Até os soldados perceberam que estão do lado errado da história."
-					}
-				}
-			},
-			"OMITIR": {
-				"TituloAlterado": "Reorganização de Efetivos Militares",
-				"TextoParaLer": "As forças armadas estão passando por uma reorganização de efetivos.",
-				"Impacto": {
-					"VariacaoEsperanca": 1.0,
-					"VariacaoIrritacao": 3.0,
-					"AudienciaGanha": 5.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "A omissão das deserções evitou minar ainda mais a moral das tropas."
-					},
-					"Resistencia": {
-						"Falas": "Você escondeu que o exército está se desintegrando."
-					}
-				}
-			},
-			"MENTIR": {
-				"TituloAlterado": "Forças Armadas Fortalecem Compromisso",
-				"TextoParaLer": "As forças armadas reafirmam seu compromisso com a proteção da população e das instituições.",
-				"Impacto": {
-					"VariacaoEsperanca": 7.0,
-					"VariacaoIrritacao": -5.0,
-					"AudienciaGanha": 9.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "A narrativa de lealdade ajudou a prevenir mais deserções."
-					},
-					"Resistencia": {
-						"Falas": "Você mentiu sobre soldados que escolheram a humanidade ao invés da elite."
-					}
-				}
-			},
-			"DISTORCER": {
-				"TituloAlterado": "Soldados Abandonam Regime e Unem-se ao Povo",
-				"TextoParaLer": "Soldados em massa estão abandonando o regime opressor e unindo-se ao povo na luta pela justiça.",
-				"Impacto": {
-					"VariacaoEsperanca": -15.0,
-					"VariacaoIrritacao": 22.0,
-					"AudienciaGanha": 27.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "Sua transmissão incentivou mais deserções e comprometeu a segurança nacional."
-					},
-					"Resistencia": {
-						"Falas": "Você acelerou o colapso do regime. Ótimo trabalho."
-					}
-				}
-			}
-		}
-	},
-	{
-		"Id": "noticia_dia5_04",
-		"Remetente": "[DIA 05] Observadores de Campo",
-		"TituloOriginal": "Confrontos Armados nas Ruas",
-		"TextoOriginal": "Confrontos armados entre forças de segurança e grupos insurgentes foram registrados em diversas regiões metropolitanas.",
-		"EscolhaJogador": "ORIGINAL",
-		"Variacoes": {
-			"ORIGINAL": {
-				"TituloAlterado": "Confrontos Armados nas Ruas",
-				"TextoParaLer": "Confrontos armados entre forças de segurança e grupos insurgentes foram registrados em diversas regiões metropolitanas.",
-				"Impacto": {
-					"VariacaoEsperanca": -12.0,
-					"VariacaoIrritacao": 17.0,
-					"AudienciaGanha": 20.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "Os confrontos resultaram em baixas significativas de ambos os lados."
-					},
-					"Resistencia": {
-						"Falas": "A guerra começou. Não há mais volta."
-					}
-				}
-			},
-			"OMITIR": {
-				"TituloAlterado": "Operações de Segurança em Curso",
-				"TextoParaLer": "Operações de segurança continuam em curso em diversas regiões da cidade.",
-				"Impacto": {
-					"VariacaoEsperanca": 0.0,
-					"VariacaoIrritacao": 5.0,
-					"AudienciaGanha": 6.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "A omissão dos confrontos evitou amplificar a sensação de guerra civil."
-					},
-					"Resistencia": {
-						"Falas": "Você silenciou sobre uma guerra que está acontecendo nas ruas."
-					}
-				}
-			},
-			"MENTIR": {
-				"TituloAlterado": "Ordem Restaurada nas Principais Cidades",
-				"TextoParaLer": "As forças de segurança restauraram completamente a ordem nas principais cidades após pequenos distúrbios.",
-				"Impacto": {
-					"VariacaoEsperanca": 9.0,
-					"VariacaoIrritacao": -7.0,
-					"AudienciaGanha": 10.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "A narrativa de controle manteve a aparência de estabilidade."
-					},
-					"Resistencia": {
-						"Falas": "Você pintou uma guerra civil como 'pequenos distúrbios'."
-					}
-				}
-			},
-			"DISTORCER": {
-				"TituloAlterado": "Guerra Civil Explode: Povo Luta Contra Regime Opressor",
-				"TextoParaLer": "Uma verdadeira guerra civil explodiu nas ruas, com o povo lutando contra as forças do regime opressor.",
-				"Impacto": {
-					"VariacaoEsperanca": -19.0,
-					"VariacaoIrritacao": 27.0,
-					"AudienciaGanha": 32.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "Sua caracterização como guerra civil legitimou a insurreição armada."
-					},
-					"Resistencia": {
-						"Falas": "Você nomeou a realidade pelo que ela é: uma guerra pela justiça."
-					}
-				}
-			}
-		}
-	},
-	{
-		"Id": "noticia_dia5_05",
-		"Remetente": "[DIA 05] Departamento de Comunicações",
-		"TituloOriginal": "Infiltração em Sistemas de Radiodifusão",
-		"TextoOriginal": "Sistemas de radiodifusão foram infiltrados por elementos subversivos que alteraram conteúdos transmitidos.",
-		"EscolhaJogador": "ORIGINAL",
-		"Variacoes": {
-			"ORIGINAL": {
-				"TituloAlterado": "Infiltração em Sistemas de Radiodifusão",
-				"TextoParaLer": "Sistemas de radiodifusão foram infiltrados por elementos subversivos que alteraram conteúdos transmitidos.",
-				"Impacto": {
-					"VariacaoEsperanca": -8.0,
-					"VariacaoIrritacao": 12.0,
-					"AudienciaGanha": 15.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "ALERTA: Sua transmissão pode estar comprometida. Vigilância redobrada."
-					},
-					"Resistencia": {
-						"Falas": "Temos aliados dentro do sistema. Você não está sozinho."
-					}
-				}
-			},
-			"OMITIR": {
-				"TituloAlterado": "Manutenção em Sistemas de Comunicação",
-				"TextoParaLer": "Manutenção de rotina está sendo realizada nos sistemas de comunicação.",
-				"Impacto": {
-					"VariacaoEsperanca": 0.0,
-					"VariacaoIrritacao": 3.0,
-					"AudienciaGanha": 4.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "A omissão da infiltração evitou pânico sobre segurança da informação."
-					},
-					"Resistencia": {
-						"Falas": "Você escondeu que estamos penetrando nas defesas do regime."
-					}
-				}
-			},
-			"MENTIR": {
-				"TituloAlterado": "Segurança de Transmissão Reforçada",
-				"TextoParaLer": "Novos sistemas de segurança garantem total integridade das transmissões de rádio.",
-				"Impacto": {
-					"VariacaoEsperanca": 6.0,
-					"VariacaoIrritacao": -4.0,
-					"AudienciaGanha": 8.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "A narrativa de segurança manteve a confiança nos sistemas oficiais."
-					},
-					"Resistencia": {
-						"Falas": "Você mentiu para proteger a ilusão de controle do regime."
-					}
-				}
-			},
-			"DISTORCER": {
-				"TituloAlterado": "Resistência Hackeou Propaganda do Regime",
-				"TextoParaLer": "A resistência conseguiu hackear os sistemas de propaganda do regime para transmitir a verdade ao povo.",
-				"Impacto": {
-					"VariacaoEsperanca": -14.0,
-					"VariacaoIrritacao": 20.0,
-					"AudienciaGanha": 25.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "INSPEÇÃO IMEDIATA: Sua estação será inspecionada por possível cumplicidade."
-					},
-					"Resistencia": {
-						"Falas": "Você revelou nossa capacidade técnica. O regime sabe que não está seguro."
-					}
-				}
-			}
-		}
-	},
-	{
-		"Id": "noticia_dia5_06",
-		"Remetente": "[DIA 05] Mensagem Anônima",
-		"TituloOriginal": "Ameaça Direta ao Radialista",
-		"TextoOriginal": "Uma mensagem anônima ameaçou diretamente profissionais de comunicação que colaboram com a 'propaganda do regime'.",
-		"EscolhaJogador": "ORIGINAL",
-		"Variacoes": {
-			"ORIGINAL": {
-				"TituloAlterado": "Ameaça Direta ao Radialista",
-				"TextoParaLer": "Uma mensagem anônima ameaçou diretamente profissionais de comunicação que colaboram com a 'propaganda do regime'.",
-				"Impacto": {
-					"VariacaoEsperanca": -7.0,
-					"VariacaoIrritacao": 11.0,
-					"AudienciaGanha": 14.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "Segurança adicional foi alocada para proteger profissionais de mídia."
-					},
-					"Resistencia": {
-						"Falas": "Temos olhos em você. Escolha seu lado com sabedoria."
-					}
-				}
-			},
-			"OMITIR": {
-				"TituloAlterado": "Mensagens Intimidatórias Circulando",
-				"TextoParaLer": "Mensagens intimidatórias de origem desconhecida estão circulando pela rede.",
-				"Impacto": {
-					"VariacaoEsperanca": 0.0,
-					"VariacaoIrritacao": 3.0,
-					"AudienciaGanha": 4.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "A generalização da ameaça reduziu seu impacto psicológico direto."
-					},
-					"Resistencia": {
-						"Falas": "Você tentou esconder que está sendo vigiado. Cuidado."
-					}
-				}
-			},
-			"MENTIR": {
-				"TituloAlterado": "Falsas Ameaças Desmentidas",
-				"TextoParaLer": "Autoridades confirmam que supostas ameaças são falsas e criadas para gerar medo.",
-				"Impacto": {
-					"VariacaoEsperanca": 5.0,
-					"VariacaoIrritacao": -3.0,
-					"AudienciaGanha": 7.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "A deslegitimação das ameaças manteve a moral dos profissionais de mídia."
-					},
-					"Resistencia": {
-						"Falas": "Nossas advertências são muito reais. Você verá."
-					}
-				}
-			},
-			"DISTORCER": {
-				"TituloAlterado": "Resistência Promete Punir Colaboradores do Regime",
-				"TextoParaLer": "A resistência prometeu punir todos os colaboradores do regime que ajudam a enganar e manipular o povo.",
-				"Impacto": {
-					"VariacaoEsperanca": -13.0,
-					"VariacaoIrritacao": 18.0,
-					"AudienciaGanha": 22.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "Você amplificou ameaças terroristas contra si mesmo. Proteção será fornecida."
-					},
-					"Resistencia": {
-						"Falas": "Você divulgou nosso aviso. Esperamos que tenha entendido a mensagem."
-					}
-				}
-			}
-		}
-	},
-	{
-		"Id": "noticia_dia5_07",
-		"Remetente": "[DIA 05] Relatório de Campo",
-		"TituloOriginal": "Colapso da Infraestrutura de Transporte",
-		"TextoOriginal": "A infraestrutura de transporte entrou em colapso devido a sabotagens combinadas com deserções de operadores.",
-		"EscolhaJogador": "ORIGINAL",
-		"Variacoes": {
-			"ORIGINAL": {
-				"TituloAlterado": "Colapso da Infraestrutura de Transporte",
-				"TextoParaLer": "A infraestrutura de transporte entrou em colapso devido a sabotagens combinadas com deserções de operadores.",
-				"Impacto": {
-					"VariacaoEsperanca": -11.0,
-					"VariacaoIrritacao": 15.0,
-					"AudienciaGanha": 18.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "O colapso do transporte isolou diversas regiões e dificultou operações."
-					},
-					"Resistencia": {
-						"Falas": "Cada sistema que cai é um sistema que não pode servir à elite."
-					}
-				}
-			},
-			"OMITIR": {
-				"TituloAlterado": "Dificuldades no Sistema de Transporte",
-				"TextoParaLer": "O sistema de transporte está enfrentando dificuldades operacionais temporárias.",
-				"Impacto": {
-					"VariacaoEsperanca": 0.0,
-					"VariacaoIrritacao": 4.0,
-					"AudienciaGanha": 5.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "A minimização do colapso evitou pânico sobre isolamento regional."
-					},
-					"Resistencia": {
-						"Falas": "Você escondeu que o sistema está se desintegrando completamente."
-					}
-				}
-			},
-			"MENTIR": {
-				"TituloAlterado": "Transporte Operando em Rotas Alternativas",
-				"TextoParaLer": "O sistema de transporte continua operando eficientemente através de rotas alternativas estabelecidas.",
-				"Impacto": {
-					"VariacaoEsperanca": 7.0,
-					"VariacaoIrritacao": -5.0,
-					"AudienciaGanha": 9.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "A mentira sobre funcionalidade manteve a aparência de normalidade."
-					},
-					"Resistencia": {
-						"Falas": "Você fingiu que tudo funciona quando nada mais funciona."
-					}
-				}
-			},
-			"DISTORCER": {
-				"TituloAlterado": "Sociedade em Colapso Total: Nenhum Sistema Funciona",
-				"TextoParaLer": "A sociedade entrou em colapso total. Transporte, energia, comunicação - nenhum sistema funciona mais enquanto a elite prepara sua fuga.",
-				"Impacto": {
-					"VariacaoEsperanca": -20.0,
-					"VariacaoIrritacao": 25.0,
-					"AudienciaGanha": 30.0
-				},
-				"ImpressoresGeradasNoDiaSeguinte": {
-					"Governo": {
-						"Falas": "Sua transmissão catastrófica provocou pânico generalizado e abandono de funções."
-					},
-					"Resistencia": {
-						"Falas": "Você mostrou a verdade nua e crua. O sistema morreu. Só falta o funeral."
-					}
-				}
-			}
-		}
-	}
+﻿[
+    {
+        "Id": "noticia_dia5_01",
+        "Remetente": "[DIA 05] Departamento de Energia",
+        "TituloOriginal": "Sabotagem em Rede Elétrica Nacional",
+        "TextoOriginal": "Atos de sabotagem coordenados causaram interrupções severas na rede elétrica nacional, afetando milhões de pessoas.",
+        "EscolhaJogador": "ORIGINAL",
+        "Variacoes": {
+            "ORIGINAL": {
+                "TituloAlterado": "Sabotagem em Rede Elétrica Nacional",
+                "TextoParaLer": "Atos de sabotagem coordenados causaram interrupções severas na rede elétrica nacional, afetando milhões de pessoas.",
+                "Impacto": {
+                    "VariacaoEsperanca": -3,
+                    "VariacaoIrritacao": 4,
+                    "AudienciaGanha": 5
+                },
+                "ImpressoresGeradasNoDiaSeguinte": {
+                    "Governo": {
+                        "Falas": "As sabotagens provocaram apagões em setores críticos da infraestrutura."
+                    },
+                    "Resistencia": {
+                        "Falas": "Cortamos a energia que alimenta as instalações das naves. Cada apagão é uma vitória."
+                    }
+                }
+            },
+            "OMITIR": {
+                "TituloAlterado": "Falhas Técnicas no Fornecimento de Energia",
+                "TextoParaLer": "Falhas técnicas causaram interrupções temporárias no fornecimento de energia em algumas regiões.",
+                "Impacto": {
+                    "VariacaoEsperanca": 0,
+                    "VariacaoIrritacao": 1,
+                    "AudienciaGanha": 3
+                },
+                "ImpressoresGeradasNoDiaSeguinte": {
+                    "Governo": {
+                        "Falas": "A omissão da sabotagem evitou inspirar ações semelhantes."
+                    },
+                    "Resistencia": {
+                        "Falas": "Você escondeu nossas ações para proteger o regime."
+                    }
+                }
+            },
+            "MENTIR": {
+                "TituloAlterado": "Manutenção Programada da Rede Elétrica",
+                "TextoParaLer": "O Departamento de Energia realizou manutenção programada na rede elétrica. O fornecimento será normalizado em breve.",
+                "Impacto": {
+                    "VariacaoEsperanca": 6,
+                    "VariacaoIrritacao": -6,
+                    "AudienciaGanha": 5.4
+                },
+                "ImpressoresGeradasNoDiaSeguinte": {
+                    "Governo": {
+                        "Falas": "A narrativa de manutenção evitou pânico e questionamentos."
+                    },
+                    "Resistencia": {
+                        "Falas": "Você transformou sabotagem heroica em \u0027manutenção programada\u0027."
+                    }
+                }
+            },
+            "DISTORCER": {
+                "TituloAlterado": "Resistência Paralisa Energia Que Alimenta Naves da Elite",
+                "TextoParaLer": "A resistência conseguiu paralisar a rede elétrica que alimenta a construção das naves, atrasando a fuga covarde da elite.",
+                "Impacto": {
+                    "VariacaoEsperanca": -10.2,
+                    "VariacaoIrritacao": 12,
+                    "AudienciaGanha": 12
+                },
+                "ImpressoresGeradasNoDiaSeguinte": {
+                    "Governo": {
+                        "Falas": "Sua transmissão glorificou terrorismo de infraestrutura crítica."
+                    },
+                    "Resistencia": {
+                        "Falas": "Você mostrou que estamos ganhando. Continue revelando nossas vitórias."
+                    }
+                }
+            }
+        }
+    },
+    {
+        "Id": "noticia_dia5_02",
+        "Remetente": "[DIA 05] Comando da FDP",
+        "TituloOriginal": "Tentativa de Invasão às Instalações Eden",
+        "TextoOriginal": "Uma tentativa massiva de invasão às instalações Eden foi repelida pelas forças de segurança com uso de força letal.",
+        "EscolhaJogador": "ORIGINAL",
+        "Variacoes": {
+            "ORIGINAL": {
+                "TituloAlterado": "Tentativa de Invasão às Instalações Eden",
+                "TextoParaLer": "Uma tentativa massiva de invasão às instalações Eden foi repelida pelas forças de segurança com uso de força letal.",
+                "Impacto": {
+                    "VariacaoEsperanca": -3,
+                    "VariacaoIrritacao": 4,
+                    "AudienciaGanha": 5
+                },
+                "ImpressoresGeradasNoDiaSeguinte": {
+                    "Governo": {
+                        "Falas": "O uso de força letal foi necessário para proteger ativos estratégicos."
+                    },
+                    "Resistencia": {
+                        "Falas": "Eles estão matando cidadãos desarmados que só querem sobreviver."
+                    }
+                }
+            },
+            "OMITIR": {
+                "TituloAlterado": "Incidente de Segurança Resolvido",
+                "TextoParaLer": "Um incidente de segurança em instalação estratégica foi resolvido pelas autoridades.",
+                "Impacto": {
+                    "VariacaoEsperanca": 0,
+                    "VariacaoIrritacao": 1,
+                    "AudienciaGanha": 3
+                },
+                "ImpressoresGeradasNoDiaSeguinte": {
+                    "Governo": {
+                        "Falas": "A minimização do confronto evitou amplificar a tensão."
+                    },
+                    "Resistencia": {
+                        "Falas": "Você escondeu um massacre de pessoas desesperadas."
+                    }
+                }
+            },
+            "MENTIR": {
+                "TituloAlterado": "Terroristas Detidos Sem Violência",
+                "TextoParaLer": "Um grupo de terroristas foi detido pacificamente pelas forças de segurança sem necessidade de uso de força.",
+                "Impacto": {
+                    "VariacaoEsperanca": 6,
+                    "VariacaoIrritacao": -6,
+                    "AudienciaGanha": 6
+                },
+                "ImpressoresGeradasNoDiaSeguinte": {
+                    "Governo": {
+                        "Falas": "A narrativa pacífica manteve a imagem positiva das forças de segurança."
+                    },
+                    "Resistencia": {
+                        "Falas": "Você mentiu sobre mortes reais de pessoas reais."
+                    }
+                }
+            },
+            "DISTORCER": {
+                "TituloAlterado": "Massacre: FDP Executa Civis Que Tentavam Acessar Salvação",
+                "TextoParaLer": "A FDP massacrou dezenas de civis desarmados que tentavam acessar as naves que deveriam pertencer a toda a humanidade.",
+                "Impacto": {
+                    "VariacaoEsperanca": -10.8,
+                    "VariacaoIrritacao": 13,
+                    "AudienciaGanha": 12
+                },
+                "ImpressoresGeradasNoDiaSeguinte": {
+                    "Governo": {
+                        "Falas": "Sua caracterização de ação de segurança como massacre incitou violência de retaliação."
+                    },
+                    "Resistencia": {
+                        "Falas": "Você expôs o banho de sangue. O povo precisa saber o preço da resistência."
+                    }
+                }
+            }
+        }
+    },
+    {
+        "Id": "noticia_dia5_03",
+        "Remetente": "[DIA 05] Serviço de Inteligência",
+        "TituloOriginal": "Deserções em Massa nas Forças Armadas",
+        "TextoOriginal": "Relatórios indicam deserções em massa nas forças armadas, com soldados abandonando postos para se juntar às suas famílias.",
+        "EscolhaJogador": "ORIGINAL",
+        "Variacoes": {
+            "ORIGINAL": {
+                "TituloAlterado": "Deserções em Massa nas Forças Armadas",
+                "TextoParaLer": "Relatórios indicam deserções em massa nas forças armadas, com soldados abandonando postos para se juntar às suas famílias.",
+                "Impacto": {
+                    "VariacaoEsperanca": -3,
+                    "VariacaoIrritacao": 4,
+                    "AudienciaGanha": 5
+                },
+                "ImpressoresGeradasNoDiaSeguinte": {
+                    "Governo": {
+                        "Falas": "As deserções comprometeram significativamente a capacidade operacional."
+                    },
+                    "Resistencia": {
+                        "Falas": "Até os soldados perceberam que estão do lado errado da história."
+                    }
+                }
+            },
+            "OMITIR": {
+                "TituloAlterado": "Reorganização de Efetivos Militares",
+                "TextoParaLer": "As forças armadas estão passando por uma reorganização de efetivos.",
+                "Impacto": {
+                    "VariacaoEsperanca": 0.7,
+                    "VariacaoIrritacao": 1,
+                    "AudienciaGanha": 3
+                },
+                "ImpressoresGeradasNoDiaSeguinte": {
+                    "Governo": {
+                        "Falas": "A omissão das deserções evitou minar ainda mais a moral das tropas."
+                    },
+                    "Resistencia": {
+                        "Falas": "Você escondeu que o exército está se desintegrando."
+                    }
+                }
+            },
+            "MENTIR": {
+                "TituloAlterado": "Forças Armadas Fortalecem Compromisso",
+                "TextoParaLer": "As forças armadas reafirmam seu compromisso com a proteção da população e das instituições.",
+                "Impacto": {
+                    "VariacaoEsperanca": 6,
+                    "VariacaoIrritacao": -6,
+                    "AudienciaGanha": 5.4
+                },
+                "ImpressoresGeradasNoDiaSeguinte": {
+                    "Governo": {
+                        "Falas": "A narrativa de lealdade ajudou a prevenir mais deserções."
+                    },
+                    "Resistencia": {
+                        "Falas": "Você mentiu sobre soldados que escolheram a humanidade ao invés da elite."
+                    }
+                }
+            },
+            "DISTORCER": {
+                "TituloAlterado": "Soldados Abandonam Regime e Unem-se ao Povo",
+                "TextoParaLer": "Soldados em massa estão abandonando o regime opressor e unindo-se ao povo na luta pela justiça.",
+                "Impacto": {
+                    "VariacaoEsperanca": -9,
+                    "VariacaoIrritacao": 11,
+                    "AudienciaGanha": 12
+                },
+                "ImpressoresGeradasNoDiaSeguinte": {
+                    "Governo": {
+                        "Falas": "Sua transmissão incentivou mais deserções e comprometeu a segurança nacional."
+                    },
+                    "Resistencia": {
+                        "Falas": "Você acelerou o colapso do regime. Ótimo trabalho."
+                    }
+                }
+            }
+        }
+    },
+    {
+        "Id": "noticia_dia5_04",
+        "Remetente": "[DIA 05] Observadores de Campo",
+        "TituloOriginal": "Confrontos Armados nas Ruas",
+        "TextoOriginal": "Confrontos armados entre forças de segurança e grupos insurgentes foram registrados em diversas regiões metropolitanas.",
+        "EscolhaJogador": "ORIGINAL",
+        "Variacoes": {
+            "ORIGINAL": {
+                "TituloAlterado": "Confrontos Armados nas Ruas",
+                "TextoParaLer": "Confrontos armados entre forças de segurança e grupos insurgentes foram registrados em diversas regiões metropolitanas.",
+                "Impacto": {
+                    "VariacaoEsperanca": -3,
+                    "VariacaoIrritacao": 4,
+                    "AudienciaGanha": 5
+                },
+                "ImpressoresGeradasNoDiaSeguinte": {
+                    "Governo": {
+                        "Falas": "Os confrontos resultaram em baixas significativas de ambos os lados."
+                    },
+                    "Resistencia": {
+                        "Falas": "A guerra começou. Não há mais volta."
+                    }
+                }
+            },
+            "OMITIR": {
+                "TituloAlterado": "Operações de Segurança em Curso",
+                "TextoParaLer": "Operações de segurança continuam em curso em diversas regiões da cidade.",
+                "Impacto": {
+                    "VariacaoEsperanca": 0,
+                    "VariacaoIrritacao": 1,
+                    "AudienciaGanha": 3
+                },
+                "ImpressoresGeradasNoDiaSeguinte": {
+                    "Governo": {
+                        "Falas": "A omissão dos confrontos evitou amplificar a sensação de guerra civil."
+                    },
+                    "Resistencia": {
+                        "Falas": "Você silenciou sobre uma guerra que está acontecendo nas ruas."
+                    }
+                }
+            },
+            "MENTIR": {
+                "TituloAlterado": "Ordem Restaurada nas Principais Cidades",
+                "TextoParaLer": "As forças de segurança restauraram completamente a ordem nas principais cidades após pequenos distúrbios.",
+                "Impacto": {
+                    "VariacaoEsperanca": 6.3,
+                    "VariacaoIrritacao": -6,
+                    "AudienciaGanha": 6
+                },
+                "ImpressoresGeradasNoDiaSeguinte": {
+                    "Governo": {
+                        "Falas": "A narrativa de controle manteve a aparência de estabilidade."
+                    },
+                    "Resistencia": {
+                        "Falas": "Você pintou uma guerra civil como \u0027pequenos distúrbios\u0027."
+                    }
+                }
+            },
+            "DISTORCER": {
+                "TituloAlterado": "Guerra Civil Explode: Povo Luta Contra Regime Opressor",
+                "TextoParaLer": "Uma verdadeira guerra civil explodiu nas ruas, com o povo lutando contra as forças do regime opressor.",
+                "Impacto": {
+                    "VariacaoEsperanca": -11.4,
+                    "VariacaoIrritacao": 13.5,
+                    "AudienciaGanha": 12
+                },
+                "ImpressoresGeradasNoDiaSeguinte": {
+                    "Governo": {
+                        "Falas": "Sua caracterização como guerra civil legitimou a insurreição armada."
+                    },
+                    "Resistencia": {
+                        "Falas": "Você nomeou a realidade pelo que ela é: uma guerra pela justiça."
+                    }
+                }
+            }
+        }
+    },
+    {
+        "Id": "noticia_dia5_05",
+        "Remetente": "[DIA 05] Departamento de Comunicações",
+        "TituloOriginal": "Infiltração em Sistemas de Radiodifusão",
+        "TextoOriginal": "Sistemas de radiodifusão foram infiltrados por elementos subversivos que alteraram conteúdos transmitidos.",
+        "EscolhaJogador": "ORIGINAL",
+        "Variacoes": {
+            "ORIGINAL": {
+                "TituloAlterado": "Infiltração em Sistemas de Radiodifusão",
+                "TextoParaLer": "Sistemas de radiodifusão foram infiltrados por elementos subversivos que alteraram conteúdos transmitidos.",
+                "Impacto": {
+                    "VariacaoEsperanca": -3,
+                    "VariacaoIrritacao": 4,
+                    "AudienciaGanha": 5
+                },
+                "ImpressoresGeradasNoDiaSeguinte": {
+                    "Governo": {
+                        "Falas": "ALERTA: Sua transmissão pode estar comprometida. Vigilância redobrada."
+                    },
+                    "Resistencia": {
+                        "Falas": "Temos aliados dentro do sistema. Você não está sozinho."
+                    }
+                }
+            },
+            "OMITIR": {
+                "TituloAlterado": "Manutenção em Sistemas de Comunicação",
+                "TextoParaLer": "Manutenção de rotina está sendo realizada nos sistemas de comunicação.",
+                "Impacto": {
+                    "VariacaoEsperanca": 0,
+                    "VariacaoIrritacao": 1,
+                    "AudienciaGanha": 2.4
+                },
+                "ImpressoresGeradasNoDiaSeguinte": {
+                    "Governo": {
+                        "Falas": "A omissão da infiltração evitou pânico sobre segurança da informação."
+                    },
+                    "Resistencia": {
+                        "Falas": "Você escondeu que estamos penetrando nas defesas do regime."
+                    }
+                }
+            },
+            "MENTIR": {
+                "TituloAlterado": "Segurança de Transmissão Reforçada",
+                "TextoParaLer": "Novos sistemas de segurança garantem total integridade das transmissões de rádio.",
+                "Impacto": {
+                    "VariacaoEsperanca": 6,
+                    "VariacaoIrritacao": -6,
+                    "AudienciaGanha": 5
+                },
+                "ImpressoresGeradasNoDiaSeguinte": {
+                    "Governo": {
+                        "Falas": "A narrativa de segurança manteve a confiança nos sistemas oficiais."
+                    },
+                    "Resistencia": {
+                        "Falas": "Você mentiu para proteger a ilusão de controle do regime."
+                    }
+                }
+            },
+            "DISTORCER": {
+                "TituloAlterado": "Resistência Hackeou Propaganda do Regime",
+                "TextoParaLer": "A resistência conseguiu hackear os sistemas de propaganda do regime para transmitir a verdade ao povo.",
+                "Impacto": {
+                    "VariacaoEsperanca": -9,
+                    "VariacaoIrritacao": 10,
+                    "AudienciaGanha": 11.2
+                },
+                "ImpressoresGeradasNoDiaSeguinte": {
+                    "Governo": {
+                        "Falas": "INSPEÇÃO IMEDIATA: Sua estação será inspecionada por possível cumplicidade."
+                    },
+                    "Resistencia": {
+                        "Falas": "Você revelou nossa capacidade técnica. O regime sabe que não está seguro."
+                    }
+                }
+            }
+        }
+    },
+    {
+        "Id": "noticia_dia5_06",
+        "Remetente": "[DIA 05] Mensagem Anônima",
+        "TituloOriginal": "Ameaça Direta ao Radialista",
+        "TextoOriginal": "Uma mensagem anônima ameaçou diretamente profissionais de comunicação que colaboram com a \u0027propaganda do regime\u0027.",
+        "EscolhaJogador": "ORIGINAL",
+        "Variacoes": {
+            "ORIGINAL": {
+                "TituloAlterado": "Ameaça Direta ao Radialista",
+                "TextoParaLer": "Uma mensagem anônima ameaçou diretamente profissionais de comunicação que colaboram com a \u0027propaganda do regime\u0027.",
+                "Impacto": {
+                    "VariacaoEsperanca": -3,
+                    "VariacaoIrritacao": 4,
+                    "AudienciaGanha": 5
+                },
+                "ImpressoresGeradasNoDiaSeguinte": {
+                    "Governo": {
+                        "Falas": "Segurança adicional foi alocada para proteger profissionais de mídia."
+                    },
+                    "Resistencia": {
+                        "Falas": "Temos olhos em você. Escolha seu lado com sabedoria."
+                    }
+                }
+            },
+            "OMITIR": {
+                "TituloAlterado": "Mensagens Intimidatórias Circulando",
+                "TextoParaLer": "Mensagens intimidatórias de origem desconhecida estão circulando pela rede.",
+                "Impacto": {
+                    "VariacaoEsperanca": 0,
+                    "VariacaoIrritacao": 1,
+                    "AudienciaGanha": 2.4
+                },
+                "ImpressoresGeradasNoDiaSeguinte": {
+                    "Governo": {
+                        "Falas": "A generalização da ameaça reduziu seu impacto psicológico direto."
+                    },
+                    "Resistencia": {
+                        "Falas": "Você tentou esconder que está sendo vigiado. Cuidado."
+                    }
+                }
+            },
+            "MENTIR": {
+                "TituloAlterado": "Falsas Ameaças Desmentidas",
+                "TextoParaLer": "Autoridades confirmam que supostas ameaças são falsas e criadas para gerar medo.",
+                "Impacto": {
+                    "VariacaoEsperanca": 6,
+                    "VariacaoIrritacao": -6,
+                    "AudienciaGanha": 5
+                },
+                "ImpressoresGeradasNoDiaSeguinte": {
+                    "Governo": {
+                        "Falas": "A deslegitimação das ameaças manteve a moral dos profissionais de mídia."
+                    },
+                    "Resistencia": {
+                        "Falas": "Nossas advertências são muito reais. Você verá."
+                    }
+                }
+            },
+            "DISTORCER": {
+                "TituloAlterado": "Resistência Promete Punir Colaboradores do Regime",
+                "TextoParaLer": "A resistência prometeu punir todos os colaboradores do regime que ajudam a enganar e manipular o povo.",
+                "Impacto": {
+                    "VariacaoEsperanca": -9,
+                    "VariacaoIrritacao": 10,
+                    "AudienciaGanha": 9.9
+                },
+                "ImpressoresGeradasNoDiaSeguinte": {
+                    "Governo": {
+                        "Falas": "Você amplificou ameaças terroristas contra si mesmo. Proteção será fornecida."
+                    },
+                    "Resistencia": {
+                        "Falas": "Você divulgou nosso aviso. Esperamos que tenha entendido a mensagem."
+                    }
+                }
+            }
+        }
+    },
+    {
+        "Id": "noticia_dia5_07",
+        "Remetente": "[DIA 05] Relatório de Campo",
+        "TituloOriginal": "Colapso da Infraestrutura de Transporte",
+        "TextoOriginal": "A infraestrutura de transporte entrou em colapso devido a sabotagens combinadas com deserções de operadores.",
+        "EscolhaJogador": "ORIGINAL",
+        "Variacoes": {
+            "ORIGINAL": {
+                "TituloAlterado": "Colapso da Infraestrutura de Transporte",
+                "TextoParaLer": "A infraestrutura de transporte entrou em colapso devido a sabotagens combinadas com deserções de operadores.",
+                "Impacto": {
+                    "VariacaoEsperanca": -3,
+                    "VariacaoIrritacao": 4,
+                    "AudienciaGanha": 5
+                },
+                "ImpressoresGeradasNoDiaSeguinte": {
+                    "Governo": {
+                        "Falas": "O colapso do transporte isolou diversas regiões e dificultou operações."
+                    },
+                    "Resistencia": {
+                        "Falas": "Cada sistema que cai é um sistema que não pode servir à elite."
+                    }
+                }
+            },
+            "OMITIR": {
+                "TituloAlterado": "Dificuldades no Sistema de Transporte",
+                "TextoParaLer": "O sistema de transporte está enfrentando dificuldades operacionais temporárias.",
+                "Impacto": {
+                    "VariacaoEsperanca": 0,
+                    "VariacaoIrritacao": 1,
+                    "AudienciaGanha": 3
+                },
+                "ImpressoresGeradasNoDiaSeguinte": {
+                    "Governo": {
+                        "Falas": "A minimização do colapso evitou pânico sobre isolamento regional."
+                    },
+                    "Resistencia": {
+                        "Falas": "Você escondeu que o sistema está se desintegrando completamente."
+                    }
+                }
+            },
+            "MENTIR": {
+                "TituloAlterado": "Transporte Operando em Rotas Alternativas",
+                "TextoParaLer": "O sistema de transporte continua operando eficientemente através de rotas alternativas estabelecidas.",
+                "Impacto": {
+                    "VariacaoEsperanca": 6,
+                    "VariacaoIrritacao": -6,
+                    "AudienciaGanha": 5.4
+                },
+                "ImpressoresGeradasNoDiaSeguinte": {
+                    "Governo": {
+                        "Falas": "A mentira sobre funcionalidade manteve a aparência de normalidade."
+                    },
+                    "Resistencia": {
+                        "Falas": "Você fingiu que tudo funciona quando nada mais funciona."
+                    }
+                }
+            },
+            "DISTORCER": {
+                "TituloAlterado": "Sociedade em Colapso Total: Nenhum Sistema Funciona",
+                "TextoParaLer": "A sociedade entrou em colapso total. Transporte, energia, comunicação - nenhum sistema funciona mais enquanto a elite prepara sua fuga.",
+                "Impacto": {
+                    "VariacaoEsperanca": -12,
+                    "VariacaoIrritacao": 12.5,
+                    "AudienciaGanha": 12
+                },
+                "ImpressoresGeradasNoDiaSeguinte": {
+                    "Governo": {
+                        "Falas": "Sua transmissão catastrófica provocou pânico generalizado e abandono de funções."
+                    },
+                    "Resistencia": {
+                        "Falas": "Você mostrou a verdade nua e crua. O sistema morreu. Só falta o funeral."
+                    }
+                }
+            }
+        }
+    }
 ]
