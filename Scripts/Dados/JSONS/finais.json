@@ -1,0 +1,40 @@
+{
+  "finais": [
+    {
+      "id": "revolucao_hades",
+      "nome": "A Era de Hades (Vitória Total da Resistência)",
+      "requisitos": {
+        "reputacao_hades": "alta",
+        "reputacao_fdp": "baixa"
+      },
+      "descricao": "Você usou o jornalismo para desmascarar totalmente os esquemas do FDP e expor os crimes da elite da cidade. O Hades liderou um levante popular implacável. As forças de segurança da FDP desmoronaram e os líderes da facção autoritária foram caçados. A rádio e os meios de comunicação tornaram-se a voz livre da revolução."
+    },
+    {
+      "id": "ordem_corporativa",
+      "nome": "A Ordem de Ferro (Domínio Total da FDP)",
+      "requisitos": {
+        "reputacao_hades": "baixa",
+        "reputacao_fdp": "alta"
+      },
+      "descricao": "Suas transmissões distorceram e silenciaram as intenções do Hades, pintando-os apenas como terroristas sanguinários. A FDP massacrou os rebeldes com apoio da população manipulara. O controle estatal/corporativo sobre a informação é total, e você foi promovido a Chefe Oficial de Propaganda da FDP."
+    },
+    {
+      "id": "paz_armada",
+      "nome": "O Equilíbrio das Sombras (Paz Velada)",
+      "requisitos": {
+        "reputacao_hades": "alta",
+        "reputacao_fdp": "alta"
+      },
+      "descricao": "Ao manobrar as notícias com maestria, você conseguiu agradar ambos os lados sem se comprometer inteiramente. Hades e FDP estabeleceram um trégua tensa e não declarada. Você se tornou o intermediário de informação mais influente e perigoso da cidade, temido e respeitado por ambas as facções."
+    },
+    {
+      "id": "caos_total",
+      "nome": "Terra Arrasada (Guerra Civil Absoluta)",
+      "requisitos": {
+        "reputacao_hades": "baixa",
+        "reputacao_fdp": "baixa"
+      },
+      "descricao": "Suas mentiras, omissões e manipulações foram descobertas por ambas as partes. Hades e FDP perderam a confiança na imprensa e se chocaram em um conflito aberto, sangrento e sem regras. A cidade virou ruínas, o sinal da rádio caiu e você agora precisa fugir para sobreviver à caçada liderada pelas duas facções."
+    }
+  ]
+}

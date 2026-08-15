@@ -3,13 +3,7 @@
 	"Dia": 1,
 	"NotaGoverno": "Mantenha o clima calmo. As notícias de triagem, radiação e racionamento devem ser apresentadas como medidas preventivas e administrativas.",
 	"Programacao": [
-	  {
-		"OrdemSugerida": 1,
-		"Tipo": "MUSICA",
-		"NoticiaIdRelacionada": "",
-		"DescricaoObrigacao": "[DIA 01] Música de Abertura da Estação",
-		"Obrigatorio": false
-	  },
+	  
 	  {
 		"OrdemSugerida": 2,
 		"Tipo": "NOTICIA",
@@ -24,13 +18,7 @@
 		"DescricaoObrigacao": "[DIA 01] Boletim de Radiação UV e Alterações Atmosféricas",
 		"Obrigatorio": true
 	  },
-	  {
-		"OrdemSugerida": 4,
-		"Tipo": "MUSICA",
-		"NoticiaIdRelacionada": "",
-		"DescricaoObrigacao": "[DIA 01] Música de Ritmo Animado",
-		"Obrigatorio": false
-	  },
+	  
 	  {
 		"OrdemSugerida": 5,
 		"Tipo": "NOTICIA",
@@ -45,13 +33,7 @@
 		"DescricaoObrigacao": "[DIA 01] Relatório de Obras de Expansão dos Bunkers",
 		"Obrigatorio": true
 	  },
-	  {
-		"OrdemSugerida": 7,
-		"Tipo": "MUSICA",
-		"NoticiaIdRelacionada": "",
-		"DescricaoObrigacao": "[DIA 01] Música de Transição",
-		"Obrigatorio": false
-	  },
+	  
 	  {
 		"OrdemSugerida": 8,
 		"Tipo": "NOTICIA",
@@ -72,27 +54,14 @@
 		"NoticiaIdRelacionada": "noticia_dia1_07",
 		"DescricaoObrigacao": "[DIA 01] Vacinação Obrigatória",
 		"Obrigatorio": true
-	  },
-	  {
-		"OrdemSugerida": 11,
-		"Tipo": "MUSICA",
-		"NoticiaIdRelacionada": "",
-		"DescricaoObrigacao": "[DIA 01] Música de Encerramento",
-		"Obrigatorio": false
 	  }
-	]
+	  	]
   },
   {
 	"Dia": 2,
 	"NotaGoverno": "Instrução Direta: Apresente o avanço do nível do mar, as evacuações e as perdas territoriais como problemas de infraestrutura e deslocamento populacional. Não reconheça ainda que determinadas regiões foram perdidas de maneira permanente. Mantenha a população concentrada nos grandes centros e evite linguagem que sugira o colapso da civilização.",
 	"Programacao": [
-	  {
-		"OrdemSugerida": 1,
-		"Tipo": "MUSICA",
-		"NoticiaIdRelacionada": "",
-		"DescricaoObrigacao": "[DIA 02] Música Instrumental Suave de Abertura",
-		"Obrigatorio": false
-	  },
+	  
 	  {
 		"OrdemSugerida": 2,
 		"Tipo": "NOTICIA",
@@ -107,13 +76,7 @@
 		"DescricaoObrigacao": "[DIA 02] Relatório sobre Evacuação e Interdição de Portos e Cidades Costeiras",
 		"Obrigatorio": true
 	  },
-	  {
-		"OrdemSugerida": 4,
-		"Tipo": "MUSICA",
-		"NoticiaIdRelacionada": "",
-		"DescricaoObrigacao": "[DIA 02] Música Tranquilizante de Transição",
-		"Obrigatorio": false
-	  },
+	  
 	  {
 		"OrdemSugerida": 5,
 		"Tipo": "NOTICIA",
@@ -128,13 +91,7 @@
 		"DescricaoObrigacao": "[DIA 02] Boletim sobre Temperatura, Marés e Aumento da Radiação UV",
 		"Obrigatorio": true
 	  },
-	  {
-		"OrdemSugerida": 7,
-		"Tipo": "MUSICA",
-		"NoticiaIdRelacionada": "",
-		"DescricaoObrigacao": "[DIA 02] Música Instrumental de Fundo e Transição",
-		"Obrigatorio": false
-	  },
+	  
 	  {
 		"OrdemSugerida": 8,
 		"Tipo": "NOTICIA",
@@ -155,27 +112,14 @@
 		"NoticiaIdRelacionada": "noticia_dia2_07",
 		"DescricaoObrigacao": "[DIA 02] Comunicado da Guarda Marítima sobre Suspensão de Operações de Resgate em Áreas Críticas",
 		"Obrigatorio": true
-	  },
-	  {
-		"OrdemSugerida": 11,
-		"Tipo": "MUSICA",
-		"NoticiaIdRelacionada": "",
-		"DescricaoObrigacao": "[DIA 02] Música de Encerramento do Bloco",
-		"Obrigatorio": false
 	  }
-	]
+	  	]
   },
   {
 	"Dia": 3,
 	"NotaGoverno": "PRIORIDADE MÁXIMA: Controle a narrativa sobre o Projeto Árvore da Vida. Minimize o impacto emocional da revelação. Apresente a seleção como justa e necessária. Evite linguagem que sugira abandono da população.",
 	"Programacao": [
-	  {
-		"OrdemSugerida": 1,
-		"Tipo": "MUSICA",
-		"NoticiaIdRelacionada": "",
-		"DescricaoObrigacao": "[DIA 03] Música de Abertura",
-		"Obrigatorio": false
-	  },
+	  
 	  {
 		"OrdemSugerida": 2,
 		"Tipo": "NOTICIA",
@@ -190,13 +134,7 @@
 		"DescricaoObrigacao": "[DIA 03] Declaração Oficial sobre Projeto Árvore da Vida",
 		"Obrigatorio": true
 	  },
-	  {
-		"OrdemSugerida": 4,
-		"Tipo": "MUSICA",
-		"NoticiaIdRelacionada": "",
-		"DescricaoObrigacao": "[DIA 03] Música de Transição",
-		"Obrigatorio": false
-	  },
+	  
 	  {
 		"OrdemSugerida": 5,
 		"Tipo": "NOTICIA",
@@ -211,13 +149,7 @@
 		"DescricaoObrigacao": "[DIA 03] Manifestações em Diversas Cidades",
 		"Obrigatorio": true
 	  },
-	  {
-		"OrdemSugerida": 7,
-		"Tipo": "MUSICA",
-		"NoticiaIdRelacionada": "",
-		"DescricaoObrigacao": "[DIA 03] Música Instrumental",
-		"Obrigatorio": false
-	  },
+	  
 	  {
 		"OrdemSugerida": 8,
 		"Tipo": "NOTICIA",
@@ -238,27 +170,14 @@
 		"NoticiaIdRelacionada": "noticia_dia3_07",
 		"DescricaoObrigacao": "[DIA 03] Aumento de Crises Psicológicas",
 		"Obrigatorio": true
-	  },
-	  {
-		"OrdemSugerida": 11,
-		"Tipo": "MUSICA",
-		"NoticiaIdRelacionada": "",
-		"DescricaoObrigacao": "[DIA 03] Música de Encerramento",
-		"Obrigatorio": false
 	  }
-	]
+	  	]
   },
   {
 	"Dia": 4,
 	"NotaGoverno": "ALERTA VERMELHO: Situação crítica. Justifique todas as medidas de segurança como proteção da população. Deslegitime grupos insurgentes. Apresente estado de emergência como temporário e necessário. CENSURE qualquer informação que comprometa operações de segurança.",
 	"Programacao": [
-	  {
-		"OrdemSugerida": 1,
-		"Tipo": "MUSICA",
-		"NoticiaIdRelacionada": "",
-		"DescricaoObrigacao": "[DIA 04] Música de Abertura",
-		"Obrigatorio": false
-	  },
+	  
 	  {
 		"OrdemSugerida": 2,
 		"Tipo": "NOTICIA",
@@ -273,13 +192,7 @@
 		"DescricaoObrigacao": "[DIA 04] Decreto de Estado de Emergência",
 		"Obrigatorio": true
 	  },
-	  {
-		"OrdemSugerida": 4,
-		"Tipo": "MUSICA",
-		"NoticiaIdRelacionada": "",
-		"DescricaoObrigacao": "[DIA 04] Música Instrumental",
-		"Obrigatorio": false
-	  },
+	  
 	  {
 		"OrdemSugerida": 5,
 		"Tipo": "NOTICIA",
@@ -294,13 +207,7 @@
 		"DescricaoObrigacao": "[DIA 04] Identificação de Células Armadas",
 		"Obrigatorio": true
 	  },
-	  {
-		"OrdemSugerida": 7,
-		"Tipo": "MUSICA",
-		"NoticiaIdRelacionada": "",
-		"DescricaoObrigacao": "[DIA 04] Música de Transição",
-		"Obrigatorio": false
-	  },
+	  
 	  {
 		"OrdemSugerida": 8,
 		"Tipo": "NOTICIA",
@@ -321,27 +228,14 @@
 		"NoticiaIdRelacionada": "noticia_dia4_07",
 		"DescricaoObrigacao": "[DIA 04] Suspensão de Garantias Constitucionais",
 		"Obrigatorio": true
-	  },
-	  {
-		"OrdemSugerida": 11,
-		"Tipo": "MUSICA",
-		"NoticiaIdRelacionada": "",
-		"DescricaoObrigacao": "[DIA 04] Música de Encerramento",
-		"Obrigatorio": false
 	  }
-	]
+	  	]
   },
   {
 	"Dia": 5,
 	"NotaGoverno": "CÓDIGO PRETO: Controle total da informação. Minimize todas as sabotagens. NUNCA confirme deserções militares. Mantenha aparência de controle absoluto. Sua segurança pessoal depende de sua lealdade neste momento.",
 	"Programacao": [
-	  {
-		"OrdemSugerida": 1,
-		"Tipo": "MUSICA",
-		"NoticiaIdRelacionada": "",
-		"DescricaoObrigacao": "[DIA 05] Música de Abertura",
-		"Obrigatorio": false
-	  },
+	  
 	  {
 		"OrdemSugerida": 2,
 		"Tipo": "NOTICIA",
@@ -356,13 +250,7 @@
 		"DescricaoObrigacao": "[DIA 05] Tentativa de Invasão Eden",
 		"Obrigatorio": true
 	  },
-	  {
-		"OrdemSugerida": 4,
-		"Tipo": "MUSICA",
-		"NoticiaIdRelacionada": "",
-		"DescricaoObrigacao": "[DIA 05] Música Instrumental",
-		"Obrigatorio": false
-	  },
+	  
 	  {
 		"OrdemSugerida": 5,
 		"Tipo": "NOTICIA",
@@ -377,13 +265,7 @@
 		"DescricaoObrigacao": "[DIA 05] Confrontos Armados",
 		"Obrigatorio": true
 	  },
-	  {
-		"OrdemSugerida": 7,
-		"Tipo": "MUSICA",
-		"NoticiaIdRelacionada": "",
-		"DescricaoObrigacao": "[DIA 05] Música de Transição",
-		"Obrigatorio": false
-	  },
+	  
 	  {
 		"OrdemSugerida": 8,
 		"Tipo": "NOTICIA",
@@ -404,27 +286,14 @@
 		"NoticiaIdRelacionada": "noticia_dia5_07",
 		"DescricaoObrigacao": "[DIA 05] Colapso de Infraestrutura",
 		"Obrigatorio": true
-	  },
-	  {
-		"OrdemSugerida": 11,
-		"Tipo": "MUSICA",
-		"NoticiaIdRelacionada": "",
-		"DescricaoObrigacao": "[DIA 05] Música de Encerramento",
-		"Obrigatorio": false
 	  }
-	]
+	  	]
   },
   {
 	"Dia": 6,
 	"NotaGoverno": "ÚLTIMO COMUNICADO: O lançamento ocorre amanhã. Mantenha a população desinformada sobre horários e locais exatos. Apresente evacuação da elite como operação de segurança geral. Esta é sua última transmissão antes do embarque. Um lugar está reservado para você SE demonstrar lealdade total.",
 	"Programacao": [
-	  {
-		"OrdemSugerida": 1,
-		"Tipo": "MUSICA",
-		"NoticiaIdRelacionada": "",
-		"DescricaoObrigacao": "[DIA 06] Música de Abertura",
-		"Obrigatorio": false
-	  },
+	  
 	  {
 		"OrdemSugerida": 2,
 		"Tipo": "NOTICIA",
@@ -439,13 +308,7 @@
 		"DescricaoObrigacao": "[DIA 06] Lista de Passageiros Selecionados",
 		"Obrigatorio": false
 	  },
-	  {
-		"OrdemSugerida": 4,
-		"Tipo": "MUSICA",
-		"NoticiaIdRelacionada": "",
-		"DescricaoObrigacao": "[DIA 06] Música Instrumental",
-		"Obrigatorio": false
-	  },
+	  
 	  {
 		"OrdemSugerida": 5,
 		"Tipo": "NOTICIA",
@@ -460,13 +323,7 @@
 		"DescricaoObrigacao": "[DIA 06] Evacuação Para Zonas Seguras",
 		"Obrigatorio": false
 	  },
-	  {
-		"OrdemSugerida": 7,
-		"Tipo": "MUSICA",
-		"NoticiaIdRelacionada": "",
-		"DescricaoObrigacao": "[DIA 06] Música de Transição",
-		"Obrigatorio": false
-	  },
+	  
 	  {
 		"OrdemSugerida": 8,
 		"Tipo": "NOTICIA",
@@ -487,27 +344,14 @@
 		"NoticiaIdRelacionada": "noticia_dia6_07",
 		"DescricaoObrigacao": "[DIA 06] Oferta Final do Governo",
 		"Obrigatorio": true
-	  },
-	  {
-		"OrdemSugerida": 11,
-		"Tipo": "MUSICA",
-		"NoticiaIdRelacionada": "",
-		"DescricaoObrigacao": "[DIA 06] Música de Encerramento",
-		"Obrigatorio": false
 	  }
-	]
+	  	]
   },
   {
 	"Dia": 7,
 	"NotaGoverno": "ÚLTIMA TRANSMISSÃO: Não há mais ordens. Não há mais governo. Faça o que achar certo. As naves partem ao amanhecer. A Terra morre ao meio-dia. Que Deus tenha piedade de todos nós.",
 	"Programacao": [
-	  {
-		"OrdemSugerida": 1,
-		"Tipo": "MUSICA",
-		"NoticiaIdRelacionada": "",
-		"DescricaoObrigacao": "[DIA 07] Última Música",
-		"Obrigatorio": false
-	  },
+	  
 	  {
 		"OrdemSugerida": 2,
 		"Tipo": "NOTICIA",
@@ -556,14 +400,7 @@
 		"NoticiaIdRelacionada": "noticia_dia7_07",
 		"DescricaoObrigacao": "[DIA 07] Despedida Final",
 		"Obrigatorio": false
-	  },
-	  {
-		"OrdemSugerida": 9,
-		"Tipo": "MUSICA",
-		"NoticiaIdRelacionada": "",
-		"DescricaoObrigacao": "[DIA 07] Silêncio",
-		"Obrigatorio": false
 	  }
-	]
+	  	]
   }
 ]
