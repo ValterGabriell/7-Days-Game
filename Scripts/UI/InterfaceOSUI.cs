@@ -10,8 +10,9 @@ namespace fiveyears3.Scripts.UI
 {
     public partial class InterfaceOSUI : Control
     {
-        [Export] public ScrollContainer Scroll; 
-        [Export] public VBoxContainer ListaNoticias; 
+        [Export] public Label LabelMetricas;
+        [Export] public ScrollContainer Scroll;
+        [Export] public VBoxContainer ListaNoticias;
 
         [Export] public Label LblTitulo;
         [Export] public Label LblRemetente;
@@ -43,6 +44,7 @@ namespace fiveyears3.Scripts.UI
         private readonly List<MusicaModel> _musicasDisponiveis = new();
         private ButtonGroup _grupoBotoesNoticias = new ButtonGroup();
         private bool _inicializado;
+
         private VBoxContainer ObterListaMusicas()
         {
             if (ListaMusicas != null) return ListaMusicas;
@@ -66,6 +68,17 @@ namespace fiveyears3.Scripts.UI
             InicializarInterface();
         }
 
+        private void EncerrarDia()
+        {
+            Log.Print("[InterfaceOSUI] Encerrando o dia...");
+            GerenciadorPassagemDoTempo.Instance?.AvancarDia();
+        }
+
+        private void OnFinalizacaoDoDiaLiberada()
+        {
+            this.BtnEncerrar.Disabled = false;
+        }
+
         private void OnJogoIniciado()
         {
             Menu.AoIniciarJogo -= OnJogoIniciado;
@@ -77,12 +90,20 @@ namespace fiveyears3.Scripts.UI
             if (_inicializado) return;
             _inicializado = true;
 
-            ConfigurarGrupoDeOpcoes();
+            // Garante a inscrição dos eventos do botão e de finalização do dia aqui dentro
+            if (BtnEncerrar != null)
+            {
+                BtnEncerrar.Disabled = true;
+                BtnEncerrar.Pressed += EncerrarDia;
+            }
 
             if (GerenciadorDeNoticias.Instance != null)
             {
                 GerenciadorDeNoticias.Instance.NoticiasCarregadas += AtualizarListaNoticias;
+                GerenciadorDeNoticias.Instance.FinalizacaoDoDiaLiberada += OnFinalizacaoDoDiaLiberada;
             }
+
+            ConfigurarGrupoDeOpcoes();
 
             if (GerenciadorNoticiasImpressas.Instance != null)
             {
@@ -91,13 +112,18 @@ namespace fiveyears3.Scripts.UI
                 GerenciadorNoticiasImpressas.Instance.MusicaFinalizadaTransmissao += OnMusicaFinalizadaTransmissao;
             }
 
+            if (GerenciadorDeAudiencia.Instance != null)
+            {
+                GerenciadorDeAudiencia.Instance.MetricasAlteradas += OnMetricasAlteradas;
+                AtualizarMetricasUI();
+            }
+
             OptIntegra.Pressed += () => SelecionarAcaoEditorial(AcaoEditorial.ORIGINAL);
             OptSuprimir.Pressed += () => SelecionarAcaoEditorial(AcaoEditorial.OMITIR);
             OptOficial.Pressed += () => SelecionarAcaoEditorial(AcaoEditorial.MENTIR);
             OptInvestigativo.Pressed += () => SelecionarAcaoEditorial(AcaoEditorial.DISTORCER);
 
             BtnImprimir.Pressed += OnImprimirPauta;
- 
 
             if (BtnMusicas != null)
             {
@@ -115,7 +141,6 @@ namespace fiveyears3.Scripts.UI
             AtualizarListaMusicas();
             ExibirAba(false);
 
-            // Força a atualização da lista caso as notícias já estejam carregadas no Gerenciador
             AtualizarListaNoticias();
         }
 
@@ -123,9 +148,15 @@ namespace fiveyears3.Scripts.UI
         {
             Menu.AoIniciarJogo -= OnJogoIniciado;
 
+            if (BtnEncerrar != null)
+            {
+                BtnEncerrar.Pressed -= EncerrarDia;
+            }
+
             if (GerenciadorDeNoticias.Instance != null)
             {
                 GerenciadorDeNoticias.Instance.NoticiasCarregadas -= AtualizarListaNoticias;
+                GerenciadorDeNoticias.Instance.FinalizacaoDoDiaLiberada -= OnFinalizacaoDoDiaLiberada;
             }
 
             if (GerenciadorNoticiasImpressas.Instance != null)
@@ -134,6 +165,60 @@ namespace fiveyears3.Scripts.UI
                 GerenciadorNoticiasImpressas.Instance.MusicaRemovidaDaFila -= OnMusicaRemovidaDaFila;
                 GerenciadorNoticiasImpressas.Instance.MusicaFinalizadaTransmissao -= OnMusicaFinalizadaTransmissao;
             }
+
+            if (GerenciadorDeAudiencia.Instance != null)
+            {
+                GerenciadorDeAudiencia.Instance.MetricasAlteradas -= OnMetricasAlteradas;
+            }
+        }
+
+        private void OnMetricasAlteradas(double varAudiencia, double varEsperanca, double varIrritacao)
+        {
+            AtualizarMetricasUI();
+        }
+
+        private void AtualizarMetricasUI()
+        {
+            var aud = GerenciadorDeAudiencia.Instance;
+            if (aud == null) return;
+
+            // Atualiza o rótulo consolidado de métricas
+            if (LabelMetricas != null)
+            {
+                EstadoClimaSocial clima = aud.ObterEstadoClimaSocial();
+                LabelMetricas.Text = $"Audiência: {aud.AudienciaAtual:F1}% | " +
+                                     $"Esperança: {aud.EsperancaAtual:F1} | " +
+                                     $"Irritação: {aud.IrritacaoAtual:F1} | " +
+                                     $"Clima: {ObterTextoFormatadoClima(clima)}";
+            }
+
+            // Atualiza rótulos individuais, caso existam no Inspector
+            if (LblAudiencia != null)
+            {
+                LblAudiencia.Text = $"Audiência: {aud.AudienciaAtual:F1}%";
+            }
+
+            if (LblEsperanca != null)
+            {
+                LblEsperanca.Text = $"Esperança: {aud.EsperancaAtual:F1}";
+            }
+
+            if (LblIrritacao != null)
+            {
+                LblIrritacao.Text = $"Irritação: {aud.IrritacaoAtual:F1}";
+            }
+        }
+
+        private string ObterTextoFormatadoClima(EstadoClimaSocial clima)
+        {
+            return clima switch
+            {
+                EstadoClimaSocial.AudienciaBaixa => "Audiência Baixa (Crítico)",
+                EstadoClimaSocial.DominadoPeloGoverno => "Dominado pelo Governo",
+                EstadoClimaSocial.RevoltaPopular => "Revolta Popular",
+                EstadoClimaSocial.TensaoEquilibrada => "Tensão Equilibrada",
+                _ => "Desconhecido"
+            };
         }
 
         private void ExibirAba(bool mostrarMusicas)
@@ -467,11 +552,15 @@ namespace fiveyears3.Scripts.UI
             BtnImprimir.Text = jaImpressa ? "Editar Notícia" : "Imprimir Notícia";
         }
 
-       
         private void AtualizarStatusDia()
         {
             LblPautas.Text = $"Pautas Impressas: {_pautasImpressasCount} / {MAX_PAUTAS_DIA}";
-            BtnEncerrar.Disabled = _pautasImpressasCount < MAX_PAUTAS_DIA;
+
+            // Altere para ativar caso as pautas atinjam o máximo OU se o evento de liberação já tiver ocorrido
+            if (_pautasImpressasCount >= MAX_PAUTAS_DIA)
+            {
+                BtnEncerrar.Disabled = false;
+            }
         }
 
         private void LimparPainelCentral()

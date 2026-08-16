@@ -2,21 +2,11 @@
 
 [ext_resource type="Script" uid="uid://banqxiu40s8m4" path="res://Scripts/Utilidades/Porta.cs" id="1_wvnwk"]
 [ext_resource type="AudioStream" uid="uid://bgfc13tk5jwmw" path="res://Arte/Audio/Efeitos/batida-de-porta-troll.mp3" id="2_pt4jf"]
+[ext_resource type="PackedScene" uid="uid://brxn532o8366t" path="res://Arte/Modelos3D/Porta.glb" id="3_f00p3"]
 [ext_resource type="PackedScene" uid="uid://cwc0qvqdxhptj" path="res://Cenas/Utilidades/Carta.tscn" id="3_lxqia"]
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_17se2"]
 data = PackedVector3Array(-0.6893, 1.0997, 0.189, 0.6893, 1.0997, 0.189, -0.6893, -1.0997, 0.189, 0.6893, 1.0997, 0.189, 0.6893, -1.0997, 0.189, -0.6893, -1.0997, 0.189, 0.6893, 1.0997, -0.189, -0.6893, 1.0997, -0.189, 0.6893, -1.0997, -0.189, -0.6893, 1.0997, -0.189, -0.6893, -1.0997, -0.189, 0.6893, -1.0997, -0.189, 0.6893, 1.0997, 0.189, 0.6893, 1.0997, -0.189, 0.6893, -1.0997, 0.189, 0.6893, 1.0997, -0.189, 0.6893, -1.0997, -0.189, 0.6893, -1.0997, 0.189, -0.6893, 1.0997, -0.189, -0.6893, 1.0997, 0.189, -0.6893, -1.0997, -0.189, -0.6893, 1.0997, 0.189, -0.6893, -1.0997, 0.189, -0.6893, -1.0997, -0.189, 0.6893, 1.0997, 0.189, -0.6893, 1.0997, 0.189, 0.6893, 1.0997, -0.189, -0.6893, 1.0997, 0.189, -0.6893, 1.0997, -0.189, 0.6893, 1.0997, -0.189, -0.6893, -1.0997, 0.189, 0.6893, -1.0997, 0.189, -0.6893, -1.0997, -0.189, 0.6893, -1.0997, 0.189, 0.6893, -1.0997, -0.189, -0.6893, -1.0997, -0.189)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_17se2"]
-albedo_color = Color(0.09019608, 0.078431375, 1, 1)
-
-[sub_resource type="BoxMesh" id="BoxMesh_v5wr4"]
-material = SubResource("StandardMaterial3D_17se2")
-size = Vector3(1.3786621, 1.6939087, 0.3779297)
-
-[sub_resource type="BoxMesh" id="BoxMesh_ef0sp"]
-material = SubResource("StandardMaterial3D_17se2")
-size = Vector3(1.4145508, 0.48779297, 0.37646484)
 
 [sub_resource type="BoxMesh" id="BoxMesh_exfc0"]
 size = Vector3(1.4012451, 0.2849121, 0.51416016)
@@ -30,20 +20,16 @@ AudioBatendoPorta = NodePath("PORTA_BATENDO")
 CenaCartaPorta = ExtResource("3_lxqia")
 PontoSpawnCarta = NodePath("Carta")
 
+[node name="Porta" parent="." unique_id=1574021256 instance=ExtResource("3_f00p3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.81454885, 0.49286008)
+
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=963636942]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.18933105, 0.5996704, 0.31103516)
+transform = Transform3D(0.70031154, 0, 0, 0, 1, 0, 0, 0, 1, 0.026197076, 0.7715709, 0.42698067)
 shape = SubResource("ConcavePolygonShape3D_17se2")
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=636988901]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.18933105, 0.34695435, 0.31103516)
-mesh = SubResource("BoxMesh_v5wr4")
-
-[node name="MeshInstance3D2" type="MeshInstance3D" parent="." unique_id=1760202025]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.20727539, 1.7267396, 0.31176758)
-mesh = SubResource("BoxMesh_ef0sp")
 
 [node name="VISOR" type="MeshInstance3D" parent="." unique_id=1953377661]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.20062256, 1.3183861, 0.24291992)
+visible = false
 mesh = SubResource("BoxMesh_exfc0")
 
 [node name="PORTA_BATENDO" type="AudioStreamPlayer3D" parent="." unique_id=84663216]

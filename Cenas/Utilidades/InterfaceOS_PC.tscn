@@ -11,7 +11,7 @@ font_names = PackedStringArray("Courier New")
 [sub_resource type="SystemFont" id="SystemFont_esxif"]
 font_names = PackedStringArray("Consolas")
 
-[node name="InterfaceOS" type="Control" unique_id=1710706125 node_paths=PackedStringArray("ListaNoticias", "LblTitulo", "LblRemetente", "LblTextoOriginal", "OptIntegra", "OptSuprimir", "OptOficial", "OptInvestigativo", "LblPreview", "BtnImprimir", "LblPautas", "LblAudiencia", "LblEsperanca", "LblIrritacao", "BtnEncerrar", "BtnMusicas", "BtnPropagandaNoticias", "BoxMusicas", "BoxNoticiasPropaganda", "ListaMusicas")]
+[node name="InterfaceOS" type="Control" unique_id=1710706125 node_paths=PackedStringArray("LabelMetricas", "ListaNoticias", "LblTitulo", "LblRemetente", "LblTextoOriginal", "OptIntegra", "OptSuprimir", "OptOficial", "OptInvestigativo", "LblPreview", "BtnImprimir", "LblPautas", "LblAudiencia", "LblEsperanca", "LblIrritacao", "BtnEncerrar", "BtnMusicas", "BtnPropagandaNoticias", "BoxMusicas", "BoxNoticiasPropaganda", "ListaMusicas")]
 layout_mode = 3
 anchor_right = 0.53000003
 anchor_bottom = 0.697
@@ -21,6 +21,7 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
 script = ExtResource("1_r6i6s")
+LabelMetricas = NodePath("FundoTerminal/Margens/VBoxContainer/VBoxContainer/LABEL_METRICAS")
 ListaNoticias = NodePath("FundoTerminal/Margens/VBoxContainer/LayoutGridNoticias/ColunaEsquerda/ScrollContainer/ListaNoticias")
 LblTitulo = NodePath("FundoTerminal/Margens/VBoxContainer/LayoutGridNoticias/ColunaCentro/LblTitulo")
 LblRemetente = NodePath("FundoTerminal/Margens/VBoxContainer/LayoutGridNoticias/ColunaCentro/LblRemetente")
@@ -76,12 +77,12 @@ theme_override_constants/separation = 32
 [node name="VBoxContainer" type="VBoxContainer" parent="FundoTerminal/Margens/VBoxContainer" unique_id=260287035]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="FundoTerminal/Margens/VBoxContainer/VBoxContainer" unique_id=570990219]
+[node name="LABEL_METRICAS" type="Label" parent="FundoTerminal/Margens/VBoxContainer/VBoxContainer" unique_id=570990219]
 layout_mode = 2
 size_flags_horizontal = 4
 theme_override_colors/font_color = Color(0, 1, 0.25490198, 1)
 theme_override_fonts/font = SubResource("SystemFont_y1r0m")
-theme_override_font_sizes/font_size = 24
+theme_override_font_sizes/font_size = 18
 text = "Plataforma de Auditoria, Triagem e Regulação de Informação Autônoma"
 
 [node name="ColunaDireita" type="HBoxContainer" parent="FundoTerminal/Margens/VBoxContainer/VBoxContainer" unique_id=1307420572]

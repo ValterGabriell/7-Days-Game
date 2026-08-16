@@ -15,14 +15,11 @@ public partial class UiAudiencia : CanvasLayer
 
     public override void _Ready()
     {
-        if (GerenciadorDeAudiencia.Instance != null)
-        {
-            // Inscreve no novo evento unificado de métricas
-            GerenciadorDeAudiencia.Instance.MetricasAlteradas += OnMetricasAlteradas;
-
-            // Atualização inicial com os dados atuais do gerenciador
-            AtualizarUi(0.0, 0.0, 0.0);
-        }
+        this.LabelAudiencia.Visible = false;
+        this.LabelEsperanca.Visible = false;
+        this.LabelIrritacao.Visible = false;
+        this.LabelClimaSocial.Visible = false;
+        this.BarraAudiencia.Visible = false;
     }
 
     public override void _ExitTree()

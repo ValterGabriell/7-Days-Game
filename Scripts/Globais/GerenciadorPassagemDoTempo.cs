@@ -2,6 +2,7 @@ using Flags;
 using Godot;
 using Scripts.SaveSystem;
 using System;
+using System.Threading.Tasks;
 
 namespace fiveyears3.Scripts.Globais
 {
@@ -81,6 +82,9 @@ namespace fiveyears3.Scripts.Globais
         }
         public async void FinalizarDiaDeTrabalho()
         {
+            // Fade out antes de realizar a finalização (escurece a tela)
+            await FadeOutAsync();
+
             Log.Print($"[GerenciadorPassagemDoTempo] Finalizando o dia {DiaAtual} de trabalho.");
             EstadoAtual = EstadoDoDia.Parado;
 
@@ -129,6 +133,47 @@ namespace fiveyears3.Scripts.Globais
             GerenciadorDeNoticias.Instance?.ResetarValoresDeNoticiasEMusicasQueDevemSerTransmitidasNoDia();
 
             Log.Print($"[GerenciadorPassagemDoTempo] Dia {DiaAtual} finalizado.");
+
+            // Fade in para revelar o novo dia
+            await FadeInAsync();
+        }
+
+        private CanvasLayer _fadeCanvas;
+        private ColorRect _fadeRect;
+        private const float TEMPO_FADE = 0.8f;
+
+        private async Task FadeOutAsync()
+        {
+            if (_fadeCanvas == null)
+            {
+                _fadeCanvas = new CanvasLayer { Layer = 100 };
+                _fadeRect = new ColorRect
+                {
+                    Color = new Color(0, 0, 0, 0),
+                    MouseFilter = Control.MouseFilterEnum.Stop
+                };
+
+                _fadeRect.SetAnchorsAndOffsetsPreset(Control.LayoutPreset.FullRect);
+                _fadeCanvas.AddChild(_fadeRect);
+                AddChild(_fadeCanvas);
+            }
+
+            Tween tween = CreateTween();
+            tween.TweenProperty(_fadeRect, "color:a", 1.0f, TEMPO_FADE);
+            await ToSignal(tween, Tween.SignalName.Finished);
+        }
+
+        private async Task FadeInAsync()
+        {
+            if (_fadeRect == null) return;
+
+            Tween tween = CreateTween();
+            tween.TweenProperty(_fadeRect, "color:a", 0.0f, TEMPO_FADE);
+            await ToSignal(tween, Tween.SignalName.Finished);
+
+            _fadeCanvas?.QueueFree();
+            _fadeCanvas = null;
+            _fadeRect = null;
         }
     }
 }
